@@ -1,5 +1,5 @@
 list_1=[1,2,3,0,4,5,6]
-dict_1={1:"abhinav",2:"Aakash"}
+dict_1={1:"Abhishek",2:"Abhinav"}
 
 
 try:
