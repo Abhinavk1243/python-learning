@@ -1,0 +1,5 @@
+x=float(input('enter first number'))
+y=float(input ('enter second number'))
+print("x<5 and x<10",x<5 and x<10)
+print("x<5 or x<4",x<5 or x<4)
+print("not(x<5 and x<10)",not(x<5 and x<10))
