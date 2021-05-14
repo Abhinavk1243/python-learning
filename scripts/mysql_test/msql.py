@@ -1,12 +1,15 @@
 import mysql.connector as msc 
 from lib import read_config 
 
+# Function to connect databse with python code
 def read_configconnection():
     mydb=msc.connect(host=read_config.getconfig("mysql","host"),
                     user=read_config.getconfig("mysql","user"),
                     database=read_config.getconfig("mysql","database"),
                     password=read_config.getconfig("mysql","password"))
     return mydb
+
+# Function to display name of each database
 
 def showallDatabases():
     mydb=read_configconnection()
@@ -16,16 +19,16 @@ def showallDatabases():
         print(i)
 
 
-def fetchRecoread_config():
+def fetchrecord():
     mydb=read_configconnection()
     mycursor=mydb.cursor()
-    choice=int(input('select choice by index \n 1:fetch all recoread_config \n 2:fetch all recoread_config for specific column\n 3:fetch recoread_configs  of specific condition \n 4:fetch recoread_config as specific column for a specific condition '))
+    choice=int(input('select choice by index \n 1:fetch all record \n 2:fetch all record for specific column\n 3:fetch record  of specific condition \n 4:fetch record as specific column for a specific condition '))
     try:
         if choice==1:
             try:
                 mycursor.execute("select * from test_db.data")
                 result=mycursor.fetchall()
-                for recoread_config in result:
+                for record in result:
                     print(result)
             except:
                 print("unknown error")
@@ -35,28 +38,28 @@ def fetchRecoread_config():
             l=input("Enter column names as comma seperated")
             mycursor.execute(f"select {l} from test_db.data")
             result=mycursor.fetchall()
-            for recoread_config in result:
+            for record in result:
                 print(result)
         elif choice==3:
             cond=input("enter condition ")
             mycursor.execute(f"select * from test_db.data where {cond}")
             result=mycursor.fetchall()
-            for recoread_config in result:
-                print(recoread_config)
+            for record in result:
+                print(record)
         elif choice==4:
             l=input("Enter column names as comma seperated")
             cond=input("enter condition ")
             mycursor.execute(f"select {l} from test_db.data where {cond} ")
             result=mycursor.fetchall()
-            for recoread_config in result:
-                print(recoread_config)
+            for record in result:
+                print(record)
     except Exception as error:
         print(f"Exception generated {error}")
     finally:
         mydb.close()
         
 
-def insertrecoread_config():
+def insertrecord():
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     list_1=[]
@@ -68,7 +71,7 @@ def insertrecoread_config():
     col_val=tuple(list_1)
     try:
         mycursor.execute("insert into test_db.data (f_name,l_name,age,qualification,percentage) values (%s,%s,%s,%s,%s) ",col_val)
-        print("recoread_config was successfully inserted ")
+        print("record was successfully inserted ")
         mydb.commit()
     except Exception as error:
         print(f"Exception generated {error}")
@@ -76,15 +79,15 @@ def insertrecoread_config():
         mydb.close()
 
 
-def insertManyRecoread_configs():
+def insertmanyrecord():
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     sql="insert into test_db.data (f_name,l_name,age,qualification,percentage) values(%s,%s,%s,%s,%s)"
-    no_of_recoread_config=int(input("Enter the number of recoread_config")) 
+    no_of_record=int(input("Enter the number of record")) 
     l=[]
     val=[]
-    for i in range(0,no_of_recoread_config):
-        list_element=input('Enter the recoread_config')
+    for i in range(0,no_of_record):
+        list_element=input('Enter the record')
         l=list_element.split(",")
         for i in range(0,len(l)):
             if l[i].isdigit():
@@ -92,7 +95,7 @@ def insertManyRecoread_configs():
         val.append(tuple(l))
     try:
         mycursor.executemany(sql,val)
-        print("recoread_config was successfully inserted ")
+        print("record was successfully inserted ")
         mydb.commit()
     except Exception as error:
         print(f"Exception generated {error}")
@@ -141,20 +144,20 @@ def join():
         elif choice==3:
             mycursor.execute(inner)
         result=mycursor.fetchall()
-        for recoread_config in result:
-            print(recoread_config)
+        for record in result:
+            print(record)
     except Exception as error:
         print(f"Exception generated {error}")
     finally:
         mydb.close()
 
-def deleterecoread_config():
+def deleterecord():
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     cond=input("enter condition ")
     try:
         mycursor.execute(f"delete from test_db.data where {cond} ")
-        print(f"recoread_config was successfully deleted from table where {cond} ")
+        print(f"record was successfully deleted from table where {cond} ")
         mydb.commit()
     except Exception as error:
         print(f"Exception generated {error}")
@@ -165,17 +168,17 @@ def main():
     
     cont="y"
     while cont=='y' or cont=='Y':
-        choice=int(input("Enter your choice \n 1: fetch recoread_config \n 2: insert recoread_config \n 3: insert many recoread_config \n 4: join \n 5: Delete recoread_configs \n 6: update column values"))
+        choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: join \n 5: Delete records \n 6: update column values"))
         if choice==1:
-            fetchRecoread_config()
+            fetchrecord()
         elif choice==2:
-            insertrecoread_config()
+            insertrecord()
         elif choice==3:
-            insertManyRecoread_configs()
+            insertmanyrecord()
         elif choice==4:
             join()
         elif choice==5:
-            deleterecoread_config()
+            deleterecord()
         elif choice==6:
             updatecolvalue()
         cont=input("want to continue y or n")
