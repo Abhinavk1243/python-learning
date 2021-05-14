@@ -5,13 +5,13 @@ def readcsv(l,set_list):
     n=int(input("enter the number of dataframe"))
     for i in range(0,n):
         path=input("enter path of file")
-        df1=pd.read_csv(f"scripts/pandas_test/csvfile/{path}",sep="|")
+        df1=pd.read_csv(f"scripts/pandas_test/csvfiles/{path}",sep="|")
         l.append(df1)
         set_list.append(set(df1.columns))
     return l
 
 
-# function for merging a csv files
+# function for merging a csv filesS
 def merge(l,set_list):
     com_col=set()
     for i in range(0,len(set_list)):
