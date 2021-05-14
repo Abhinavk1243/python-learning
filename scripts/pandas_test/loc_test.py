@@ -12,4 +12,5 @@ for i in l:
         if df.loc[i,j]=="::unspecified":
             df.drop(i, inplace = True,axis=0)
             break
+print("After filteration")
 print(df)
