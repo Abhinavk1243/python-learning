@@ -1,12 +1,12 @@
 def is_member(list_1):
-    item=input("enter the number want to know is in list")
-    if item.isdigit()==True:
-         item=int(item)
-    print("{} is in {} : {}".format(item,list_1,item in list_1))
-    print("{} is not in {} : {}".format(item,list_1,item not in list_1))
-
-
-
+    try:
+        item=input("enter the number want to know is in list")
+        if item.isdigit()==True:
+             item=int(item)
+        print("{} is in {} : {}".format(item,list_1,item in list_1))
+        print("{} is not in {} : {}".format(item,list_1,item not in list_1))
+    except Exception as e:
+        print(f"error  : {e}")
 
 list_element=input('Enter the element of list')
 list_1=list_element.split(",")
