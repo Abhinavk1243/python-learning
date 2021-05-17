@@ -1,5 +1,13 @@
 import pandas as pd 
 def filter(df4):
+    """Method is use to filter the rows
+
+    Args:
+        df4 (Dataframes): dataframe whose row has to be filtered out
+
+    Returns:
+        dataframe :  final dataframe after row filtering
+    """
     filter_value=input("enter the value which u want to use to filter row")
     for i in df4.columns:
         df4=df4[df4[i] !=filter_value]

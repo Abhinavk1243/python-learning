@@ -1,4 +1,9 @@
 def add_data():
+    """This method add key,value pair in a specified dictonary
+
+    Returns:
+        Dictonary : dictonary having a new key , value pair added
+    """
     key=input("enter the key")
     if key.isdigit()==True:
         key=int(key)
@@ -8,6 +13,11 @@ def add_data():
     _dict.update({key:value})
     return _dict
 def delete_element():
+    """This method delete the speified key value pair from dictonary
+
+    Returns:
+        Dictonary :  dictonary after deletion of key,value pair
+    """
     key=input("enter the key of data which want to delete")
     if key.isdigit()==True:
         key=int(key)

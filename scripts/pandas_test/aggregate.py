@@ -1,6 +1,14 @@
 import pandas as pd 
 
 def agg(df):
+    """Method apply aggragate function (sum,min,max) on columns of dataframe
+
+    Args:
+        df (Dataframe): Dataframe
+
+    Returns:
+        Dataframe : aggregated dataframe with sum, min and max as column  name
+    """
     df=df.aggregate({"Age":['sum','min'],"Weight":["min","max"],"Marks":["sum"]})
     return df
 

@@ -4,23 +4,43 @@ list_1=[]
 
 # function to append one list to another list
 def add_list():
+    """This method append a list to another list
+
+    Returns:
+        array : result array after adding
+    """
     list_element_1=input('Enter the element of list')
     list_2=list_element_1.split(",")
     return list_1+list_2
 
 # function to repeate elements
 def repeatition():
+    """Method to repete all element of array
+
+    Returns:
+        array : final array
+    """
     number_of_time=int(input('Enter the number of repeatetion'))
     return list_1*number_of_time
 
 #function to do slicing
 def range_slicing():
+    """Method used to return sub array of 
+    Returns:
+        array : sub array
+    """
+
     start_index=int(input('enter starting index for slicing'))
     end_index=int(input('enter end index for slicing'))
     return list_1[start_index:end_index+1]
 
 # function to insert element at specified location
 def insert_at_loc():
+    """Method use to insert element in a array at specified location
+
+    Returns:
+        array : new array after insertion
+    """
     element=input("enter element")
     loc=int(input('Enter the location'))
     if element.isdigit()==True:

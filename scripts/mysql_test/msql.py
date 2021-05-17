@@ -3,6 +3,11 @@ from lib import read_config
 
 # Function to connect databse with python code
 def read_configconnection():
+    """Metod is use to connect database with python 
+
+    Returns:
+        connection : myslconnection
+    """
     mydb=msc.connect(host=read_config.getconfig("mysql","host"),
                     user=read_config.getconfig("mysql","user"),
                     database=read_config.getconfig("mysql","database"),
@@ -12,6 +17,8 @@ def read_configconnection():
 # Function to display name of each database
 
 def showallDatabases():
+    """Method use to print all the database in a host"""
+
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     mycursor.execute("show databases")
@@ -20,6 +27,8 @@ def showallDatabases():
 
 
 def fetchrecord():
+    """Method is use to fetch the record from a specific table in a database"""
+
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     choice=int(input('select choice by index \n 1:fetch all record \n 2:fetch all record for specific column\n 3:fetch record  of specific condition \n 4:fetch record as specific column for a specific condition '))
@@ -60,6 +69,7 @@ def fetchrecord():
         
 
 def insertrecord():
+    """ Method is used to insert record in a table"""
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     list_1=[]
@@ -80,6 +90,7 @@ def insertrecord():
 
 
 def insertmanyrecord():
+    """Method is used to insert more than one record at a time in a databsase table"""
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     sql="insert into test_db.data (f_name,l_name,age,qualification,percentage) values(%s,%s,%s,%s,%s)"
@@ -103,6 +114,7 @@ def insertmanyrecord():
         mydb.close()
 
 def updatecolvalue():
+    """Method is used to update a column value in a table"""
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     dict1=dict()
@@ -130,6 +142,7 @@ def updatecolvalue():
         mydb.close()
 
 def join():
+    """Method is used to join 2 table """
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     inner="select * from test_db.student inner join test_db.student_course on test_db.student.roll_no=test_db.student_course.roll_no "
@@ -152,6 +165,8 @@ def join():
         mydb.close()
 
 def deleterecord():
+    """Method is used to delete record from database table
+    """
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     cond=input("enter condition ")

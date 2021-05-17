@@ -1,5 +1,11 @@
 from datetime import datetime,timedelta,date
 def data(start_date,end_date):
+    """Method used to print the information from spectified start to end date
+
+    Args:
+        start_date (datetime): start date
+        end_date (datetime): end date
+    """
     format="%Y%m%d"
     l=[]
     d=datetime.strptime(start_date,format)

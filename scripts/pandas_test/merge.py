@@ -4,23 +4,59 @@ import pandas as pd
 
 #function of merge using single key
 def singlekey(df,df1):
+        """Method use to merge 2 dataframes using single key
+
+        Args:
+            df (Dataframe):  dataframe 1
+            df1 (Dataframe): dataframe 2
+
+        Returns:
+            Dataframe: merged dataframe
+        """
         single_key=pd.merge(df,df1,on='key')
-        print(single_key)
+        return single_key
 
 #function of merge using multiple key
 def mulkey(df,df1):
+        """Method use to merge 2 dataframes using multiple key
+
+        Args:
+            df (Dataframe):  dataframe 1
+            df1 (Dataframe): dataframe 2
+
+        Returns:
+            Dataframe: merged dataframe
+        """
         mul_key=pd.merge(df,df1,on=['key','key1'])
-        print(mul_key)
+        return mul_key
 
 #function of merge  using left join
 def leftjoin(df,df1):
+        """Method use to merge 2 dataframes using left join
+
+        Args:
+            df (Dataframe):  dataframe 1
+            df1 (Dataframe): dataframe 2
+
+        Returns:
+            Dataframe: merged dataframe
+        """
         left=pd.merge(df,df1,how="left",on=['key','key1'])
-        print(left)
+        return left
 
 #function of merge  using right join
 def rightjoin(df,df1):
+        """Method use to merge 2 dataframes using right join
+
+        Args:
+            df (Dataframe):  dataframe 1
+            df1 (Dataframe): dataframe 2
+
+        Returns:
+            Dataframe: merged dataframe
+        """
         right=pd.merge(df,df1,how="right",on=['key','key1'])
-        print(right)
+        return right
 
 def main():
 
@@ -43,20 +79,17 @@ def main():
         df1 = pd.DataFrame(data2) 
 
         # print merged dataframes
-        print("merge by single key")
-        singlekey(df,df1)
+        print(f"merge by single key : \n {singlekey(df,df1)}")
         print("\n")
 
-        print("merge by multiple keys")
-        mulkey(df,df1)
+        print(f"merge by multiple keys : \n {mulkey(df,df1)}")
         print("\n")
 
-        print("merge by left join")
-        leftjoin(df,df1)
+        print(f"merge by left join : {leftjoin(df,df1)}")
         print("\n")
         
-        print("merge by right join")
-        rightjoin(df,df1)
+        print(f"merge by right join : \n {rightjoin(df,df1)}")
+        
 
 if __name__=="__main__":
         main()
