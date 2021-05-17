@@ -4,8 +4,9 @@ df=pd.DataFrame(dict)
 #for i,j in df.iterrows():
    # print(i,j)
 for i in df.itertuples():
-    print(i.Name)
+   print(f"{i.Name} {i.roll_no}")
+   
 #for i,j in df.iteritems():
-   # print(i)
-    #print(j)
+   #print(i)
+   #print(j)
 

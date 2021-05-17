@@ -11,9 +11,10 @@ df = pd.DataFrame(data1,index=['K0', 'K1', 'K2', 'K3'])
   
 # Convert the dictionary into DataFrame  
 df1 = pd.DataFrame(data2, index=['K0', 'K2', 'K3', 'K4'])
-print(df ,'\n\n', df1)
+#print(df ,'\n\n', df1)
 
-outer = df.join(df1)
+outer = df.join(df1,how='outer')
+print(outer)
 #inner = df.join(df1,how='inner')
 
 

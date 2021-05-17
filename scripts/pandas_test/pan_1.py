@@ -1,16 +1,13 @@
 import pandas as pd 
 dict={"Name":["abhinav","aakash","Ayansh","arpit","Rohan","Maynak"], "roll_no":[1,2,2,4,5,6],"Marks":[76,87,90,55,54,66]}
 df=pd.DataFrame(dict)
-# print(df)  #print dataframe
-#print(df.head(5)) # print dateframe to 5th raw from top
-#print(df.tail(3))  #print dataframe to 3rd row from bottom 
-#print(df.to_numpy()) # convert data frame to numpy array
+
   
 # dealing with columns
-#print(df.loc[:,["Name","Marks"]]) #print selecteed columns
-#print(df.drop("Name",axis=1)) # drop column from dataframe
-#df.loc[[0,1,3],["pass"]]="yes"
-#print(df)
+print(df.loc[:,["Name","Marks"]]) #print selecteed columns
+print(df.drop("Name",axis=1)) # drop column from dataframe
+df.loc[[0,1,3],["pass"]]="yes"
+print(df)
 
 # dealing with rows
 #print(df.loc[[2,4,5],:]) #print selecteed columns

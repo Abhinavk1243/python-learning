@@ -27,6 +27,6 @@ group_dict={'Column 1.1':"column1",
      'Column 2.1':"column1",
      'Column 2.2':"column1"}
 df_1= df_1.set_index('id')
-df_1= df_1.groupby(group_dict, axis = 1).min()
+df_1= df_1.groupby(group_dict, axis = 1).sum()
 
 print(df_1)

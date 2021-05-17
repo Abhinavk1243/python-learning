@@ -5,7 +5,7 @@ def makedataframe():
     while continue_1=='y' or continue_1=='Y':
         col_name=input("enter the column name")
         if col_name.isdigit()==True:
-            col_name=int(key)
+            col_name=int(col_name)
         cols_data=input('Enter the columns data')
         list_1=cols_data.split(",")
         for i in range(0,len(list_1)):

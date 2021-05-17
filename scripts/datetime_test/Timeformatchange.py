@@ -6,6 +6,9 @@ def time_formatChange(date_1):
     print(date_2)
 
 
-date_1=input("enter date")
-time_formatChange(date_1)
+def main():
+    date_1=input("enter date")
+    time_formatChange(date_1)
 
+if __name__=="__main__":
+    main()

@@ -1,5 +1,10 @@
 import pandas as pd 
-data1 =  {'F_Name':['Jai', 'Anuj', 'Jai', 'Prince', 'Gaurav', 'Anuj', 'Prince', 'Abhinav'],"L_Name":["Singh","Kumar","Singh","Sharma","goel","Kumar","Shrama","Parjapati"],'Age':[27, 24, 22, 32, 33, 36, 27, 32],'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj','Jaunpur', 'Kanpur', 'Allahabad', 'Aligarh'],'Qualification':['Msc', 'MA', 'MCA', 'Phd','B.Tech', 'B.com', 'Msc', 'MA'],"Weight":[78,45,70,87,68,89,80,47]}
+data1 =  {'F_Name':['Jai', 'Anuj', 'Jai', 'Prince', 'Gaurav', 'Anuj', 'Prince', 'Abhinav'],
+          'L_Name':["Singh","Kumar","Singh","Sharma","goel","Kumar","Shrama","Parjapati"],
+          'Age':[27, 24, 22, 32, 33, 36, 27, 32],
+          'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj','Jaunpur', 'Kanpur', 'Allahabad', 'Aligarh'],
+          'Qualification':['Msc', 'MA', 'MCA', 'Phd','B.Tech', 'B.com', 'Msc', 'MA'],
+          "Weight":[78,45,70,87,68,89,80,47]}
 df=pd.DataFrame(data1)
 
 #function 

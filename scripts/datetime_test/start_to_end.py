@@ -15,7 +15,10 @@ def data(start_date,end_date):
         d= d.replace(minute=59, hour=23, second=59)
         print(d)
 
-start_date=input("enter start date")
-end_date=input("enter end date")
-data(start_date,end_date)
+def main():
+    start_date=input("enter start date")
+    end_date=input("enter end date")
+    data(start_date,end_date)
 
+if __name__=="__main__":
+    main()
