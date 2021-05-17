@@ -39,13 +39,13 @@ want_continue="y"
 while want_continue=="y" or want_continue=="Y":
     choice=int(input('enter your choice by indexing'))
     if choice==1:
-         print(add())
+         print(f"addition of 2 number is : {add()}")
     elif choice==2:
-        print(sub()) 
+        print(f"substraction of 2 no. :{sub()}") 
     elif choice==3:
-         print(mul())
+         print(f"multipluication of 2 number is {mul()}")
     elif choice==4:
-        print(div())
+        print(f"division of 2 number is {div()}")
     elif choice==5:
         print(mod())
     elif choice==6:
