@@ -1,5 +1,5 @@
 import pandas as pd 
-import sys
+
 
 def readcsv(l,set_list):
     """Method to read csv files 

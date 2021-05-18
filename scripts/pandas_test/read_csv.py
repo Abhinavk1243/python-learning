@@ -1,7 +1,18 @@
 import pandas as pd 
-try:
-    df=pd.read_csv(f"scripts/pandas_test/csvfiles/marks.csv")
-    df.to_csv("scripts/pandas_test/csvfiles/marks.csv",sep="|")
-    print("file sucessfully saved")
-except FileNotFoundError as e:
-    print(f"error : {e}")
+import argparse
+parse=argparse.ArgumentParser()
+def readcsvfile(args):
+    try:
+        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{args.path}",sep="|")
+        print("file sucessfully saved")
+        print(df)
+    except FileNotFoundError as e:
+        print(f"error : {e}")
+
+def main():
+    parse.add_argument("path",type=str)
+    arg=parse.parse_args()
+    readcsvfile(arg)
+    
+if __name__=="__main__":
+    main()

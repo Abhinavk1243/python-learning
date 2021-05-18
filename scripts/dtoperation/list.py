@@ -1,16 +1,15 @@
 # List Manipulation
 
-list_1=[]
+
 
 # function to append one list to another list
-def add_list():
+def add_list(list_1,list_2):
     """This method append a list to another list
 
     Returns:
         array : result array after adding
     """
-    list_element_1=input('Enter the element of list')
-    list_2=list_element_1.split(",")
+    
     return list_1+list_2
 
 # function to repeate elements
@@ -60,7 +59,12 @@ def main():
     while want_continue=="y" or want_continue=="Y":
         choice=int(input('enter your choice by indexing'))
         if choice==1:
-            print(add_list())
+            list_element_1=input('Enter the element of list')
+            list_2=list_element_1.split(",")
+            for i in range(0,len(list_1)):
+                if list_2[i].isdigit():
+                    list_2[i]=int(list_2[i])
+            print(add_list(list_1,list_2))
         elif choice==2:
             print(repeatition()) 
         elif choice==3:
