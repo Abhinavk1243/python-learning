@@ -1,7 +1,6 @@
 # List Manipulation
 
 
-
 # function to append one list to another list
 def add_list(list_1,list_2):
     """This method append a list to another list

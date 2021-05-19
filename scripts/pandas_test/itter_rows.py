@@ -3,10 +3,12 @@ dict={"Name":["abhinav","aakash","abhishek","arpit","Rohan","Maynak"], "roll_no"
 df=pd.DataFrame(dict)
 #for i,j in df.iterrows():
    # print(i,j)
-for i in df.itertuples():
-   print(f"{i.Name} {i.roll_no}")
+#for i in df.itertuples():
+  # print(f"{i.Name} {i.roll_no}")
    
 #for i,j in df.iteritems():
    #print(i)
    #print(j)
 
+
+df.to_csv("scripts/pandas_test/csvfiles/marks.csv",index=False)

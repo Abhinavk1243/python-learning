@@ -1,1 +1,47 @@
-{"Name": ["Abhinav", "Abhishek", "Aakash"], "roll_no": [1, 2, 3], "marks": [89, 67, 77]}
+{
+"students": 
+           [
+           {
+               "Name": "Abhinav kumar",
+               "ID": 1, 
+               "course": "B.tech", 
+               "percentage": 77
+            }, 
+            {
+                "Name": "Abhishek chauhan", 
+                "ID": 2, 
+                "course": "B.tech", 
+                "percentage": 80}, 
+            {
+                "Name": "Aakash rastogi", 
+                "ID": 3, 
+                "course": "B.tech", 
+                "percentage": 66}, 
+            {
+                "Name": "Arpit sharma", 
+                "ID": 4, 
+                "course": "B.tech", 
+                "percentage": 96
+            }
+            
+            ], 
+
+"teachers": 
+            [
+            {
+                "Name": "Sanjay Singh", 
+                "ID": 112, 
+                "Subject": "Python"
+            }, 
+            {
+                "Name": "Manoj Sharma", 
+                "ID": 129, 
+                "Subject": "Maths"
+            }, 
+            {
+                "Name": "Rohit Aggarwal", 
+                "ID": 116, 
+                "Subject": "Soft computing"
+            }
+            ]
+}
