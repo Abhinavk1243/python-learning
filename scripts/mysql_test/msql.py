@@ -1,4 +1,5 @@
 import mysql.connector as msc 
+import pandas as pd
 from lib import read_config 
 
 # Function to connect databse with python code
@@ -179,9 +180,27 @@ def deleterecord():
     finally:
         mydb.close()
 
+def csv_to_table(file_name):
+    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}")
+    mydb=read_configconnection()
+    mycursor=mydb.cursor()
+    cols=",".join([str(i) for i in df.columns.tolist()])
+    
+    for i,row in df.iterrows():
+        sql=f"insert into test_db.new_class ({cols}) values {tuple(row)} "           
+        mycursor.execute(sql)
+    mydb.commit()
+    
+            
+def  table_to_df():
+    mydb=read_configconnection()
+    df=pd.read_sql(con=mydb, sql="select * from test_db.data")
+    return df
+
+
 def main():
     
-    cont="y"
+    """cont="y"
     while cont=='y' or cont=='Y':
         choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: join \n 5: Delete records \n 6: update column values"))
         if choice==1:
@@ -196,7 +215,14 @@ def main():
             deleterecord()
         elif choice==6:
             updatecolvalue()
-        cont=input("want to continue y or n")
+        elif choice==7:
+            csv_to_table("githubdata.csv")
+        cont=input("want to continue y or n")"""
+    df=table_to_df()
+    
+    csv_to_table(df)
+
+
 
 if __name__=="__main__":
     main()

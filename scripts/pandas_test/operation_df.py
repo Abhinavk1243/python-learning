@@ -7,6 +7,7 @@ data1 =  {'F_Name':['Jai', 'Anuj', 'Jai', 'Prince', 'Gaurav', 'Anuj', 'Prince', 
           "Weight":[78,45,70,87,68,89,80,47]}
 df=pd.DataFrame(data1)
 
+print(df.columns)
 #function 
 """def fun_age(num):
     if num>30:
@@ -32,5 +33,5 @@ print(df)'''
 #print(df)
 
 #2 col to 1 col
-df["Name"]=df["F_Name"].str.cat(df["L_Name"],sep=" ")
-print(df)
+#df["Name"]=df["F_Name"].str.cat(df["L_Name"],sep=" ")
+print(df)#

@@ -1,5 +1,5 @@
 import pandas as pd 
-dict={"Name":["abhinav","aakash","Ayansh","arpit","Rohan","Maynak"], "roll_no":[1,2,2,4,5,6],"Marks":[76,87,90,55,54,66]}
+dict={"Name":["abhinav","aakash","Ayansh","arpit","Rohan","Maynak"], "roll_no":[1,2,3,4,5,6],"Marks":[76,87,90,55,54,66]}
 df=pd.DataFrame(dict)
 
   

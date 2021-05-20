@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-f=open(f"scripts\dtoperation\json_files\student_detail.json",)
+f=open(f"scripts\dtoperation\json_files\intents.json",)
 
 dict_2=json.load(f)  # load file object
 
@@ -17,3 +17,5 @@ for k in l:
         j=j+1
     print(df)
     print("\n")
+
+    
