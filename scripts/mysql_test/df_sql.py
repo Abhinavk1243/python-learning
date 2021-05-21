@@ -1,5 +1,7 @@
+from datetime import datetime
 import mysql.connector as msc 
 import pandas as pd
+from pandas.core.dtypes import dtypes
 from lib import read_config 
 
 # Function to connect databse with python code
@@ -15,63 +17,89 @@ def read_configconnection():
                     password=read_config.getconfig("mysql","password"))
     return mydb
 
-def csv_to_table(df):
+def csv_to_table(file_name):
+    """ Method insert a data of csv file in sql table
+
+    Args:
+        file_name (str): Name of .csv file
+    """
+
+    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
     mydb=read_configconnection()
     mycursor=mydb.cursor()
-    cols=",".join([str(i) for i in df.columns.tolist()])
+    cols_1=df.columns
+    cols_1=",".join([str(i) for i in cols_1.tolist()])
     
     for i,row in df.iterrows():
-        sql=f"insert into test_db.new_class ({cols}) values {tuple(row)} "           
+        #print(f"insert into test_db.{file_name} ({cols_1}) values{tuple(row)} " )
+        sql=f"insert into test_db.{file_name}({cols_1}) values{tuple(row)} "           
         mycursor.execute(sql)
+        #break
     mydb.commit()
     
             
-def  table_to_df():
+def  table_to_df(table_name):
+
     mydb=read_configconnection()
-    df=pd.read_sql(con=mydb, sql="select * from test_db.data")
+    db=read_config.getconfig("mysql","database")
+    df=pd.read_sql(con=mydb, sql=f"select * from {db}.{table_name}")
     return df
 
 
 
-#def create_table(df):
-dict={
-       "Name":["abhinav","aakash","Ayansh","arpit","Rohan","Maynak"], 
-       "Roll_no":[1,2,3,4,5,6],
-       "Marks":[76,87,90,55,54,66],
-       "Qualification":["B.Tech","BBA","BCA","BSC","B.Tech","BBA"]
-       }
-df=pd.DataFrame(dict)
-cols=list(df.columns)
-"""colm=list(df.columns)
-for i in colm:
-    print(type(df[i]))"""
+def create_table(file_name):
+    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
+    #print(df.dtypes)
+    mydb=read_configconnection()
+    mycursor=mydb.cursor()
+    cols=list(df.columns)
+
+    k=0
+    for i,j in df.iterrows():
+        if k==0:
+            tup=list(j)
+            data_type=[]
+            for item in tup:
+                data_type.append(item)
+        break
+
+    #print(data_type)
+
+    table_schema=[]
+    k=0
+    first=0
+    for col in cols:
+        if isinstance(data_type[k],int):
+            if first==0 :
+                table_schema.append(f"id int primary key")
+                
+            else:
+                table_schema.append(f"{col} int")
+
+        elif isinstance(data_type[k],str):
+            table_schema.append(f"{col} TEXT")
+        elif isinstance(data_type[k],float):
+            table_schema.append(f"{col} decimal(6)")
+        elif isinstance(data_type[k],datetime):
+            table_schema.append(f"{col} datetime(fsp)")
+        first=1
+        k=k+1
+
+    table_schema=",".join([str(i) for i in table_schema])
+    #print(f"create table test_db.{file_name}({table_schema})")
+    #sql=f"create table test_db.{file_name}({table_schema})"
+    #mycursor.execute(sql)
+    mydb.commit()
+
+    csv_to_table(file_name)
 
 
-#cols=",".join([str(i) for i in df.columns.tolist()])
-#for i in cols:
-   # sql="create table test_db.graduation_details(     )"
-k=0
-for i,j in df.iterrows():
-    if k==0:
-        tup=list(j)
-        data_type=[]
-        for item in tup:
-            data_type.append(type(item))
-    break
 
-print(data_type)
-
-table_schema=[]
-j=0
-for column_name in cols:
-    
-    table_schema.append(f"{column_name} {data_type[j]}")
-    j=j+1
+def main():
+    #file_name=input("Enter the csv file name")
+    #create_table(file_name)
+    print(table_to_df("data"))
 
 
-
-
-table_schema=",".join([str(i) for i in table_schema])
-print(table_schema)
-table_schema=[table_schema]
-print(table_schema)
+if __name__=="__main__":
+    main()

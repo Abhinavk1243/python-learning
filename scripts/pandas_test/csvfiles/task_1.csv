@@ -1,4 +1,4 @@
-|datetime|datetime_friendly|prop28|prop31|prop16|prop8|metric_name|metric_value
+id|datetime|datetime_friendly|prop28|prop31|prop16|prop8|metric_name|metric_value
 0|2021-04-28|Wed. 28 Apr. 2021|7985e0de-ec51-428c-ae66-64756aac1cab|iOS|"title EN-US||body EN-US"|insights|event16|9
 1|2021-04-28|Wed. 28 Apr. 2021|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Congratulations!||See what you just earned."|insights|event16|5
 2|2021-04-28|Wed. 28 Apr. 2021|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Hi||EN click it"|dailyReminder|event16|1

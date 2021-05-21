@@ -20,14 +20,14 @@ def update_resources(url,dict_1):
 
 def main():
     dict_1={
-        "name": "Abhinav",
+        "name": "morpheus",
         "job": "leader of all"
     }
 
     json_data=json.dumps(dict_1)
     #print(post_resources("https://reqres.in/api/users",json_data))
     #print(get_resource("https://reqres.in/api/users?page=2"))
-    #print(update_resources("https://reqres.in/api/users/2",dict_1))
+    print(update_resources("https://reqres.in/api/users/2",dict_1))
 
 if __name__=="__main__":
     main()
