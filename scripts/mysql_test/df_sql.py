@@ -39,6 +39,14 @@ def csv_to_table(file_name):
     
             
 def  table_to_df(table_name):
+    """Metod used to insert sql table into dataframe
+
+    Args:
+        table_name (str): name of a table
+
+    Returns:
+        object: dataframe of sql table
+    """
 
     mydb=read_configconnection()
     db=read_config.getconfig("mysql","database")
@@ -48,8 +56,14 @@ def  table_to_df(table_name):
 
 
 def create_table(file_name):
+    """method used to create table on mysql server of dataframe in csv file 
+
+    Args:
+        file_name (str): name of csv file
+    """
+
     df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
-    #print(df.dtypes)
+    
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     cols=list(df.columns)
@@ -63,7 +77,6 @@ def create_table(file_name):
                 data_type.append(item)
         break
 
-    #print(data_type)
 
     table_schema=[]
     k=0
@@ -87,8 +100,8 @@ def create_table(file_name):
 
     table_schema=",".join([str(i) for i in table_schema])
     #print(f"create table test_db.{file_name}({table_schema})")
-    #sql=f"create table test_db.{file_name}({table_schema})"
-    #mycursor.execute(sql)
+    sql=f"create table test_db.{file_name}({table_schema})"
+    mycursor.execute(sql)
     mydb.commit()
 
     csv_to_table(file_name)
