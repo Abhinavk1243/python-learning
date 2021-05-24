@@ -1,18 +1,20 @@
 import pandas as pd 
 import argparse
 parse=argparse.ArgumentParser()
-def readcsvfile(args):
+def readcsvfile(file_name):
     try:
-        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{args.path}",sep="|")
+        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
         print("file sucessfully saved")
-        print(df)
+        df.to_csv(f"scripts/pandas_test/csvfiles/task_2.csv",sep="|",index=False)
+        return df 
     except FileNotFoundError as e:
         print(f"error : {e}")
 
 def main():
-    parse.add_argument("path",type=str)
-    arg=parse.parse_args()
-    readcsvfile(arg)
+    df=pd.DataFrame()
+    result=readcsvfile("task_1")
     
+    
+
 if __name__=="__main__":
     main()

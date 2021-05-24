@@ -15,7 +15,7 @@ def readcsv(l,set_list):
         n=int(input("enter the number of dataframe"))
         for i in range(0,n):
             path=input("enter path of file")
-            df1=pd.read_csv(f"scripts/pandas_test/csvfiles/{path}",sep="|")
+            df1=pd.read_csv(f"scripts/pandas_test/csvfiles/{path}.csv",sep="|")
             l.append(df1)
             set_list.append(set(df1.columns))
         return l
@@ -102,6 +102,6 @@ def savecsv(df4):
     """
     try:
         file_name=input("Enter name want to save as .csv")
-        df4.to_csv(f"scripts/pandas_test/csvfiles/{file_name}",sep="|")
+        df4.to_csv(f"scripts/pandas_test/csvfiles/{file_name}",sep="|",index=False)
     except Exception as e:
         print(f"exception arise : {e}")

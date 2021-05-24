@@ -32,11 +32,11 @@ def csv_to_table(file_name):
     
     for i,row in df.iterrows():
         #print(f"insert into test_db.{file_name} ({cols_1}) values{tuple(row)} " )
-        sql=f"insert into test_db.{file_name}({cols_1}) values{tuple(row)} "           
+        sql=f"INSERT INTO test_db.{file_name}({cols_1}) VALUES{tuple(row)} "           
         mycursor.execute(sql)
         #break
     mydb.commit()
-    
+
             
 def  table_to_df(table_name):
     """Metod used to insert sql table into dataframe
@@ -50,7 +50,7 @@ def  table_to_df(table_name):
 
     mydb=read_configconnection()
     db=read_config.getconfig("mysql","database")
-    df=pd.read_sql(con=mydb, sql=f"select * from {db}.{table_name}")
+    df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
     return df
 
 
@@ -83,12 +83,7 @@ def create_table(file_name):
     first=0
     for col in cols:
         if isinstance(data_type[k],int):
-            if first==0 :
-                table_schema.append(f"id int primary key")
-                
-            else:
-                table_schema.append(f"{col} int")
-
+            table_schema.append(f"{col} int")
         elif isinstance(data_type[k],str):
             table_schema.append(f"{col} TEXT")
         elif isinstance(data_type[k],float):
@@ -99,19 +94,20 @@ def create_table(file_name):
         k=k+1
 
     table_schema=",".join([str(i) for i in table_schema])
+    db=read_config.getconfig("mysql","database")
     #print(f"create table test_db.{file_name}({table_schema})")
-    sql=f"create table test_db.{file_name}({table_schema})"
+    sql=f"CREATE TABLE {db}.{file_name}({table_schema})"
     mycursor.execute(sql)
     mydb.commit()
 
-    csv_to_table(file_name)
+    
 
 
 
 def main():
-    #file_name=input("Enter the csv file name")
-    #create_table(file_name)
-    print(table_to_df("data"))
+    file_name=input("Enter the csv file name")
+    create_table(file_name)
+    csv_to_table(file_name)
 
 
 if __name__=="__main__":
