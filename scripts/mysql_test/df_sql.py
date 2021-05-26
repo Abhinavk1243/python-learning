@@ -1,7 +1,15 @@
 from datetime import datetime
 import mysql.connector as msc 
 import pandas as pd
-from pandas.core.dtypes import dtypes
+import logging as lg 
+logger = lg.getLogger(__name__)
+logger.setLevel(lg.DEBUG)
+formatter = lg.Formatter('%(asctime)s : %(name)s :%(levelname)s : %(funcName)s :%(lineno)d : %(message)s ')
+
+
+file_handler =lg.FileHandler("scripts/loggers_test/df_sql.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 from lib import read_config 
 
 # Function to connect databse with python code
@@ -27,22 +35,30 @@ def csv_to_table(file_name):
     df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
     mydb=read_configconnection()
     mycursor=mydb.cursor()
+    database=read_config.getconfig("mysql","database")
+    
     cols_1=df.columns
     cols_1=",".join([str(i) for i in cols_1.tolist()])
+    try:
+        for i,row in df.iterrows():
+            #print(f"insert into test_db.{file_name} ({cols_1}) values{tuple(row)} " )
+            sql=f"INSERT INTO {database}.{file_name}({cols_1}) VALUES{tuple(row)} "           
+            mycursor.execute(sql)
+            #break
+        logger.debug(f"csv file : {file_name} is successfully inserted in database table : {file_name} ")
+    except Exception as error:
+        logger.error(f"Exception arise : {error}")
     
-    for i,row in df.iterrows():
-        #print(f"insert into test_db.{file_name} ({cols_1}) values{tuple(row)} " )
-        sql=f"INSERT INTO test_db.{file_name}({cols_1}) VALUES{tuple(row)} "           
-        mycursor.execute(sql)
-        #break
-    mydb.commit()
+    finally:
+        mydb.commit()
 
             
-def  table_to_df(table_name):
+def  table_to_csv(table_name,file_name):
     """Metod used to insert sql table into dataframe
 
     Args:
         table_name (str): name of a table
+        file_name (str): name csv file in which the sql table is need to stored
 
     Returns:
         object: dataframe of sql table
@@ -50,22 +66,35 @@ def  table_to_df(table_name):
 
     mydb=read_configconnection()
     db=read_config.getconfig("mysql","database")
-    df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
-    return df
+    try:
+        df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
+        df.to_csv(f"scripts/pandas_test/csvfiles/{file_name}",sep="|",index=False)
+        logger.debug(f"data of table : {table_name}  is stored in csv file :{file_name} ")  
+    except Exception as error:
+        logger.error(f"Exception arise : {error}")
+    finally:
+        mydb.close()
 
+        
 
-
-def create_table(file_name):
+   
+def create_table(file_name,table_name):
     """method used to create table on mysql server of dataframe in csv file 
 
     Args:
         file_name (str): name of csv file
+        table_name (str): name of table want to created
     """
-
-    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
-    
     mydb=read_configconnection()
     mycursor=mydb.cursor()
+
+    try:
+        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
+    except FileExistsError as error:
+        logger.error(f"error arise : {error}")
+    except Exception as error:
+        logger.error(f"Exception arise : {error}")
+    
     cols=list(df.columns)
 
     k=0
@@ -94,20 +123,22 @@ def create_table(file_name):
         k=k+1
 
     table_schema=",".join([str(i) for i in table_schema])
-    db=read_config.getconfig("mysql","database")
-    #print(f"create table test_db.{file_name}({table_schema})")
-    sql=f"CREATE TABLE {db}.{file_name}({table_schema})"
-    mycursor.execute(sql)
-    mydb.commit()
+    try:
+        db=read_config.getconfig("mysql","database")
+        #print(f"create table test_db.{file_name}({table_schema})")
+        sql=f"CREATE TABLE {db}.{file_name}({table_schema})"
+        mycursor.execute(sql)
+        mydb.commit()
+        logger.debug(f"create table {db}.{table_name}({cols}) ")
+    except Exception as error:
+        logger.error(f"exception arise : {error}")
 
     
 
 
 
 def main():
-    file_name=input("Enter the csv file name")
-    create_table(file_name)
-    csv_to_table(file_name)
+    table_to_csv("students","students")
 
 
 if __name__=="__main__":

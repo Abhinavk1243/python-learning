@@ -1,5 +1,16 @@
+from logging import exception
 import mysql.connector as msc 
 import pandas as pd
+import logging as lg 
+logger = lg.getLogger(__name__)
+logger.setLevel(lg.DEBUG)
+formatter = lg.Formatter('%(asctime)s : %(name)s :%(levelname)s : %(funcName)s :%(lineno)d : %(message)s ')
+
+
+file_handler =lg.FileHandler("scripts/loggers_test/mysql.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
 from lib import read_config 
 
 # Function to connect databse with python code
@@ -15,6 +26,29 @@ def read_configconnection():
                     password=read_config.getconfig("mysql","password"))
     return mydb
 
+def create_table(table_name):
+
+
+    mydb=read_configconnection()
+    mycursor=mydb.cursor()
+    database=read_config.getconfig("mysql","database")
+
+    cols=[]
+    column=input("enter column name with thier data type")
+    cols=column.split(",")
+    cols= ",".join([str(i) for i in cols])
+
+    try:
+        sql=f"create table {database}.{table_name}({cols})"
+        mycursor.execute(sql)
+        logger.debug(f"create table {database}.{table_name}({cols}) ")
+        mydb.commit()
+    except Exception as e:
+        logger.debug(f"exception arise :{e}")
+
+
+
+
 # Function to display name of each database
 
 def showallDatabases():
@@ -27,52 +61,64 @@ def showallDatabases():
         print(i)
 
 
-def fetchrecord():
+def fetchrecord(table_name):
     """Method is use to fetch the record from a specific table in a database"""
 
+    database=read_config.getconfig("mysql","database")
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     choice=int(input('select choice by index \n 1:fetch all record \n 2:fetch all record for specific column\n 3:fetch record  of specific condition \n 4:fetch record as specific column for a specific condition '))
     try:
         if choice==1:
-            try:
-                mycursor.execute("select * from test_db.data")
-                result=mycursor.fetchall()
-                for record in result:
-                    print(result)
-            except:
-                print("unknown error")
-            finally:
-                mydb.close()
-        elif choice==2:
-            l=input("Enter column names as comma seperated")
-            mycursor.execute(f"select {l} from test_db.data")
+            
+            sql=f"select * from {database}.{table_name}"
+            mycursor.execute(sql)
             result=mycursor.fetchall()
             for record in result:
                 print(result)
+            logger.debug(f"data fetched from {table_name}")
+           
+        elif choice==2:
+            l=input("Enter column names as comma seperated")
+            sql=f"select {l} from {database}.{table_name}"
+            mycursor.execute(sql)
+            result=mycursor.fetchall()
+            for record in result:
+                print(result)
+            logger.debug(f"data fetched from {table_name}")
         elif choice==3:
             cond=input("enter condition ")
-            mycursor.execute(f"select * from test_db.data where {cond}")
+            sql=f"select * from {database}.{table_name} where {cond}"
+            mycursor.execute(sql)
             result=mycursor.fetchall()
             for record in result:
                 print(record)
+            logger.debug(f"data fetched from {table_name}")
         elif choice==4:
             l=input("Enter column names as comma seperated")
             cond=input("enter condition ")
-            mycursor.execute(f"select {l} from test_db.data where {cond} ")
+            sql=f"select {l} from {database}.{table_name} where {cond} "
+            mycursor.execute(sql)
             result=mycursor.fetchall()
             for record in result:
                 print(record)
+            logger.debug(f"data fetched from {table_name}")
     except Exception as error:
-        print(f"Exception generated {error}")
+        logger.error(f"Exception arrise : {error}")
     finally:
         mydb.close()
         
 
-def insertrecord():
+def insertrecord(table_name):
     """ Method is used to insert record in a table"""
     mydb=read_configconnection()
-    mycursor=mydb.cursor()
+    mycursor=mydb.cursor()  
+    database=read_config.getconfig("mysql","database")
+
+    cols=[]
+    cols_name=input("Enter columns names")
+    cols=cols_name.split(",")
+    cols=",".join([str(i) for i in cols])
     list_1=[]
     list_element=input('Enter the column values')
     list_1=list_element.split(",")
@@ -80,21 +126,28 @@ def insertrecord():
         if list_1[i].isdigit():
             list_1[i]=int(list_1[i])
     col_val=tuple(list_1)
+
     try:
-        mycursor.execute("insert into test_db.data (f_name,l_name,age,qualification,percentage) values (%s,%s,%s,%s,%s) ",col_val)
-        print("record was successfully inserted ")
+        mycursor.execute(f"insert into {database}.{table_name} ({cols}) values {col_val} ")
         mydb.commit()
+        logger.debug(f"insert into {database}.{table_name} ({cols}) values {col_val} ")
     except Exception as error:
-        print(f"Exception generated {error}")
+        logger.error(f"Exception generated {error}")
     finally:
         mydb.close()
 
 
-def insertmanyrecord():
+def insertmanyrecord(table_name):
     """Method is used to insert more than one record at a time in a databsase table"""
     mydb=read_configconnection()
     mycursor=mydb.cursor()
-    sql="insert into test_db.data (f_name,l_name,age,qualification,percentage) values(%s,%s,%s,%s,%s)"
+    database=read_config.getconfig("mysql","database")
+
+    cols=[]
+    cols_name=input("Enter columns names")
+    cols=cols_name.split(",")
+    para_len=len(cols)
+    cols=",".join([str(i) for i in cols])
     no_of_record=int(input("Enter the number of record")) 
     l=[]
     val=[]
@@ -105,26 +158,34 @@ def insertmanyrecord():
             if l[i].isdigit():
                 l[i]=int(l[i])
         val.append(tuple(l))
+    parameters=["%s"]*para_len
+    parameters=",".join([str(i) for i in parameters])
     try:
+        sql=f"insert into {database}.{table_name}({cols}) values({parameters})"
         mycursor.executemany(sql,val)
-        print("record was successfully inserted ")
+        print(f"records {val} was successfully inserted in {table_name} ")
         mydb.commit()
     except Exception as error:
-        print(f"Exception generated {error}")
+        logger.debug(f"Exception generated {error}")
     finally:
         mydb.close()
 
-def updatecolvalue():
+def updatecolvalue(table_name):
     """Method is used to update a column value in a table"""
+
     mydb=read_configconnection()
     mycursor=mydb.cursor()
+    database=read_config.getconfig("mysql","database")
+
     dict1=dict()
     cont="y"
     while cont=='y' or cont=='Y':
         colname=input("enter col_name whose values u want to updated")
         if colname.isdigit()==True:
             colname=int(colname)
+        
         new_val=input("enter new value")
+        
         if new_val.isdigit()==True:
             new_val=int(new_val)
         dict1.update({colname:new_val})
@@ -133,96 +194,59 @@ def updatecolvalue():
     cond=input("enter condition")
     try:
         for c_name,val in dict1.items():
-            sql=f"update test_db.data set  {c_name}  ='{val}'  where {cond}" 
+            #print(f"update {database}.{table_name}  set {c_name} ={val}  where {cond}")
+            sql=f"update {database}.{table_name}  set {c_name} ={val}  where {cond}" 
             mycursor.execute(sql)
-            print(f"Successfuly upadate {c_name} at {val} where {cond}")
+            logger.debug(f"Successfuly upadate value of {c_name} to {val} where {cond} in {table_name}")
         mydb.commit()
     except Exception as error:
-        print(f"Exception generated {error}")
+        logger.debug(f"Exception generated {error}")
     finally:
         mydb.close()
 
-def join():
-    """Method is used to join 2 table """
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
-    inner="select * from test_db.student inner join test_db.student_course on test_db.student.roll_no=test_db.student_course.roll_no "
-    left="select * from test_db.student left join test_db.student_course on test_db.student.roll_no=test_db.student_course.roll_no "
-    right ="select * from test_db.student right join test_db.student_course on test_db.student.roll_no=test_db.student_course.roll_no "
-    choice=int(input("enter your choice for join \n 1:Right join \n 2: left join \n 3: inner join"))
-    try:
-        if choice==1:
-            mycursor.execute(right)
-        elif choice==2:
-            mycursor.execute(left)
-        elif choice==3:
-            mycursor.execute(inner)
-        result=mycursor.fetchall()
-        for record in result:
-            print(record)
-    except Exception as error:
-        print(f"Exception generated {error}")
-    finally:
-        mydb.close()
 
-def deleterecord():
+       
+
+def deleterecord(table_name):
     """Method is used to delete record from database table
     """
     mydb=read_configconnection()
     mycursor=mydb.cursor()
+    database=read_config.getconfig("mysql","database")
+
     cond=input("enter condition ")
     try:
-        mycursor.execute(f"delete from test_db.data where {cond} ")
-        print(f"record was successfully deleted from table where {cond} ")
+        mycursor.execute(f"delete from {database}.{table_name} where {cond} ")
         mydb.commit()
+        logger.debug(f"record was successfully deleted from {table_name} where {cond} ")
     except Exception as error:
-        print(f"Exception generated {error}")
+        logger.debug(f"Exception generated {error}")
     finally:
         mydb.close()
 
-def csv_to_table(file_name):
-    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}")
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
-    cols=",".join([str(i) for i in df.columns.tolist()])
-    
-    for i,row in df.iterrows():
-        sql=f"insert into test_db.new_class ({cols}) values {tuple(row)} "           
-        mycursor.execute(sql)
-    mydb.commit()
-    
-            
-def  table_to_df():
-    mydb=read_configconnection()
-    df=pd.read_sql(con=mydb, sql="select * from test_db.data")
-    return df
-
-
+           
 def main():
-    
-    """cont="y"
+   
+    cont="y"
     while cont=='y' or cont=='Y':
-        choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: join \n 5: Delete records \n 6: update column values"))
+        table_name=input("enter table_name")
+        choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: Delete records \n 5: update column values \n 6: create table"))
         if choice==1:
-            fetchrecord()
+            fetchrecord(table_name)
         elif choice==2:
-            insertrecord()
+            insertrecord(table_name)
         elif choice==3:
-            insertmanyrecord()
+            insertmanyrecord(table_name)
         elif choice==4:
-            join()
+            deleterecord(table_name)
         elif choice==5:
-            deleterecord()
+            updatecolvalue(table_name)
         elif choice==6:
-            updatecolvalue()
-        elif choice==7:
-            csv_to_table("githubdata.csv")
-        cont=input("want to continue y or n")"""
-    df=table_to_df()
+            create_table(table_name)
+        cont=input("want to continue y or n")
     
-    csv_to_table(df)
-
-
+    
+    
 
 if __name__=="__main__":
     main()
