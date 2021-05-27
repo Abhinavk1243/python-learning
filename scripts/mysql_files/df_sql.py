@@ -4,10 +4,10 @@ import pandas as pd
 import logging as lg 
 logger = lg.getLogger(__name__)
 logger.setLevel(lg.DEBUG)
-formatter = lg.Formatter('%(asctime)s : %(name)s :%(levelname)s : %(funcName)s :%(lineno)d : %(message)s ')
+formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s : %(funcName)s : %(lineno)d : %(message)s ')
 
 
-file_handler =lg.FileHandler("scripts/loggers_test/df_sql.log")
+file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 from lib import read_config 
@@ -32,7 +32,7 @@ def csv_to_table(file_name):
         file_name (str): Name of .csv file
     """
 
-    df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
+    df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
     mydb=read_configconnection()
     mycursor=mydb.cursor()
     database=read_config.getconfig("mysql","database")
@@ -68,7 +68,7 @@ def  table_to_csv(table_name,file_name):
     db=read_config.getconfig("mysql","database")
     try:
         df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
-        df.to_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|",index=False)
+        df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|",index=False)
         logger.debug(f"data of table : {table_name}  is stored in csv file :{file_name} ")  
     except Exception as error:
         logger.error(f"Exception arise : {error}")
@@ -89,7 +89,7 @@ def create_table(file_name,table_name):
     mycursor=mydb.cursor()
 
     try:
-        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
+        df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
     except FileExistsError as error:
         logger.error(f"error arise : {error}")
     except Exception as error:
@@ -139,7 +139,7 @@ def create_table(file_name,table_name):
 
 
 def main():
-    table_to_csv("students","students")
+    table_to_csv("address","student_address")
 
 
 if __name__=="__main__":

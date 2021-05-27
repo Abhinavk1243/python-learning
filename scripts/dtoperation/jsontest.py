@@ -45,7 +45,7 @@ def csv_to_json(csvfile_1):
         str : json string
     """
     dict_4=dict()
-    df=pd.read_csv(f"scripts\pandas_test\csvfiles\{csvfile_1}.csv")
+    df=pd.read_csv(f"scripts\pandas_files\csvfiles\{csvfile_1}.csv")
     dict_4=df.to_dict('list')
     json_1=json.dumps(dict_4)
     return json_1
@@ -135,7 +135,7 @@ def main():
     #print(parseXML("scripts/dtoperation/xml_files/mobile_data.xml"))
     #print(xml_to_json())
     #df=pd.DataFrame(dict_3)
-    #df.to_csv(f"scripts/pandas_test/csvfiles/intents.csv")
+    #df.to_csv(f"scripts/pandas_files/csvfiles/intents.csv")
 
 if __name__=="__main__":
     main()

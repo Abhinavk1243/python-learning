@@ -45,7 +45,7 @@ def csv_to_json(csvfile_1):
         str : json string
     """
     dict_4=dict()
-    df=pd.read_csv(f"scripts\pandas_test\csvfiles\{csvfile_1}.csv")
+    df=pd.read_csv(f"scripts\pandas_files\csvfiles\{csvfile_1}.csv")
     dict_4=df.to_dict('list')
     json_1=json.dumps(dict_4)
     return json_1
@@ -61,7 +61,7 @@ def json_to_csv(dict_1,file_name_1):
     
     df=pd.DataFrame(dict_1,index=[0])
 
-    df.to_csv(f"scripts\pandas_test\csvfiles\{file_name_1}.csv",sep="|")
+    df.to_csv(f"scripts\pandas_files\csvfiles\{file_name_1}.csv",sep="|")
 
 
 

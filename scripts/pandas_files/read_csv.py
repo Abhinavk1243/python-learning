@@ -3,9 +3,9 @@ import argparse
 parse=argparse.ArgumentParser()
 def readcsvfile(file_name):
     try:
-        df=pd.read_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|")
+        df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
         print("file sucessfully saved")
-        df.to_csv(f"scripts/pandas_test/csvfiles/task_2.csv",sep="|",index=False)
+        df.to_csv(f"scripts/pandas_files/csvfiles/task_2.csv",sep="|",index=False)
         return df 
     except FileNotFoundError as e:
         print(f"error : {e}")

@@ -4,10 +4,10 @@ import pandas as pd
 import logging as lg 
 logger = lg.getLogger(__name__)
 logger.setLevel(lg.DEBUG)
-formatter = lg.Formatter('%(asctime)s : %(name)s :%(levelname)s : %(funcName)s :%(lineno)d : %(message)s ')
+formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s  :%(funcName)s :%(lineno)d : %(message)s ')
 
 
-file_handler =lg.FileHandler("scripts/loggers_test/mysql.log")
+file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 

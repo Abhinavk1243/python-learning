@@ -15,4 +15,4 @@ for i,j in df.iterrows():
    #print(j)
 
 
-#df.to_csv("scripts/pandas_test/csvfiles/marks.csv",index=False)
+#df.to_csv("scripts/pandas_files/csvfiles/marks.csv",index=False)
