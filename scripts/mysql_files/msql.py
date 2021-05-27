@@ -163,7 +163,7 @@ def insertmanyrecord(table_name):
     try:
         sql=f"insert into {database}.{table_name}({cols}) values({parameters})"
         mycursor.executemany(sql,val)
-        print(f"records {val} was successfully inserted in {table_name} ")
+        logger.debug(f"records {val} was successfully inserted in {table_name} ")
         mydb.commit()
     except Exception as error:
         logger.debug(f"Exception generated {error}")

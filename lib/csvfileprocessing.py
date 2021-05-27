@@ -1,4 +1,13 @@
 import pandas as pd 
+import logging as lg 
+logger = lg.getLogger(__name__)
+logger.setLevel(lg.DEBUG)
+formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s  :%(funcName)s :%(lineno)d : %(message)s ')
+
+
+file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 
 def readcsv(l,set_list):
@@ -18,9 +27,11 @@ def readcsv(l,set_list):
             df1=pd.read_csv(f"scripts/pandas_files/csvfiles/{path}.csv",sep="|")
             l.append(df1)
             set_list.append(set(df1.columns))
+        logger.debug("All csv file was read into a dataframe")
         return l
+        logger.debug("All csv file was read into a dataframe")
     except FileNotFoundError as e:
-        print(f"error arrise :{e}")
+        logger.error(f"error arrise :{e}")
 
 
 # function for merging a csv filesS
@@ -51,9 +62,11 @@ def merge_df(l,set_list):
                 continue
             else:
                 df4=pd.merge(l[i],df,how="outer",on=list_1).fillna(0)
+        logger.debug("All dataframe was merged successfully")
         return df4
+    
     except Exception as e:
-        print(f"exception arise : {e}")
+        logger.error(f"exception arise : {e}")
 
 #Function to filer 
 def filter(df4):
@@ -69,9 +82,10 @@ def filter(df4):
         filter_value=input("enter the value which u want to use to filter row")
         for i in df4.columns:
             df4=df4[df4[i] !=filter_value]
+        logger.debug(f"Row was filtered which contain : {filter_value}")
         return df4
     except Exception as e:
-        print(f"exception arise : {e}")
+        logger.error(f"exception arise : {e}")
 
 
 #function for melt dataframe
@@ -88,9 +102,10 @@ def meltdf(df4):
         df4=pd.melt(df4,id_vars=["datetime","datetime_friendly","prop28","prop31","prop16","prop8"],var_name="metric_name",value_name="metric_value")
         df4["metric_value"]=df4["metric_value"].astype(int)
         df4=df4[df4.metric_value>0]
+        logger.debug("dataframe melt")
         return df4
     except Exception as e:
-        print(f"exception arise : {e}")
+        logger.error(f"exception arise : {e}")
 
 
 #function to save csv file
@@ -103,5 +118,6 @@ def savecsv(df4):
     try:
         file_name=input("Enter name want to save as .csv")
         df4.to_csv(f"scripts/pandas_files/csvfiles/{file_name}",sep="|",index=False)
+        logger.debug(f" resulted dataframe saved in {file_name}.csv ")
     except Exception as e:
-        print(f"exception arise : {e}")
+        logger.error(f"exception arise : {e}")
