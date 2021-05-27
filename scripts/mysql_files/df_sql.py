@@ -68,7 +68,7 @@ def  table_to_csv(table_name,file_name):
     db=read_config.getconfig("mysql","database")
     try:
         df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
-        df.to_csv(f"scripts/pandas_test/csvfiles/{file_name}",sep="|",index=False)
+        df.to_csv(f"scripts/pandas_test/csvfiles/{file_name}.csv",sep="|",index=False)
         logger.debug(f"data of table : {table_name}  is stored in csv file :{file_name} ")  
     except Exception as error:
         logger.error(f"Exception arise : {error}")
@@ -123,8 +123,9 @@ def create_table(file_name,table_name):
         k=k+1
 
     table_schema=",".join([str(i) for i in table_schema])
+    db=read_config.getconfig("mysql","database")
+
     try:
-        db=read_config.getconfig("mysql","database")
         #print(f"create table test_db.{file_name}({table_schema})")
         sql=f"CREATE TABLE {db}.{file_name}({table_schema})"
         mycursor.execute(sql)
