@@ -1,17 +1,16 @@
 from logging import exception
 import mysql.connector as msc 
 import pandas as pd
+from lib import read_config 
 import logging as lg 
+
 logger = lg.getLogger(__name__)
 logger.setLevel(lg.DEBUG)
 formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s  :%(funcName)s :%(lineno)d : %(message)s ')
-
-
 file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-from lib import read_config 
 
 # Function to connect databse with python code
 def read_configconnection():
@@ -74,8 +73,9 @@ def fetchrecord(table_name):
             sql=f"select * from {database}.{table_name}"
             mycursor.execute(sql)
             result=mycursor.fetchall()
+            
             for record in result:
-                print(result)
+                print(record)
             logger.debug(f"data fetched from {table_name}")
            
         elif choice==2:
@@ -104,6 +104,7 @@ def fetchrecord(table_name):
                 print(record)
             logger.debug(f"data fetched from {table_name}")
     except Exception as error:
+        print(f"Exception generated {error}")
         logger.error(f"Exception arrise : {error}")
     finally:
         mydb.close()
@@ -132,6 +133,7 @@ def insertrecord(table_name):
         mydb.commit()
         logger.debug(f"insert into {database}.{table_name} ({cols}) values {col_val} ")
     except Exception as error:
+        print(f"Exception generated {error}")
         logger.error(f"Exception generated {error}")
     finally:
         mydb.close()
@@ -166,6 +168,7 @@ def insertmanyrecord(table_name):
         logger.debug(f"records {val} was successfully inserted in {table_name} ")
         mydb.commit()
     except Exception as error:
+        print(f"Exception generated {error}")
         logger.debug(f"Exception generated {error}")
     finally:
         mydb.close()
@@ -201,6 +204,7 @@ def updatecolvalue(table_name):
         mydb.commit()
     except Exception as error:
         logger.debug(f"Exception generated {error}")
+        print(f"Exception generated {error}")
     finally:
         mydb.close()
 
@@ -220,6 +224,7 @@ def deleterecord(table_name):
         mydb.commit()
         logger.debug(f"record was successfully deleted from {table_name} where {cond} ")
     except Exception as error:
+        print(f"Exception generated {error}")
         logger.debug(f"Exception generated {error}")
     finally:
         mydb.close()
@@ -229,20 +234,28 @@ def main():
    
     cont="y"
     while cont=='y' or cont=='Y':
-        table_name=input("enter table_name")
-        choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: Delete records \n 5: update column values \n 6: create table"))
-        if choice==1:
-            fetchrecord(table_name)
-        elif choice==2:
-            insertrecord(table_name)
-        elif choice==3:
-            insertmanyrecord(table_name)
-        elif choice==4:
-            deleterecord(table_name)
-        elif choice==5:
-            updatecolvalue(table_name)
-        elif choice==6:
-            create_table(table_name)
+        try:
+            table_name=input("enter table_name")
+            choice=int(input("Enter your choice \n 1: fetch record \n 2: insert record \n 3: insert many record \n 4: Delete records \n 5: update column values \n 6: create table"))
+            if choice==1:
+                fetchrecord(table_name)
+            elif choice==2:
+                insertrecord(table_name)
+            elif choice==3:
+                insertmanyrecord(table_name)
+            elif choice==4:
+                deleterecord(table_name)
+            elif choice==5:
+                updatecolvalue(table_name)
+            elif choice==6:
+                create_table(table_name)
+        except ValueError as error:
+            print(f"error arise : {error}")
+            logger.error(f"error arise : {error}")
+        except Exception as error:
+            print(f"exception arise : {error}")
+            logger.error(f"exception arise : {error}")
+
         cont=input("want to continue y or n")
     
     

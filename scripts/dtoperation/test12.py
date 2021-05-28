@@ -1,3 +1,4 @@
+from codecs import encode
 import mysql.connector as msc 
 import pandas as pd
 from lib import read_config 
@@ -15,12 +16,12 @@ def read_configconnection():
                     password=read_config.getconfig("mysql","password"))
     return mydb
 
-cols=[]
+"""cols=[]
 column=input("enter column name with thier data type")
 cols=column.split(",")
 print(cols)
 c=cols
-c1=cols
+c1=cols"""
 """table_schema=[]
 k=0
 first=0
@@ -35,7 +36,12 @@ cols=",".join([str(i) for i in cols])"""
   
     
 
-c= ",".join([str(i) for i in c])
+"""c= ",".join([str(i) for i in c])
 c1= ",".join([str(i) for i in c1])
 print(c)
-print(c1)
+print(c1)"""
+
+x,y,z=[int(a) for a in input("enter x,y,z ").split(',')]
+print(type(x))
+print(y)
+print(z)
