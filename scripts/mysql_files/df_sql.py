@@ -4,57 +4,57 @@ import pandas as pd
 import logging as lg 
 from lib import read_config 
 
-logger = lg.getLogger(__name__)
-logger.setLevel(lg.DEBUG)
-formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s : %(funcName)s : %(lineno)d : %(message)s ')
-
-
-file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
-
+logger = read_config.logger()
+pool_cnxn=read_config.mysl_pool_connection()
+mycursor=pool_cnxn.cursor()
 
 # Function to connect databse with python code
-def read_configconnection():
-    """Metod is use to connect database with python 
 
-    Returns:
-        connection : myslconnection
-    """
-    mydb=msc.connect(host=read_config.getconfig("mysql","host"),
-                    user=read_config.getconfig("mysql","user"),
-                    database=read_config.getconfig("mysql","database"),
-                    password=read_config.getconfig("mysql","password"))
-    return mydb
+def checkTableExists(tablename):
+    print(f"SELECT COUNT(*) FROM information_schema.tables \
+        WHERE TABLE_SCHEMA = 'web_data' AND TABLE_NAME = '{tablename}' ")
+    mycursor.execute(f"SELECT COUNT(*) FROM information_schema.tables \
+        WHERE TABLE_SCHEMA = 'web_data' AND TABLE_NAME = '{tablename}' ")
+    result=mycursor.fetchone()
+    mycursor.close()
 
-def csv_to_table(file_name):
+    if result[0]== 1:
+        return True
+
+    else:
+        return False
+
+
+def csv_to_table(file_name,table_name):
     """ Method insert a data of csv file in sql table
 
     Args:
         file_name (str): Name of .csv file
     """
-
-    df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
-    database=read_config.getconfig("mysql","database")
     
+    df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
+    database=read_config.getconfig("mysql","database")
     cols_1=df.columns
-    cols_1=",".join([str(i) for i in cols_1.tolist()])
-    try:
-        for i,row in df.iterrows():
-            #print(f"insert into test_db.{file_name} ({cols_1}) values{tuple(row)} " )
-            sql=f"INSERT INTO {database}.{file_name}({cols_1}) VALUES{tuple(row)} "           
-            mycursor.execute(sql)
-            #break
-        logger.debug(f"csv file : {file_name} is successfully inserted in database table : {file_name} ")
+    cols_1=list(cols_1)
+    para_len=len(cols_1)
+    cols_1=",".join([str(i) for i in cols_1])
+    parameters=["%s"]*para_len
+    parameters=",".join([str(i) for i in parameters])
+    val=[]
+    for i,row in df.iterrows():
+        val.append(tuple(row))
+    
+    try:   
+        sql=f"INSERT INTO {database}.{table_name}({cols_1}) VALUES ({parameters}) "           
+        mycursor.executemany(sql,val)
+            
+        logger.debug(f"csv file : {file_name} is successfully inserted in database table : {table_name} ")
     except Exception as error:
         logger.error(f"Exception arise : {error}")
     
     finally:
-        mydb.commit()
+        pool_cnxn.commit()
 
-            
 def  table_to_csv(table_name,file_name):
     """Metod used to insert sql table into dataframe
 
@@ -65,21 +65,15 @@ def  table_to_csv(table_name,file_name):
     Returns:
         object: dataframe of sql table
     """
-
-    mydb=read_configconnection()
     db=read_config.getconfig("mysql","database")
     try:
-        df=pd.read_sql(con=mydb, sql=f"SELECT * FROM {db}.{table_name}")
+        df=pd.read_sql(con=pool_cnxn, sql=f"SELECT * FROM {db}.{table_name}")
         df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|",index=False)
         logger.debug(f"data of table : {table_name}  is stored in csv file :{file_name} ")  
     except Exception as error:
         logger.error(f"Exception arise : {error}")
-    finally:
-        mydb.close()
+    
 
-        
-
-   
 def create_table(file_name,table_name):
     """method used to create table on mysql server of dataframe in csv file 
 
@@ -87,9 +81,7 @@ def create_table(file_name,table_name):
         file_name (str): name of csv file
         table_name (str): name of table want to created
     """
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
-
+    
     try:
         df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
     except FileExistsError as error:
@@ -129,20 +121,18 @@ def create_table(file_name,table_name):
 
     try:
         #print(f"create table test_db.{file_name}({table_schema})")
-        sql=f"CREATE TABLE {db}.{file_name}({table_schema})"
+        sql=f"CREATE TABLE {db}.{table_name}({table_schema})"
         mycursor.execute(sql)
-        mydb.commit()
+        pool_cnxn.commit()
         logger.debug(f"create table {db}.{table_name}({cols}) ")
     except Exception as error:
         logger.error(f"exception arise : {error}")
-
     
 
 
-
 def main():
-    table_to_csv("address","student_address")
-
+    create_table('student_address','address')
+    csv_to_table('student_address','address')
 
 if __name__=="__main__":
     main()

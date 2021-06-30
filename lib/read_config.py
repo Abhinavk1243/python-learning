@@ -1,5 +1,8 @@
+import mysql.connector as msc
+from mysql.connector import pooling
+import logging as lg 
 import configparser
-
+import os
 def getconfig(section,key):
     """Method use to read the value of key in congfig file i.e .cfg extension file
 
@@ -11,7 +14,33 @@ def getconfig(section,key):
         string: value of corresonding section key
     """
     parser = configparser.ConfigParser()
-    parser.read('C:/Users/user/config/sqlcred.cfg')
+    parser.read(os.path.join(os.path.expanduser("~"),'config\\sqlcred.cfg'))
     return parser.get(section,key)  
 
     
+def mysl_pool_connection():
+    """Metod is use to connect database with python 
+
+    Returns:
+        connection : myslconnection
+    """
+    dbconfig ={ 'host' : getconfig("mysql","host"),
+                'user' : getconfig("mysql","user"),
+                'database':getconfig("mysql","database"),
+                'password' :getconfig("mysql","password")
+               }
+    
+    cnxn = pooling.MySQLConnectionPool(pool_name = "school",**dbconfig)
+    pool_cnxn=cnxn.get_connection()
+    return pool_cnxn
+
+def logger():
+    logger = lg.getLogger(__name__)
+    logger.setLevel(lg.DEBUG)
+    formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s\
+                             :%(funcName)s :%(lineno)d : %(message)s ')
+    file_handler =lg.FileHandler("D:/ashu\GitHub/python-learning/scripts/loggers_files/logsfile.log")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+    return logger
+

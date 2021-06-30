@@ -2,34 +2,17 @@ from logging import exception
 import mysql.connector as msc 
 import pandas as pd
 from lib import read_config 
-import logging as lg 
 
-logger = lg.getLogger(__name__)
-logger.setLevel(lg.DEBUG)
-formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s  :%(funcName)s :%(lineno)d : %(message)s ')
-file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
+logger = read_config.logger()
+pool_cnxn=read_config.mysl_pool_connection()
+mycursor=pool_cnxn.cursor()
 
 
 # Function to connect databse with python code
-def read_configconnection():
-    """Metod is use to connect database with python 
 
-    Returns:
-        connection : myslconnection
-    """
-    mydb=msc.connect(host=read_config.getconfig("mysql","host"),
-                    user=read_config.getconfig("mysql","user"),
-                    database=read_config.getconfig("mysql","database"),
-                    password=read_config.getconfig("mysql","password"))
-    return mydb
 
 def create_table(table_name):
 
-
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
     database=read_config.getconfig("mysql","database")
 
     cols=[]
@@ -41,7 +24,7 @@ def create_table(table_name):
         sql=f"create table {database}.{table_name}({cols})"
         mycursor.execute(sql)
         logger.debug(f"create table {database}.{table_name}({cols}) ")
-        mydb.commit()
+        pool_cnxn.commit()
     except Exception as e:
         logger.debug(f"exception arise :{e}")
 
@@ -53,8 +36,7 @@ def create_table(table_name):
 def showallDatabases():
     """Method use to print all the database in a host"""
 
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
+    
     mycursor.execute("show databases")
     for i in mycursor:
         print(i)
@@ -64,8 +46,6 @@ def fetchrecord(table_name):
     """Method is use to fetch the record from a specific table in a database"""
 
     database=read_config.getconfig("mysql","database")
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
     choice=int(input('select choice by index \n 1:fetch all record \n 2:fetch all record for specific column\n 3:fetch record  of specific condition \n 4:fetch record as specific column for a specific condition '))
     try:
         if choice==1:
@@ -106,14 +86,13 @@ def fetchrecord(table_name):
     except Exception as error:
         print(f"Exception generated {error}")
         logger.error(f"Exception arrise : {error}")
-    finally:
-        mydb.close()
+    
         
 
 def insertrecord(table_name):
     """ Method is used to insert record in a table"""
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()  
+    
+     
     database=read_config.getconfig("mysql","database")
 
     cols=[]
@@ -130,19 +109,17 @@ def insertrecord(table_name):
 
     try:
         mycursor.execute(f"insert into {database}.{table_name} ({cols}) values {col_val} ")
-        mydb.commit()
+        pool_cnxn.commit()
         logger.debug(f"insert into {database}.{table_name} ({cols}) values {col_val} ")
     except Exception as error:
         print(f"Exception generated {error}")
         logger.error(f"Exception generated {error}")
-    finally:
-        mydb.close()
+    
 
 
 def insertmanyrecord(table_name):
     """Method is used to insert more than one record at a time in a databsase table"""
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
+    
     database=read_config.getconfig("mysql","database")
 
     cols=[]
@@ -166,18 +143,16 @@ def insertmanyrecord(table_name):
         sql=f"insert into {database}.{table_name}({cols}) values({parameters})"
         mycursor.executemany(sql,val)
         logger.debug(f"records {val} was successfully inserted in {table_name} ")
-        mydb.commit()
+        pool_cnxn.commit()
     except Exception as error:
         print(f"Exception generated {error}")
         logger.debug(f"Exception generated {error}")
-    finally:
-        mydb.close()
+    
 
 def updatecolvalue(table_name):
     """Method is used to update a column value in a table"""
 
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
+    
     database=read_config.getconfig("mysql","database")
 
     dict1=dict()
@@ -201,12 +176,11 @@ def updatecolvalue(table_name):
             sql=f"update {database}.{table_name}  set {c_name} ={val}  where {cond}" 
             mycursor.execute(sql)
             logger.debug(f"Successfuly upadate value of {c_name} to {val} where {cond} in {table_name}")
-        mydb.commit()
+        pool_cnxn.commit()
     except Exception as error:
         logger.debug(f"Exception generated {error}")
         print(f"Exception generated {error}")
-    finally:
-        mydb.close()
+    
 
 
        
@@ -214,20 +188,19 @@ def updatecolvalue(table_name):
 def deleterecord(table_name):
     """Method is used to delete record from database table
     """
-    mydb=read_configconnection()
-    mycursor=mydb.cursor()
+    
+    mycursor=pool_cnxn.cursor()
     database=read_config.getconfig("mysql","database")
 
     cond=input("enter condition ")
     try:
         mycursor.execute(f"delete from {database}.{table_name} where {cond} ")
-        mydb.commit()
+        pool_cnxn.commit()
         logger.debug(f"record was successfully deleted from {table_name} where {cond} ")
     except Exception as error:
         print(f"Exception generated {error}")
         logger.debug(f"Exception generated {error}")
-    finally:
-        mydb.close()
+    
 
            
 def main():
