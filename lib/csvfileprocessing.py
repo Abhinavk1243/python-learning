@@ -58,10 +58,14 @@ def merge_df(l,set_list):
         for i in range(0,len(l)):
             if i==0:
                 df=pd.merge(l[0],l[1],how="outer",on=list_1).fillna(0)
+                print(df)
             if i==1:
                 continue
             else:
                 df4=pd.merge(l[i],df,how="outer",on=list_1).fillna(0)
+                print(df)
+        
+
         logger.debug("All dataframe was merged successfully")
         return df4
     
