@@ -10,9 +10,9 @@ def main():
     try:
         csvfileprocessing.readcsv(l,set_list)
         df4=csvfileprocessing.merge_df(l,set_list)
-        df4=csvfileprocessing.filter(df4)
-        df4=csvfileprocessing.meltdf(df4)
-        print(df4)
+        #df4=csvfileprocessing.filter(df4)
+        #df4=csvfileprocessing.meltdf(df4)
+        #print(df4)
         csvfileprocessing.savecsv(df4)
     except Exception as error:
         print(f"Excepttion occurs : {error}")

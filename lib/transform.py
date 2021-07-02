@@ -2,18 +2,57 @@ import pandas as pd
 from lib import read_config
 logger=read_config.logger()
 
-def col_rename(df,old_col_name,new_col_name):
-    df.rename(columns = {old_col_name: new_col_name }, inplace = True)
-    return df
+def col_rename(df,args):
+    try:
+        df.rename(columns = {args[0]: args[1]}, inplace = True)
+        logger.debug(f"column rename from {args[0]} to {args[1]} ")
+        return df
+    except Exception as error:
+        logger.error(f"error arise as : {error}")
+        return error
 
+def col_filter_unspecified(df,args):
+    try:
+        df=df[df[args[0]] !="::unspecified::"]
+        logger.debug(f" {args[0]} where value = 0 ")
+        return df
+    except Exception  as error:
+        logger.error(f"error arise as : {error}")
+        return error
 
-def col_filter_unspecified(df,col_name):
-    df=df[df[col_name] !="::unspecified::"]
-    return df
+def col_melt(df,args):
+    try:
+        args[0]=args[0].split(",")
+        if args[1]=="None":
+            df=pd.melt(df,id_vars=args[0],var_name=args[2],value_name=args[3])
+        return df
+    except Exception as error:
+        logger.error(f"error arise as : {error}")
+        return error
 
-"""def col_filter_zero(df):
-    df=pd.melt(df,id_vars=["datetime","datetime_friendly","prop28","prop31","prop16","prop8"],var_name="metric_name",value_name="metric_value")
-    df["metric_value"]=df["metric_value"].astype(int)
-    df=df[df.metric_value>0]
-    return df
-"""
+def col_filter_zero(df,args):
+    try:
+        df[args[0]]=df[args[0]].astype(int)
+        df=df[df[args[0]]>0]
+        logger.debug(f"dataframe melt and filer row {args[0]} where value = 0 ")
+        return df
+    except Exception as error:
+        logger.error(f"error arise as : {error}")
+        print(f"error arise as : {error}") 
+
+def col_drop(df,args):
+    try:
+        df.drop([args[0]], axis = 1,inplace = True)
+        return df
+    except Exception as error:
+        print(f"Error arise as {error}")
+        logger.error(f"error arise as : {error}")
+
+def col_filter_none(df,args):
+    try:
+        df=df[df[args[0]] !="none"]
+        logger.debug(f" {args[0]} where value = 0 ")
+        return df
+    except Exception  as error:
+        logger.error(f"error arise as : {error}")
+        return error
