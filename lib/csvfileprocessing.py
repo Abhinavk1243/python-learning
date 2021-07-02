@@ -1,79 +1,67 @@
 import pandas as pd 
-import logging as lg 
-logger = lg.getLogger(__name__)
-logger.setLevel(lg.DEBUG)
-formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s  :%(funcName)s :%(lineno)d : %(message)s ')
+from lib import read_config
+logger=read_config.logger()
 
-
-file_handler =lg.FileHandler("scripts/loggers_files/logsfile.log")
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
-
-
-def readcsv(l,set_list):
+def readcsv(list_df,list_set_col):
     """Method to read csv files 
 
     Args:
         l (array): list of dataframes 
-        set_list (set): empty set 
+        list_set_col (set): empty set 
 
     Returns:
         array: merged dataframe 
     """
     try:
-        n=int(input("enter the number of dataframe"))
-        for i in range(0,n):
+        no_of_df=int(input("enter the number of dataframe"))
+        for i in range(no_of_df):
             path=input("enter path of file")
             df1=pd.read_csv(f"scripts/pandas_files/csvfiles/{path}.csv",sep="|")
-            l.append(df1)
-            set_list.append(set(df1.columns))
+            list_df.append(df1)
+            list_set_col.append(set(df1.columns))
         logger.debug("All csv file was read into a dataframe")
-        return l
-        logger.debug("All csv file was read into a dataframe")
+        return list_df
     except FileNotFoundError as e:
         logger.error(f"error arrise :{e}")
 
 
 # function for merging a csv filesS
-def merge_df(l,set_list):
+def merge_df(list_df,list_set_col):
 
     """Method to merge number of dataframes
 
     Args:
         l (array): array that contain dataframes which had to merged
-        set_list (set): set of list where every list contain column name of respective dataframes
+        list_set_col (set): set of list where every list contain column name of respective dataframes
 
     Returns:
         dataframe : return the final merged dataframe
     """
     try:
         com_col=set()
-        for i in range(0,len(set_list)):
+        for i in range(0,len(list_set_col)):
             if i==0:
-                com_col=com_col.union(set_list[i])
+                com_col=com_col.union(list_set_col[i])
             else:
-                com_col=com_col.intersection(set_list[i])
-        list_1=list(com_col)
+                com_col=com_col.intersection(list_set_col[i])
+        com_col=list(com_col)
         df=pd.DataFrame()
-        for i in range(0,len(l)):
-            if i==0:
-                df=pd.merge(l[0],l[1],how="outer",on=list_1).fillna(0)
-                print(df)
-            if i==1:
-                continue
+        counter=0
+        for i in list_df:
+            if counter==0:
+                df=i
+                counter=counter+1
             else:
-                df4=pd.merge(l[i],df,how="outer",on=list_1).fillna(0)
-                print(df)
-        
-
+                df=pd.merge(i,df,how="outer",on=com_col).fillna(0)
+                
         logger.debug("All dataframe was merged successfully")
-        return df4
+        return df
     
     except Exception as e:
         logger.error(f"exception arise : {e}")
 
 #Function to filer 
-def filter(df4):
+def filter(df):
     """Method is use to filter the rows
 
     Args:
@@ -83,17 +71,17 @@ def filter(df4):
         dataframe :  final dataframe after row filtering
     """
     try:
-        filter_value=input("enter the value which u want to use to filter row")
-        for i in df4.columns:
-            df4=df4[df4[i] !=filter_value]
-        logger.debug(f"Row was filtered which contain : {filter_value}")
-        return df4
+        
+        for i in df.columns:
+            df=df[df[i] !='::unspecified::']
+        logger.debug(f"Row was filtered which contain : '::unspecified::' ")
+        return df
     except Exception as e:
         logger.error(f"exception arise : {e}")
-
+ 
 
 #function for melt dataframe
-def meltdf(df4):
+def meltdf(df,id_vars,metric_name,metric_value):
     """This function is useful to massage a DataFrame into a format where one or more columns are identifier variables (id_vars), while all other columns, considered measured variables (value_vars), are "unpivoted" to the row axis, leaving just two non-identifier columns, 'variable' and 'value'. 
  
     Args:
@@ -103,17 +91,17 @@ def meltdf(df4):
         dataframe: unpivoted dataframe
     """
     try:
-        df4=pd.melt(df4,id_vars=["datetime","datetime_friendly","prop28","prop31","prop16","prop8"],var_name="metric_name",value_name="metric_value")
-        df4["metric_value"]=df4["metric_value"].astype(int)
-        df4=df4[df4.metric_value>0]
+        df=pd.melt(df,id_vars=id_vars,var_name=metric_name,value_name=metric_value)
+        df[metric_value]=df[metric_value].astype(int)
+        df=df[df[metric_value]>0]
         logger.debug("dataframe melt")
-        return df4
+        return df
     except Exception as e:
         logger.error(f"exception arise : {e}")
 
 
 #function to save csv file
-def savecsv(df4):
+def savecsv(df):
     """Method use to save dataframe as .csv file in directories
 
     Args:
@@ -121,7 +109,7 @@ def savecsv(df4):
     """
     try:
         file_name=input("Enter name want to save as .csv")
-        df4.to_csv(f"scripts/pandas_files/csvfiles/{file_name}",sep="|",index=False)
+        df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}",sep="|",index=False)
         logger.debug(f" resulted dataframe saved in {file_name}.csv ")
     except Exception as e:
         logger.error(f"exception arise : {e}")

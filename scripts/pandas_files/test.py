@@ -1,13 +1,28 @@
-def mmap_io(filename):
-    with open(filename, mode="r", encoding="utf8") as f:
-        etl_rules = [ line.strip() for line in f ]
-        return etl_rules
+from typing import Counter
+import pandas as pd 
+df1=pd.read_csv(f"scripts/pandas_files/csvfiles/push_notification_raw_0.csv",sep="|")
+df2=pd.read_csv(f"scripts/pandas_files/csvfiles/push_notification_raw_1.csv",sep="|")
+df3=pd.read_csv(f"scripts/pandas_files/csvfiles/push_notification_raw_2.csv",sep="|")
+df4=pd.read_csv(f"scripts/pandas_files/csvfiles/push_notification_raw_4.csv",sep="|")
+list_1=["datetime","datetime_friendly","prop28","prop31","prop16","prop8"]
+l=[df1,df2,df3,df4]
+df=pd.DataFrame()
+"""for i in range(0,len(l)):
+    if i==0:
+        df=pd.merge(l[0],l[1],how="outer",on=list_1).fillna(0)
+        print(df)
+    if i==1:
+        continue
+    else:
+        df=pd.merge(l[i],df,how="outer",on=list_1).fillna(0)
+    """
+counter=0
+for i in l:
+    if counter==0:
+        df=i
+        counter=counter+1
+    else:
+        df=pd.merge(i,df,how="outer",on=list_1).fillna(0)
 
-file_name='scripts/pandas_files/csvfiles/test.map'
-etl_rules=mmap_io(file_name)
-for i in etl_rules:
-    function_args=i.split("=>")
-    operation=function_args[0]
-    
-    args=function_args[1].split("|")
-    
+
+print(df)
