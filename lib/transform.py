@@ -13,7 +13,7 @@ def col_rename(df,args):
 
 def col_filter_unspecified(df,args):
     try:
-        df=df[df[args[0]] !="::unspecified::"]
+        df=df[df[args[0]]!="::unspecified::"]
         logger.debug(f" {args[0]} where value = 0 ")
         return df
     except Exception  as error:
