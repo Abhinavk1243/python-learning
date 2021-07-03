@@ -1,0 +1,934 @@
+2021-05-28 17:14:08,849 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((1, 8)) is wrong entry 
+2021-05-28 17:14:15,825 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 4)) is wrong entry 
+2021-05-28 17:14:27,647 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 9)) is wrong entry 
+2021-05-28 18:21:36,349 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((1, 8)) is wrong entry 
+2021-05-28 18:21:42,057 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 4)) is wrong entry 
+2021-05-28 18:21:57,305 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 9)) is wrong entry 
+2021-05-28 18:21:59,499 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :93 : records [(1, 1), (2, 1), (4, 5), (3, 5), (3, 1), (7, 5), (6, 3), (7, 3), (4, 4), (3, 4), (1, 10), (6, 10), (6, 6), (3, 6), (2, 6), (1, 9), (7, 9), (4, 9), (5, 8)] was successfully inserted in teacher_class  
+2021-05-28 18:36:04,961 : __main__ : msql.py : ERROR  :main :254 : error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:20,992 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,037 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,249 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,302 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,320 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,370 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,374 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,428 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,432 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,482 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,485 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,537 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,541 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,590 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,592 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,640 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,643 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,690 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,693 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,736 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,746 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,795 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,798 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,841 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,844 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,890 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,894 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,936 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,938 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:21,984 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:21,988 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:22,031 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:22,033 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:22,078 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:22,081 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:22,122 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:22,125 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:22,168 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:22,171 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :76 : Error arise : invalid literal for int() with base 10: '' 
+2021-05-28 18:36:22,218 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 1)) is wrong entry 
+2021-05-28 18:36:22,236 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :93 : records [(1, 1), (2, 1)] was successfully inserted in teacher_class  
+2021-05-28 18:38:37,708 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((1, 8)) is wrong entry 
+2021-05-28 18:38:42,038 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 4)) is wrong entry 
+2021-05-28 18:38:49,998 : __main__ : mapping.py : ERROR  :insert_teacher_Class :84 : ((2, 9)) is wrong entry 
+2021-05-28 18:38:51,977 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :93 : records [(1, 1), (2, 1), (4, 5), (3, 5), (3, 1), (7, 5), (6, 3), (7, 3), (4, 4), (3, 4), (1, 10), (6, 10), (6, 6), (3, 6), (2, 6), (1, 9), (7, 9), (4, 9), (5, 8)] was successfully inserted in teacher_class  
+2021-05-31 10:22:44,675 : __main__ : mapping.py : ERROR  :insert_teacher_Class :85 : ((1, 9)) is wrong entry
+2021-05-31 10:23:35,734 : __main__ : mapping.py : ERROR  :insert_teacher_Class :85 : ((1, 8)) is wrong entry
+2021-05-31 10:24:15,717 : __main__ : mapping.py : ERROR  :insert_teacher_Class :85 : ((2, 4)) is wrong entry
+2021-05-31 10:24:16,227 : __main__ : mapping.py : DEBUG  :insert_teacher_Class :92 : records [(1, 1), (2, 1), (3, 1), (4, 5), (3, 5), (7, 5), (6, 3), (7, 3), (4, 4), (3, 4), (1, 10), (6, 10), (6, 6), (3, 6), (2, 6), (4, 9), (7, 9), (5, 8), (5, 8)] was successfully inserted in teacher_class 
+2021-06-02 15:46:59,703 : __main__ : student.py : DEBUG  :insert_data :58 : data ('rishabh kasana', 21) successfully inserted 
+2021-06-02 15:48:33,670 : __main__ : student.py : DEBUG  :insert_data :58 : data ('rishabh kasana', 22) successfully inserted 
+2021-06-02 15:52:31,347 : __main__ : student.py : DEBUG  :insert_data :58 : data ('Rishabh kasana', 23) successfully inserted 
+2021-06-02 15:58:10,122 : __main__ : student.py : DEBUG  :insert_data :62 : data ('Rishabh kasana', 21) successfully inserted 
+2021-06-02 16:04:17,263 : __main__ : student.py : DEBUG  :insert_data :62 : data ('Arun kumar', 24) successfully inserted 
+2021-06-02 16:41:34,278 : __main__ : student.py : DEBUG  :insert_data :62 : data ('Aman rastogi', 20) successfully inserted 
+2021-06-02 17:05:56,337 : __main__ : student.py : DEBUG  :delete :87 : record of id = 10 is deleted from the database 
+2021-06-03 13:41:24,091 : __main__ : student.py : DEBUG  :delete :85 : record of id = 1 is deleted from the database 
+2021-06-03 13:43:29,597 : __main__ : student.py : DEBUG  :delete :85 : record of id = 2 is deleted from the database 
+2021-06-03 13:48:13,100 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 13:52:59,573 : __main__ : student.py : DEBUG  :delete :85 : record of id = 3 is deleted from the database 
+2021-06-03 13:58:32,949 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Rohit bhandari', 23) successfully inserted 
+2021-06-03 14:02:21,380 : __main__ : student.py : DEBUG  :delete :85 : record of id = 12 is deleted from the database 
+2021-06-03 14:02:52,086 : __main__ : student.py : DEBUG  :delete :85 : record of id = 11 is deleted from the database 
+2021-06-03 14:13:08,445 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Anubhav tyagi', 21) successfully inserted 
+2021-06-03 14:13:19,715 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 14:20:39,293 : __main__ : student.py : DEBUG  :delete :85 : record of id = 14 is deleted from the database 
+2021-06-03 14:21:07,370 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 14:24:16,092 : __main__ : student.py : DEBUG  :delete :85 : record of id = 15 is deleted from the database 
+2021-06-03 14:24:24,533 : __main__ : student.py : DEBUG  :delete :85 : record of id = 13 is deleted from the database 
+2021-06-03 14:45:11,497 : __main__ : student.py : DEBUG  :delete :91 : record of id = 9 is deleted from the database 
+2021-06-03 14:45:50,509 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 14:46:05,413 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhishek Chauhan', 21) successfully inserted 
+2021-06-03 14:46:25,414 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Amogh Goswami', 19) successfully inserted 
+2021-06-03 14:46:41,744 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-03 14:49:01,270 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Pawan Kumar', 20) successfully inserted 
+2021-06-03 14:49:23,558 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Kush', 20) successfully inserted 
+2021-06-03 14:53:59,318 : __main__ : student.py : DEBUG  :delete :91 : record of id = 21 is deleted from the database 
+2021-06-03 14:55:19,919 : __main__ : student.py : DEBUG  :delete :91 : record of id = 20 is deleted from the database 
+2021-06-03 15:07:26,180 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Uttkarsh gupta', 21) successfully inserted 
+2021-06-03 15:08:42,879 : __main__ : student.py : DEBUG  :delete :91 : record of id = 22 is deleted from the database 
+2021-06-03 15:12:38,032 : __main__ : student.py : DEBUG  :delete :96 : record of id = 19 is deleted from the database 
+2021-06-03 15:14:14,390 : __main__ : student.py : DEBUG  :delete :98 : record of id = 18 is deleted from the database 
+2021-06-03 15:15:43,677 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Mukesh', 21) successfully inserted 
+2021-06-03 15:16:17,341 : __main__ : student.py : DEBUG  :delete :102 : record of id = 23 is deleted from the database 
+2021-06-03 15:17:27,655 : __main__ : student.py : DEBUG  :delete :102 : record of id = 17 is deleted from the database 
+2021-06-03 15:17:29,312 : __main__ : student.py : DEBUG  :delete :102 : record of id = 17 is deleted from the database 
+2021-06-03 15:17:55,880 : __main__ : student.py : DEBUG  :delete :102 : record of id = 16 is deleted from the database 
+2021-06-03 15:36:54,988 : __main__ : student.py : DEBUG  :delete :102 : record of id = 16 is deleted from the database 
+2021-06-03 15:37:34,271 : __main__ : student.py : DEBUG  :delete :102 : record of id = 8 is deleted from the database 
+2021-06-03 15:38:42,365 : __main__ : student.py : DEBUG  :delete :102 : record of id = 8 is deleted from the database 
+2021-06-03 16:09:15,433 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 16:09:36,416 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhishek Chauhan', 21) successfully inserted 
+2021-06-03 16:10:02,666 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-03 16:10:37,880 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-03 16:32:04,650 : __main__ : student.py : DEBUG  :delete :92 : record of id = 27 is deleted from the database 
+2021-06-03 16:37:02,111 : __main__ : student.py : DEBUG  :delete :92 : record of id = 26 is deleted from the database 
+2021-06-03 16:41:53,041 : __main__ : student.py : DEBUG  :delete :92 : record of id = 25 is deleted from the database 
+2021-06-03 16:42:20,565 : __main__ : student.py : DEBUG  :delete :92 : record of id = 25 is deleted from the database 
+2021-06-03 16:44:12,657 : __main__ : student.py : DEBUG  :delete :92 : record of id = 24 is deleted from the database 
+2021-06-03 16:50:30,095 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 16:50:42,305 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Mayanak saini', 20) successfully inserted 
+2021-06-03 16:52:45,292 : __main__ : student.py : DEBUG  :delete :92 : record of id = 29 is deleted from the database 
+2021-06-03 16:53:23,521 : __main__ : student.py : DEBUG  :delete :92 : record of id = 28 is deleted from the database 
+2021-06-03 16:56:28,140 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-03 16:56:39,775 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-03 16:56:56,075 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-03 16:57:09,216 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Shivam', 22) successfully inserted 
+2021-06-03 16:59:37,878 : __main__ : student.py : DEBUG  :delete :92 : record of id = 33 is deleted from the database 
+2021-06-03 17:05:15,857 : __main__ : student.py : DEBUG  :delete :92 : record of id = 32 is deleted from the database 
+2021-06-03 17:05:44,974 : __main__ : student.py : DEBUG  :delete :92 : record of id = 31 is deleted from the database 
+2021-06-04 13:31:49,604 : __main__ : student.py : DEBUG  :delete :92 : record of id = 30 is deleted from the database 
+2021-06-04 13:36:31,328 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Aakash', 21) successfully inserted 
+2021-06-04 13:36:46,417 : __main__ : student.py : DEBUG  :insert_data :63 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-04 13:41:16,561 : __main__ : student.py : DEBUG  :delete :92 : record of id = 35 is deleted from the database 
+2021-06-07 10:53:58,569 : models : crud.py : DEBUG  :delete :69 : record of id = 34 is deleted from the database 
+2021-06-07 10:53:58,569 : models : crud.py : DEBUG  :delete :69 : record of id = 34 is deleted from the database 
+2021-06-07 10:56:32,924 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 10:56:32,924 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 10:58:22,523 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 10:58:22,523 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 10:59:03,912 : models : crud.py : DEBUG  :delete :69 : record of id = 37 is deleted from the database 
+2021-06-07 10:59:03,912 : models : crud.py : DEBUG  :delete :69 : record of id = 37 is deleted from the database 
+2021-06-07 10:59:18,638 : models : crud.py : DEBUG  :insert_data :40 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-07 10:59:18,638 : models : crud.py : DEBUG  :insert_data :40 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-07 10:59:31,093 : models : crud.py : DEBUG  :insert_data :40 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-07 10:59:31,093 : models : crud.py : DEBUG  :insert_data :40 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-07 11:30:43,255 : models : crud.py : DEBUG  :delete :69 : record of id = 39 is deleted from the database 
+2021-06-07 11:30:43,255 : models : crud.py : DEBUG  :delete :69 : record of id = 39 is deleted from the database 
+2021-06-07 11:32:07,222 : models : crud.py : DEBUG  :delete :69 : record of id = 38 is deleted from the database 
+2021-06-07 11:32:07,222 : models : crud.py : DEBUG  :delete :69 : record of id = 38 is deleted from the database 
+2021-06-07 11:34:58,504 : models : crud.py : DEBUG  :delete :69 : record of id = 36 is deleted from the database 
+2021-06-07 11:34:58,504 : models : crud.py : DEBUG  :delete :69 : record of id = 36 is deleted from the database 
+2021-06-07 11:39:40,312 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 11:39:40,312 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 11:40:38,826 : models : crud.py : DEBUG  :delete :69 : record of id = 40 is deleted from the database 
+2021-06-07 11:40:38,826 : models : crud.py : DEBUG  :delete :69 : record of id = 40 is deleted from the database 
+2021-06-07 11:40:57,980 : models : crud.py : DEBUG  :insert_data :40 : data ('rishabh kasana', 22) successfully inserted 
+2021-06-07 11:40:57,980 : models : crud.py : DEBUG  :insert_data :40 : data ('rishabh kasana', 22) successfully inserted 
+2021-06-07 11:41:13,213 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhishek Chauhan', 22) successfully inserted 
+2021-06-07 11:41:13,213 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhishek Chauhan', 22) successfully inserted 
+2021-06-07 12:12:38,137 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 12:12:38,137 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 12:17:07,843 : models : crud.py : DEBUG  :delete :70 : record of id = 43 is deleted from the database 
+2021-06-07 12:17:07,843 : models : crud.py : DEBUG  :delete :70 : record of id = 43 is deleted from the database 
+2021-06-07 12:20:30,013 : models : crud.py : DEBUG  :delete :70 : record of id = 42 is deleted from the database 
+2021-06-07 12:20:30,013 : models : crud.py : DEBUG  :delete :70 : record of id = 42 is deleted from the database 
+2021-06-07 12:21:05,156 : models : crud.py : DEBUG  :delete :70 : record of id = 41 is deleted from the database 
+2021-06-07 12:21:05,156 : models : crud.py : DEBUG  :delete :70 : record of id = 41 is deleted from the database 
+2021-06-07 12:24:59,584 : models : crud.py : DEBUG  :delete :70 : record of id = 8 is deleted from the database 
+2021-06-07 12:24:59,584 : models : crud.py : DEBUG  :delete :70 : record of id = 8 is deleted from the database 
+2021-06-07 13:38:33,738 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 13:38:33,738 : models : crud.py : DEBUG  :insert_data :40 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-07 13:39:05,335 : models : crud.py : DEBUG  :insert_data :40 : data ('Mayank saini', 22) successfully inserted 
+2021-06-07 13:39:05,335 : models : crud.py : DEBUG  :insert_data :40 : data ('Mayank saini', 22) successfully inserted 
+2021-06-07 13:44:56,021 : models : crud.py : DEBUG  :insert_data :40 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-07 13:44:56,021 : models : crud.py : DEBUG  :insert_data :40 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-07 15:46:33,671 : models : crud.py : DEBUG                             :delete :70 : record of id = 46 is deleted from the database 
+2021-06-07 15:46:33,671 : models : crud.py : DEBUG                             :delete :70 : record of id = 46 is deleted from the database 
+2021-06-07 16:48:06,612 : models : crud.py : DEBUG                             :delete :70 : record of id = 4 is deleted from the database 
+2021-06-07 16:48:06,612 : models : crud.py : DEBUG                             :delete :70 : record of id = 4 is deleted from the database 
+2021-06-07 17:45:03,911 : models : crud.py : DEBUG                             :insert_data :40 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-07 17:45:03,911 : models : crud.py : DEBUG                             :insert_data :40 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-07 17:47:54,926 : models : crud.py : DEBUG                             :insert_data :40 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-07 17:47:54,926 : models : crud.py : DEBUG                             :insert_data :40 : data ('Amogh Goswami', 20) successfully inserted 
+2021-06-08 14:30:04,374 : models : student.py : DEBUG                             :delete :64 : record of id = 48 is deleted from the database 
+2021-06-08 14:30:04,374 : models : student.py : DEBUG                             :delete :64 : record of id = 48 is deleted from the database 
+2021-06-08 14:30:04,374 : models : student.py : DEBUG                             :delete :64 : record of id = 48 is deleted from the database 
+2021-06-08 14:41:52,616 : models : student.py : DEBUG                             :remove_student :64 : record of id = 44 is deleted from the database 
+2021-06-08 14:41:52,616 : models : student.py : DEBUG                             :remove_student :64 : record of id = 44 is deleted from the database 
+2021-06-08 14:41:52,616 : models : student.py : DEBUG                             :remove_student :64 : record of id = 44 is deleted from the database 
+2021-06-08 15:17:54,578 : models : student.py : DEBUG                             :create_student :40 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-08 15:17:54,578 : models : student.py : DEBUG                             :create_student :40 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-08 15:17:54,578 : models : student.py : DEBUG                             :create_student :40 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-08 15:25:34,404 : models : student.py : DEBUG                             :create_student :40 : data ('Abhay Gupta', 23) successfully inserted 
+2021-06-08 15:25:34,404 : models : student.py : DEBUG                             :create_student :40 : data ('Abhay Gupta', 23) successfully inserted 
+2021-06-08 15:25:34,404 : models : student.py : DEBUG                             :create_student :40 : data ('Abhay Gupta', 23) successfully inserted 
+2021-06-08 18:49:38,070 : models : student.py : DEBUG                             :create_student :64 : data ('Rohit bhandari', 22) successfully inserted 
+2021-06-08 18:49:38,070 : models : student.py : DEBUG                             :create_student :64 : data ('Rohit bhandari', 22) successfully inserted 
+2021-06-09 10:48:24,880 : models : student.py : DEBUG                             :create_student :61 : data ('Arpan Tyagi', 21) successfully inserted 
+2021-06-09 10:48:24,880 : models : student.py : DEBUG                             :create_student :61 : data ('Arpan Tyagi', 21) successfully inserted 
+2021-06-09 11:40:29,822 : models : student.py : DEBUG                             :remove_student :82 : record of id = 52 is deleted from the database 
+2021-06-09 11:40:29,822 : models : student.py : DEBUG                             :remove_student :82 : record of id = 52 is deleted from the database 
+2021-06-09 12:11:53,953 : models : student.py : DEBUG                             :remove_student :85 : record of id = 51 is deleted from the database 
+2021-06-09 12:11:53,953 : models : student.py : DEBUG                             :remove_student :85 : record of id = 51 is deleted from the database 
+2021-06-09 15:09:25,843 : models : student.py : DEBUG                             :remove_student :95 : record of id = 50 is deleted from the database 
+2021-06-09 15:09:25,843 : models : student.py : DEBUG                             :remove_student :95 : record of id = 50 is deleted from the database 
+2021-06-09 15:17:36,087 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-09 15:17:36,087 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-09 15:23:59,664 : models : student.py : DEBUG                             :remove_student :95 : record of id = 53 is deleted from the database 
+2021-06-09 15:23:59,664 : models : student.py : DEBUG                             :remove_student :95 : record of id = 53 is deleted from the database 
+2021-06-09 15:36:30,975 : models : student.py : DEBUG                             :remove_student :95 : record of id = 49 is deleted from the database 
+2021-06-09 15:36:30,975 : models : student.py : DEBUG                             :remove_student :95 : record of id = 49 is deleted from the database 
+2021-06-09 15:36:45,420 : models : student.py : DEBUG                             :create_student :69 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-09 15:36:45,420 : models : student.py : DEBUG                             :create_student :69 : data ('Amogh Goswami', 22) successfully inserted 
+2021-06-09 15:37:19,282 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 20) successfully inserted 
+2021-06-09 15:37:19,282 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 20) successfully inserted 
+2021-06-09 16:47:27,462 : models : student.py : DEBUG                             :create_student :69 : data ('Rishabh kasana', 22) successfully inserted 
+2021-06-09 16:47:27,462 : models : student.py : DEBUG                             :create_student :69 : data ('Rishabh kasana', 22) successfully inserted 
+2021-06-09 16:47:33,207 : models : student.py : DEBUG                             :remove_student :95 : record of id = 56 is deleted from the database 
+2021-06-09 16:47:33,207 : models : student.py : DEBUG                             :remove_student :95 : record of id = 56 is deleted from the database 
+2021-06-10 10:17:49,243 : models : student.py : DEBUG                             :remove_student :95 : record of id = 55 is deleted from the database 
+2021-06-10 10:17:49,243 : models : student.py : DEBUG                             :remove_student :95 : record of id = 55 is deleted from the database 
+2021-06-10 10:18:03,107 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-10 10:18:03,107 : models : student.py : DEBUG                             :create_student :69 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-10 12:12:39,327 : models : student.py : DEBUG                             :create_student :78 : data ('rishabh kasana', 20) successfully inserted 
+2021-06-10 12:12:39,327 : models : student.py : DEBUG                             :create_student :78 : data ('rishabh kasana', 20) successfully inserted 
+2021-06-10 12:16:42,860 : models : student.py : DEBUG                             :create_student :81 : data ('Prashant kumar', 20) successfully inserted 
+2021-06-10 12:16:42,860 : models : student.py : DEBUG                             :create_student :81 : data ('Prashant kumar', 20) successfully inserted 
+2021-06-10 13:05:59,725 : models : student.py : DEBUG                             :create_student :87 : data ('Mani Rastogi', 20) successfully inserted 
+2021-06-10 13:05:59,725 : models : student.py : DEBUG                             :create_student :87 : data ('Mani Rastogi', 20) successfully inserted 
+2021-06-10 14:48:19,637 : models : student.py : DEBUG                             :create_student :95 : data ('Aakash', 20) successfully inserted 
+2021-06-10 14:48:19,637 : models : student.py : DEBUG                             :create_student :95 : data ('Aakash', 20) successfully inserted 
+2021-06-10 14:51:28,262 : models : student.py : DEBUG                             :create_student :95 : data ('Abhishek Chauhan', 22) successfully inserted 
+2021-06-10 14:51:28,262 : models : student.py : DEBUG                             :create_student :95 : data ('Abhishek Chauhan', 22) successfully inserted 
+2021-06-10 14:52:13,320 : models : student.py : DEBUG                             :create_student :95 : data ('Amogh Goswami', 19) successfully inserted 
+2021-06-10 14:52:13,320 : models : student.py : DEBUG                             :create_student :95 : data ('Amogh Goswami', 19) successfully inserted 
+2021-06-10 14:53:09,612 : models : student.py : DEBUG                             :remove_student :121 : record of id = 63 is deleted from the database 
+2021-06-10 14:53:09,612 : models : student.py : DEBUG                             :remove_student :121 : record of id = 63 is deleted from the database 
+2021-06-10 14:55:58,757 : models : student.py : DEBUG                             :create_student :95 : data ('Paranjay', 22) successfully inserted 
+2021-06-10 14:55:58,757 : models : student.py : DEBUG                             :create_student :95 : data ('Paranjay', 22) successfully inserted 
+2021-06-10 15:54:34,577 : models : df_sql.py : DEBUG                             :create_table :116 : create table web_data.student_address(['address_id', 'student_id', 'house_no', 'colony', 'city', 'state', 'pincode'])  
+2021-06-10 15:54:57,758 : models : df_sql.py : DEBUG                             :csv_to_table :28 : csv file : student_address.csv is successfully inserted in database table : student_address  
+2021-06-10 16:08:48,455 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:08:48,455 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:08:48,455 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:00,728 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:00,728 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:00,728 : models : df_sql.py : ERROR                             :create_table :76 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:36,422 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:36,422 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:36,422 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:10:36,440 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:10:36,440 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:10:36,440 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:16:26,357 : models : student.py : DEBUG                             :create_student :98 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-10 16:16:26,357 : models : student.py : DEBUG                             :create_student :98 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-10 16:16:26,357 : models : student.py : DEBUG                             :create_student :98 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-10 16:17:30,784 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:17:30,784 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:17:30,784 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 22] Invalid argument: "./files/<FileStorage: 'student.csv' ('application/vnd.ms-excel')>" 
+2021-06-10 16:17:30,792 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:17:30,792 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:17:30,792 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:18:12,104 : models : df_sql.py : DEBUG                             :create_table :117 : create table web_data.student_1(['Name', 'age', 'gender'])  
+2021-06-10 16:18:12,104 : models : df_sql.py : DEBUG                             :create_table :117 : create table web_data.student_1(['Name', 'age', 'gender'])  
+2021-06-10 16:18:12,104 : models : df_sql.py : DEBUG                             :create_table :117 : create table web_data.student_1(['Name', 'age', 'gender'])  
+2021-06-10 16:18:12,268 : models : df_sql.py : DEBUG                             :csv_to_table :28 : csv file : student.csv is successfully inserted in database table : student_1  
+2021-06-10 16:18:12,268 : models : df_sql.py : DEBUG                             :csv_to_table :28 : csv file : student.csv is successfully inserted in database table : student_1  
+2021-06-10 16:18:12,268 : models : df_sql.py : DEBUG                             :csv_to_table :28 : csv file : student.csv is successfully inserted in database table : student_1  
+2021-06-10 16:18:12,628 : models : student.py : DEBUG                             :create_student :100 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-10 16:18:12,628 : models : student.py : DEBUG                             :create_student :100 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-10 16:18:12,628 : models : student.py : DEBUG                             :create_student :100 : data ('Mayanak saini', 21) successfully inserted 
+2021-06-10 16:38:52,345 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 2] No such file or directory: './files/1 KtWwvLK-jpGPSnj3tStg-Q.png' 
+2021-06-10 16:38:52,345 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 2] No such file or directory: './files/1 KtWwvLK-jpGPSnj3tStg-Q.png' 
+2021-06-10 16:38:52,345 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : [Errno 2] No such file or directory: './files/1 KtWwvLK-jpGPSnj3tStg-Q.png' 
+2021-06-10 16:38:52,354 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:38:52,354 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:38:52,354 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:39:06,897 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : Error tokenizing data. C error: Expected 1 fields in line 20, saw 3
+ 
+2021-06-10 16:39:06,897 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : Error tokenizing data. C error: Expected 1 fields in line 20, saw 3
+ 
+2021-06-10 16:39:06,897 : models : df_sql.py : ERROR                             :create_table :77 : Exception arise : Error tokenizing data. C error: Expected 1 fields in line 20, saw 3
+ 
+2021-06-10 16:39:06,900 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:39:06,900 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:39:06,900 : models : df_sql.py : ERROR                             :create_table :119 : exception arise : 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-10 16:39:45,764 : models : student.py : DEBUG                             :create_student :99 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-10 16:39:45,764 : models : student.py : DEBUG                             :create_student :99 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-10 16:39:45,764 : models : student.py : DEBUG                             :create_student :99 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-10 17:20:41,035 : models : student.py : DEBUG                             :create_student :100 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-10 17:20:41,035 : models : student.py : DEBUG                             :create_student :100 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-10 17:20:41,035 : models : student.py : DEBUG                             :create_student :100 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-11 12:05:59,625 : models : student.py : DEBUG                             :create_student :100 : data ('Apporv', 20) successfully inserted 
+2021-06-11 12:05:59,625 : models : student.py : DEBUG                             :create_student :100 : data ('Apporv', 20) successfully inserted 
+2021-06-11 12:05:59,625 : models : student.py : DEBUG                             :create_student :100 : data ('Apporv', 20) successfully inserted 
+2021-06-11 17:46:41,983 : models : student.py : DEBUG                             :remove_student :127 : record of id = 45 is deleted from the database 
+2021-06-11 17:46:41,983 : models : student.py : DEBUG                             :remove_student :127 : record of id = 45 is deleted from the database 
+2021-06-11 17:46:41,983 : models : student.py : DEBUG                             :remove_student :127 : record of id = 45 is deleted from the database 
+2021-06-11 17:46:48,013 : models : student.py : DEBUG                             :remove_student :127 : record of id = 47 is deleted from the database 
+2021-06-11 17:46:48,013 : models : student.py : DEBUG                             :remove_student :127 : record of id = 47 is deleted from the database 
+2021-06-11 17:46:48,013 : models : student.py : DEBUG                             :remove_student :127 : record of id = 47 is deleted from the database 
+2021-06-11 17:50:48,102 : models : student.py : DEBUG                             :create_student :101 : data ('Archit ', 21) successfully inserted 
+2021-06-11 17:50:48,102 : models : student.py : DEBUG                             :create_student :101 : data ('Archit ', 21) successfully inserted 
+2021-06-11 17:50:48,102 : models : student.py : DEBUG                             :create_student :101 : data ('Archit ', 21) successfully inserted 
+2021-06-13 12:05:24,974 : models : student.py : DEBUG                             :create_student :101 : data ('Ak', 22) successfully inserted 
+2021-06-13 12:05:24,974 : models : student.py : DEBUG                             :create_student :101 : data ('Ak', 22) successfully inserted 
+2021-06-13 12:05:24,974 : models : student.py : DEBUG                             :create_student :101 : data ('Ak', 22) successfully inserted 
+2021-06-13 12:06:04,990 : models : student.py : DEBUG                             :remove_student :127 : record of id = 54 is deleted from the database 
+2021-06-13 12:06:04,990 : models : student.py : DEBUG                             :remove_student :127 : record of id = 54 is deleted from the database 
+2021-06-13 12:06:04,990 : models : student.py : DEBUG                             :remove_student :127 : record of id = 54 is deleted from the database 
+2021-06-14 11:35:47,391 : models : student.py : DEBUG                             :remove_student :127 : record of id = 57 is deleted from the database 
+2021-06-14 11:35:47,391 : models : student.py : DEBUG                             :remove_student :127 : record of id = 57 is deleted from the database 
+2021-06-14 11:35:47,391 : models : student.py : DEBUG                             :remove_student :127 : record of id = 57 is deleted from the database 
+2021-06-14 12:43:15,939 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 18) successfully inserted 
+2021-06-14 12:43:15,939 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 18) successfully inserted 
+2021-06-14 12:43:15,939 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 18) successfully inserted 
+2021-06-14 12:43:30,999 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 19) successfully inserted 
+2021-06-14 12:43:30,999 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 19) successfully inserted 
+2021-06-14 12:43:30,999 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 19) successfully inserted 
+2021-06-14 12:44:49,971 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-14 12:44:49,971 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-14 12:44:49,971 : models : student.py : DEBUG                             :create_student :101 : data ('Abhinav kumar', 21) successfully inserted 
+2021-06-14 12:44:58,780 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 20) successfully inserted 
+2021-06-14 12:44:58,780 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 20) successfully inserted 
+2021-06-14 12:44:58,780 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek Chauhan', 20) successfully inserted 
+2021-06-14 12:45:06,299 : models : student.py : DEBUG                             :create_student :101 : data ('Rishabh kasana', 20) successfully inserted 
+2021-06-14 12:45:06,299 : models : student.py : DEBUG                             :create_student :101 : data ('Rishabh kasana', 20) successfully inserted 
+2021-06-14 12:45:06,299 : models : student.py : DEBUG                             :create_student :101 : data ('Rishabh kasana', 20) successfully inserted 
+2021-06-14 12:45:20,563 : models : student.py : DEBUG                             :create_student :101 : data ('Rohit bhandari', 22) successfully inserted 
+2021-06-14 12:45:20,563 : models : student.py : DEBUG                             :create_student :101 : data ('Rohit bhandari', 22) successfully inserted 
+2021-06-14 12:45:20,563 : models : student.py : DEBUG                             :create_student :101 : data ('Rohit bhandari', 22) successfully inserted 
+2021-06-14 12:45:31,670 : models : student.py : DEBUG                             :create_student :101 : data ('Abhay Gupta', 21) successfully inserted 
+2021-06-14 12:45:31,670 : models : student.py : DEBUG                             :create_student :101 : data ('Abhay Gupta', 21) successfully inserted 
+2021-06-14 12:45:31,670 : models : student.py : DEBUG                             :create_student :101 : data ('Abhay Gupta', 21) successfully inserted 
+2021-06-14 14:38:07,122 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-14 14:38:07,122 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-14 14:38:07,122 : models : student.py : DEBUG                             :create_student :101 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-14 14:39:38,118 : models : student.py : DEBUG                             :create_student :101 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-14 14:39:38,118 : models : student.py : DEBUG                             :create_student :101 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-14 14:39:38,118 : models : student.py : DEBUG                             :create_student :101 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-14 14:39:51,171 : models : student.py : DEBUG                             :create_student :101 : data ('Mani Rastogi', 18) successfully inserted 
+2021-06-14 14:39:51,171 : models : student.py : DEBUG                             :create_student :101 : data ('Mani Rastogi', 18) successfully inserted 
+2021-06-14 14:39:51,171 : models : student.py : DEBUG                             :create_student :101 : data ('Mani Rastogi', 18) successfully inserted 
+2021-06-14 14:40:04,948 : models : student.py : DEBUG                             :create_student :101 : data ('Aakash', 20) successfully inserted 
+2021-06-14 14:40:04,948 : models : student.py : DEBUG                             :create_student :101 : data ('Aakash', 20) successfully inserted 
+2021-06-14 14:40:04,948 : models : student.py : DEBUG                             :create_student :101 : data ('Aakash', 20) successfully inserted 
+2021-06-14 14:40:19,752 : models : student.py : DEBUG                             :create_student :101 : data ('Arpit', 21) successfully inserted 
+2021-06-14 14:40:19,752 : models : student.py : DEBUG                             :create_student :101 : data ('Arpit', 21) successfully inserted 
+2021-06-14 14:40:19,752 : models : student.py : DEBUG                             :create_student :101 : data ('Arpit', 21) successfully inserted 
+2021-06-14 14:44:50,040 : models : student.py : DEBUG                             :create_student :101 : data ('Pawan Kumar', 21) successfully inserted 
+2021-06-14 14:44:50,040 : models : student.py : DEBUG                             :create_student :101 : data ('Pawan Kumar', 21) successfully inserted 
+2021-06-14 14:44:50,040 : models : student.py : DEBUG                             :create_student :101 : data ('Pawan Kumar', 21) successfully inserted 
+2021-06-14 14:45:13,152 : models : student.py : DEBUG                             :create_student :101 : data ('Aman rastogi', 17) successfully inserted 
+2021-06-14 14:45:13,152 : models : student.py : DEBUG                             :create_student :101 : data ('Aman rastogi', 17) successfully inserted 
+2021-06-14 14:45:13,152 : models : student.py : DEBUG                             :create_student :101 : data ('Aman rastogi', 17) successfully inserted 
+2021-06-14 14:45:21,585 : models : student.py : DEBUG                             :create_student :101 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-14 14:45:21,585 : models : student.py : DEBUG                             :create_student :101 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-14 14:45:21,585 : models : student.py : DEBUG                             :create_student :101 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-14 16:08:58,161 : models : student.py : DEBUG                             :create_student :74 : data ('Arpit', 20) successfully inserted 
+2021-06-14 16:08:58,161 : models : student.py : DEBUG                             :create_student :74 : data ('Arpit', 20) successfully inserted 
+2021-06-14 16:08:58,161 : models : student.py : DEBUG                             :create_student :74 : data ('Arpit', 20) successfully inserted 
+2021-06-14 16:21:03,905 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:21:03,905 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:21:03,905 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:22:10,974 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 20) successfully inserted 
+2021-06-14 16:22:10,974 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 20) successfully inserted 
+2021-06-14 16:22:10,974 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 20) successfully inserted 
+2021-06-14 16:22:34,975 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:22:34,975 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:22:34,975 : models : student.py : DEBUG                             :create_student :74 : data ('Arpan', 21) successfully inserted 
+2021-06-14 16:22:45,141 : models : student.py : DEBUG                             :remove_student :100 : record of id = 11 is deleted from the database 
+2021-06-14 16:22:45,141 : models : student.py : DEBUG                             :remove_student :100 : record of id = 11 is deleted from the database 
+2021-06-14 16:22:45,141 : models : student.py : DEBUG                             :remove_student :100 : record of id = 11 is deleted from the database 
+2021-06-14 16:22:51,355 : models : student.py : DEBUG                             :remove_student :100 : record of id = 12 is deleted from the database 
+2021-06-14 16:22:51,355 : models : student.py : DEBUG                             :remove_student :100 : record of id = 12 is deleted from the database 
+2021-06-14 16:22:51,355 : models : student.py : DEBUG                             :remove_student :100 : record of id = 12 is deleted from the database 
+2021-06-14 16:22:57,081 : models : student.py : DEBUG                             :remove_student :100 : record of id = 13 is deleted from the database 
+2021-06-14 16:22:57,081 : models : student.py : DEBUG                             :remove_student :100 : record of id = 13 is deleted from the database 
+2021-06-14 16:22:57,081 : models : student.py : DEBUG                             :remove_student :100 : record of id = 13 is deleted from the database 
+2021-06-14 16:23:25,891 : models : student.py : DEBUG                             :remove_student :100 : record of id = 1 is deleted from the database 
+2021-06-14 16:23:25,891 : models : student.py : DEBUG                             :remove_student :100 : record of id = 1 is deleted from the database 
+2021-06-14 16:23:25,891 : models : student.py : DEBUG                             :remove_student :100 : record of id = 1 is deleted from the database 
+2021-06-14 16:23:40,873 : models : student.py : DEBUG                             :remove_student :100 : record of id = 2 is deleted from the database 
+2021-06-14 16:23:40,873 : models : student.py : DEBUG                             :remove_student :100 : record of id = 2 is deleted from the database 
+2021-06-14 16:23:40,873 : models : student.py : DEBUG                             :remove_student :100 : record of id = 2 is deleted from the database 
+2021-06-14 16:26:03,286 : models : student.py : DEBUG                             :remove_student :100 : record of id = 16 is deleted from the database 
+2021-06-14 16:26:03,286 : models : student.py : DEBUG                             :remove_student :100 : record of id = 16 is deleted from the database 
+2021-06-14 16:26:03,286 : models : student.py : DEBUG                             :remove_student :100 : record of id = 16 is deleted from the database 
+2021-06-14 16:26:09,428 : models : student.py : DEBUG                             :remove_student :100 : record of id = 17 is deleted from the database 
+2021-06-14 16:26:09,428 : models : student.py : DEBUG                             :remove_student :100 : record of id = 17 is deleted from the database 
+2021-06-14 16:26:09,428 : models : student.py : DEBUG                             :remove_student :100 : record of id = 17 is deleted from the database 
+2021-06-14 16:42:13,626 : models : student.py : DEBUG                             :create_student :74 : data ('Koshi', 21) successfully inserted 
+2021-06-14 16:42:13,626 : models : student.py : DEBUG                             :create_student :74 : data ('Koshi', 21) successfully inserted 
+2021-06-14 16:42:13,626 : models : student.py : DEBUG                             :create_student :74 : data ('Koshi', 21) successfully inserted 
+2021-06-14 16:42:39,482 : models : student.py : DEBUG                             :remove_student :100 : record of id = 18 is deleted from the database 
+2021-06-14 16:42:39,482 : models : student.py : DEBUG                             :remove_student :100 : record of id = 18 is deleted from the database 
+2021-06-14 16:42:39,482 : models : student.py : DEBUG                             :remove_student :100 : record of id = 18 is deleted from the database 
+2021-06-15 10:44:03,435 : models : student.py : DEBUG                             :create_student :74 : data ('manish', 21) successfully inserted 
+2021-06-15 10:44:03,435 : models : student.py : DEBUG                             :create_student :74 : data ('manish', 21) successfully inserted 
+2021-06-15 10:44:03,435 : models : student.py : DEBUG                             :create_student :74 : data ('manish', 21) successfully inserted 
+2021-06-15 10:44:03,435 : models : student.py : DEBUG                             :create_student :74 : data ('manish', 21) successfully inserted 
+2021-06-15 12:04:31,834 : models : student.py : DEBUG                             :remove_student :104 : record of id = 19 is deleted from the database 
+2021-06-15 12:04:31,834 : models : student.py : DEBUG                             :remove_student :104 : record of id = 19 is deleted from the database 
+2021-06-15 12:04:31,834 : models : student.py : DEBUG                             :remove_student :104 : record of id = 19 is deleted from the database 
+2021-06-15 12:04:31,834 : models : student.py : DEBUG                             :remove_student :104 : record of id = 19 is deleted from the database 
+2021-06-15 12:25:04,412 : models : student.py : DEBUG                             :create_student :79 : data ('Koshi', 22) successfully inserted 
+2021-06-15 12:25:04,412 : models : student.py : DEBUG                             :create_student :79 : data ('Koshi', 22) successfully inserted 
+2021-06-15 12:25:04,412 : models : student.py : DEBUG                             :create_student :79 : data ('Koshi', 22) successfully inserted 
+2021-06-15 12:25:04,412 : models : student.py : DEBUG                             :create_student :79 : data ('Koshi', 22) successfully inserted 
+2021-06-15 12:26:49,872 : models : student.py : DEBUG                             :create_student :79 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-15 12:26:49,872 : models : student.py : DEBUG                             :create_student :79 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-15 12:26:49,872 : models : student.py : DEBUG                             :create_student :79 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-15 12:26:49,872 : models : student.py : DEBUG                             :create_student :79 : data ('Prashant kumar', 19) successfully inserted 
+2021-06-15 12:30:36,782 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 12:30:36,782 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 12:30:36,782 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 12:30:36,782 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 14:32:39,577 : models : student.py : DEBUG                             :create_student :80 : data ('Divyansh', 17) successfully inserted 
+2021-06-15 14:32:39,577 : models : student.py : DEBUG                             :create_student :80 : data ('Divyansh', 17) successfully inserted 
+2021-06-15 15:03:30,280 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:03:30,280 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:03:30,280 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:03:30,280 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:04:06,208 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:04:06,208 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:04:06,208 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:04:06,208 : models : student.py : DEBUG                             :remove_student :106 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 15:06:51,153 : models : student.py : DEBUG                             :create_student :82 : data ('Divyansh', 21) successfully inserted 
+2021-06-15 15:06:51,153 : models : student.py : DEBUG                             :create_student :82 : data ('Divyansh', 21) successfully inserted 
+2021-06-15 15:06:51,153 : models : student.py : DEBUG                             :create_student :82 : data ('Divyansh', 21) successfully inserted 
+2021-06-15 15:06:51,153 : models : student.py : DEBUG                             :create_student :82 : data ('Divyansh', 21) successfully inserted 
+2021-06-15 17:15:38,367 : models : student.py : DEBUG                             :remove_student :108 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 17:15:38,367 : models : student.py : DEBUG                             :remove_student :108 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 17:15:38,367 : models : student.py : DEBUG                             :remove_student :108 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 17:15:38,367 : models : student.py : DEBUG                             :remove_student :108 : record of id = <built-in function id> is deleted from the database 
+2021-06-15 17:15:50,800 : models : student.py : DEBUG                             :create_student :84 : data ('Anuj', 20) successfully inserted 
+2021-06-15 17:15:50,800 : models : student.py : DEBUG                             :create_student :84 : data ('Anuj', 20) successfully inserted 
+2021-06-15 17:15:50,800 : models : student.py : DEBUG                             :create_student :84 : data ('Anuj', 20) successfully inserted 
+2021-06-15 17:15:50,800 : models : student.py : DEBUG                             :create_student :84 : data ('Anuj', 20) successfully inserted 
+2021-06-16 11:19:03,724 : models : student.py : DEBUG                             :create_student :82 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-16 11:19:03,724 : models : student.py : DEBUG                             :create_student :82 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-16 11:19:03,724 : models : student.py : DEBUG                             :create_student :82 : data ('Abhishek tyagi', 20) successfully inserted 
+2021-06-16 11:19:29,049 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 11:19:29,049 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 11:19:29,049 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:11:00,729 : models : student.py : DEBUG                             :create_student :79 : data ('Pavan', 20) successfully inserted 
+2021-06-16 15:11:00,729 : models : student.py : DEBUG                             :create_student :79 : data ('Pavan', 20) successfully inserted 
+2021-06-16 15:11:00,729 : models : student.py : DEBUG                             :create_student :79 : data ('Pavan', 20) successfully inserted 
+2021-06-16 15:20:22,847 : models : student.py : DEBUG                             :create_student :79 : data ('Prianshu', 21) successfully inserted 
+2021-06-16 15:20:22,847 : models : student.py : DEBUG                             :create_student :79 : data ('Prianshu', 21) successfully inserted 
+2021-06-16 15:20:22,847 : models : student.py : DEBUG                             :create_student :79 : data ('Prianshu', 21) successfully inserted 
+2021-06-16 15:21:12,248 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 15:21:12,248 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 15:21:12,248 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 15:21:20,352 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:21:20,352 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:21:20,352 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:21:31,250 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:21:31,250 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:21:31,250 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:24:38,183 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:24:38,183 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:24:38,183 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:30:16,039 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:30:16,039 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:30:16,039 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:46:59,903 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:46:59,903 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 15:46:59,903 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 16:28:53,500 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 16:28:53,500 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 16:28:53,500 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 16:29:07,528 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 16:29:07,528 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 16:29:07,528 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 16:29:18,639 : models : student.py : DEBUG                             :create_student :79 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-16 16:29:18,639 : models : student.py : DEBUG                             :create_student :79 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-16 16:29:18,639 : models : student.py : DEBUG                             :create_student :79 : data ('Mayanak saini', 22) successfully inserted 
+2021-06-16 16:29:35,368 : models : student.py : DEBUG                             :create_student :79 : data ('Pankaj', 22) successfully inserted 
+2021-06-16 16:29:35,368 : models : student.py : DEBUG                             :create_student :79 : data ('Pankaj', 22) successfully inserted 
+2021-06-16 16:29:35,368 : models : student.py : DEBUG                             :create_student :79 : data ('Pankaj', 22) successfully inserted 
+2021-06-16 17:21:45,524 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:21:45,524 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:21:45,524 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:27:21,674 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:27:21,674 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:27:21,674 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-16 17:55:08,615 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 17:55:08,615 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 17:55:08,615 : models : student.py : DEBUG                             :create_student :79 : data ('Abhinav kumar', 22) successfully inserted 
+2021-06-16 17:55:29,801 : models : student.py : DEBUG                             :create_student :79 : data ('Sidharth', 20) successfully inserted 
+2021-06-16 17:55:29,801 : models : student.py : DEBUG                             :create_student :79 : data ('Sidharth', 20) successfully inserted 
+2021-06-16 17:55:29,801 : models : student.py : DEBUG                             :create_student :79 : data ('Sidharth', 20) successfully inserted 
+2021-06-17 10:07:57,241 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-17 10:07:57,241 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-17 10:07:57,241 : models : student.py : DEBUG                             :remove_student :95 : record of id = <built-in function id> is deleted from the database 
+2021-06-17 10:09:01,502 : models : student.py : DEBUG                             :create_student :79 : data ('Nirbhay', 21) successfully inserted 
+2021-06-17 10:09:01,502 : models : student.py : DEBUG                             :create_student :79 : data ('Nirbhay', 21) successfully inserted 
+2021-06-17 10:09:01,502 : models : student.py : DEBUG                             :create_student :79 : data ('Nirbhay', 21) successfully inserted 
+2021-06-17 16:46:17,190 : models : student.py : DEBUG                             :remove_student :99 : record of id = <built-in function id> is deleted from the database 
+2021-06-17 16:46:17,190 : models : student.py : DEBUG                             :remove_student :99 : record of id = <built-in function id> is deleted from the database 
+2021-06-17 16:46:17,190 : models : student.py : DEBUG                             :remove_student :99 : record of id = <built-in function id> is deleted from the database 
+2021-06-18 12:32:10,155 : models : student.py : DEBUG                             :remove_student :122 : record of id = <built-in function id> is deleted from the database 
+2021-06-18 12:32:10,155 : models : student.py : DEBUG                             :remove_student :122 : record of id = <built-in function id> is deleted from the database 
+2021-06-18 12:32:10,155 : models : student.py : DEBUG                             :remove_student :122 : record of id = <built-in function id> is deleted from the database 
+2021-06-18 13:05:34,297 : models : student.py : DEBUG                             :create_student :103 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-18 13:05:34,297 : models : student.py : DEBUG                             :create_student :103 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-18 13:05:34,297 : models : student.py : DEBUG                             :create_student :103 : data ('Amogh Goswami', 21) successfully inserted 
+2021-06-22 18:11:31,298 : models : student.py : DEBUG                             :create_student :85 : data ('Nirbhay', 21) successfully inserted 
+2021-06-22 18:11:31,298 : models : student.py : DEBUG                             :create_student :85 : data ('Nirbhay', 21) successfully inserted 
+2021-06-22 18:11:31,298 : models : student.py : DEBUG                             :create_student :85 : data ('Nirbhay', 21) successfully inserted 
+2021-06-22 18:20:21,512 : models : student.py : DEBUG                             :create_student :85 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-22 18:20:21,512 : models : student.py : DEBUG                             :create_student :85 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-22 18:20:21,512 : models : student.py : DEBUG                             :create_student :85 : data ('Mani Rastogi', 21) successfully inserted 
+2021-06-24 17:43:35,214 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:35,214 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:35,214 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:35,515 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:35,515 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:35,515 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:36,136 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:36,136 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:36,136 : models : student.py : DEBUG                             :create_student :82 : data ('Arpit', 22) successfully inserted 
+2021-06-24 17:43:48,782 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 17:43:48,782 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 17:43:48,782 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 17:44:11,762 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 17:44:11,762 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 17:44:11,762 : models : student.py : DEBUG                             :remove_student :101 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 18:12:15,262 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 18:12:15,262 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-24 18:12:15,262 : models : student.py : DEBUG                             :remove_student :103 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 10:10:46,791 : models : student.py : DEBUG                             :create_student :82 : data ('Abhinav', 24) successfully inserted 
+2021-06-25 10:10:46,791 : models : student.py : DEBUG                             :create_student :82 : data ('Abhinav', 24) successfully inserted 
+2021-06-25 10:10:46,791 : models : student.py : DEBUG                             :create_student :82 : data ('Abhinav', 24) successfully inserted 
+2021-06-25 12:13:41,595 : models : student.py : DEBUG                             :create_student :84 : data ('Amit', 19) successfully inserted 
+2021-06-25 12:13:41,595 : models : student.py : DEBUG                             :create_student :84 : data ('Amit', 19) successfully inserted 
+2021-06-25 12:13:41,595 : models : student.py : DEBUG                             :create_student :84 : data ('Amit', 19) successfully inserted 
+2021-06-25 14:23:48,369 : models : student.py : DEBUG                             :remove_student :107 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 14:23:48,369 : models : student.py : DEBUG                             :remove_student :107 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 14:23:48,369 : models : student.py : DEBUG                             :remove_student :107 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 14:37:28,390 : models : student.py : DEBUG                             :remove_student :111 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 14:37:28,390 : models : student.py : DEBUG                             :remove_student :111 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 14:37:28,390 : models : student.py : DEBUG                             :remove_student :111 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 18:18:48,425 : models : student.py : DEBUG                             :remove_student :114 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 18:18:48,425 : models : student.py : DEBUG                             :remove_student :114 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 18:18:48,425 : models : student.py : DEBUG                             :remove_student :114 : record of id = <built-in function id> is deleted from the database 
+2021-06-25 19:02:11,668 : models : student.py : DEBUG                             :create_student :87 : data ('Abhinav', 22) successfully inserted 
+2021-06-25 19:02:11,668 : models : student.py : DEBUG                             :create_student :87 : data ('Abhinav', 22) successfully inserted 
+2021-06-25 19:02:11,668 : models : student.py : DEBUG                             :create_student :87 : data ('Abhinav', 22) successfully inserted 
+2021-06-28 10:48:29,574 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 10:48:29,574 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 10:48:29,574 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 10:49:15,098 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 10:49:15,098 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 10:49:15,098 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 11:04:44,723 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 11:04:44,723 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 11:04:44,723 : models : student.py : DEBUG                             :remove_student :119 : record of id = <built-in function id> is deleted from the database 
+2021-06-28 17:34:08,928 : models : admin.py : DEBUG                             :create_role :95 : [(5, 1), (5, 2)] is inserted in user_roles table 
+2021-06-28 17:34:08,928 : models : admin.py : DEBUG                             :create_role :95 : [(5, 1), (5, 2)] is inserted in user_roles table 
+2021-06-28 17:34:08,928 : models : admin.py : DEBUG                             :create_role :95 : [(5, 1), (5, 2)] is inserted in user_roles table 
+2021-06-28 17:34:08,928 : models : admin.py : DEBUG                             :create_role :95 : [(5, 1), (5, 2)] is inserted in user_roles table 
+2021-06-28 18:57:50,839 : models : student.py : DEBUG                             :create_student :93 : data ('Abhinav', 23) successfully inserted 
+2021-06-28 18:57:50,839 : models : student.py : DEBUG                             :create_student :93 : data ('Abhinav', 23) successfully inserted 
+2021-06-28 18:57:50,839 : models : student.py : DEBUG                             :create_student :93 : data ('Abhinav', 23) successfully inserted 
+2021-06-28 18:57:50,839 : models : student.py : DEBUG                             :create_student :93 : data ('Abhinav', 23) successfully inserted 
+2021-06-29 10:14:13,874 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 23) successfully inserted 
+2021-06-29 10:14:13,874 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 23) successfully inserted 
+2021-06-29 10:14:13,874 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 23) successfully inserted 
+2021-06-29 10:14:13,874 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 23) successfully inserted 
+2021-06-29 11:16:18,219 : models : student.py : DEBUG                             :create_student :93 : data ('monty', 24) successfully inserted 
+2021-06-29 11:16:18,219 : models : student.py : DEBUG                             :create_student :93 : data ('monty', 24) successfully inserted 
+2021-06-29 11:16:18,219 : models : student.py : DEBUG                             :create_student :93 : data ('monty', 24) successfully inserted 
+2021-06-29 11:16:18,219 : models : student.py : DEBUG                             :create_student :93 : data ('monty', 24) successfully inserted 
+2021-06-29 11:16:47,598 : models : student.py : DEBUG                             :create_student :93 : data ('manish', 22) successfully inserted 
+2021-06-29 11:16:47,598 : models : student.py : DEBUG                             :create_student :93 : data ('manish', 22) successfully inserted 
+2021-06-29 11:16:47,598 : models : student.py : DEBUG                             :create_student :93 : data ('manish', 22) successfully inserted 
+2021-06-29 11:16:47,598 : models : student.py : DEBUG                             :create_student :93 : data ('manish', 22) successfully inserted 
+2021-06-29 11:38:38,609 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 22) successfully inserted 
+2021-06-29 11:38:38,609 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 22) successfully inserted 
+2021-06-29 11:38:38,609 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 22) successfully inserted 
+2021-06-29 11:38:38,609 : models : student.py : DEBUG                             :create_student :93 : data ('Monty', 22) successfully inserted 
+2021-06-29 11:50:11,034 : models : student.py : DEBUG                             :create_student :93 : data ('Ak', 22) successfully inserted 
+2021-06-29 11:50:11,034 : models : student.py : DEBUG                             :create_student :93 : data ('Ak', 22) successfully inserted 
+2021-06-29 11:50:11,034 : models : student.py : DEBUG                             :create_student :93 : data ('Ak', 22) successfully inserted 
+2021-06-29 11:50:11,034 : models : student.py : DEBUG                             :create_student :93 : data ('Ak', 22) successfully inserted 
+2021-06-30 17:57:44,234 : lib.read_config : msql.py : DEBUG                             :fetchrecord :60 : data fetched from students 
+2021-06-30 17:58:06,738 : lib.read_config : msql.py : ERROR                             :insertrecord :118 : Exception generated 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-06-30 17:58:06,738 : lib.read_config : msql.py : ERROR                             :main :236 : exception arise : Failed adding connection; queue is full 
+2021-06-30 18:26:35,908 : lib.read_config : df_sql.py : ERROR                             :create_table :130 : exception arise : 2055: Cursor is not connected 
+2021-06-30 18:26:35,948 : lib.read_config : df_sql.py : ERROR                             :csv_to_table :53 : Exception arise : Cursor is not connected 
+2021-06-30 18:29:05,079 : lib.read_config : df_sql.py : DEBUG                             :create_table :127 : create table test_db.address(['address_id', 'student_id', 'house_no', 'colony', 'city', 'state', 'pincode'])  
+2021-06-30 18:29:05,141 : lib.read_config : df_sql.py : ERROR                             :csv_to_table :53 : Exception arise : 1146 (42S02): Table 'test_db.address' doesn't exist 
+2021-06-30 18:31:13,749 : lib.read_config : df_sql.py : DEBUG                             :create_table :127 : create table test_db.address(['address_id', 'student_id', 'house_no', 'colony', 'city', 'state', 'pincode'])  
+2021-06-30 18:31:14,540 : lib.read_config : df_sql.py : DEBUG                             :csv_to_table :51 : csv file : student_address is successfully inserted in database table : address  
+2021-06-30 18:41:00,663 : models : student.py : DEBUG                             :remove_student :120 : record of id = <built-in function id> is deleted from the database 
+2021-06-30 18:41:00,663 : models : student.py : DEBUG                             :remove_student :120 : record of id = <built-in function id> is deleted from the database 
+2021-06-30 18:41:00,663 : models : student.py : DEBUG                             :remove_student :120 : record of id = <built-in function id> is deleted from the database 
+2021-06-30 18:41:00,663 : models : student.py : DEBUG                             :remove_student :120 : record of id = <built-in function id> is deleted from the database 
+2021-07-01 17:17:08,993 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:17:09,053 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :72 : exception arise : not enough values to unpack (expected 3, got 0) 
+2021-07-01 17:17:16,714 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :91 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:17:16,738 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :111 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:17:46,645 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :126 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:22:16,393 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:22:16,468 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :73 : exception arise : 'datetime' 
+2021-07-01 17:22:19,076 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :92 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:22:19,076 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :112 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:22:27,548 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :127 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:23:30,582 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:23:30,811 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :merge_df :68 : All dataframe was merged successfully 
+2021-07-01 17:23:32,705 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :filter :88 : Row was filtered which contain : ::unspecified:: 
+2021-07-01 17:23:32,774 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :meltdf :108 : dataframe melt 
+2021-07-01 17:24:04,026 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :126 : exception arise : [Errno 13] Permission denied: 'scripts/pandas_files/csvfiles/' 
+2021-07-01 17:40:00,894 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:40:00,897 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :74 : exception arise : Can only merge Series or DataFrame objects, a <class 'list'> was passed 
+2021-07-01 17:40:02,607 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :93 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:40:02,608 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :113 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:40:13,200 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :128 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:40:48,480 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:40:48,480 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :75 : exception arise : Can only merge Series or DataFrame objects, a <class 'list'> was passed 
+2021-07-01 17:40:52,447 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :94 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:40:52,447 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :114 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:41:11,929 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :129 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:41:20,372 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:41:20,372 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :75 : exception arise : 'prop16' 
+2021-07-01 17:42:07,793 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :94 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:42:07,793 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :114 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:42:08,512 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :129 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:42:24,301 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:42:24,301 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :merge_df :75 : exception arise : 'datetime' 
+2021-07-01 17:43:59,842 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :filter :94 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:43:59,842 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :meltdf :114 : exception arise : 'NoneType' object has no attribute 'columns' 
+2021-07-01 17:44:00,453 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :129 : exception arise : 'NoneType' object has no attribute 'to_csv' 
+2021-07-01 17:44:10,442 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-01 17:44:10,862 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :merge_df :69 : All dataframe was merged successfully 
+2021-07-01 18:19:53,294 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :filter :89 : Row was filtered which contain :  
+2021-07-01 18:19:53,410 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :meltdf :109 : dataframe melt 
+2021-07-01 18:19:53,669 : lib.csvfileprocessing : csvfileprocessing.py : ERROR  :savecsv :127 : exception arise : [Errno 13] Permission denied: 'scripts/pandas_files/csvfiles/' 
+2021-07-02 08:38:01,779 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-02 08:38:02,510 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :merge_df :69 : All dataframe was merged successfully 
+2021-07-02 08:39:06,320 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :savecsv :125 :  resulted dataframe saved in etl_source.csv.csv  
+
+2021-07-02 10:24:45,073 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :26 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:10:02,291 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:10:02,291 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:10:02,291 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:10:02,301 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:10:02,396 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : 'date,datetime,prop28,prop31,prop16,prop8' 
+2021-07-02 11:10:02,396 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:10:02,396 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'TypeError' object has no attribute 'rename' 
+2021-07-02 11:10:02,401 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 11:10:18,421 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:10:18,421 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : 'date,datetime,prop28,prop31,prop16,prop8' 
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'TypeError' object has no attribute 'rename' 
+2021-07-02 11:10:18,426 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 11:11:58,712 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:11:58,712 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:11:58,712 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:11:58,722 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:11:58,722 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : 'date,datetime,prop28,prop31,prop16,prop8' 
+2021-07-02 11:11:58,722 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:11:58,722 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'TypeError' object has no attribute 'rename' 
+2021-07-02 11:11:58,722 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : 'date,datetime,prop28,prop31,prop16,prop8' 
+2021-07-02 11:12:31,564 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:12:50,064 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:12:50,064 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:12:50,064 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:12:50,074 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:12:50,074 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : 'date,datetime,prop28,prop31,prop16,prop8' 
+2021-07-02 11:14:50,754 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:14:50,754 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:14:50,754 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:14:50,764 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:16:22,180 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:16:22,190 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:16:22,190 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:16:22,190 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:17:46,609 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:17:46,609 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:17:46,619 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:17:46,619 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:17:46,654 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:23:53,007 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:23:53,016 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:23:53,025 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:23:53,025 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:23:53,065 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:29:40,557 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:29:40,557 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:29:40,557 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:29:40,567 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:29:40,597 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:38:51,492 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:38:51,492 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:38:51,492 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:38:51,492 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:38:51,502 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:38:51,502 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:38:51,502 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:38:51,502 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:38:51,502 : lib.read_config : transform.py : ERROR                             :col_drop :48 : error arise as : 'NoneType' object has no attribute 'drop' 
+2021-07-02 11:39:15,957 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:39:15,957 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:39:15,957 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:39:15,967 : lib.read_config : transform.py : ERROR                             :col_drop :48 : error arise as : 'NoneType' object has no attribute 'drop' 
+2021-07-02 11:39:32,021 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:39:32,021 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:39:32,021 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:39:32,021 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:39:32,031 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:39:32,031 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:39:32,031 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:39:32,031 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:39:32,031 : lib.read_config : transform.py : ERROR                             :col_drop :48 : error arise as : 'NoneType' object has no attribute 'drop' 
+2021-07-02 11:39:53,051 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:39:53,051 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:39:53,051 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:39:53,061 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:39:53,061 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:39:53,061 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:39:53,061 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:39:53,061 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:40:12,439 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:40:12,439 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:40:12,439 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:40:12,449 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:40:12,449 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:40:12,449 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:40:12,449 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:40:12,449 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:40:37,130 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'NoneType' object is not subscriptable 
+2021-07-02 11:40:37,140 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:40:37,140 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 11:40:55,126 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:40:55,126 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'TypeError' object has no attribute 'rename' 
+2021-07-02 11:40:55,136 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : ERROR                             :col_filter_zero :39 : error arise as : 'KeyError' object is not subscriptable 
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'TypeError' object has no attribute 'rename' 
+2021-07-02 11:41:05,382 : lib.read_config : transform.py : ERROR                             :col_rename :10 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 11:42:05,504 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:42:05,515 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:42:05,517 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:42:05,520 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:43:13,240 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:43:13,250 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:43:13,250 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:43:13,250 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:43:13,250 : lib.read_config : transform.py : ERROR                             :col_melt :29 : error arise as : "The following 'id_vars' are not present in the DataFrame: ['datetime']" 
+2021-07-02 11:44:26,878 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:44:26,878 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:44:26,878 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:44:26,878 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:44:26,908 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:47:20,836 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:47:20,836 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:47:20,846 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:47:20,846 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:47:20,866 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:48:02,271 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:48:02,271 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:48:02,271 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:48:02,281 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:48:02,301 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:48:33,123 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:48:33,125 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:48:33,127 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:48:33,129 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:48:33,153 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:49:00,554 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:49:00,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:49:00,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:49:00,564 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:49:00,594 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:49:58,550 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:49:58,550 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:49:58,550 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:49:58,550 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:49:58,580 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:51:15,186 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:51:15,186 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:51:15,186 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:51:15,196 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:51:15,229 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 11:52:06,523 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop28 where value = 0  
+2021-07-02 11:52:06,525 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop31 where value = 0  
+2021-07-02 11:52:06,528 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop16 where value = 0  
+2021-07-02 11:52:06,530 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :16 :  prop8 where value = 0  
+2021-07-02 11:52:06,553 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :36 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:11:22,438 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:11:22,438 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:11:22,448 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:11:22,448 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:11:22,448 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:11:22,478 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:11:22,478 : lib.read_config : transform.py : ERROR                             :col_rename :11 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 12:11:22,488 : lib.read_config : transform.py : ERROR                             :col_rename :11 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 12:11:22,488 : lib.read_config : transform.py : ERROR                             :col_drop :49 : error arise as : 'NoneType' object has no attribute 'drop' 
+2021-07-02 12:11:54,222 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:11:54,232 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:11:54,232 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:11:54,232 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:11:54,232 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:11:54,262 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:11:54,262 : lib.read_config : transform.py : ERROR                             :col_rename :11 : error arise as : 'NoneType' object has no attribute 'rename' 
+2021-07-02 12:11:54,262 : lib.read_config : transform.py : ERROR                             :col_rename :11 : error arise as : 'AttributeError' object has no attribute 'rename' 
+2021-07-02 12:11:54,262 : lib.read_config : transform.py : ERROR                             :col_drop :49 : error arise as : 'AttributeError' object has no attribute 'drop' 
+2021-07-02 12:12:26,100 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:12:26,100 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:12:26,100 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:12:26,100 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:12:26,112 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:12:26,138 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:12:26,139 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:12:26,140 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:47:24,624 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:47:24,626 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:47:24,629 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:47:24,629 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:47:24,631 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:47:24,656 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:47:24,656 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:47:24,659 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:47:46,564 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:47:46,574 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:47:46,574 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:47:46,574 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:47:46,574 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:47:46,604 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:47:46,604 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:47:46,604 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:48:28,051 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:48:28,053 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:48:28,053 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:48:28,056 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:48:28,058 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:48:28,088 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:48:28,088 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:48:28,091 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:49:22,563 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:49:22,566 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:49:22,571 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:49:22,573 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:49:22,576 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:49:22,618 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:49:22,621 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:49:22,623 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:50:21,951 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:50:21,954 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:50:21,956 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:50:21,959 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:50:21,961 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:50:21,991 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:50:21,994 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:50:21,994 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:50:37,573 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:50:37,578 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:50:37,581 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:50:37,583 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:50:37,586 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:50:37,608 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:50:37,608 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:50:37,608 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:50:55,742 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:50:55,747 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:50:55,752 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:50:55,752 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:50:55,757 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:50:55,787 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:50:55,787 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:50:55,792 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:53:10,838 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 12:53:10,838 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 12:53:10,838 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 12:53:10,848 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 12:53:10,848 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 12:53:10,868 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 12:53:10,868 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 12:53:10,878 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 12:53:10,878 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop28 where value = 0  
+2021-07-02 12:53:10,883 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
+2021-07-02 12:53:10,883 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
+2021-07-02 12:53:10,888 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
+2021-07-02 17:23:27,699 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :readcsv :30 : All csv file was read into a dataframe 
+2021-07-02 17:23:27,802 : lib.csvfileprocessing : csvfileprocessing.py : DEBUG  :merge_df :65 : All dataframe was merged successfully 
+2021-07-02 17:29:31,878 : lib.read_config : csvfileprocessing.py : DEBUG                             :readcsv :22 : All csv file was read into a dataframe 
+2021-07-02 17:29:31,948 : lib.read_config : csvfileprocessing.py : DEBUG                             :merge_df :57 : All dataframe was merged successfully 
+2021-07-02 17:29:32,038 : lib.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-07-02 17:29:32,118 : lib.read_config : csvfileprocessing.py : DEBUG                             :meltdf :97 : dataframe melt 
+2021-07-02 17:37:50,095 : lib.read_config : csvfileprocessing.py : DEBUG                             :readcsv :22 : All csv file was read into a dataframe 
+2021-07-02 17:37:50,155 : lib.read_config : csvfileprocessing.py : DEBUG                             :merge_df :57 : All dataframe was merged successfully 
+2021-07-02 17:37:50,180 : lib.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-07-02 17:37:50,210 : lib.read_config : csvfileprocessing.py : DEBUG                             :meltdf :97 : dataframe melt 
+2021-07-02 17:46:17,904 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 17:46:17,904 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 17:46:17,904 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 17:46:17,904 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 17:46:17,914 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 17:46:17,934 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row metric_value where value = 0  
+2021-07-02 17:46:17,944 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_name to event_name  
+2021-07-02 17:46:17,944 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from metric_value to event_value  
+2021-07-02 17:46:17,944 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop28 where value = 0  
+2021-07-02 17:46:17,944 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
+2021-07-02 17:46:17,954 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
+2021-07-02 17:46:17,954 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
+2021-07-02 17:47:28,358 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-02 17:47:28,363 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-02 17:47:28,363 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-02 17:47:28,368 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-02 17:47:28,368 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-02 17:47:28,393 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row event_value where value = 0  
+2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop28 where value = 0  
+2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
+2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
+2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
