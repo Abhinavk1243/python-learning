@@ -932,3 +932,13 @@
 2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
 2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
 2021-07-02 17:47:28,403 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
+2021-07-03 09:42:06,984 : lib.read_config : transform.py : DEBUG                             :col_rename :8 : column rename from datetime to date  
+2021-07-03 09:42:06,986 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop28 where value = 0  
+2021-07-03 09:42:06,987 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop31 where value = 0  
+2021-07-03 09:42:06,987 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop16 where value = 0  
+2021-07-03 09:42:06,987 : lib.read_config : transform.py : DEBUG                             :col_filter_unspecified :17 :  prop8 where value = 0  
+2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_zero :37 : dataframe melt and filer row event_value where value = 0  
+2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop28 where value = 0  
+2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
+2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
+2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
