@@ -1,5 +1,5 @@
-#import mysql.connector as msc
-#from mysql.connector import pooling
+import mysql.connector as msc
+from mysql.connector import pooling
 import logging as lg 
 import configparser
 import os
@@ -17,11 +17,11 @@ def getconfig(section,key):
     parser.read(os.path.join(os.path.expanduser("~"),'config\\sqlcred.cfg'))
     return parser.get(section,key)  
  
-"""def mysl_pool_connection():
-    Metod is use to connect database with python 
+def mysl_pool_connection():
+    """Metod is use to connect database with python 
 
     Returns:
-        connection : myslconnection
+        connection : myslconnection"""
     
     dbconfig ={ 'host' : getconfig("mysql","host"),
                 'user' : getconfig("mysql","user"),
@@ -31,7 +31,7 @@ def getconfig(section,key):
     
     cnxn = pooling.MySQLConnectionPool(pool_name = "school",**dbconfig)
     pool_cnxn=cnxn.get_connection()
-    return pool_cnxn"""
+    return pool_cnxn
 
 def logger():
     logger = lg.getLogger(__name__)

@@ -942,3 +942,14 @@
 2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop31 where value = 0  
 2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop16 where value = 0  
 2021-07-03 09:42:06,989 : lib.read_config : transform.py : DEBUG                             :col_filter_none :54 :  prop8 where value = 0  
+2021-07-03 17:55:26,096 : lib.read_config : csvfileprocessing.py : ERROR                             :readcsv :25 : error arrise :[Errno 2] No such file or directory: 'scripts/pandas_files/csvfiles/4.csv' 
+2021-07-03 17:55:26,096 : lib.read_config : csvfileprocessing.py : DEBUG                             :merge_df :57 : All dataframe was merged successfully 
+2021-07-03 17:55:26,096 : lib.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-07-03 17:55:26,096 : lib.read_config : csvfileprocessing.py : ERROR                             :meltdf :100 : exception arise : "The following 'id_vars' are not present in the DataFrame: ['datetime', 'datetime_friendly', 'prop28', 'prop31', 'prop16', 'prop8']" 
+2021-07-03 17:55:52,942 : lib.read_config : csvfileprocessing.py : DEBUG                             :readcsv :22 : All csv file was read into a dataframe 
+2021-07-03 17:55:52,978 : lib.read_config : csvfileprocessing.py : DEBUG                             :merge_df :57 : All dataframe was merged successfully 
+2021-07-03 17:55:52,978 : lib.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-07-03 17:55:52,978 : lib.read_config : csvfileprocessing.py : DEBUG                             :meltdf :97 : dataframe melt 
+2021-07-03 17:56:34,735 : lib.read_config : csvfileprocessing.py : DEBUG                             :readcsv :22 : All csv file was read into a dataframe 
+2021-07-03 17:56:34,744 : lib.read_config : csvfileprocessing.py : DEBUG                             :merge_df :57 : All dataframe was merged successfully 
+2021-07-05 10:20:16,521 : lib.read_config : msql.py : DEBUG                             :fetchrecord :59 : data fetched from students 
