@@ -2,7 +2,7 @@ from datetime import datetime
 import mysql.connector as msc 
 import pandas as pd
 import logging as lg 
-from lib import read_config 
+from library import read_config 
 
 logger = read_config.logger()
 pool_cnxn=read_config.mysl_pool_connection()

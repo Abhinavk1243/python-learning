@@ -1,6 +1,6 @@
 import pandas as pd 
 
-from lib import csvfileprocessing
+from library import csvfileprocessing
 
 # MAIN FUNCTION
 def main():

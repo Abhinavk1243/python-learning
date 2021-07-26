@@ -9,7 +9,7 @@ rng['day'] = rng['date'].dt.day
 rng['hour'] = rng['date'].dt.hour
 rng['minute'] = rng['date'].dt.minute
 print(rng)
-#t=pd._tslib.Timestamp.now()
+#t=pd._tslibrary.Timestamp.now()
 #print(pd.to_datetime(t))
 #rng["Lec_Name"]=["Maths","Physics","Chemistry","IT","English"]
 #rng["Teacher_name"]=["Abhinav","Aakash","Abhishek","Abhay","Ayansh"]

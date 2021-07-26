@@ -1,0 +1,17 @@
+col_copy=>datetime|date
+col_rename=>datetime|hour
+col_rename=>prop28|userid
+col_rename=>platform|platform
+col_rename=>evar54|benfit
+col_rename=>evar55|benefit_sponsor
+col_rename=>evar80|market
+col_rename=>datetime_friendly|datetime_friendly
+col_rename=>event110|view benefit
+col_rename=>cm300007853_5ebcb03b9005f6248a063d1f|email
+col_rename=>cm300007853_5ebcb00d9005f6248a063d1b|phone
+col_rename=>cm300007853_5ebcafaa04dd2673d5b06ecb|external link
+col_rename=>cm300007853_5ebcb2f0edbac973579e1f14|email
+col_rename=>cm300007853_5ebcb2db173a781c24180686|phone
+col_rename=>cm300007853_5ebcb2164c546630df62b223|external link
+col_to_date=>date
+col_to_hour=>hour

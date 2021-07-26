@@ -1,7 +1,7 @@
 from logging import exception
 import mysql.connector as msc 
 import pandas as pd
-from lib import read_config 
+from library import read_config 
 
 logger = read_config.logger()
 pool_cnxn=read_config.mysl_pool_connection()

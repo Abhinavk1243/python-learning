@@ -29,7 +29,7 @@ def mysl_pool_connection():
                 'password' :getconfig("mysql","password")
                }
     
-    cnxn = pooling.MySQLConnectionPool(pool_name = "school",**dbconfig)
+    cnxn = pooling.MySQLConnectionPool(pool_name = "Abhinav_mysl_pool",**dbconfig)
     pool_cnxn=cnxn.get_connection()
     return pool_cnxn
 

@@ -1,5 +1,5 @@
 import pandas as pd 
-from lib import read_config
+from library import read_config
 logger=read_config.logger()
 
 def readcsv(list_df,list_set_col):

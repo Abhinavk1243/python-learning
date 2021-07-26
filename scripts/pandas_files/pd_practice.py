@@ -5,11 +5,11 @@ data1 = {'Name':['Jai', 'Princi', 'Gaurav', 'Anuj'],
         'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj'], 
         'Qualification':['Msc', 'MA', 'MCA', 'Phd']} 
 df=pd.DataFrame(data1)
-ser=df["Address"].copy()
+"""ser=df["Address"].copy()
 df["Name"]=df["Name"].str.cat(ser,sep=", ")
-df=df.rename(columns={"Name":"Name, Address"})
+df=df.rename(columns={"Name":"Name, Address"})"""
 print(df)
-print(df.drop("Address",axis=1))
+#print(df.drop("Address",axis=1))
 
 
 
