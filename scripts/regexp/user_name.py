@@ -3,7 +3,7 @@ parser = configparser.ConfigParser()
 
 parser.read('config.cfg')
 
-#def getconfig(section,key):
+#def get_config(section,key):
     #return parser.get(section,key)  
 
 print(parser["Abhinav_mysql"]["host"])

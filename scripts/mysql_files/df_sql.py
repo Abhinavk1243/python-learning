@@ -33,7 +33,7 @@ def csv_to_table(file_name,table_name):
     """
     
     df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
     cols_1=df.columns
     cols_1=list(cols_1)
     para_len=len(cols_1)
@@ -65,7 +65,7 @@ def  table_to_csv(table_name,file_name):
     Returns:
         object: dataframe of sql table
     """
-    db=read_config.getconfig("mysql","database")
+    db=read_config.get_config("mysql","database")
     try:
         df=pd.read_sql(con=pool_cnxn, sql=f"SELECT * FROM {db}.{table_name}")
         df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|",index=False)
@@ -117,7 +117,7 @@ def create_table(file_name,table_name):
         k=k+1
 
     table_schema=",".join([str(i) for i in table_schema])
-    db=read_config.getconfig("mysql","database")
+    db=read_config.get_config("mysql","database")
 
     try:
         #print(f"create table test_db.{file_name}({table_schema})")

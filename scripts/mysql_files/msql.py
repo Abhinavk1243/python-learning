@@ -13,7 +13,7 @@ mycursor=pool_cnxn.cursor()
 
 def create_table(table_name):
 
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
 
     cols=[]
     column=input("enter column name with thier data type")
@@ -45,7 +45,7 @@ def showallDatabases():
 def fetchrecord(table_name):
     """Method is use to fetch the record from a specific table in a database"""
 
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
     choice=int(input('select choice by index \n 1:fetch all record \n 2:fetch all record for specific column\n 3:fetch record  of specific condition \n 4:fetch record as specific column for a specific condition '))
     try:
         if choice==1:
@@ -93,7 +93,7 @@ def insertrecord(table_name):
     """ Method is used to insert record in a table"""
     
      
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
 
     cols=[]
     cols_name=input("Enter columns names")
@@ -120,7 +120,7 @@ def insertrecord(table_name):
 def insertmanyrecord(table_name):
     """Method is used to insert more than one record at a time in a databsase table"""
     
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
 
     cols=[]
     cols_name=input("Enter columns names")
@@ -153,7 +153,7 @@ def updatecolvalue(table_name):
     """Method is used to update a column value in a table"""
 
     
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
 
     dict1=dict()
     cont="y"
@@ -190,7 +190,7 @@ def deleterecord(table_name):
     """
     
     mycursor=pool_cnxn.cursor()
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
 
     cond=input("enter condition ")
     try:

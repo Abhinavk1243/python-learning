@@ -1,5 +1,5 @@
 import csv
-def write():
+def write_csv():
     """Method used to write in csv
     """
     file_name=input("enter the name of file")
@@ -16,7 +16,7 @@ def write():
     except:
         print("something went wrong while writing")
 
-def read():
+def read_csv():
     """Method use to read the csv file
     """
     file_name=input("enter the name of file")
@@ -52,9 +52,9 @@ def main():
     while continue_1=='y' or continue_1=='Y':
         choice=int(input('choice are: \n 1: read \n 2: write \n 3:append'))
         if choice==1:
-            read()
+            read_csv()
         elif choice==2:
-            write()
+            write_csv()
         elif choice==3:
             append()
         continue_1=input("want to continue 'y' or 'Y' ")

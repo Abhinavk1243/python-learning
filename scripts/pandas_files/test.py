@@ -1,9 +1,16 @@
 from typing import Counter
 import pandas as pd 
-df1=pd.read_csv(f"scripts/pandas_files/csvfiles/etl_source.csv",sep="|")
+from datetime import datetime
 
-df1=df1[df1['prop28']!="::unspecified::"]
-df1=df1[df1['prop31']!="::unspecified::"]
-df1=df1[df1['prop16']!="::unspecified::"]
-df1=df1[df1['prop8']!="::unspecified::"]
-print(df1)
+def save_csv():
+    df=pd.DataFrame(data={"ID":[1,2,3],
+                      "name":["abhinav","Abhishek","Aakash"]})
+    df["date"]=datetime.now()
+    # df.to_csv(path,index=False,sep="|")
+    if "role" in list(df.columns):
+        return True
+    else:
+        return False
+    
+    
+print(save_csv())

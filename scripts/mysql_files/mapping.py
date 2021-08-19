@@ -10,7 +10,7 @@ mycursor=pool_cnxn.cursor()
 list_1=[]
 
 def validation(teacher_id,class_id,course_id):
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
     mycursor.execute(f"select * from {database}.class_course;")
     class_course=mycursor.fetchall()
     mycursor.execute(f"select * from {database}.teacher_course;")
@@ -30,7 +30,7 @@ def validation(teacher_id,class_id,course_id):
         return False
 
 def insert_teacher_Class():
-    database=read_config.getconfig("mysql","database")
+    database=read_config.get_config("mysql","database")
     no_of_record=int(input("Enter the number of record")) 
     l=[]
     val=[]
