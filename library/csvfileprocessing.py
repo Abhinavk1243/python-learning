@@ -61,7 +61,7 @@ def merge_df(list_df,list_set_col):
         logger.error(f"exception arise : {e}")
 
 #Function to filer 
-def filter(df):
+def filter(df,value,args):
     """Method is use to filter the rows
 
     Args:
@@ -72,12 +72,33 @@ def filter(df):
     """
     try:
         
-        for i in df.columns:
-            df=df[df[i] !='::unspecified::']
+        for i in args:
+            df=df[df[i] !=value]
         logger.debug(f"Row was filtered which contain : '::unspecified::' ")
         return df
     except Exception as e:
         logger.error(f"exception arise : {e}")
+
+def filter_col_value(df,col_args,value):
+    """return df the with row which having value giving as parameter
+
+    Args:
+        df (DataFrame): [description]
+        col_args (array): [description]
+        value (string): [description]
+
+    Returns:
+        [type]: [description]
+    """
+    try:
+        for i in col_args:
+            df=df[df[i] ==value]
+        logger.debug(f"Row was filtered which contain : '::unspecified::' ")
+        return df
+    except Exception as e:
+        logger.error(f"exception arise : {e}")
+            
+            
  
 
 #function for melt dataframe
@@ -101,15 +122,15 @@ def meltdf(df,id_vars,metric_name,metric_value):
 
 
 #function to save csv file
-def savecsv(df):
+def savecsv(df,file_name):
     """Method use to save dataframe as .csv file in directories
 
     Args:
         df4 (dataframe): Dataframe
     """
     try:
-        file_name=input("Enter name want to save as .csv")
-        df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}",sep="|",index=False)
+        
+        df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|",index=False)
         logger.debug(f" resulted dataframe saved in {file_name}.csv ")
     except Exception as e:
         logger.error(f"exception arise : {e}")

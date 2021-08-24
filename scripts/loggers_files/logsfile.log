@@ -1129,3 +1129,67 @@
 2021-08-19 13:47:29,342 : library.read_config : transform.py : DEBUG                             :col_filter_none :57 :  prop31 where value = 0  
 2021-08-19 13:47:29,343 : library.read_config : transform.py : DEBUG                             :col_filter_none :57 :  prop16 where value = 0  
 2021-08-19 13:47:29,344 : library.read_config : transform.py : DEBUG                             :col_filter_none :57 :  prop8 where value = 0  
+2021-08-23 12:44:57,339 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :113 :  resulted dataframe saved in web_scrapping_data.csv  
+2021-08-23 14:29:10,939 : library.read_config : msql.py : ERROR                             :fetchrecord :96 : Exception arrise : 1146 (42S02): Table 'test_db.student' doesn't exist 
+2021-08-23 14:29:19,921 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 
+2021-08-23 14:31:10,559 : library.read_config : msql.py : ERROR                             :fetchrecord :96 : Exception arrise : array should contain 4 elements 
+2021-08-23 14:31:41,346 : library.read_config : msql.py : ERROR                             :main :235 : error arise : invalid literal for int() with base 10: 'y1' 
+2021-08-23 14:31:50,107 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 
+2021-08-23 16:15:05,798 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :113 :  resulted dataframe saved in covid_data.csv  
+2021-08-23 16:24:48,836 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-23 16:24:48,844 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :113 :  resulted dataframe saved in covid_data.csv  
+2021-08-23 16:27:03,626 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-23 16:27:03,626 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-23 16:27:03,636 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :113 :  resulted dataframe saved in covid_data.csv  
+2021-08-23 17:23:17,893 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-23 17:23:17,893 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-23 17:29:00,663 : library.read_config : msql.py : ERROR                             :main :235 : error arise : invalid literal for int() with base 10: 'y1' 
+2021-08-23 17:29:13,606 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 
+2021-08-24 10:30:00,411 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 10:30:00,413 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 10:35:20,295 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 10:35:20,295 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 11:58:01,518 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 11:58:01,518 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 13:32:35,279 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 13:32:35,281 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:34:43,373 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:34:43,373 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:34:43,373 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:38:15,346 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:38:15,346 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:38:15,349 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:38:15,349 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:11,377 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:11,385 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:11,385 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:11,385 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:42,807 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:42,807 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:39:42,807 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:25,305 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:25,313 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:25,314 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:53,570 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:53,570 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:53,570 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:44:53,570 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:49:57,788 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:49:57,788 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:49:57,790 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:49:57,790 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:50:21,971 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:50:21,971 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:50:21,971 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:50:21,971 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:50:21,987 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :134 :  resulted dataframe saved in South Americacovid_data.csv  
+2021-08-24 14:51:33,588 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:51:33,588 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:51:33,588 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:51:33,588 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:51:33,596 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :134 :  resulted dataframe saved in North America_covid_data.csv  
+2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
+2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :134 :  resulted dataframe saved in North America_covid_data.csv  

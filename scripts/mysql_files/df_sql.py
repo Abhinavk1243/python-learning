@@ -11,8 +11,7 @@ mycursor=pool_cnxn.cursor()
 # Function to connect databse with python code
 
 def checkTableExists(tablename):
-    print(f"SELECT COUNT(*) FROM information_schema.tables \
-        WHERE TABLE_SCHEMA = 'web_data' AND TABLE_NAME = '{tablename}' ")
+    
     mycursor.execute(f"SELECT COUNT(*) FROM information_schema.tables \
         WHERE TABLE_SCHEMA = 'web_data' AND TABLE_NAME = '{tablename}' ")
     result=mycursor.fetchone()
@@ -131,8 +130,9 @@ def create_table(file_name,table_name):
 
 
 def main():
-    create_table('student_address','address')
-    csv_to_table('student_address','address')
+    # create_table('student_address','address')
+    # csv_to_table('student_address','address')
+    print(checkTableExists("user"))
 
 if __name__=="__main__":
     main()
