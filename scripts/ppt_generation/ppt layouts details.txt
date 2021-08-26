@@ -1,0 +1,21 @@
+### TITLE LAYOUT  == 0
+idx  object              number
+0    Title               1
+10   Picture Placeholder 2
+11   Picture Placeholder 3
+
+
+
+### Reporting Slide ==2
+idx  object           number
+0    Title             1
+10   Text Placeholder  2
+
+
+### Seperator slide == 1
+0 Title 1
+
+## check layout details
+
+for shape in slide.placeholders:
+   print('%d %s' % (shape.placeholder_format.idx, shape.name))

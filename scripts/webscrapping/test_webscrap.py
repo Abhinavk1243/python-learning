@@ -7,6 +7,7 @@ from requests.api import get
 from requests.models import Response 
 from library.csvfileprocessing import savecsv,filter,filter_col_value
 import texttable as tt
+from lxml import html 
 
 def get_blog_data():
     URL = "https://realpython.github.io/fake-jobs/"
@@ -29,7 +30,14 @@ def get_blog_data():
     # savecsv(df,'web_scrapping_data')
     print(df)
     
-    
+def test_lxml():
+    url = 'https://www.geeksforgeeks.org'
+    path = '//*[@id="home-page"]/div/div[1]/div[2]'
+    response = requests.get(url)
+    byte_data = response.content
+    source_code = html.fromstring(byte_data)
+    tree = source_code.xpath(path)
+    print(tree[0].text_content())
 
 def parse_list():
     html_list="""
@@ -127,6 +135,10 @@ def covid_stats(url,filter_continent="all"):
         savecsv(df,filter_continent+"_covid_data")         
     else:
         savecsv(df,"covid_data")
+        
+        
+def graph_scrap():
+    url=""
     
 def new_tag():
     html=""" <html>
@@ -147,13 +159,13 @@ def new_tag():
     
 def main():
     try:
-        # new_tag()
-        # get_blog_data()
-        url="https://www.worldometers.info/coronavirus/"
-        # url="https://newzoo.com/insights/rankings/top-10-countries-by-game-revenues/"
-        # url="https://covid19.who.int/table"
-        covid_stats(url,filter_continent="North America")
-        
+        # # new_tag()
+        # # get_blog_data()
+        # url="https://www.worldometers.info/coronavirus/"
+        # # url="https://newzoo.com/insights/rankings/top-10-countries-by-game-revenues/"
+        # # url="https://covid19.who.int/table"
+        # covid_stats(url,filter_continent="North America")
+        test_lxml()
 
     except Exception as error:
         print(error)  
