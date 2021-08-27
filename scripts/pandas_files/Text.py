@@ -16,9 +16,30 @@ prs=Presentation("scripts/ppt_generation/themes/sharecare_temp.pptx")
 #     print('%d %d %s' % (i,shape.placeholder_format.idx, shape.name))
     
 # for index,slide in enumerate(prs.slides):
-#   for shape in slide.placeholders:
-#     print('%d %d %s' % (index,shape.placeholder_format.idx, shape.name))
+# for shape in prs.slides[19].shapes.placeholders:
+#   print('%d %s' % (shape.placeholder_format.idx, shape.name))
 
 
-for i in  prs.slides[4].shapes:
+for i in  prs.slides[19].shapes:
   print(i.name)
+
+  
+  
+# slide=prs.slides[5].shapes[8].name
+# for chart in prs.slides[12].shapes:
+#   print(chart)
+# print(slide)
+
+
+# prs.save("slide5.pptx")
+
+# slide=prs.slides[19]
+# shape=slide.shapes[10]
+# chart=shape.chart
+# chart_data = ChartData()
+# chart_data.categories =["A","B","C","D","E"]
+# chart_data.add_series("sales1",(234,453,100,600,540))
+# chart_data.add_series("sales2",(560,290,680,220,320))
+# chart.replace_data(chart_data)
+
+# prs.save("slide13.pptx")
