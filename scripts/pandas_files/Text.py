@@ -1,24 +1,24 @@
-import pandas as pd 
-import numpy as np
-data1 = {'Name':['Jai', 'Princi', 'Gaurav', 'Abhi','Abhinav', 'Ayushi', 'Dhiraj', 'Hitesh'],  'Age':[27, 24,32, 14, 12, 52, 22, 32],  'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj','Kannuaj', 'Kanpur', 'Allahabad', 'Kannuaj'], 'Qualification':['Msc', 'MA', 'MCA', 'Phd','Phd', 'B.A', 'Bcom', 'B.hons']} 
-df=pd.DataFrame(data1)
-#g=df.groupby(["Address"])
-#for i,j in g:
-    #print(i)
-    #print(j)
-#print(g.get_group('Kannuaj'))
-#agg1=g["Age"].agg([np.sum,np.mean,np.std])
-#print(agg1)
-#sc=lambda x:(x-x.mean())/x.std()*10
-#print(g.transform(sc))
-#g=df['Name'].groupby(df["Address"])
-#for i,j in g:
- #   print(i)
-  #  print(j)
-df["Name"]=df["Name"].str.lower() # to lower case 
-print(df)
-#df["Age"]=df["Age"].replace(52,32)# replace data
-# print(df)
-#new=df["Address"].copy()
-#df["Name"]=df["Name"].str.cat(new,sep=", ")
-#print(df)
+from scripts.webscrapping.test_webscrap import get_blog_data
+from pptx import Presentation
+from pptx.enum.shapes import MSO_SHAPE
+from pptx.chart.data import CategoryChartData ,ChartData
+from pptx.enum.chart import XL_CHART_TYPE,XL_TICK_MARK,XL_LEGEND_POSITION,XL_DATA_LABEL_POSITION
+
+from pptx.util import Inches,Pt
+import pandas as pd
+from scripts.pandas_files.itter_rows import get_tuple_list
+# title_id=[]
+# slide=[]
+# placeholders_id=[]
+prs=Presentation("scripts/ppt_generation/themes/sharecare_temp.pptx")
+# for i in range(len(prs.slides)):
+#   for shape in prs.slides[i].placeholders:
+#     print('%d %d %s' % (i,shape.placeholder_format.idx, shape.name))
+    
+# for index,slide in enumerate(prs.slides):
+#   for shape in slide.placeholders:
+#     print('%d %d %s' % (index,shape.placeholder_format.idx, shape.name))
+
+
+for i in  prs.slides[4].shapes:
+  print(i.name)

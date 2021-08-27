@@ -96,7 +96,7 @@ def main():
     graph_data=CategoryChartData()
     graph_data.categories=["A","B","C"]
     graph_data.add_series('Q1 Sales', (19.2, 21.4, 16.7))
-    graph_data.add_series('Q2 Sales', (22.3, 28.6, 15.2))
+    graph_data.add_series('Q2 Sales', (-22.3, -28.6, -15.2))
     graph_data.add_series('Q3 Sales', (20.4, 26.3, 14.2))
     x, y, cx, cy = Inches(2), Inches(2), Inches(6), Inches(4.5) 
   
