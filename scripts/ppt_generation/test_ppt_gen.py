@@ -28,6 +28,8 @@ prs=Presentation("scripts/ppt_generation/two_axix_graph.pptx")
 #         print('%d %d %s' % (prs.slides.index(slide), shape.placeholder_format.idx, shape.name))
 
 
-for i in prs.slides[1].shapes:
-    print(i.name)
+# for shape in prs.slides[1].shapes:
+#     print(f" name :{shape.name} id:{shape.placeholder_format.idx}")
+    
+print(prs.slides[1].shapes[1].chart)
     
