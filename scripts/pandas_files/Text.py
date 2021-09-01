@@ -5,6 +5,19 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.chart.data import CategoryChartData ,ChartData
 from pptx.enum.chart import XL_CHART_TYPE,XL_TICK_MARK,XL_LEGEND_POSITION,XL_DATA_LABEL_POSITION
 
+def get_cell_text(table,row,col):
+  cell = table.cell(row,col)
+  paragraphs = cell.text_frame.paragraphs
+  for paragraph in paragraphs:
+    for run in paragraph.runs:
+      return run.text
+      
+
+def delete_slides(presentation, index):
+  xml_slides = presentation.slides._sldIdLst  
+  slides = list(xml_slides)
+  xml_slides.remove(slides[index]) 
+
 from pptx.util import Inches,Pt
 import pandas as pd
 from scripts.pandas_files.itter_rows import get_tuple_list
@@ -22,13 +35,20 @@ prs=Presentation("scripts/ppt_generation/ppts/input_4.pptx")
 
 shape_name={}
 funct_dict={}
-for index,i in  enumerate(prs.slides[24].shapes):
+for index,i in  enumerate(prs.slides[37].shapes):
   # print(f"id:{index} , name : {i.name}, shape_type :{i.shape_type} ")
   shape_name.update({i.name:[index,str(i.shape_type)]})
   funct_dict.update({i.name:index})
   
-  
+# print(prs.slides[0].shapes.title)
 print(shape_name)
+# alt=[]
+# for shape_name in prs.slides[0].shapes:
+#       alt.append('%s' % (shape_name.name))
+
+# for ind in alt:
+#   shape_name=alt.index(ind)
+#   print(shape_name)
 
 # print(table.cell(1,1).text)
 
@@ -45,25 +65,6 @@ print(shape_name)
 
   
   
-# slide=prs.slides[5].shapes[8].name
-# for chart in prs.slides[12].shapes:
-#   print(chart)
-# print(slide)
-
-
-# prs.save("slide5.pptx")
-
-# slide=prs.slides[19]
-# shape=slide.shapes[10]
-# chart=shape.chart
-# chart_data = ChartData()
-# chart_data.categories =["A","B","C","D","E"]
-# chart_data.add_series("sales1",(234,453,100,600,540))
-# chart_data.add_series("sales2",(560,290,680,220,320))
-# chart.replace_data(chart_data)
-
-# prs.save("slide13.pptx")
-
 
 # df=pd.read_csv("scripts/ppt_generation/chart.csv")
 
@@ -72,5 +73,30 @@ print(shape_name)
 
 
 # os.path.join(os.path.expanduser("~"),'config/sqlcred.cfg
-from pptx.enum.dml import MSO_COLOR_TYPE, MSO_THEME_COLOR
-print( MSO_THEME_COLOR.ACCENT_1)
+
+# prs=Presentation("scripts/ppt_generation/themes/sharecare_temp.pptx")
+
+# slide = prs.slides[27]
+# shape = slide.shapes
+
+# table = shape[4].table
+# try:
+  
+#   # print(table.cell(0,0).textframe.paragraphs.runs.text)
+#   # print(len(table.rows))
+#   # print(len(table.columns))
+#   table_data=dict()
+#   for j in range(len(table.columns)):
+#     table_data.update({get_cell_text(table,0,j):[]})
+    
+#   # print(cols)
+#   # print(table.cell(0,0).text_frame.paragraphs.runs.text)
+#   # data={table.cell(0,0).text_frame.paragraphs.runs.text}
+#   for i in range(1,len(table.rows)):
+#     for j in range(0,len(table.columns)):
+#       table_data[get_cell_text(table,0,j)].append(get_cell_text(table,i,j))
+  
+#   print(table_data)
+# except Exception as error:
+#   print(error)
+  

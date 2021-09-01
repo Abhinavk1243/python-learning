@@ -14,6 +14,10 @@ import copy
 import os
 from pptx.dml.color import RGBColor
 
+def delete_slides(presentation, index):
+    xml_slides = presentation.slides._sldIdLst  
+    slides = list(xml_slides)
+    xml_slides.remove(slides[index]) 
 
 def replace_picture(slide, shape_no, img):
     
@@ -306,7 +310,14 @@ def main():
     shape_id=list(shape_name.values())
     replace_funnel_text(shape,shape_name,shape_id,shape_value)
     
-
+    
+    slide=prs.slides[37]
+    shape=slide.shapes
+    data={'Risk Name': ['BMI (High)', 'Blood Pressure (High)', 'PHQ2 - Depressed/Little Interest'],
+          'Number of Risk Points at T1': ['114', '35', '24']}
+    replace_table(shape,6,data)
+    delete_slides(prs,4)
+    delete_slides(prs,11)
     prs.save('scripts/ppt_generation/ppts/output_4.pptx')
     
 if __name__=="__main__":
