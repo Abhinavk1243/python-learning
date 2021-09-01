@@ -14,6 +14,9 @@ import copy
 import os
 from pptx.dml.color import RGBColor
 
+def add_hyperlink_to_shape(shape,shape_id,url):
+    shape[shape_id].click_action.hyperlink.address = url
+    
 def delete_slides(presentation, index):
     xml_slides = presentation.slides._sldIdLst  
     slides = list(xml_slides)
@@ -316,9 +319,48 @@ def main():
     data={'Risk Name': ['BMI (High)', 'Blood Pressure (High)', 'PHQ2 - Depressed/Little Interest'],
           'Number of Risk Points at T1': ['114', '35', '24']}
     replace_table(shape,6,data)
+    
+    
+    ## real age slide 
+    slide=prs.slides[11]
+    shape=slide.shapes
+    
+    shape_name={'avg_realage_delta': 7, 'members_with_realage_delta': 8, 'distinct_realage_test_completers': 9}
+    shape_id=list(shape_name.values())
+    shape_value=["-2.7","13%","875"]
+    replace_text(shape,shape_name,shape_id,shape_value)
+    add_hyperlink_to_shape(shape,7,"https://github.com/Abhinavk1243/python-learning")
+    
+    data={'category': ['LT -5', '-4.9 to -3', '-2.9 to -1', '-.9 to 1', '1.1 to 2.9', '3 to 5', 'GT 5'],
+     'Series_1': [20.9, 30.3, 24.6, 12.1, 6.2, 2.9, 2.9]}
+    replace_chart(slide,10,data)
+    
+    ## challenge participation sponsor initiated
+    slide=prs.slides[20]
+    shape=slide.shapes
+    shape.title.text="Challenge Participation – Sponsor Initiated"
+    
+    shape_name={'challeng_ptpn_rate': 12, 'challenge_joins': 13, 'challenge_completions': 14,'challenge_completion_rate': 15}
+    shape_id=list(shape_name.values())
+    shape_value=["33.8%","2377","1385","54%"]
+    
+    replace_text(shape,shape_name,shape_id,shape_value)
+        
+    data={'Challenge Type': ['Individual'], 'Challenge Participations': ['2,377'], 'Challenge Completes': ['1,385'], 'Challenge Completion Rate': ['58.3%']}
+    replace_table(shape,7,data)
+    
+    data={'category': ['2020-04', '2020-052', '2020-06', '2020-07', '2020-08', '2020-09', '2020-10', '2020-11', '2020-12', '2021-01', '2021-02', '2021-03', '2021-04', '2021-05', '2021-06'], 
+          'Challenge Participations': [185, 71, 164, 191, 0, 0, 0, 0, 0, 161, 166, 168, 149, 117, 90], 
+          'Challenge Completes': [134, 178, 113, 148, 0, 0, 0, 0, 0, 78, 104, 87, 70, 56, 49]}
+    
+    replace_chart(slide,6,data)
+    
+    
+    
     delete_slides(prs,4)
     delete_slides(prs,11)
     prs.save('scripts/ppt_generation/ppts/output_4.pptx')
+    
     
 if __name__=="__main__":
     main()
