@@ -68,39 +68,45 @@ def parse_list():
         
         
 def table_webscrap():
-    url='https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    data_iter=iter(soup.find_all("td"))
-    data=[]
-    while True:
-        try:
-            country=next(data_iter).text
-            cases=next(data_iter).text
-            deaths=next(data_iter).text
-            continents=next(data_iter).text
+    url = "C:/Users/DELL/flask-learning/files/email_scrap/email_html/_SUCCESS__DataPlatform_sn_execenviron_dag_trigger_rule___Completed_successfully.html"
+    page = open(url)
+    soup = BeautifulSoup(page.read(),features="lxml")   
+    
+    data_iter=soup.find_all("table")
+    
+    # url='https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/'
+    # response = requests.get(url)
+    # soup = BeautifulSoup(response.content, 'html.parser')
+    # data_iter=iter(soup.find_all("td"))
+    # data=[]
+    # while True:
+    #     try:
+    #         country=next(data_iter).text
+    #         cases=next(data_iter).text
+    #         deaths=next(data_iter).text
+    #         continents=next(data_iter).text
             
-            data.append((
-              country,
-              continents,
-              int(cases.replace(",","")),
-              int(deaths.replace(",",""))
-            ))
-        except StopIteration:
-            break
+    #         data.append((
+    #           country,
+    #           continents,
+    #           int(cases.replace(",","")),
+    #           int(deaths.replace(",",""))
+    #         ))
+    #     except StopIteration:
+    #         break
         
-    data.sort(key = lambda row: row[1], reverse = True)
-    table = tt.Texttable()
+    # data.sort(key = lambda row: row[1], reverse = True)
+    # table = tt.Texttable()
  
 
-    table.add_rows([(None, None, None, None)] + data)
-    table.set_cols_align(('c', 'c', 'c', 'c')) 
-    table.header((' Country ', ' Continent ', ' Deaths ', ' Cases '))
+    # table.add_rows([(None, None, None, None)] + data)
+    # table.set_cols_align(('c', 'c', 'c', 'c')) 
+    # table.header((' Country ', ' Continent ', ' Deaths ', ' Cases '))
     
-    df=pd.DataFrame(data,columns=[' Country ', ' Continent ', ' Deaths ', ' Cases '])
-    # print(df)
+    # df=pd.DataFrame(data,columns=[' Country ', ' Continent ', ' Deaths ', ' Cases '])
+    # # print(df)
     
-    print(table.draw())
+    # print(table.draw())
     
             
 def covid_stats(url,filter_continent="all"):
@@ -165,7 +171,7 @@ def main():
         # # url="https://newzoo.com/insights/rankings/top-10-countries-by-game-revenues/"
         # # url="https://covid19.who.int/table"
         # covid_stats(url,filter_continent="North America")
-        test_lxml()
+        table_webscrap()
 
     except Exception as error:
         print(error)  

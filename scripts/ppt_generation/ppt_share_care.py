@@ -160,7 +160,10 @@ def replace_funnel_text(shape,shape_name,shape_id,shape_value):
 
 def main():
     prs=Presentation("scripts/ppt_generation/ppts/input_4.pptx")
-
+    ## title slide
+    slide=prs.slides[0]
+    shape=slide.shapes
+    shape.title.text="Demo sc ppt using python"
     ## program overview
     slide=prs.slides[3]
     shape=slide.shapes
@@ -355,8 +358,13 @@ def main():
     
     replace_chart(slide,6,data)
     
-    
-    
+    slide=prs.slides[13]
+    shape=slide.shapes
+    txbox=shape[7]
+    textframe = txbox.text_frame
+    p = textframe.paragraphs[0]
+    run = p.add_run()
+    run.text = "this is text-area for writing notes"    
     delete_slides(prs,4)
     delete_slides(prs,11)
     prs.save('scripts/ppt_generation/ppts/output_4.pptx')

@@ -1193,3 +1193,476 @@
 2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter :77 : Row was filtered which contain : '::unspecified::'  
 2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :filter_col_value :96 : Row was filtered which contain : '::unspecified::'  
 2021-08-24 14:52:37,722 : library.read_config : csvfileprocessing.py : DEBUG                             :savecsv :134 :  resulted dataframe saved in North America_covid_data.csv  
+2021-09-02 14:43:53,027 : library.read_config : email_scrapping.py : DEBUG                             :<module> :45 : get subect of mail_no : {i} 
+2021-09-02 14:48:52,849 : library.read_config : email_scrapping.py : DEBUG                             :<module> :45 : get subect of mail_no : {i} 
+2021-09-02 14:50:50,304 : library.read_config : email_scrapping.py : DEBUG                             :<module> :48 : get subect of mail_no : {i} 
+2021-09-02 15:00:22,161 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:05:34,039 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:05:59,976 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:08:23,795 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:08:36,756 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:08:57,512 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:09:03,730 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:09:12,936 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:09:59,615 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:10:54,797 : library.read_config : email_scrapping.py : DEBUG                             :<module> :47 : get subect of mail_no : {i} 
+2021-09-02 15:11:09,754 : library.read_config : email_scrapping.py : DEBUG                             :<module> :48 : get subect of mail_no : {i} 
+2021-09-02 15:11:45,753 : library.read_config : email_scrapping.py : DEBUG                             :<module> :48 : get subect of mail_no : {i} 
+2021-09-02 15:12:30,647 : library.read_config : email_scrapping.py : DEBUG                             :<module> :48 : get subect of mail_no : {i} 
+2021-09-02 15:12:43,998 : library.read_config : email_scrapping.py : DEBUG                             :<module> :48 : get subect of mail_no : {i} 
+2021-09-02 15:17:25,734 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:17:51,062 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:29:38,598 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:30:21,613 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:36:33,412 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:36:48,072 : library.read_config : email_scrapping.py : DEBUG                             :<module> :49 : get subect of mail_no : {i} 
+2021-09-02 15:41:06,900 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 15:51:15,548 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 15:51:33,479 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 15:57:54,444 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 15:57:55,410 : library.read_config : email_scrapping.py : DEBUG                             :<module> :54 : get subect of mail_no : {i} 
+2021-09-02 15:58:10,646 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 15:58:12,596 : library.read_config : email_scrapping.py : DEBUG                             :<module> :54 : get subect of mail_no : {i} 
+2021-09-02 15:59:19,218 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 15:59:21,178 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 15:59:24,137 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:00:30,953 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:00:32,583 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:00:32,595 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:00:32,595 : library.read_config : email_scrapping.py : DEBUG                             :<module> :59 : get mail and subject and sender 
+2021-09-02 16:01:06,277 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:01:08,348 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:01:08,361 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:01:08,361 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:02:28,210 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:02:30,097 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:02:30,113 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:02:30,113 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:02:30,113 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:02:30,114 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:02:30,114 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:03:10,628 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:03:12,481 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:03:12,494 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:03:12,494 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:03:12,494 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:03:12,495 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:03:12,495 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:05:09,209 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:05:10,026 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:05:10,026 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:05:10,026 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:05:10,026 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:05:10,026 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:05:10,042 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : body 
+2021-09-02 16:05:10,043 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:06:18,862 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:06:33,610 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:06:34,910 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:06:34,925 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:06:34,925 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:06:34,925 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:06:34,925 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:06:34,943 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : body 
+2021-09-02 16:06:34,944 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:06:34,944 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:07:32,630 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:07:33,473 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:07:33,478 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:07:33,478 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:07:33,478 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:07:33,479 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:07:33,482 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : body 
+2021-09-02 16:07:33,482 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:07:59,928 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:08:01,758 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:08:01,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:08:01,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:08:01,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:08:01,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:08:01,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:08:57,581 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:08:59,309 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:08:59,325 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:08:59,325 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:08:59,325 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:08:59,325 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:08:59,325 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:14:45,767 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:14:47,575 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:14:47,592 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:14:47,593 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:14:47,593 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:14:47,593 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:14:47,593 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:13,700 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:15:15,214 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : in if st 
+2021-09-02 16:15:15,231 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:15,235 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : in if st 
+2021-09-02 16:15:44,805 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:15:46,171 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:15:46,187 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:15:46,187 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:15:46,187 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:46,187 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:15:46,194 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:19:12,656 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:19:14,176 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:19:14,192 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:19:14,202 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:22:21,529 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:22:23,962 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:22:23,977 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:22:23,977 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:22:23,977 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:23,978 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:23,978 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:22:23,978 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:23,981 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:22:47,935 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:22:50,036 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:22:50,052 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:22:50,055 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:22:58,508 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:23:00,484 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:23:00,499 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:23:00,503 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:27:03,180 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:27:05,067 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:27:05,100 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:27:05,100 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:27:05,100 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:27:05,108 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:27:05,108 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:27:05,108 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:27:05,108 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:27:05,116 : library.read_config : email_scrapping.py : DEBUG                             :<module> :88 : get attachment file :admit.pdf 
+2021-09-02 16:45:52,263 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:45:53,118 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:45:53,134 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:45:53,134 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:45:53,134 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:45:53,134 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:45:53,134 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:46:11,311 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:46:12,131 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:46:35,478 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:46:36,299 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:47:39,788 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:47:40,551 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:47:54,423 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:47:55,246 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:48:23,704 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:48:24,496 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:48:32,422 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:48:33,239 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:48:33,255 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:48:33,255 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:48:33,255 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:48:33,256 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:48:33,256 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:48:33,258 : library.read_config : email_scrapping.py : DEBUG                             :<module> :84 : body 
+2021-09-02 16:48:33,258 : library.read_config : email_scrapping.py : DEBUG                             :<module> :70 : content_type and content disposition 
+2021-09-02 16:48:33,258 : library.read_config : email_scrapping.py : DEBUG                             :<module> :76 : in if st 
+2021-09-02 16:52:19,025 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:52:19,845 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:52:19,861 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:52:19,861 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:52:19,861 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:19,872 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:19,872 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:52:19,872 : library.read_config : email_scrapping.py : DEBUG                             :<module> :85 : body 
+2021-09-02 16:52:19,872 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:19,872 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:52:47,810 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:52:48,630 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:52:48,637 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:52:48,637 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :85 : body 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:52:48,645 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:53:59,491 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:54:01,025 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :85 : body 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:54:01,041 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:55:13,425 : library.read_config : email_scrapping.py : DEBUG                             :<module> :36 : loged in successfully 
+2021-09-02 16:55:14,246 : library.read_config : email_scrapping.py : DEBUG                             :<module> :44 : get part of msg as res 
+2021-09-02 16:55:14,254 : library.read_config : email_scrapping.py : DEBUG                             :<module> :56 : get subect of mail_no : {i} 
+2021-09-02 16:55:14,254 : library.read_config : email_scrapping.py : DEBUG                             :<module> :64 : get mail and subject and sender 
+2021-09-02 16:55:14,254 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:55:14,262 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:55:14,262 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 16:55:14,262 : library.read_config : email_scrapping.py : DEBUG                             :<module> :85 : body 
+2021-09-02 16:55:14,262 : library.read_config : email_scrapping.py : DEBUG                             :<module> :71 : content_type and content disposition 
+2021-09-02 16:55:14,262 : library.read_config : email_scrapping.py : DEBUG                             :<module> :77 : in if st 
+2021-09-02 17:12:55,913 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:12:56,755 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:12:56,770 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:12:56,770 : library.read_config : email_scrapping.py : DEBUG                             :<module> :66 : get mail and subject and sender 
+2021-09-02 17:12:56,773 : library.read_config : email_scrapping.py : DEBUG                             :<module> :72 : content_type and content disposition 
+2021-09-02 17:12:56,773 : library.read_config : email_scrapping.py : DEBUG                             :<module> :72 : content_type and content disposition 
+2021-09-02 17:12:56,773 : library.read_config : email_scrapping.py : DEBUG                             :<module> :78 : in if st 
+2021-09-02 17:12:56,773 : library.read_config : email_scrapping.py : DEBUG                             :<module> :86 : body 
+2021-09-02 17:12:56,773 : library.read_config : email_scrapping.py : DEBUG                             :<module> :72 : content_type and content disposition 
+2021-09-02 17:12:56,774 : library.read_config : email_scrapping.py : DEBUG                             :<module> :78 : in if st 
+2021-09-02 17:13:54,405 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:13:55,225 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:13:55,225 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :67 : get mail and subject and sender 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :73 : content_type and content disposition 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :73 : content_type and content disposition 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :79 : in if st 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :87 : body 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :73 : content_type and content disposition 
+2021-09-02 17:13:55,238 : library.read_config : email_scrapping.py : DEBUG                             :<module> :79 : in if st 
+2021-09-02 17:14:15,907 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:14:16,725 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :68 : get mail and subject and sender 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :74 : content_type and content disposition 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :74 : content_type and content disposition 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :80 : in if st 
+2021-09-02 17:14:16,741 : library.read_config : email_scrapping.py : DEBUG                             :<module> :88 : body 
+2021-09-02 17:14:16,757 : library.read_config : email_scrapping.py : DEBUG                             :<module> :74 : content_type and content disposition 
+2021-09-02 17:14:16,757 : library.read_config : email_scrapping.py : DEBUG                             :<module> :80 : in if st 
+2021-09-02 17:29:37,931 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:29:38,771 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:29:38,786 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :90 : body 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:38,790 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:29:58,825 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:29:59,630 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:29:59,630 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :90 : body 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:29:59,648 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:30:15,723 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:30:16,524 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:30:16,524 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :90 : body 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:16,540 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:30:36,737 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:30:37,652 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:30:37,660 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :90 : body 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:30:37,668 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:43:26,228 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:43:27,044 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:43:27,050 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:43:27,050 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:43:27,050 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:27,050 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:27,050 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:43:27,062 : library.read_config : email_scrapping.py : DEBUG                             :<module> :91 : body 
+2021-09-02 17:43:27,062 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:27,062 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:43:52,067 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:43:52,889 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :91 : body 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:43:52,905 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:44:34,438 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:44:35,275 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:44:35,290 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:44:35,290 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:44:35,290 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:44:35,290 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:44:35,290 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:44:35,300 : library.read_config : email_scrapping.py : DEBUG                             :<module> :91 : body 
+2021-09-02 17:44:35,300 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:44:35,300 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:48:34,557 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:48:35,418 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:48:35,426 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :92 : body 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:48:35,434 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:49:16,694 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:49:17,515 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:49:17,515 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:49:17,515 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:49:17,531 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:49:17,531 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:49:17,531 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:49:17,532 : library.read_config : email_scrapping.py : DEBUG                             :<module> :92 : body 
+2021-09-02 17:49:17,532 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:49:17,532 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:50:26,731 : library.read_config : email_scrapping.py : DEBUG                             :<module> :35 : loged in successfully 
+2021-09-02 17:50:27,535 : library.read_config : email_scrapping.py : DEBUG                             :<module> :41 : get part of msg as res 
+2021-09-02 17:50:27,550 : library.read_config : email_scrapping.py : DEBUG                             :<module> :53 : get subect of mail_no : {i} 
+2021-09-02 17:50:27,550 : library.read_config : email_scrapping.py : DEBUG                             :<module> :69 : get mail and subject and sender 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :92 : body 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :75 : content_type and content disposition 
+2021-09-02 17:50:27,555 : library.read_config : email_scrapping.py : DEBUG                             :<module> :81 : in if st 
+2021-09-02 18:06:08,416 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :25 : loged in successfully 
+2021-09-02 18:06:09,231 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :31 : get part of msg as res 
+2021-09-02 18:06:09,246 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :44 : get subect of mail_no : {i} 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :60 : get mail and subject and sender 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : in if st 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :83 : body 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:09,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : in if st 
+2021-09-02 18:06:10,141 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :127 : ---- email scrapping completed ---- 
+2021-09-02 18:06:48,760 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :25 : loged in successfully 
+2021-09-02 18:06:49,585 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :31 : get part of msg as res 
+2021-09-02 18:06:49,605 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :44 : get subect of mail_no : {i} 
+2021-09-02 18:06:49,605 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :60 : get mail and subject and sender 
+2021-09-02 18:06:49,605 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:49,613 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:49,613 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : in if st 
+2021-09-02 18:06:49,613 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :83 : body 
+2021-09-02 18:06:49,613 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:06:49,613 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : in if st 
+2021-09-02 18:06:50,502 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :127 : ---- email scrapping completed ---- 
+2021-09-02 18:17:09,554 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :25 : loged in successfully 
+2021-09-02 18:17:10,571 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :31 : get part of msg as res 
+2021-09-02 18:17:10,577 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :44 : get subect of mail_no : {i} 
+2021-09-02 18:17:10,577 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :60 : get mail and subject and sender 
+2021-09-02 18:17:10,577 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:17:10,577 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:17:10,590 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :82 : body 
+2021-09-02 18:17:10,590 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:17:11,460 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :126 : ---- email scrapping completed ---- 
+2021-09-02 18:18:02,249 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :25 : loged in successfully 
+2021-09-02 18:18:03,268 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :31 : get part of msg as res 
+2021-09-02 18:18:03,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :44 : get subect of mail_no : {i} 
+2021-09-02 18:18:03,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :60 : get mail and subject and sender 
+2021-09-02 18:18:03,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:03,290 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:03,290 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :82 : body 
+2021-09-02 18:18:03,290 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:04,087 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :126 : ---- email scrapping completed ---- 
+2021-09-02 18:18:39,926 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :25 : loged in successfully 
+2021-09-02 18:18:40,958 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :31 : get part of msg as res 
+2021-09-02 18:18:40,968 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :44 : get subect of mail_no : {i} 
+2021-09-02 18:18:40,980 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :60 : get mail and subject and sender 
+2021-09-02 18:18:40,980 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:40,980 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:40,980 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :82 : body 
+2021-09-02 18:18:40,980 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :66 : content_type and content disposition 
+2021-09-02 18:18:41,782 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :126 : ---- email scrapping completed ---- 
+2021-09-02 19:12:27,835 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:12:28,732 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :42 : get part of msg as res 
+2021-09-02 19:12:28,745 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :55 : get subect of mail_no : {i} 
+2021-09-02 19:12:28,745 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :71 : get mail and subject and sender 
+2021-09-02 19:12:28,745 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :77 : content_type and content disposition 
+2021-09-02 19:12:28,745 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :77 : content_type and content disposition 
+2021-09-02 19:12:28,753 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :93 : body 
+2021-09-02 19:12:28,753 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :77 : content_type and content disposition 
+2021-09-02 19:12:29,573 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :137 : ---- email scrapping completed ---- 
+2021-09-02 19:12:58,378 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:12:59,268 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:12:59,276 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:12:59,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:12:59,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:12:59,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:12:59,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:12:59,284 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:13:00,057 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :138 : ---- email scrapping completed ---- 
+2021-09-02 19:13:32,248 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:13:33,077 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:13:33,086 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:13:33,086 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:13:33,086 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:13:33,086 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:13:33,094 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:13:33,094 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:13:33,095 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :138 : ---- email scrapping completed ---- 
+2021-09-02 19:16:30,720 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:16:31,514 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:16:31,522 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:16:31,530 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:16:31,530 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:16:31,530 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:16:31,532 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:16:31,532 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:16:31,532 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :139 : ---- email scrapping completed ---- 
+2021-09-02 19:19:21,591 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:19:22,461 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:19:22,473 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:19:23,281 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :140 : ---- email scrapping completed ---- 
+2021-09-02 19:20:48,871 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:20:49,694 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:20:49,710 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:20:50,110 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :140 : ---- email scrapping completed ---- 
+2021-09-02 19:29:43,821 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :36 : loged in successfully 
+2021-09-02 19:29:44,660 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :43 : get part of msg as res 
+2021-09-02 19:29:44,678 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :56 : get subect of mail_no : {i} 
+2021-09-02 19:29:44,686 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :72 : get mail and subject and sender 
+2021-09-02 19:29:44,686 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:29:44,686 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:29:44,686 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :94 : body 
+2021-09-02 19:29:44,686 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :78 : content_type and content disposition 
+2021-09-02 19:29:45,160 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :140 : ---- email scrapping completed ---- 

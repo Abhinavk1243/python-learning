@@ -41,6 +41,6 @@ prs=Presentation("scripts/ppt_generation/themes/sharecare_temp.pptx")
 # title.text="2 axis"
 
 data={'Challenge Type': ['Individual'], 'Challenge Participations': ['2,377'], 'Challenge Completes': ['1,385'], 'Challenge Completion Rate': ['58.3%']}
-replace_table(shape,7,data)
+# replace_table(shape,7,data)
 
 prs.save("scripts/ppt_generation/ppts/sc_slide_20.pptx")

@@ -26,6 +26,21 @@ from scripts.pandas_files.itter_rows import get_tuple_list
 # placeholders_id=[]
 prs=Presentation("scripts/ppt_generation/ppts/input_4.pptx")
 # for i in range(len(prs.slides)):
+
+# slide=prs.slides[11]
+# shape=slide.shapes
+
+# alt=[]
+
+# for i in shape:
+#   alt.append(i.name)
+  
+# shape_id=[]
+# for i in alt:
+#   shape_id.append(alt.index(i))
+
+# print(shape_id)
+# print(shape[7].name)
 #   for shape in prs.slides[i].placeholders:
 #     print('%d %d %s' % (i,shape.placeholder_format.idx, shape.name))
     
@@ -35,13 +50,17 @@ prs=Presentation("scripts/ppt_generation/ppts/input_4.pptx")
 
 shape_name={}
 funct_dict={}
-for index,i in  enumerate(prs.slides[11].shapes):
-  # print(f"id:{index} , name : {i.name}, shape_type :{i.shape_type} ")
-  shape_name.update({i.name:[index,str(i.shape_type)]})
-  funct_dict.update({i.name:index})
+# for index,i in  enumerate(prs.slides[13].shapes):
+#   # print(f"id:{index} , name : {i.name}, shape_type :{i.shape_type} ")
+#   shape_name.update({i.name:[index,str(i.shape_type)]})
+#   funct_dict.update({i.name:index})
   
-# print(prs.slides[0].shapes.title)
+# # print(prs.slides[0].shapes.title)
 # print(shape_name)
+
+# text_placeholder=prs.slides[13].shapes[1]
+# text_placeholder.text="hello"
+
 # alt=[]
 # for shape_name in prs.slides[0].shapes:
 #       alt.append('%s' % (shape_name.name))
@@ -66,9 +85,9 @@ for index,i in  enumerate(prs.slides[11].shapes):
   
   
 
-df=pd.read_csv("scripts/ppt_generation/chart.csv")
+# df=pd.read_csv("scripts/ppt_generation/chart.csv")
 
-print(df.to_dict("list"))
+# print(df.to_dict("list"))
 # df= pd.read_csv('scripts/pandas_files/csvfiles/uscities.csv')
 
 
@@ -99,4 +118,5 @@ def table_data():
     print(table_data)
   except Exception as error:
     print(error)
+    
     
