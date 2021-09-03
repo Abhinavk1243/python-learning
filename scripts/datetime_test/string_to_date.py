@@ -7,5 +7,5 @@ def string_to_date(date_1):
 
 
 
-date_1=input("enter date")
+date_1="Fri, 20 Aug 2021 02:33:35 -0700 (PDT)"
 print(string_to_date(date_1))

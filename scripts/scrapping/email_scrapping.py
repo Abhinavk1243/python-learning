@@ -35,8 +35,8 @@ def email_scrapping(username,password,mail_no):
         imap_session.login(username, password)
         logger.debug("loged in successfully")
         
-        status, no_of_messages = imap_session.select('"[Gmail]/Sent Mail"')
-        print(no_of_messages)
+        status, no_of_messages = imap_session.select('"[Gmail]/All Mail"')
+        # print(no_of_messages)
         no_of_messages = int(no_of_messages[0])
         
         res, msg = imap_session.fetch(str(mail_no), "(RFC822)")
@@ -53,21 +53,19 @@ def email_scrapping(username,password,mail_no):
                 if isinstance(subject,bytes):
                     subject=subject.decode(encoding)
             
-                logger.debug("get subect of mail_no : {i}")
-                
                 sender, encoding = decode_header(mail["From"])[0]
                 receiver,encoding = decode_header(mail["To"])[0]
-                
+                date,encoding=decode_header(mail["Date"])[0]
+                date=date[0:-5]
                 # check if mail-sender is bytes and if true then decode subject
                 if isinstance(sender,bytes):
                     sender=sender.decode(encoding)
                 print("=="*50)
                 
                 print(f"From : {sender}")
-                
                 print(f"TO : {receiver}")
-                
                 print(f"Subject : {subject}")
+                print(f"Date : {date}")
                 
                 logger.debug("get mail and subject and sender") 
                 
@@ -104,7 +102,7 @@ def email_scrapping(username,password,mail_no):
                                 filepath = os.path.join(folder_name, filename)
                                 # download attachment and save it
                                 open(filepath, "wb").write(part.get_payload(decode=True))
-                                print("attachment file saved at loc :{folder_name}")
+                                print(f"attachment file saved at loc :{folder_name}")
                             
                         else:
                             # content_type=mail.get_content_type()
@@ -141,7 +139,7 @@ def email_scrapping(username,password,mail_no):
 def main():
     username=read_config.get_config("email","sender")
     password=read_config.get_config("email","password")
-    email_scrapping(username,password,241)
+    email_scrapping(username,password,19)
     
 if __name__=="__main__":
     main()

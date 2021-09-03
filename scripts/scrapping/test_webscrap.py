@@ -73,6 +73,8 @@ def table_webscrap():
     soup = BeautifulSoup(page.read(),features="lxml")   
     
     data_iter=soup.find_all("table")
+    # for table in data_iter:
+        
     
     # url='https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/'
     # response = requests.get(url)

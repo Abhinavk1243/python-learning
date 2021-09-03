@@ -1,4 +1,3 @@
-from scripts.webscrapping.test_webscrap import get_blog_data
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.chart.data import CategoryChartData ,ChartData
@@ -363,6 +362,7 @@ def main():
     txbox=shape[7]
     textframe = txbox.text_frame
     p = textframe.paragraphs[0]
+    p.add_line_break()
     run = p.add_run()
     run.text = "this is text-area for writing notes"    
     delete_slides(prs,4)
