@@ -5,7 +5,7 @@ from library import read_config
 import texttable as tt
 
 logger = read_config.logger()
-pool_cnxn=read_config.mysl_pool_connection()
+pool_cnxn=read_config.mysl_pool_connection("mysql")
 mycursor=pool_cnxn.cursor()
 
 
@@ -54,16 +54,16 @@ def fetchrecord(table_name):
             sql=f"select * from {database}.{table_name}"
             mycursor.execute(sql)
             result=mycursor.fetchall()
-            table = tt.Texttable()
+            # table = tt.Texttable()
  
 
-            table.add_rows([(None, None, None, None,None,None)] + result)
-            table.set_cols_align(('c', 'c', 'c', 'c','c','c')) 
-            table.header((' student_id','f_name', 'l_name', 'roll_no', 'marks', 'project '))
-            print(table.draw())
+            # table.add_rows([(None, None, None, None,None,None)] + result)
+            # table.set_cols_align(('c', 'c', 'c', 'c','c','c')) 
+            # table.header((' student_id','f_name', 'l_name', 'roll_no', 'marks', 'project '))
+            # print(table.draw())
             
-            # for record in result:
-            #     print(record)
+            for record in result:
+                print(record)
             logger.debug(f"data fetched from {table_name}")
            
         elif choice==2:

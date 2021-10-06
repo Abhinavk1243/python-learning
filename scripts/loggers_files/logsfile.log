@@ -1803,3 +1803,116 @@
 2021-09-03 10:20:43,819 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :76 : content_type and content disposition 
 2021-09-03 10:20:43,819 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :76 : content_type and content disposition 
 2021-09-03 10:20:44,575 : library.read_config : email_scrapping.py : DEBUG                             :email_scrapping :138 : ---- email scrapping completed ---- 
+2021-09-08 14:36:21,252 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-08 14:36:21,252 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-08 14:36:21,252 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-08 14:36:21,252 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-09 17:47:52,555 : models : student.py : DEBUG                             :create_student :94 : data ('akshay', 23) successfully inserted 
+2021-09-09 17:47:52,555 : models : student.py : DEBUG                             :create_student :94 : data ('akshay', 23) successfully inserted 
+2021-09-09 17:47:52,555 : models : student.py : DEBUG                             :create_student :94 : data ('akshay', 23) successfully inserted 
+2021-09-09 17:47:52,555 : models : student.py : DEBUG                             :create_student :94 : data ('akshay', 23) successfully inserted 
+2021-09-09 17:57:07,416 : models : student.py : DEBUG                             :create_student :94 : data ('rohan', 23) successfully inserted 
+2021-09-09 17:57:07,416 : models : student.py : DEBUG                             :create_student :94 : data ('rohan', 23) successfully inserted 
+2021-09-09 17:57:07,416 : models : student.py : DEBUG                             :create_student :94 : data ('rohan', 23) successfully inserted 
+2021-09-09 17:57:07,416 : models : student.py : DEBUG                             :create_student :94 : data ('rohan', 23) successfully inserted 
+2021-09-09 18:12:00,580 : models : student.py : DEBUG                             :create_student :94 : data ('rohit', 23) successfully inserted 
+2021-09-09 18:12:00,580 : models : student.py : DEBUG                             :create_student :94 : data ('rohit', 23) successfully inserted 
+2021-09-09 18:12:00,580 : models : student.py : DEBUG                             :create_student :94 : data ('rohit', 23) successfully inserted 
+2021-09-09 18:12:00,580 : models : student.py : DEBUG                             :create_student :94 : data ('rohit', 23) successfully inserted 
+2021-09-09 18:15:33,194 : models : student.py : DEBUG                             :student_update :155 : 53 
+2021-09-09 18:15:33,194 : models : student.py : DEBUG                             :student_update :155 : 53 
+2021-09-09 18:15:33,194 : models : student.py : DEBUG                             :student_update :155 : 53 
+2021-09-09 18:15:33,194 : models : student.py : DEBUG                             :student_update :155 : 53 
+2021-09-09 18:21:47,750 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-09 18:21:47,750 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-09 18:21:47,750 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-09 18:21:47,750 : models : student.py : DEBUG                             :remove_student :121 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 10:08:07,843 : models : student.py : DEBUG                             :create_student :96 : data ('Ashish', 23) successfully inserted 
+2021-09-10 10:08:07,843 : models : student.py : DEBUG                             :create_student :96 : data ('Ashish', 23) successfully inserted 
+2021-09-10 10:08:07,843 : models : student.py : DEBUG                             :create_student :96 : data ('Ashish', 23) successfully inserted 
+2021-09-10 10:08:07,843 : models : student.py : DEBUG                             :create_student :96 : data ('Ashish', 23) successfully inserted 
+2021-09-10 10:08:19,464 : models : student.py : ERROR                             :student_update :159 : 'student_id' 
+2021-09-10 10:08:19,464 : models : student.py : ERROR                             :student_update :159 : 'student_id' 
+2021-09-10 10:08:19,464 : models : student.py : ERROR                             :student_update :159 : 'student_id' 
+2021-09-10 10:08:19,464 : models : student.py : ERROR                             :student_update :159 : 'student_id' 
+2021-09-10 10:09:11,905 : models : student.py : DEBUG                             :student_update :157 : 54 
+2021-09-10 10:09:11,905 : models : student.py : DEBUG                             :student_update :157 : 54 
+2021-09-10 10:09:11,905 : models : student.py : DEBUG                             :student_update :157 : 54 
+2021-09-10 10:09:11,905 : models : student.py : DEBUG                             :student_update :157 : 54 
+2021-09-10 10:09:30,075 : models : student.py : DEBUG                             :remove_student :123 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 10:09:30,075 : models : student.py : DEBUG                             :remove_student :123 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 10:09:30,075 : models : student.py : DEBUG                             :remove_student :123 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 10:09:30,075 : models : student.py : DEBUG                             :remove_student :123 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 10:27:26,385 : models : student.py : ERROR                             :student_update :159 : 'student_name' 
+2021-09-10 10:27:26,385 : models : student.py : ERROR                             :student_update :159 : 'student_name' 
+2021-09-10 10:27:26,385 : models : student.py : ERROR                             :student_update :159 : 'student_name' 
+2021-09-10 10:27:26,385 : models : student.py : ERROR                             :student_update :159 : 'student_name' 
+2021-09-10 10:28:42,365 : models : student.py : DEBUG                             :student_update :157 : 55 
+2021-09-10 10:28:42,365 : models : student.py : DEBUG                             :student_update :157 : 55 
+2021-09-10 10:28:42,365 : models : student.py : DEBUG                             :student_update :157 : 55 
+2021-09-10 10:28:42,365 : models : student.py : DEBUG                             :student_update :157 : 55 
+2021-09-10 13:09:34,591 : models : student.py : DEBUG                             :student_update :158 : 57 
+2021-09-10 13:09:34,591 : models : student.py : DEBUG                             :student_update :158 : 57 
+2021-09-10 13:09:34,591 : models : student.py : DEBUG                             :student_update :158 : 57 
+2021-09-10 13:09:34,591 : models : student.py : DEBUG                             :student_update :158 : 57 
+2021-09-10 15:28:28,364 : models : rest_api.py : DEBUG                             :post :42 : data ('Abhinav', 24) successfully inserted 
+2021-09-10 15:33:16,860 : models : rest_api.py : DEBUG                             :delete :64 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 15:46:05,192 : models : rest_api.py : DEBUG                             :post :42 : data ('Abhinav', 23) successfully inserted 
+2021-09-10 15:48:13,303 : models : rest_api.py : DEBUG                             :delete :66 : record of id = <built-in function id> is deleted from the database 
+2021-09-10 15:50:00,173 : models : rest_api.py : DEBUG                             :put :82 : 10 
+2021-09-27 12:32:44,782 : models : student.py : DEBUG                             :student_update :162 : 36 
+2021-09-27 12:32:44,782 : models : student.py : DEBUG                             :student_update :162 : 36 
+2021-09-27 12:32:44,782 : models : student.py : DEBUG                             :student_update :162 : 36 
+2021-09-27 12:32:44,782 : models : student.py : DEBUG                             :student_update :162 : 36 
+2021-09-27 18:47:11,604 : commons : app.py : DEBUG                             :create_student :286 : data ('abhinav', 22) successfully inserted 
+2021-09-27 18:47:11,604 : commons : app.py : DEBUG                             :create_student :286 : data ('abhinav', 22) successfully inserted 
+2021-09-27 19:00:10,855 : commons : app.py : DEBUG                             :student_update :332 : 57 
+2021-09-27 19:00:10,855 : commons : app.py : DEBUG                             :student_update :332 : 57 
+2021-09-27 19:01:14,702 : commons : app.py : DEBUG                             :remove_student :316 : record of id = <built-in function id> is deleted from the database 
+2021-09-27 19:01:14,702 : commons : app.py : DEBUG                             :remove_student :316 : record of id = <built-in function id> is deleted from the database 
+2021-09-28 10:50:46,671 : commons : app.py : DEBUG                             :create_student :286 : data ('abhinav', 22) successfully inserted 
+2021-09-28 10:50:46,671 : commons : app.py : DEBUG                             :create_student :286 : data ('abhinav', 22) successfully inserted 
+2021-09-28 10:51:22,716 : commons : app.py : DEBUG                             :student_update :332 : 58 
+2021-09-28 10:51:22,716 : commons : app.py : DEBUG                             :student_update :332 : 58 
+2021-09-28 10:51:51,328 : commons : app.py : DEBUG                             :remove_student :316 : record of id = <built-in function id> is deleted from the database 
+2021-09-28 10:51:51,328 : commons : app.py : DEBUG                             :remove_student :316 : record of id = <built-in function id> is deleted from the database 
+2021-09-28 14:48:46,995 : commons : employee_bp.py : ERROR                             :create_employee :87 : exception arise : 1366 (HY000): Incorrect integer value: 'Abhinav' for column 'employee_age' at row 1 
+2021-09-28 14:48:46,995 : commons : employee_bp.py : ERROR                             :create_employee :87 : exception arise : 1366 (HY000): Incorrect integer value: 'Abhinav' for column 'employee_age' at row 1 
+2021-09-28 14:48:46,995 : commons : employee_bp.py : ERROR                             :create_employee :87 : exception arise : 1366 (HY000): Incorrect integer value: 'Abhinav' for column 'employee_age' at row 1 
+2021-09-28 14:48:46,995 : commons : employee_bp.py : ERROR                             :create_employee :87 : exception arise : 1366 (HY000): Incorrect integer value: 'Abhinav' for column 'employee_age' at row 1 
+2021-09-28 14:51:36,107 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:36,107 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:36,107 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:36,107 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:38,748 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:38,748 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:38,748 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 14:51:38,748 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 21, 106450) successfully inserted 
+2021-09-28 15:05:37,036 : commons : employee_bp.py : ERROR                             :remove_employee :115 : exception arise : 1146 (42S02): Table 'web_data.26' doesn't exist 
+2021-09-28 15:05:37,036 : commons : employee_bp.py : ERROR                             :remove_employee :115 : exception arise : 1146 (42S02): Table 'web_data.26' doesn't exist 
+2021-09-28 15:05:37,036 : commons : employee_bp.py : ERROR                             :remove_employee :115 : exception arise : 1146 (42S02): Table 'web_data.26' doesn't exist 
+2021-09-28 15:05:37,036 : commons : employee_bp.py : ERROR                             :remove_employee :115 : exception arise : 1146 (42S02): Table 'web_data.26' doesn't exist 
+2021-09-28 15:06:22,770 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 26 is deleted from the database 
+2021-09-28 15:06:22,770 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 26 is deleted from the database 
+2021-09-28 15:06:22,770 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 26 is deleted from the database 
+2021-09-28 15:06:22,770 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 26 is deleted from the database 
+2021-09-28 16:01:24,674 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 22, 300000) successfully inserted 
+2021-09-28 16:01:24,674 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 22, 300000) successfully inserted 
+2021-09-28 16:01:24,674 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 22, 300000) successfully inserted 
+2021-09-28 16:01:24,674 : commons : employee_bp.py : DEBUG                             :create_employee :84 : data ('Abhinav', 22, 300000) successfully inserted 
+2021-09-28 16:02:07,292 : commons : employee_bp.py : ERROR                             :employee_update :138 : 'id' 
+2021-09-28 16:02:07,292 : commons : employee_bp.py : ERROR                             :employee_update :138 : 'id' 
+2021-09-28 16:02:07,292 : commons : employee_bp.py : ERROR                             :employee_update :138 : 'id' 
+2021-09-28 16:02:07,292 : commons : employee_bp.py : ERROR                             :employee_update :138 : 'id' 
+2021-09-28 16:03:23,659 : commons : employee_bp.py : DEBUG                             :employee_update :136 : 27 
+2021-09-28 16:03:23,659 : commons : employee_bp.py : DEBUG                             :employee_update :136 : 27 
+2021-09-28 16:03:23,659 : commons : employee_bp.py : DEBUG                             :employee_update :136 : 27 
+2021-09-28 16:03:23,659 : commons : employee_bp.py : DEBUG                             :employee_update :136 : 27 
+2021-09-28 16:04:24,013 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 27 is deleted from the database 
+2021-09-28 16:04:24,013 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 27 is deleted from the database 
+2021-09-28 16:04:24,013 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 27 is deleted from the database 
+2021-09-28 16:04:24,013 : commons : employee_bp.py : DEBUG                             :remove_employee :113 : record of id = 27 is deleted from the database 
+2021-10-06 18:01:24,324 : library.read_config : msql.py : ERROR                             :fetchrecord :96 : Exception arrise : array should contain 6 elements 
+2021-10-06 18:01:40,051 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 
+2021-10-06 18:02:41,718 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 
+2021-10-06 18:03:06,857 : library.read_config : msql.py : DEBUG                             :fetchrecord :67 : data fetched from students 

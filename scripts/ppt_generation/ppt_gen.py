@@ -1,4 +1,4 @@
-from scripts.webscrapping.test_webscrap import get_blog_data
+# from scripts.webscrapping.test_webscrap import get_blog_data
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.chart.data import CategoryChartData 
@@ -127,7 +127,7 @@ def main():
     data_labels.number_format = '0%'
     data_labels.position = XL_DATA_LABEL_POSITION.INSIDE_END
     
-    prs.save('scripts/ppt_generation/test.pptx')
+    prs.save('demo.pptx')
     
 if __name__=="__main__":
     main()

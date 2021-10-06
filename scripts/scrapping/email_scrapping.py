@@ -29,6 +29,13 @@ def clean(text):
     return "".join(c if c.isalnum() else "_" for c in text)
 
 def email_scrapping(username,password,mail_no):
+    """[summary]
+
+    Args:
+        username ([type]): [description]
+        password ([type]): [description]
+        mail_no ([type]): [description]
+    """
     imap_session= imaplib.IMAP4_SSL("imap.gmail.com")
     # authenticate
     try:

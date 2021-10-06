@@ -3,7 +3,7 @@ from mysql.connector import pooling
 import logging as lg 
 import configparser
 import os
-def get_config(section,key):
+def get_config(section,key,file_name='sqlcred.cfg'):
     """Method use to read the value of key in congfig file i.e .cfg extension file
 
     Args:
@@ -14,20 +14,20 @@ def get_config(section,key):
         string: value of corresonding section key
     """
     parser = configparser.ConfigParser()
-    parser.read(os.path.join(os.path.expanduser("~"),'config/sqlcred.cfg'))
+    parser.read(os.path.join(os.path.expanduser("~"),f'config/{file_name}'))
     return parser.get(section,key)  
  
-def mysl_pool_connection():
+def mysl_pool_connection(section):
     """Metod is use to connect database with python 
 
     Returns:
         connection : myslconnection"""
     
     dbconfig={ 
-              'host' : get_config("mysql","host"),
-              'user' : get_config("mysql","user"),
-              'database':get_config("mysql","database"),
-              'password' :get_config("mysql","password")
+              'host' : get_config(section,"host"),
+              'user' : get_config(section,"user"),
+              'database':get_config(section,"database"),
+              'password' :get_config(section,"password")
             }
     cnxn = pooling.MySQLConnectionPool(pool_name = "Abhinav_mysl_pool",**dbconfig)
     pool_cnxn=cnxn.get_connection()

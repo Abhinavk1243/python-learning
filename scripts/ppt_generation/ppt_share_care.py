@@ -367,7 +367,8 @@ def main():
     run.text = "this is text-area for writing notes"    
     delete_slides(prs,4)
     delete_slides(prs,11)
-    prs.save('scripts/ppt_generation/ppts/output_4.pptx')
+    # prs.save('scripts/ppt_generation/ppts/output_4.ppt')
+    prs.save("demo.pptx")
     
     
 if __name__=="__main__":

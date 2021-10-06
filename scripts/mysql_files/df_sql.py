@@ -5,7 +5,7 @@ import logging as lg
 from library import read_config 
 
 logger = read_config.logger()
-pool_cnxn=read_config.mysl_pool_connection()
+pool_cnxn=read_config.mysl_pool_connection("mysql")
 mycursor=pool_cnxn.cursor()
 
 # Function to connect databse with python code
