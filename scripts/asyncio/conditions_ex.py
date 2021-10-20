@@ -56,7 +56,7 @@ async def main():
     process_tasks = []
     for i in range(5):
         task = asyncio.create_task(process_item(condition_var, ))
-        task.name="ProcessItem%d"%(i+1)
+        task.name=f"ProcessItem{i+1}"
         process_tasks.append(task)
     
     tasks=set_tasks + process_tasks

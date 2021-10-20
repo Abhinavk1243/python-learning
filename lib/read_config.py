@@ -3,6 +3,7 @@ from mysql.connector import pooling
 import logging as lg 
 import configparser
 import os
+
 def get_config(section,key,file_name='sqlcred.cfg'):
     """Method use to read the value of key in congfig file i.e .cfg extension file
 
@@ -38,7 +39,7 @@ def logger():
     logger.setLevel(lg.DEBUG)
     formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s\
                              :%(funcName)s :%(lineno)d : %(message)s ')
-    file_handler =lg.FileHandler("scripts\loggers_files\logsfile.log")
+    file_handler =lg.FileHandler("scripts\logs_files\logsfile.log")
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     return logger

@@ -1,6 +1,6 @@
 import mmap
 import pandas as pd
-from library import transform
+from lib import transform
 def mmap_io(filename):
     with open(filename, mode="r", encoding="utf8") as f:
         etl_rules = [ line.strip() for line in f ]

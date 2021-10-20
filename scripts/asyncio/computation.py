@@ -46,22 +46,33 @@ class ProducerConsumer():
         self.producer_available.set()
         self.max_size=N
         
-    async def producer(self):
+    async def producer(self,no_of_item):
         
         for i in range(0,self.max_size+1):
+        # for i in range(no_of_item):
             await self.producer_available.wait()
             if self.queue.full():
                 print("Buffer is full , now producer wait for consumer to empty the buffer")
                 self.producer_available.clear()
                 self.consumer_available.set()
+            # elif self.queue.full()==False and i<=no_of_item-1:
             else:
                 item=random.randint(1,20)
                 print(f"Producer-{i+1} produce : {item}")
                 await self.queue.put(item)
                 
+            # else:
+            #     item=random.randint(1,20)
+            #     print(f"Producer-{i+1} produce : {item}")
+            #     await self.queue.put(item)
+            #     print("all items are produced")
+            #     self.producer_available.clear()
+            #     self.consumer_available.set()
+                
         
-    async def consumer(self):
+    async def consumer(self,no_of_item):
         for i in range(0,self.max_size+1):
+        # for i in range(no_of_item):
             await self.consumer_available.wait()
             if self.queue.empty():
                 print("buffer is empty ,now consumer wait till the producer insert the items in buffer")
@@ -70,9 +81,15 @@ class ProducerConsumer():
                 
                 self.consumer_available.clear()
                 
+            # elif self.queue.empty()==False and i<=no_of_item-1:
             else:
                 item = await self.queue.get()
                 print(f"consumer-{i+1} consume : {item}")
+            
+            # else :
+            #     print("all items ar e consumed ")
+            #     item = await self.queue.get()
+            #     print(f"consumer-{i+1} consume : {item}")
             
             
         
@@ -92,8 +109,8 @@ async def main():
     # task2.name = "print_even"
     
     prod_cons=ProducerConsumer(4)
-    task3=asyncio.create_task(prod_cons.producer())
-    task4=asyncio.create_task(prod_cons.consumer())
+    task3=asyncio.create_task(prod_cons.producer(8))
+    task4=asyncio.create_task(prod_cons.consumer(8))
     # await task1
     # await task2
     await task3

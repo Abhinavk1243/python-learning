@@ -2,20 +2,20 @@ from datetime import datetime
 import mysql.connector as msc 
 import pandas as pd
 import logging as lg 
-from library import read_config 
+from lib import read_config 
+import argparse
 
 logger = read_config.logger()
-pool_cnxn=read_config.mysl_pool_connection("mysql")
-mycursor=pool_cnxn.cursor()
+pool_cnxn =  read_config.mysl_pool_connection("mysql")
+mycursor = pool_cnxn.cursor()
 
 # Function to connect databse with python code
-
-def checkTableExists(tablename):
+def checkTableExists(tablename,database):
     
     mycursor.execute(f"SELECT COUNT(*) FROM information_schema.tables \
-        WHERE TABLE_SCHEMA = 'web_data' AND TABLE_NAME = '{tablename}' ")
+        WHERE TABLE_SCHEMA = '{database}' AND TABLE_NAME = '{tablename}' ")
     result=mycursor.fetchone()
-    mycursor.close()
+    # mycursor.close()
 
     if result[0]== 1:
         return True
@@ -40,8 +40,10 @@ def csv_to_table(file_name,table_name):
     parameters=["%s"]*para_len
     parameters=",".join([str(i) for i in parameters])
     val=[]
-    for i,row in df.iterrows():
-        val.append(tuple(row))
+    
+    val = list(df.itertuples(index=False, name=None))
+    # for i,row in df.iterrows():
+    #     val.append(tuple(row))
     
     try:   
         sql=f"INSERT INTO {database}.{table_name}({cols_1}) VALUES ({parameters}) "           
@@ -80,14 +82,7 @@ def create_table(file_name,table_name):
         file_name (str): name of csv file
         table_name (str): name of table want to created
     """
-    
-    try:
-        df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
-    except FileExistsError as error:
-        logger.error(f"error arise : {error}")
-    except Exception as error:
-        logger.error(f"Exception arise : {error}")
-    
+    df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
     cols=list(df.columns)
 
     k=0
@@ -129,10 +124,20 @@ def create_table(file_name,table_name):
     
 
 
-def main():
-    # create_table('student_address','address')
-    # csv_to_table('student_address','address')
-    print(checkTableExists("user"))
+def main(filename,tablename):
+    
+    if checkTableExists(tablename,"test_db"):
+        print(f"table '{tablename}' already exist")
+    else:
+        create_table(filename,tablename)
+        csv_to_table(filename,tablename)
+        
 
 if __name__=="__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('-filename',type=str,help="filename")
+    parser.add_argument('-tablename',type=str,help="tablename")
+    args = parser.parse_args()
+    filename = args.filename
+    tablename = args.tablename
+    main(filename,tablename)

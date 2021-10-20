@@ -2,7 +2,7 @@ import imaplib
 import email
 from email.header import decode_header
 import os
-from library import read_config
+from lib import read_config
 logger=read_config.logger()
 
 ## INBOX              - select inbox directory

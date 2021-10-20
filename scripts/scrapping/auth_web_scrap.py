@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 from requests.models import default_hooks
-from library.read_config import get_config
+from lib.read_config import get_config
 import pandas as pd
 
 login = get_config("github","username")

@@ -1,6 +1,8 @@
 import asyncio
+from asyncio.queues import Queue
 from datetime import datetime
 import time 
+import random
 
 x=3
 
@@ -31,7 +33,38 @@ async def Raise(lock, y):
 
     lock.release()
         
+async def producer(item,queue,condition_var):
+    if queue.full():
+        print(" -------------------------------------")
+        print(f"| Buffer is full ,{asyncio.Task.current_task().name} will wait |")
+        print(" -------------------------------------")
+       
+        await asyncio.sleep(2)
+    
+    await condition_var.acquire()
+    print(f"{asyncio.Task.current_task().name} insert {item} in buffer")
+    await queue.put(item)
+    condition_var.notify(n=1)
+
+    condition_var.release()
+    
+
+async def consumer(queue,condition_var):
+    
+    await condition_var.acquire()
+    if queue.empty():
+        print(" --------------------------------------")
+        print(f"| Buffer is empty ,{asyncio.Task.current_task().name} will wait |")
+        print(" --------------------------------------")
+        await condition_var.wait()
+
+    item=await queue.get()
+    print(f"{asyncio.Task.current_task().name} consume the {item}")
+    condition_var.release()
         
+    
+        
+    
 async def main():
     ### non primitive tasks
     
@@ -48,20 +81,40 @@ async def main():
     # task3 = asyncio.create_task(Raise(lock,3))
     
     # ## using Semaphores
-    lock=asyncio.Semaphore(value=1)
-    task1 = asyncio.create_task(Raise(lock,3))
-    task2 = asyncio.create_task(Raise(lock,3))
-    task3 = asyncio.create_task(Raise(lock,3))
+    # lock=asyncio.Semaphore(value=1)
+    # task1 = asyncio.create_task(Raise(lock,3))
+    # task2 = asyncio.create_task(Raise(lock,3))
+    # task3 = asyncio.create_task(Raise(lock,3))
+    
+    condition_var = asyncio.Condition()
+    queue = asyncio.Queue(maxsize=4)
+    set_tasks = []
+    for i in range(5):
+        task = asyncio.create_task(producer(random.randint(1,50),queue,condition_var))
+        task.name=f"producer{i+1}"
+        set_tasks.append(task)
 
-    await task1
-    await task2
-    await task3
+    process_tasks = []
+    for i in range(5):
+        task = asyncio.create_task(consumer(queue,condition_var))
+        task.name=f"consumer{i+1}"
+        process_tasks.append(task)
+        
+    for task in set_tasks+process_tasks:
+        await task
+        
+    # await task1
+    # await task2
+    # await task3
 
 if __name__ == "__main__":
-    print("Start Time : ", datetime.now(), "\n")
+    print("===============START===================")
+    print("Start Time : ", datetime.now())
+    print("=======================================")
     start = time.time()
 
     asyncio.run(main())
-
-    print("\nEnd   Time : ", datetime.now())
-    print("\nTotal Time Taken : {} Seconds".format(time.time() - start))
+    print("=======================================")
+    print("End   Time : ", datetime.now())
+    print("Total Time Taken : {} Seconds".format(time.time() - start))
+    print("===============FINISH===================")

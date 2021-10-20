@@ -6,7 +6,7 @@ import contextvars
 import functools
 import aiohttp
 import base64
-from library import read_config
+from lib import read_config
 import ssl
 
 base_url="http://127.0.0.1:5000"

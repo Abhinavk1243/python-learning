@@ -1,7 +1,7 @@
 from logging import exception
 import mysql.connector as msc 
 import pandas as pd
-from library import read_config 
+from lib import read_config 
 import texttable as tt
 
 logger = read_config.logger()
