@@ -125,7 +125,7 @@ if __name__ == "__main__":
     # main()
     import copy
     list_1 = [1,2,[2,3],3]
-    list_2 = copy.copy(list_1)
+    # list_2 = copy.copy(list_1)
     list_2 = copy.deepcopy(list_1)
     
     # list_2[0] = "hello"

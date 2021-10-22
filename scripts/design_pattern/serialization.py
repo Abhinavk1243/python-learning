@@ -56,8 +56,6 @@ class Pickling:
     # def read_file(self):
         
     
-    
-
 if __name__ == "__main__":
     # rect = Shape()
     list_cars = ["BMW","Audi","maruti"]
@@ -68,4 +66,3 @@ if __name__ == "__main__":
     pkl.serialize(list_fruits)
     obj = pkl.deserialize()
     print(obj)
-    
