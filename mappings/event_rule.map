@@ -1,0 +1,5 @@
+get_date=>ga:date
+col_rename=>ga:dimension1|Username
+col_rename=>ga:date|date
+col_rename=>ga:eventCategory|event_name
+col_rename=>ga:totalEvents|event_value

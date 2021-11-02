@@ -2,6 +2,7 @@ import mysql.connector as msc
 from mysql.connector import pooling
 import logging as lg 
 import configparser
+from lib import transform
 import os
 
 def get_config(section,key,file_name='sqlcred.cfg'):
@@ -44,3 +45,20 @@ def logger():
     logger.addHandler(file_handler)
     return logger
 
+def load_rules(filename):
+    with open(filename, mode="r", encoding="utf8") as f:
+        etl_rules = [ line.strip() for line in f ]
+        return etl_rules
+    
+    
+def mapping(df,filename):
+    etl_rules=load_rules(filename)
+    for i in etl_rules:
+            operation_args=i.split("=>")
+            operation=operation_args[0]
+            args=operation_args[1].split("|")
+            df = getattr(transform, operation)(df,args)
+            
+    return df
+    
+# data load
