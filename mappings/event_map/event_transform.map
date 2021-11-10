@@ -1,0 +1,3 @@
+get_date=>ga:dateHourMinute
+col_rename=>ga:dateHourMinute|date
+col_rename=>ga:dimension1|Username

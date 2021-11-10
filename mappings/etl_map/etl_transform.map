@@ -1,7 +1,7 @@
+get_date=>ga:date
 col_rename=>ga:date|date
 col_rename=>ga:dimension1|Username
 col_rename=>ga:pageTitle|PageTitle
 col_rename=>ga:pageviews|Page Views
-get_date=>date
 col_filter_unspecified=>Username
 col_melt=>date,Username,PageTitle|None|event_name|event_value

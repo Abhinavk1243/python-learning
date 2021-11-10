@@ -1,13 +1,18 @@
+from inspect import _empty
+from typing_extensions import final
 from apiclient import discovery
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 from pandas.core.indexes.datetimes import date_range
 from lib import read_config
 from datetime import datetime 
+import logging
+
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 KEY_FILE_LOCATION = 'analytics-329707-cc4a4b4967b5.json'
 VIEW_ID = '253803495'
-
+# def save_csv(filename):
+    
 def initialize_analyticsreporting():
     """Initializes an Analytics Reporting API V4 service object.
 
@@ -71,84 +76,79 @@ def ga_response_dataframe(response):
     return pd.DataFrame(row_list)
 
 
+def generate_reports(area):
+    startdate = datetime(2021,11,10).date()
+    enddate = datetime(2021,11,10).date()
+    req_json = []
+    dimension = area["dimesnions"]
+    # print(dimension)
+    metrics = area["metrics"]
+    if area["iterate"]:
+        if area["iterate"]=="event":
+            for event in area["event"]:
+                # print("hello")
+                definition =[
+                    {
+                        'viewId': VIEW_ID,
+                        'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
+                        'dimensions': dimension,
+                        'metrics' : metrics,
+                        "dimensionFilterClauses": [
+                            {
+                                "filters": [
+                                    {
+                                        "dimensionName": "ga:eventCategory",
+                                        "operator": "EXACT",
+                                        "expressions": [event]
+                                    }
+                                ]
+                            }
+                                        ]
+                    }]
+                # print(definition)
+                req_json.append(definition)
+    else:
+        definition =[
+                    {
+                        'viewId': VIEW_ID,
+                        'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
+                        'dimensions': dimension,
+                        'metrics' : metrics,
+                    }]
+        req_json.append(definition)
+    return req_json
+        
+        
+def download_reports(reports):
+    list_df = []
+    for report in reports:
+        analytics = initialize_analyticsreporting()
+        response = get_report(analytics,report)
+        df = ga_response_dataframe(response)
+        list_df.append(df)
+    return list_df
 
-def main():
-    startdate = datetime(2021,11,2).date()
-    enddate = datetime(2021,11,2).date()
-    definition =[
-        {
-            'viewId': VIEW_ID,
-            'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
-            'dimensions': [
-                {'name':'ga:date'},
-                {'name': 'ga:dimension1' },
-                {"name":"ga:pageTitle"}
-                ],
-            'metrics': [
-                {"expression": "ga:pageviews"}
-                ]
-            }]
+def main(area):
+    data_config = read_config.read_json_file("config")
+    reports = generate_reports(data_config[area])
+    list_df = download_reports(reports)
+    final_df = pd.DataFrame()
     
-    definition2 =[
-        {
-            'viewId': VIEW_ID,
-            'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
-            'dimensions': [
-                {'name':'ga:date'},
-                {'name': 'ga:dimension1'},
-                {"name":"ga:eventCategory"}
-                ],
-            'metrics': [
-                {"expression": "ga:totalEvents"},
-                ],
-        }]
-    
-    definition3 =[
-        {
-            'viewId': VIEW_ID,
-            'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
-            'dimensions': [
-                 {'name':'ga:date'},
-                 {"name":"ga:eventCategory"}
-                # {'name': 'ga:dimension1'},
-             
-                ],
-            'metrics': [
-                {"expression": "ga:totalEvents"},
-               
-                ],
-			# "dimensionFilterClauses": [
-            #     {
-            #       "filters": [
-            #                     {
-            #                         "dimensionName": "ga:eventCategory",
-            #                         "operator": "EXACT",
-            #                         "expressions": ["StudentCreate"]
-            #                     }
-            #                 ]
-            #     },
-            #     {
-            #         "filters": [
-            #                     {
-            #                         "dimensionName": "ga:eventCategory",
-            #                         "operator": "EXACT",
-            #                         "expressions": ["StudentForm"]
-            #                     }
-            #                 ]
-                    
-            #     }
-            #                          ]
-        }]
-    analytics = initialize_analyticsreporting()
-    # response = get_report(analytics,definition)
-    # response = get_report(analytics,definition2)
-    response = get_report(analytics,definition3)
-    df = ga_response_dataframe(response)
-    # df = read_config.mapping(df,"mappings/event_rule.map")
-    # df = read_config.mapping(df,"mappings/etl_rule.map")
-    print(df)
-
-
+    list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
+    for data_df in list_df:
+        final_df = final_df.append(data_df,sort=False).fillna(0)  
+  
+    final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
+    print(final_df)
+    # final_df.to_csv("google_analytics_csv.files/pageviews.csv",sep="|",index=False)
+   
 if __name__ == '__main__':
-    main()
-    # print(initialize_analyticsreporting())
+    # logger =read_config.logger()
+    # main()
+    
+    area = input("enter the area")
+    main(area)
+    
+    # a= "abhinav"
+    # print(a)
+    # logger.info("hello")

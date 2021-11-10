@@ -4,6 +4,7 @@ import logging as lg
 import configparser
 from lib import transform
 import os
+import json
 
 def get_config(section,key,file_name='sqlcred.cfg'):
     """Method use to read the value of key in congfig file i.e .cfg extension file
@@ -37,7 +38,7 @@ def mysl_pool_connection(section):
 
 def logger():
     logger = lg.getLogger(__name__)
-    logger.setLevel(lg.DEBUG)
+    logger.setLevel(lg.INFO)
     formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s\
                              :%(funcName)s :%(lineno)d : %(message)s ')
     file_handler =lg.FileHandler("scripts\logs_files\logsfile.log")
@@ -60,5 +61,21 @@ def mapping(df,filename):
             df = getattr(transform, operation)(df,args)
             
     return df
+
+def read_json_file(file_name):
+    """Method is used to read json data from .json file
+
+    Args:
+        file_name (str): name of json file 
+
+    Returns:
+        Python dictonary object: json data converted into python dictonary object
+    """
+    try:
+        f=open(f"{file_name}.json",)
+        dict_2=json.load(f)  # load file object
+        return dict_2
+    except Exception as error:
+        print(f"error occurs :{error}")
     
 # data load

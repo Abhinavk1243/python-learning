@@ -5,10 +5,8 @@ from pandas.core.indexes.datetimes import date_range
 from lib import read_config
 from datetime import datetime 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-KEY_FILE_LOCATION = 'analytics2.json'
-# VIEW_ID = '254152598'
-# VIEW_ID = '254343815'
-VIEW_ID = '254152598'
+KEY_FILE_LOCATION = 'analytics-329707-cc4a4b4967b5.json'
+VIEW_ID = '253803495'
 
 def initialize_analyticsreporting():
     """Initializes an Analytics Reporting API V4 service object.
@@ -33,8 +31,10 @@ def get_report(analytics):
   Returns:
     The Analytics Reporting API V4 response.
   """
-  startdate = datetime(2021,11,2).date()
-  enddate = datetime(2021,11,2).date()
+  startdate = datetime(2021,11,10,10,0,0).date()
+  enddate = datetime(2021,11,10,11,0,0).date()
+  print(startdate)
+  print(enddate)
   return analytics.reports().batchGet(
       body={
         'reportRequests': [
@@ -42,21 +42,32 @@ def get_report(analytics):
           'viewId': VIEW_ID,
           'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
             'dimensions': [
-                            {'name':'ga:date'},
-                        #    {'name': 'ga:dimension1' },
+                            {'name':'ga:dateHourMinute'},
+                           {'name': 'ga:dimension1' },
                         #    {"name":"ga:Users"},
                           
                         
-                        #    {"name":"ga:eventLabel"},
-                           {"name":"ga:pageTitle"},
+                        #    {"name":"ga:eventAction"},
+                        #    {"name":"ga:pageTitle"},
                         # {"name":"ga:city"}
-                        #    {"name":"ga:eventCategory"}
+                           {"name":"ga:eventCategory"}
                            ],
           'metrics': [
-                      {"expression": "ga:pageviews"}
-                    #   {"expression": "ga:totalEvents"},
+                    #   {"expression": "ga:pageviews"},
+                      {"expression": "ga:totalEvents"}
     
                     ],
+        #    "dimensionFilterClauses": [
+        #                     {
+        #                         "filters": [
+        #                             {
+        #                                 "dimensionName": "ga:dimension1",
+        #                                 "operator": "EXACT",
+        #                                 "expressions": ["teacher1"]
+        #                             }
+        #                         ]
+        #                     }
+        #                                 ]
 
         
         }]
@@ -114,8 +125,8 @@ def main():
     analytics = initialize_analyticsreporting()
     response = get_report(analytics)
     df = ga_response_dataframe(response)
-    # df = read_config.mapping(df,"etl_rule.map")
-    # df= pd.melt(df, id_vars =['ga:date','ga:dimension1'], value_vars =['ga:pageTitle'])
+    df["ga:date"]= pd.to_datetime(df["ga:date"]) 
+    df["ga:date"]=df["ga:date"].dt.strftime('%d-%b-%Y (%H:%M)')
     print(df)
 
 
