@@ -31,10 +31,10 @@ def get_report(analytics):
   Returns:
     The Analytics Reporting API V4 response.
   """
-  startdate = datetime(2021,11,10,10,0,0).date()
-  enddate = datetime(2021,11,10,11,0,0).date()
-  print(startdate)
-  print(enddate)
+  startdate = datetime(2021,11,11).date()
+  enddate = datetime(2021,11,11).date()
+#   print(startdate)
+#   print(enddate)
   return analytics.reports().batchGet(
       body={
         'reportRequests': [
@@ -42,32 +42,29 @@ def get_report(analytics):
           'viewId': VIEW_ID,
           'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
             'dimensions': [
-                            {'name':'ga:dateHourMinute'},
+                            {'name':'ga:date'},
                            {'name': 'ga:dimension1' },
-                        #    {"name":"ga:Users"},
-                          
-                        
-                        #    {"name":"ga:eventAction"},
-                        #    {"name":"ga:pageTitle"},
-                        # {"name":"ga:city"}
-                           {"name":"ga:eventCategory"}
+                           {"name":"ga:eventCategory"},
+            {"name":"ga:eventLabel"},
+            {"name":"ga:eventAction"}
                            ],
           'metrics': [
                     #   {"expression": "ga:pageviews"},
-                      {"expression": "ga:totalEvents"}
+                    #   {"expression": "ga:totalEvents"},
+                    #   {"expression":"ga:eventValue"}
     
                     ],
-        #    "dimensionFilterClauses": [
-        #                     {
-        #                         "filters": [
-        #                             {
-        #                                 "dimensionName": "ga:dimension1",
-        #                                 "operator": "EXACT",
-        #                                 "expressions": ["teacher1"]
-        #                             }
-        #                         ]
-        #                     }
-        #                                 ]
+           "dimensionFilterClauses": [
+                            {
+                                "filters": [
+                                    {
+                                        "dimensionName": "ga:eventCategory",
+                                        "operator": "EXACT",
+                                        "expressions": ["Javascript_error"]
+                                    }
+                                ]
+                            }
+                                        ]
 
         
         }]
@@ -125,8 +122,8 @@ def main():
     analytics = initialize_analyticsreporting()
     response = get_report(analytics)
     df = ga_response_dataframe(response)
-    df["ga:date"]= pd.to_datetime(df["ga:date"]) 
-    df["ga:date"]=df["ga:date"].dt.strftime('%d-%b-%Y (%H:%M)')
+    # df["ga:dateHourMinute"]= pd.to_datetime(df["ga:dateHourMinute"]) 
+    # df["ga:dateHourMinute"]=df["ga:dateHourMinute"].dt.strftime('%d-%b-%Y (%H:%M)')
     print(df)
 
 

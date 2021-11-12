@@ -47,26 +47,23 @@ def ga_response_dataframe(response):
     row_list = []
     # Get each collected report
     for report in response.get('reports', []):
-        # Set column headers
+
         column_header = report.get('columnHeader', {})
         dimension_headers = column_header.get('dimensions', [])
         metric_headers = column_header.get('metricHeader', {}).get('metricHeaderEntries', [])
     
-        # Get each row in the report
+
         for row in report.get('data', {}).get('rows', []):
-            # create dict for each row
             row_dict = {}
             dimensions = row.get('dimensions', [])
             date_range_values = row.get('metrics', [])
 
-            # Fill dict with dimension header (key) and dimension value (value)
             for header, dimension in zip(dimension_headers, dimensions):
                 row_dict[header] = dimension
 
-            # Fill dict with metric header (key) and metric value (value)
             for i, values in enumerate(date_range_values):
                 for metric, value in zip(metric_headers, values.get('values')):
-                # Set int as int, float a float
+       
                     if ',' in value or '.' in value:
                         row_dict[metric.get('name')] = float(value)
                     else:
@@ -76,11 +73,9 @@ def ga_response_dataframe(response):
     return pd.DataFrame(row_list)
 
 
-def generate_reports(area):
-    startdate = datetime(2021,11,10).date()
-    enddate = datetime(2021,11,10).date()
+def generate_reports(area,startdate="yesterday",enddate="today"):
     req_json = []
-    dimension = area["dimesnions"]
+    dimension = area["dimensions"]
     # print(dimension)
     metrics = area["metrics"]
     if area["iterate"]:
@@ -130,25 +125,24 @@ def download_reports(reports):
 
 def main(area):
     data_config = read_config.read_json_file("config")
-    reports = generate_reports(data_config[area])
+    startdate = datetime(2021,11,12).date()
+    enddate = datetime(2021,11,12).date()
+    reports = generate_reports(data_config[area],startdate=startdate,enddate=enddate)
     list_df = download_reports(reports)
     final_df = pd.DataFrame()
     
-    list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
+    # list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
     for data_df in list_df:
         final_df = final_df.append(data_df,sort=False).fillna(0)  
   
-    final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
+    # final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
     print(final_df)
     # final_df.to_csv("google_analytics_csv.files/pageviews.csv",sep="|",index=False)
    
 if __name__ == '__main__':
-    # logger =read_config.logger()
-    # main()
     
     area = input("enter the area")
     main(area)
+
     
-    # a= "abhinav"
-    # print(a)
-    # logger.info("hello")
+    
