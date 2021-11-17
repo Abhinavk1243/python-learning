@@ -18,6 +18,8 @@
             "name": "ga:dateHourMinute"
         }, {
             "name": "ga:dimension1"
+        },{
+            "name": "ga:dimension3"
         }, {
             "name": "ga:pageTitle"
         }],
@@ -28,12 +30,14 @@
     },
     "video": {
         "dimensions": [{
-                "name": "ga:dateHourMinute"
+                "name": "ga:date"
             },
             {
                 "name": "ga:dimension1"
             },
-
+            {
+                "name": "ga:dimension3"
+            },
             {
                 "name": "ga:eventCategory"
             },
@@ -45,7 +49,7 @@
             }
         ],
         "metrics": [{
-            "expression": "ga:eventValue"
+            "expression": "ga:totalEvents"
         }],
         "iterate": "event",
         "event": ["video-50%"]
@@ -67,6 +71,9 @@
             },
             {
                 "name": "ga:dimension1"
+            },
+            {
+                "name": "ga:dimension3"
             },
             {
                 "name": "ga:eventCategory"
@@ -98,6 +105,10 @@
             {
                 "name": "ga:dimension1"
             },
+            {
+                "name": "ga:dimension3"
+            },
+            
 
             {
                 "name": "ga:eventLabel"
@@ -115,10 +126,13 @@
     },
     "nav-bar": {
         "dimensions": [{
-                "name": "ga:date"
+                "name": "ga:dateHourMinute"
             },
             {
                 "name": "ga:dimension1"
+            },
+            {
+                "name": "ga:dimension3"
             },
             {
                 "name": "ga:eventCategory"
@@ -156,10 +170,14 @@
             {
                 "name": "ga:eventCategory"
             },
+            {
+                "name": "ga:dimension3"
+            },
 
             {
                 "name": "ga:eventAction"
-            }
+            },
+            {"name":"ga:eventLabel"}
         ],
         "metrics": [
 

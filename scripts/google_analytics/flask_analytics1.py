@@ -43,28 +43,28 @@ def get_report(analytics):
           'dateRanges': [{'startDate': str(startdate), 'endDate': str(enddate)}],
             'dimensions': [
                             {'name':'ga:date'},
-                           {'name': 'ga:dimension1' },
+                           {'name': 'ga:dimension3' },
                            {"name":"ga:eventCategory"},
             {"name":"ga:eventLabel"},
             {"name":"ga:eventAction"}
                            ],
           'metrics': [
                     #   {"expression": "ga:pageviews"},
-                    #   {"expression": "ga:totalEvents"},
-                    #   {"expression":"ga:eventValue"}
+                      {"expression": "ga:totalEvents"},
+                      {"expression":"ga:eventValue"}
     
                     ],
-           "dimensionFilterClauses": [
-                            {
-                                "filters": [
-                                    {
-                                        "dimensionName": "ga:eventCategory",
-                                        "operator": "EXACT",
-                                        "expressions": ["Javascript_error"]
-                                    }
-                                ]
-                            }
-                                        ]
+        #    "dimensionFilterClauses": [
+        #                     {
+        #                         "filters": [
+        #                             {
+        #                                 "dimensionName": "ga:eventCategory",
+        #                                 "operator": "EXACT",
+        #                                 "expressions": ["Javascript_error"]
+        #                             }
+        #                         ]
+        #                     }
+        #                                 ]
 
         
         }]

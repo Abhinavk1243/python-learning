@@ -3,15 +3,21 @@ from typing_extensions import final
 from apiclient import discovery
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
+from pandas.core.frame import DataFrame
 from pandas.core.indexes.datetimes import date_range
 from lib import read_config
+import argparse
+import json
 from datetime import datetime 
 import logging
+
+from scripts.datetime_test.string_to_date import string_to_date
+
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 KEY_FILE_LOCATION = 'analytics-329707-cc4a4b4967b5.json'
 VIEW_ID = '253803495'
-# def save_csv(filename):
+
     
 def initialize_analyticsreporting():
     """Initializes an Analytics Reporting API V4 service object.
@@ -123,26 +129,76 @@ def download_reports(reports):
         list_df.append(df)
     return list_df
 
-def main(area):
+def main(area,params):
     data_config = read_config.read_json_file("config")
-    startdate = datetime(2021,11,12).date()
-    enddate = datetime(2021,11,12).date()
+    startdate = string_to_date(params["startdate"]).date()
+    enddate = string_to_date(params["enddate"]).date()
+    
     reports = generate_reports(data_config[area],startdate=startdate,enddate=enddate)
     list_df = download_reports(reports)
     final_df = pd.DataFrame()
     
-    # list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
+    list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
     for data_df in list_df:
         final_df = final_df.append(data_df,sort=False).fillna(0)  
-  
-    # final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
+    # if not(final_df.empty):
+    #     final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
     print(final_df)
-    # final_df.to_csv("google_analytics_csv.files/pageviews.csv",sep="|",index=False)
+
+
+
    
 if __name__ == '__main__':
+    area = "js-error"
+    area = "nav-bar"
+    # area = "event"
+    # area = "card"
+    area = "etl"
+    area = "video"
+    area = "scroll_depth"
+    # area = "auth"
+    params = {"startdate":"2021-10-16","enddate":"2021-11-16"}
+    main(area,params)
     
-    area = input("enter the area")
-    main(area)
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # parser = argparse.ArgumentParser(description='Adobe Analytics ETL Process',
+    #                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    #                                 allow_abbrev=False)
+
+    # parser.add_argument('--area', '-a',
+    #                     type=str,
+    #                     dest="area",
+    #                     required=True,
+    #                     help='Feature profile to process')
+
+    # parser.add_argument('--conf', '-conf',
+    #                     dest="conf",
+    #                     required=False,
+    #                     help='Configuration parameters with startdate, enddate, chunk_size and load')
+    # args, unknown = parser.parse_known_args()
+    # area =args.area
+    # date = args.conf
+    # date = json.loads(date)
+    # main(area,date)
 
     
     
