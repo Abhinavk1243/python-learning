@@ -1,0 +1,13 @@
+date|user_id|platform|walletcard_id|pagename|metric_name|metric_value|guid
+2021-12-22|1234|Web|12421425|Standard - Insurance Card - 60de01afd62125fda7ee66cc|pageviews|1|
+2021-12-22|1234|Web|12421425|Standard - Insurance Card - 60de01afd62125fda7ee662c|pageviews|2|
+2021-12-22|1234|Web|12421425|health wallet - Insurance Card - 60de01afd62125fda7ee66cc|pageviews|1|
+2021-12-22|1234|Web|12421425|health wallet - Insurance Card - 60de01afd62125fda7ee66cc|Delete Card|1|
+2021-12-22|1234|Web|12421425|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Delete Card|2|
+2021-12-22|1234|Web|12421425|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Save Card|3|
+2021-12-22|1234|Web|12421425|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Add Card|5|
+2021-12-22|123141|Web|124fa25|standard-insurance-card-60f9fee8750d8946d16c63d7|Delete Card|1|
+2021-12-22|123141|Web|124fa25|standard-insurance-card-60f9fee8750d8946d16c63d7|pageviews|5|
+2021-12-22|123141|Web|124fa25|standard-insurance-card-60f9fee8750d8946d16c63d7|Save Card|5|
+2021-12-22|123141|Web|124fa25|standard-insurance-card-60f9fee8750d8946d16c63d7|Add Card|2|
+2021-12-22|123489|Web|12421ty5|standard-insurance-card-60fc87fa750d8983d76c6535|Add Card|3|

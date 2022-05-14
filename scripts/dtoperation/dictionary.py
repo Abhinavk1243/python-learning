@@ -1,34 +1,93 @@
-def add_data():
-    key=input("enter the key")
-    if key.isdigit()==True:
-        key=int(key)
-    value=input("enter the value")
-    if value.isdigit()==True:
-        value=int(value)
-    _dict.update({key:value})
-    return _dict
-def delete_element():
-    key=input("enter the key of data which want to delete")
-    if key.isdigit()==True:
-        key=int(key)
-        _dict.pop(key)
-        return _dict
-
-
-
-_dict=dict()
-print("1:add_data \n 2: delete data \n 3: Get keys \n 4: get Values")
-want_continue="y"
-while want_continue=="y" or want_continue=="Y":
-    choice=int(input('enter your choice by indexing'))
-    if choice==1:
-        print(add_data())
-    elif choice==2:
-        print(delete_element())
-    elif choice==3:
-        print(_dict.keys())
-    elif choice==4:
-        print(_dict.values())
-    want_continue=input("want to continue")
+class Course:
+      
+    def __init__(self):
+        self.Fee()
+        self.available_batches()
+  
+    def Fee(self):
+        raise NotImplementedError
+  
+    def available_batches(self):
+        raise NotImplementedError
+  
+    def __repr__(self):
+        return 'Fee : {0.fee} | Batches Available : {0.batches}'.format(self)
+  
+# concrete course
+class DSA(Course):
+  
+    """Class for Data Structures and Algorithms"""
+  
+    def Fee(self):
+        self.fee = 8000
+  
+    def available_batches(self):
+        self.batches = 5
+  
+    def __str__(self):
+        return "DSA"
+  
+# concrete course
+class SDE(Course):
+  
+    """Class for Software Development Engineer"""
+  
+    def Fee(self):
+        self.fee = 10000
+  
+    def available_batches(self):
+        self.batches = 4
+  
+    def __str__(self):
+        return "SDE"
+  
+# concrete course
+class STL(Course):
+  
+    """Class for Standard Template Library"""
+  
+    def Fee(self):
+        self.fee = 5000
+  
+    def available_batches(self):
+        self.batches = 7
+  
+    def __str__(self):
+        return "STL"
+  
+# Complex Course
+class ComplexCourse:
+  
+    def __repr__(self):
+        return 'Fee : {0.fee} | available_batches: {0.batches}'.format(self)
+  
+# Complex course
+class Complexcourse(ComplexCourse):
+  
+    def Fee(self):
+        self.fee = 7000
+  
+    def available_batches(self):
+        self.batches = 6
+  
+# construct course
+def construct_course(cls):
+  
+    course = cls()
+    course.Fee()
+    course.available_batches()
+  
+    return course    # return the course object
+  
+# main method
+if __name__ == "__main__":
+  
+    # dsa = DSA()  # object for DSA course
+    # sde = SDE()  # object for SDE course
+    # stl = STL()  # object for STL course
+  
+    # complex_course = construct_course(Complexcourse)
+    # print(complex_course)
     
-
+    course = STL()
+    print(course.__repr__())

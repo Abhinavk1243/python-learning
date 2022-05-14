@@ -1,0 +1,8 @@
+get_date=>ga:date
+col_rename=>ga:date|date
+col_rename=>ga:dimension1|Username
+col_rename=>ga:eventAction|Video Status
+col_rename=>ga:eventCategory|Event Name
+col_rename=>ga:eventLabel|Title
+col_rename=>ga:dimension3|platform
+col_rename=>ga:totalEvents|Total Event

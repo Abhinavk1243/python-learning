@@ -1,0 +1,4 @@
+col_rename_index=>ga:totalEvents|StudentForm|0
+col_rename_index=>ga:totalEvents|UpdateRecord|1
+col_rename_index=>ga:totalEvents|StudentCreate|2
+col_rename_index=>ga:totalEvents|DeleteStudentRecord|3

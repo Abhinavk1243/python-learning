@@ -1,0 +1,21 @@
+{"student":
+   [
+
+   {
+	   "ID": 116,
+	   "Name":"Abhinav kumar",
+	   "Subject": "Soft computing"
+    },
+   {
+	   "ID": 117,
+	   "Name": "Aman Rastogi",
+	   "Subject": "python"
+    },
+   {
+	   "ID": 118,
+	   "Name": "Aakash",
+	   "Subject": "java"
+	}
+	
+	]
+}

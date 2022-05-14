@@ -1,0 +1,7 @@
+get_date=>ga:dateHourMinute
+col_rename=>ga:dateHourMinute|date
+col_rename=>ga:dimension1|Username
+col_rename=>ga:dimension3|platform
+col_rename=>ga:eventCategory|event_name
+col_rename=>ga:eventAction|Page Click
+col_rename=>ga:totalEvents|Event Value

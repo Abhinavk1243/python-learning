@@ -1,0 +1,5 @@
+col_drop=>datetime_friendly
+col_melt=>date,hour,userid,platform,benefit_sponsor,benefit,market|email,phone,external link,view benefit|metric_name|metric_value
+col_filter_zero=>metric_value
+col_change_int=>metric_value
+col_set=>guid|

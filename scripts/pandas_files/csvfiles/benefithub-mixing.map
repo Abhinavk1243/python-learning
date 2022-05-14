@@ -1,0 +1,4 @@
+col_add_index=>platform|Web|0
+col_add_index=>platform|Android|1
+col_add_index=>platform|iOS|2
+col_add_index=>date||0,1,2

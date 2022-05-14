@@ -1,0 +1,8 @@
+[
+    {  "item" : "binder", "qty" : 100, "price" : 12,"warranty":1,"products":{"prod_id":12,"prod_name":"toy","item":"car"}},
+    {  "item" : "pencil", "qty" : 102, "price" : 10,"products":{"prod_id":11,"prod_name":"stationary","item":"pencil"}},
+    {  "item" : "notebook", "qty" : 200, "price" : 8},
+    { "item" : "pencil", "qty" : 50, "price" : 6},
+    {  "item" : "eraser", "qty" : 150, "price" : 3},
+    {  "item" : "legal pad", "qty" : 42, "price" : 10}
+ ]

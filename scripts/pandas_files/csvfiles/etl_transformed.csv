@@ -1,0 +1,59 @@
+date|prop28|prop31|prop16|prop8|event_name|event_value
+2021-04-28|7985e0de-ec51-428c-ae66-64756aac1cab|iOS|"title EN-US||body EN-US"|insights|event16|9
+2021-04-28|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Congratulations!||See what you just earned."|insights|event16|5
+2021-04-28|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Hi||EN click it"|dailyReminder|event16|1
+2021-04-28|4f272125-ca5b-4fc6-ab10-864e228e6d6b|iOS|"Congratulations!||See what you just earned."|insights|event16|6
+2021-04-28|0fc8371f-66f5-464e-9d5f-6a12892e8561|Android|"Congratulations!|none|See what you just earned."|insights|event16|5
+2021-04-28|5f9e1303-57cf-48b3-9881-397707fc377d|iOS|"EN_US - Title||EN test test test test test test test test test test test test test test test test te"|none|event16|2
+2021-04-28|c1b70064-7d7e-4e2c-9411-38a23c20f5de|iOS|"Take the First Step has now started.||Start Tracking!"|challenges|event16|1
+2021-04-28|90d07722-27ea-4435-9390-e36b8bd55abb|iOS|"Take the First Step||This challenge ends soon. Make sure you track!"|challengeEnding|event16|1
+2021-04-28|7985e0de-ec51-428c-ae66-64756aac1cab|iOS|"title EN-US||body EN-US"|insights|event91|69
+2021-04-28|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Congratulations!||See what you just earned."|insights|event91|27
+2021-04-28|fe03fc7b-cc47-4b2a-9c5e-8a6fdeb37ec2|iOS|"Hi||EN click it"|dailyReminder|event91|1
+2021-04-28|4f272125-ca5b-4fc6-ab10-864e228e6d6b|iOS|"Congratulations!||See what you just earned."|insights|event91|3
+2021-04-28|0fc8371f-66f5-464e-9d5f-6a12892e8561|Android|"Congratulations!|none|See what you just earned."|insights|event91|17
+2021-04-28|7985e0de-ec51-428c-ae66-64756aac1cab|iOS|"Way to go!||Find out what you just earned for completing a healthy activity"|rewards|event91|2
+2021-04-28|82bea524-b26a-43d4-95b9-f9326d892280|Android|"Congratulations!|none|See what you just earned."|insights|event91|5
+2021-04-28|be4c0175-9143-4899-afad-816a045c3405|Android|"Take the First Step has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|0d12b522-80ce-425b-9d08-c9429b3871c2|iOS|"Congratulations!||See what you just earned."|insights|event91|2
+2021-04-28|0d12b522-80ce-425b-9d08-c9429b3871c2|iOS|"Hi||EN click it"|insights|event91|1
+2021-04-28|6d35437f-4100-4b1a-bc4c-29a2d789cd9a|Android|"This Will Lower Your Cholesterol Naturally|none|Push 1"|none|event91|1
+2021-04-28|6d35437f-4100-4b1a-bc4c-29a2d789cd9a|Android|"1|none|1"|none|event91|1
+2021-04-28|6d35437f-4100-4b1a-bc4c-29a2d789cd9a|Android|"sanity test|none|US staging only"|none|event91|1
+2021-04-28|42cb9a79-cdf1-4632-9c08-b00394cf26ad|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|42cb9a79-cdf1-4632-9c08-b00394cf26ad|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|50891064-dadd-45a5-817f-cd925e2924a4|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|50891064-dadd-45a5-817f-cd925e2924a4|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|a3418e36-a5ff-4efc-8f98-5343c40ee445|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|a3418e36-a5ff-4efc-8f98-5343c40ee445|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|ea27da8a-e5f3-4e99-a708-5c640399cefc|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|ea27da8a-e5f3-4e99-a708-5c640399cefc|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|eed62f29-93e0-41be-80cd-5a9b2cd4a855|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|eed62f29-93e0-41be-80cd-5a9b2cd4a855|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|fa7c1cc2-8851-445f-915d-d272e1204b74|Android|"Take the First Step has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|74402858-d283-410a-a5a4-9852eb92205e|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|74402858-d283-410a-a5a4-9852eb92205e|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|3e2368eb-5599-4cc6-8583-7103e907c072|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|3e2368eb-5599-4cc6-8583-7103e907c072|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|fadaecb9-0536-4370-adce-50d8daf85a47|Android|"Take the First Step has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|494ebbb2-44cc-4668-bd5f-e4e34a0eb5f9|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|494ebbb2-44cc-4668-bd5f-e4e34a0eb5f9|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|3c17ac11-c7e3-43fe-97da-6746705bd947|Android|"Take the First Step|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|0d131a1b-f471-41b4-8d03-46c20565e697|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|0d131a1b-f471-41b4-8d03-46c20565e697|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|ae1deb0e-0bf3-40b0-bd37-11004d5e6a68|Android|"Walk at Lunch Day Challenge has now started.|none|Start Tracking!"|challenges|event91|1
+2021-04-28|ae1deb0e-0bf3-40b0-bd37-11004d5e6a68|Android|"Walk at Lunch Day Challenge|none|This challenge ends soon. Make sure you track!"|challengeEnding|event91|1
+2021-04-28|0fc8371f-66f5-464e-9d5f-6a12892e8561|Android|"Congratulations!|none|See what you just earned."|insights|event92|3
+2021-04-28|82bea524-b26a-43d4-95b9-f9326d892280|Android|"Congratulations!|none|See what you just earned."|insights|event92|4
+2021-04-28|be4c0175-9143-4899-afad-816a045c3405|Android|"Take the First Step has now started.|none|Start Tracking!"|challenges|event92|1
+2021-04-28|OIAM_c0a54939-2dce-40a8-bf13-4872c92a7cc3|Android|"Meet your weight loss goals with Scale Back|none|Enroll now and receive a FREE digital scale. Attend"|none|event92|1
+2021-04-28|b70a30d4-4d0e-43f0-b49b-3852bc335659|Android|"Take the First Step|none|This challenge ends soon. Make sure you track!"|challengeEnding|event92|2
+2021-04-28|50c43095-fe9b-416b-b21b-b38929481889|Android|"Take the First Step|none|This challenge ends soon. Make sure you track!"|challengeEnding|event92|1
+2021-04-28|17ff8fba-58f5-4ae0-9937-46a18f7d212d|Android|"Combate à COVID-19|none|Neste momento da pandemia, a colaboração individual e coletiva é essenci"|none|event92|1
+2021-04-28|bf6c37bd-91f1-4776-8763-b1570cd5a032|Android|"Meet your weight loss goals with Scale Back|none|Enroll now and receive a FREE digital scale. Attend"|none|event92|1
+2021-04-28|dc07632e-714e-41ff-abdc-9b8dcec55f35|Android|"Take the First Step|none|This challenge ends soon. Make sure you track!"|challengeEnding|event92|1
+2021-04-28|39b6c72d-a6c4-4935-a216-9edf64d78f1d|Android|"Combate à COVID-19|none|Neste momento da pandemia, a colaboração individual e coletiva é essenci"|none|event92|1
+2021-04-28|39217377-72fd-4caf-803c-01f967db4a21|Android|"Take the First Step|none|This challenge ends soon. Make sure you track!"|challengeEnding|event92|1
+2021-04-28|bf53e51f-c821-4b01-8c6b-1e76dcd60a31|Android|"Take the First Step has now started.|none|Start Tracking!"|challenges|event92|1
+2021-04-28|c66dde91-cbc0-4630-9817-a14b42e265e9|Android|"Combate à COVID-19|none|Neste momento da pandemia, a colaboração individual e coletiva é essenci"|none|event92|1
+2021-04-28|0c7781c4-4bc1-42f4-87fa-4eef52b0f5a6|Android|"Meet your weight loss goals with Scale Back|none|Enroll now and receive a FREE digital scale. Attend"|none|event92|1

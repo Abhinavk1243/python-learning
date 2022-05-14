@@ -1,0 +1,8 @@
+get_date=>ga:date
+col_rename=>ga:date|date
+col_rename=>ga:dimension3|platform
+col_rename=>ga:userTimingCategory|event_name
+col_rename=>ga:userTimingVariable|form_name
+col_rename=>ga:userTimingValue|timetaken(msec)
+col_rename=>ga:userTimingSample|number_of_users
+col_rename=>ga:avgUserTimingValue|Avg Timetaken

@@ -1,0 +1,7 @@
+col_rename=>datetime|date
+col_rename=>datetime_friendly|datetime
+col_filter_unspecified=>prop28
+col_filter_unspecified=>prop31
+col_filter_unspecified=>prop16
+col_filter_unspecified=>prop8
+col_melt=>date,datetime,prop28,prop31,prop16,prop8|None|metric_name|metric_value
