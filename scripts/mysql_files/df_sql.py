@@ -1,12 +1,14 @@
 from datetime import datetime
 import mysql.connector as msc 
 import pandas as pd
-import logging as lg 
+import logging as lg
+
+# from tables import Cols 
 from lib import read_config 
 import argparse
 
 logger = read_config.logger()
-pool_cnxn =  read_config.mysl_pool_connection("mysql")
+pool_cnxn =  read_config.mysl_pool_connection("mysql_web_data")
 mycursor = pool_cnxn.cursor()
 
 # Function to connect databse with python code
@@ -32,7 +34,10 @@ def csv_to_table(file_name,table_name):
     """
     
     df=pd.read_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|")
-    database=read_config.get_config("mysql","database")
+    
+    df=df.fillna(0)
+    # print(df)
+    database=read_config.get_config("mysql_web_data","database")
     cols_1=df.columns
     cols_1=list(cols_1)
     para_len=len(cols_1)
@@ -40,13 +45,13 @@ def csv_to_table(file_name,table_name):
     parameters=["%s"]*para_len
     parameters=",".join([str(i) for i in parameters])
     val=[]
-    
+    print(cols_1)
     val = list(df.itertuples(index=False, name=None))
-    # for i,row in df.iterrows():
-    #     val.append(tuple(row))
     
+    # print(val)
     try:   
-        sql=f"INSERT INTO {database}.{table_name}({cols_1}) VALUES ({parameters}) "           
+        sql=f"INSERT INTO web_data.content_page ({cols_1}) VALUES ({parameters}) "           
+        print(sql)
         mycursor.executemany(sql,val)
             
         logger.debug(f"csv file : {file_name} is successfully inserted in database table : {table_name} ")
@@ -66,7 +71,8 @@ def  table_to_csv(table_name,file_name):
     Returns:
         object: dataframe of sql table
     """
-    db=read_config.get_config("mysql","database")
+    db=read_config.get_config("mysql_web_data","database")
+    # db="web_data"
     try:
         df=pd.read_sql(con=pool_cnxn, sql=f"SELECT * FROM {db}.{table_name}")
         df.to_csv(f"scripts/pandas_files/csvfiles/{file_name}.csv",sep="|",index=False)
@@ -126,18 +132,23 @@ def create_table(file_name,table_name):
 
 def main(filename,tablename):
     
-    if checkTableExists(tablename,"test_db"):
-        print(f"table '{tablename}' already exist")
-    else:
-        create_table(filename,tablename)
-        csv_to_table(filename,tablename)
+    # if checkTableExists(tablename,"test_db"):
+    #     print(f"table '{tablename}' already exist")
+    # else:
+    #     # create_table(filename,tablename)
+    #     csv_to_table(filename,tablename)
+    csv_to_table(filename,tablename)
         
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('-filename',type=str,help="filename")
-    parser.add_argument('-tablename',type=str,help="tablename")
-    args = parser.parse_args()
-    filename = args.filename
-    tablename = args.tablename
+    # parser = argparse.ArgumentParser(description='Process some integers.')
+    # parser.add_argument('-filename',type=str,help="filename")
+    # parser.add_argument('-tablename',type=str,help="tablename")
+    # args = parser.parse_args()
+    # filename = args.filename
+    # tablename = args.tablename
+    filename="melted"
+    tablename = "content_page"
     main(filename,tablename)
+    # df =pd.read_csv(f"scripts/pandas_files/csvfiles/{filename}.csv",sep="|")
+    # print(df.dtypes)

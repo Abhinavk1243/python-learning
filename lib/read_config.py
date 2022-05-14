@@ -21,7 +21,7 @@ def get_config(section,key,file_name='sqlcred.cfg'):
     return parser.get(section,key)  
  
 def mysl_pool_connection(section):
-    """Metod is use to connect database with python 
+    """Method is use to connect database with python 
 
     Returns:
         connection : myslconnection"""
@@ -32,6 +32,7 @@ def mysl_pool_connection(section):
               'database':get_config(section,"database"),
               'password' :get_config(section,"password")
             }
+    
     cnxn = pooling.MySQLConnectionPool(pool_name = "Abhinav_mysl_pool",**dbconfig)
     pool_cnxn=cnxn.get_connection()
     return pool_cnxn

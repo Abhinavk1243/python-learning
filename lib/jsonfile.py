@@ -91,3 +91,8 @@ def xml_to_json():
       xml_file.close()
     j=json.dumps(data_dict)
     return j
+import sys
+
+def test_arv():
+    print("This is the name of the program:", sys.argv[0])
+    

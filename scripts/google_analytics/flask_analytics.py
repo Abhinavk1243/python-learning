@@ -10,9 +10,11 @@ import argparse
 import json
 from datetime import datetime 
 import logging
-
+from lib.jsonfile import test_arv
+conn = read_config.mysl_pool_connection("mysql")
 from scripts.datetime_test.string_to_date import string_to_date
-
+from sqlalchemy import create_engine
+import numpy as np
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 KEY_FILE_LOCATION = 'analytics-329707-cc4a4b4967b5.json'
@@ -42,11 +44,7 @@ def get_report(analytics,definition):
     Returns:
         The Analytics Reporting API V4 response.
     """
-    return analytics.reports().batchGet(
-        body={
-            'reportRequests':definition}).execute()
-
-
+    return analytics.reports().batchGet(body={'reportRequests':definition}).execute()
 
 
 def ga_response_dataframe(response):
@@ -87,7 +85,6 @@ def generate_reports(area,startdate="yesterday",enddate="today"):
     if area["iterate"]:
         if area["iterate"]=="event":
             for event in area["event"]:
-                # print("hello")
                 definition =[
                     {
                         'viewId': VIEW_ID,
@@ -106,7 +103,6 @@ def generate_reports(area,startdate="yesterday",enddate="today"):
                             }
                                         ]
                     }]
-                # print(definition)
                 req_json.append(definition)
     else:
         definition =[
@@ -141,45 +137,55 @@ def main(area,params):
     list_df = read_config.mapping(list_df,f"mappings/{area}_map/{area}_mapping.map")
     for data_df in list_df:
         final_df = final_df.append(data_df,sort=False).fillna(0)  
-    # if not(final_df.empty):
-    #     final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
+    if not(final_df.empty):
+        final_df = read_config.mapping(final_df,f"mappings/{area}_map/{area}_transform.map")
     print(final_df)
-
-
-
+    
+    
+    
+    
    
 if __name__ == '__main__':
+    from datetime import datetime,date,timedelta
     area = "js-error"
     area = "nav-bar"
     # area = "event"
     # area = "card"
-    area = "etl"
-    area = "video"
-    area = "scroll_depth"
+    # area = "etl"
+    # area = "video"
+    # area = "scroll_depth"
     # area = "auth"
-    params = {"startdate":"2021-10-16","enddate":"2021-11-16"}
-    main(area,params)
+    # area = "form-sub-timming"
+    params = {"startdate":"2021-11-17","enddate":"2021-11-17"}
+    # main(area,params)
     
+    # try:
+    #     cur = conn.cursor()
+    #     query = "SELECT * FROM test_db.students"
+    #     cur.execute(query) 
+    #     result = cur.fetchall()
+    #     # print(result)
+    #     df1 = pd.DataFrame()
+    #     for row in result:
+    #         df = pd.DataFrame(row)[2:].transpose()
+    #         df1 = df1.add(df,fill_value = "a")
+    #     df.columns = ["a","b","c","d"]
+    #     # col = ["a","b"]
+    #     # df = df.reindex(columns = ["a","b"])
+    #     print(df)
+    # except Exception as error:
+    #     print(error)
+    import numpy as np
+  
+    # Creating a dataframe
+    # Setting the seed value to re-generate the result.
+    np.random.seed(25)
     
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    df = pd.DataFrame(np.random.rand(10, 3), columns =['A', 'B', 'C'])
+    df.iloc[-1] = np.nan
+    tk = pd.Series(np.ones(10))
+    df.add(tk, axis ='index')
+    print(df)
     # parser = argparse.ArgumentParser(description='Adobe Analytics ETL Process',
     #                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     #                                 allow_abbrev=False)

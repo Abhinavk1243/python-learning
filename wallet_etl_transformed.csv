@@ -1,0 +1,24 @@
+date|user_id|platform|walletcard_id|pagename|metric_name|metric_value|guid|card_category|card_type|card_name_id
+2021-12-22|1234|Web|12421425.0|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Delete Card|2||||
+2021-12-22|1234|Web|12421425.0|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Save Card|3||||
+2021-12-22|1234|Web|12421425.0|Standard - Insurance Card - 60de01afd62125fda7ee66cc|Add Card|5||||
+2021-12-22|1234|Web|12421425.0|health - Insurance Card - 60de01afd62125fda7ee66cc|Add Card|5||||
+2021-12-22|1234|Web|124214.0|Health Wallet - Card Detail - 5ff34ce2e53aff8d76879bef|Add Card|5||||
+2021-12-22|1234|Web|1242142.0|Health Wallet - Card Detail - 5ff34ce2e53aff8d76879bef|Delete Card|5||||
+2021-12-22|1234|Web|12421425.0|Standard - Insurance Card - 6091b9011d48f98845f91cf3|Delete Card|1||||
+2021-12-22|1234|Web|1112000.0|Standard - Insurance Card - 6091b9011d48f98845f91cf3|Save Card|7||||
+2021-12-22|1234|Web|1112000.0|Standard - Insurance Card - 6091b9011d48f98845f91cf3|Add Card|1||||
+2021-12-22|1234|Web|111125.0|health wallet - Insurance Card - 60de01afsv2125fda7ee66cc|Add Card|3||||
+2021-12-22|1234|Web|124214.0|Health Wallet - Card Detail - 60d9d5421d48f9adcff92400|Add Card|5||||
+2021-12-22|1234|Web|1242142.0|Health Wallet - Card Detail - 60d9d5421d48f9adcff92400|Delete Card|5||||
+2021-12-22|1234|Web|1242142.0|Health Wallet - Card Detail - 60d9d5421d48f9adcff92400|Save Card|5||||
+2021-12-22|1234|Web|1111090.0|"you.sharecare.com | Health Wallet - Card Detail - 60ba6ed31d48f99345f921f3"|Save Card|1||||
+2021-12-22|1234|Web|1111090.0|"you.sharecare.com | Health Wallet - Card Detail - 60ba6ed31d48f99345f921f3"|Add Card|2||||
+2021-12-22|1234|Web|12421425.0|Standard - Insurance Card - 60de01afd62125fda7ee66cc|pageviews|1|||Insurance Card|60De01Afd62125Fda7Ee66Cc
+2021-12-22|1234|Web|12421425.0|health wallet - Insurance Card - 60de01afd62125fda7ee66cc|pageviews|1||||
+2021-12-22|1234|Web|1242142.0|Health Wallet - Card Detail - 5ff34ce2e53aff8d76879bef|pageviews|5||Health Wallet Card Detail||5Ff34Ce2E53Aff8D76879Bef
+2021-12-22|1234|Web|1242167.0|Standard - Insurance Card - 6091b9011d48f98845f91cf3|pageviews|5|||Insurance Card|6091B9011D48F98845F91Cf3
+2021-12-22|1234|Web|90915.0|health wallet - Insurance Card - 60de01afdadfa5fda7ee66cc|pageviews|1||||
+2021-12-22|1234|Web|111125.0|health wallet - Insurance Card - 60de01afsv2125fda7ee66cc|pageviews|3||||
+2021-12-22|1234|Web|1242142.0|Health Wallet - Card Detail - 60d9d5421d48f9adcff92400|pageviews|5||Health Wallet Card Detail||60D9D5421D48F9Adcff92400
+2021-12-22|1234|Web|1111090.0|"you.sharecare.com | Health Wallet - Card Detail - 60ba6ed31d48f99345f921f3"|pageviews|3||Health Wallet Card Detail||60Ba6Ed31D48F99345F921F3

@@ -189,5 +189,34 @@
         ],
         "iterate": "event",
         "event":["Javascript_error"]
+    },
+    "form-sub-timming":{
+        "dimensions": [{
+            "name": "ga:date"
+        },
+        {
+            "name":"ga:userTimingCategory"
+        },
+        {
+            "name":"ga:userTimingLabel"
+        },
+        {
+            "name":"ga:userTimingVariable"
+        }
+    ],
+    "metrics": [
+        {
+            "expression": "ga:userTimingValue"
+        },
+        
+        {
+            "expression": "ga:userTimingSample"
+        },
+        {
+            "expression": "ga:avgUserTimingValue"
+        }
+    ],
+    "iterate":null
     }
+
 }

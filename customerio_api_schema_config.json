@@ -1,0 +1,26 @@
+{
+  "sc_reg": {
+    "schema": "MESSAGING",
+    "table": "custio_sc_api_"
+  },
+  "sc_nonreg": {
+    "schema": "MESSAGING",
+    "table": "custio_sc_nonreg_api_"
+  },
+  "fl_vaccine_asst": {
+    "schema": "VACCINE_ASST",
+    "table": "custio_fl_vaccine_asst_api_"
+  },
+  "ga_vaccine_asst": {
+    "schema": "VACCINE_ASST",
+    "table": "custio_ga_vaccine_asst_api_"
+  },
+  "mpg_vaccine_asst": {
+    "schema": "VACCINE_ASST",
+    "table": "custio_mpg_vaccine_asst_api_"
+  },
+  "centene_vaccine_asst": {
+    "schema": "VACCINE_ASST",
+    "table": "custio_centene_vaccine_asst_api_"
+  }
+}

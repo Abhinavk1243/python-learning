@@ -1,0 +1,255 @@
+Date,Username,Event Category,Event Action,Event Label,Total Events,Event Value
+20211111,teacher1,Scroll_depth,horizontal,/student/,101,"5,850"
+20211111,teacher1,Scroll_depth,vertical,/student/,101,"5,850"
+20211116,abhinav1,Scroll_depth,horizontal,/student/,72,"4,200"
+20211111,abhinav1,Scroll_depth,horizontal,/student/,63,"3,675"
+20211111,abhinav1,Scroll_depth,vertical,/student/,63,"3,675"
+20211116,abhinav1,Scroll_depth,vertical,/student/,56,"2,600"
+20211111,abhinav1,Scroll_depth,horizontal,/student/studentForm/,42,"2,450"
+20211111,abhinav1,Scroll_depth,vertical,/student/studentForm/,42,"2,450"
+20211115,abhinav1,Scroll_depth,horizontal,/student/studentForm/,36,"2,100"
+20211115,abhinav1,Scroll_depth,vertical,/student/studentForm/,36,"2,100"
+20211117,abhinav1,Scroll_depth,horizontal,/student/,36,"2,100"
+20211117,abhinav1,Scroll_depth,vertical,/student/,36,"2,100"
+20211111,teacher1,Scroll_depth,horizontal,/student/studentForm/,30,"1,750"
+20211111,teacher1,Scroll_depth,vertical,/student/studentForm/,30,"1,750"
+20211115,abhinav1,Scroll_depth,horizontal,/student/,30,"1,750"
+20211116,abhinav1,Scroll_depth,vertical,/student/studentForm/,30,"1,750"
+20211117,abhinav1,Visit,2 or more min,/student/,30,0
+20211116,abhinav1,Scroll_depth,horizontal,/student/studentForm/,29,"1,725"
+20211115,abhinav1,Scroll_depth,vertical,/student/,27,"1,450"
+20211116,teacher1,Scroll_depth,horizontal,/student/,25,"1,450"
+20211112,abhinav1,Scroll_depth,horizontal,/student/,24,"1,400"
+20211112,abhinav1,Scroll_depth,vertical,/student/,24,"1,400"
+20211116,teacher1,Scroll_depth,horizontal,/graphic_designing/,21,"1,225"
+20211116,teacher1,Scroll_depth,vertical,/graphic_designing/,21,"1,225"
+20211111,abhinav1,Scroll_depth,horizontal,/digital_marketing/,18,"1,050"
+20211111,abhinav1,Scroll_depth,vertical,/digital_marketing/,18,"1,050"
+20211116,abhinav1,Scroll_depth,horizontal,/graphic_designing/,18,"1,050"
+20211116,abhinav1,Scroll_depth,vertical,/graphic_designing/,18,"1,050"
+20211116,teacher1,Scroll_depth,vertical,/student/,18,800
+20211109,abhinav1,login-success,login,/student/,14,0
+20211109,abhinav1,DeleteStudentRecord,click,/student/,12,0
+20211111,abhinav1,Scroll_depth,horizontal,/graphic_designing/,12,700
+20211111,abhinav1,Scroll_depth,vertical,/graphic_designing/,12,700
+20211116,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',12,23
+20211117,abhinav1,Scroll_depth,horizontal,/student/studentForm/,12,700
+20211117,abhinav1,Scroll_depth,vertical,/student/studentForm/,12,700
+20211111,abhinav1,Scroll_depth,horizontal,/admin/,9,525
+20211111,abhinav1,Scroll_depth,vertical,/admin/,9,525
+20211111,teacher1,Scroll_depth,horizontal,/digital_marketing/,9,525
+20211111,teacher1,Scroll_depth,vertical,/digital_marketing/,9,525
+20211112,abhinav1,Scroll_depth,horizontal,/digital_marketing/,9,525
+20211112,abhinav1,Scroll_depth,horizontal,/student/studentForm/,9,525
+20211112,abhinav1,Scroll_depth,vertical,/digital_marketing/,9,525
+20211112,abhinav1,Scroll_depth,vertical,/student/studentForm/,9,525
+20211112,metric1,Scroll_depth,horizontal,/graphic_designing/,9,525
+20211112,metric1,Scroll_depth,horizontal,/student/,9,525
+20211112,metric1,Scroll_depth,vertical,/graphic_designing/,9,525
+20211112,metric1,Scroll_depth,vertical,/student/,9,525
+20211116,teacher1,Scroll_depth,horizontal,/student/studentForm/,9,525
+20211116,teacher1,Scroll_depth,vertical,/student/studentForm/,9,525
+20211117,abhinav1,Scroll_depth,horizontal,/admin/user_role_form/,9,525
+20211117,abhinav1,Scroll_depth,vertical,/admin/user_role_form/,9,525
+20211117,Aman123,Visit,2 or more min,/student/,9,0
+20211115,Admin12,Javascript_error,Uncaught ReferenceError: hello is not defined,http://127.0.0.1:5000/static/custom.js,8,280
+20211116,abhinav1,Visit,2 or more min,/student/,8,0
+20211111,teacher1,DeleteStudentRecord,click,/student/,7,0
+20211110,teacher1,Scroll_depth,horizontal,/student/,6,175
+20211110,teacher1,Scroll_depth,vertical,/student/,6,175
+20211111,abhinav1,Scroll_depth,horizontal,/admin/user_role_form/,6,350
+20211111,abhinav1,Scroll_depth,vertical,/admin/user_role_form/,6,350
+20211112,metric1,Scroll_depth,horizontal,/student/studentForm/,6,350
+20211112,metric1,Scroll_depth,vertical,/student/studentForm/,6,350
+20211115,abhinav1,Scroll_depth,horizontal,/admin/,6,350
+20211115,abhinav1,Scroll_depth,vertical,/admin/,6,350
+20211115,Admin12,Scroll_depth,horizontal,/admin/,6,350
+20211115,Admin12,Scroll_depth,horizontal,/student/,6,350
+20211115,Admin12,Scroll_depth,horizontal,/student/studentForm/,6,350
+20211115,Admin12,Scroll_depth,vertical,/admin/,6,350
+20211115,Admin12,Scroll_depth,vertical,/student/,6,350
+20211115,Admin12,Scroll_depth,vertical,/student/studentForm/,6,350
+20211117,abhinav1,Scroll_depth,horizontal,/admin/,6,350
+20211117,abhinav1,Scroll_depth,vertical,/admin/,6,350
+20211117,metric14,Scroll_depth,horizontal,/student/,6,350
+20211117,metric14,Scroll_depth,vertical,/student/,6,350
+20211101,abhinav1,StudentForm,Click,/student/,5,0
+20211109,abhinav1,graphic-design-vid,start,Bohemian Rhapsody | Muppet Music Video | The Muppets,5,0
+20211116,abhinav1,Nav-bar-click,student_list,/student/studentForm/,5,0
+20211116,teacher1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/graphic_designing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',5,10
+20211101,teacher1,StudentForm,Click,/,4,0
+20211101,teacher1,UpdateRecord,Click,/student/studentForm/,4,0
+20211109,abhinav1,StudentCreate,Click,/student/studentForm/,4,0
+20211109,abhinav1,StudentForm,Click,/student/,4,0
+20211116,abhinav1,Nav-bar-click,student_form,/student/,4,0
+20211116,teacher1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',4,8
+20211117,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',4,8
+20211117,abhinav1,Nav-bar-click,student_list,/student/,4,0
+20211101,teacher1,StudentForm,Click,/student/,3,0
+20211109,abhinav1,graphic-design-vid,pause,Bohemian Rhapsody | Muppet Music Video | The Muppets,3,0
+20211109,abhinav1,graphic-design-vid,progress,Bohemian Rhapsody | Muppet Music Video | The Muppets,3,0
+20211110,abhinav1,Scroll,horizontal,/student/,3,0
+20211110,abhinav1,Scroll,vertical,/student/,3,0
+20211110,teacher1,Scroll_depth,horizontal,/admin/,3,175
+20211110,teacher1,Scroll_depth,vertical,/admin/,3,175
+20211111,abhinav1,Nav-bar-click,digital_marketing,/graphic_designing/,3,0
+20211111,abhinav1,StudentForm,Click,/student/,3,0
+20211111,teacher1,Scroll_depth,horizontal,/admin/,3,175
+20211111,teacher1,Scroll_depth,horizontal,/admin/user_role_form/,3,175
+20211111,teacher1,Scroll_depth,horizontal,/graphic_designing/,3,175
+20211111,teacher1,Scroll_depth,vertical,/admin/,3,175
+20211111,teacher1,Scroll_depth,vertical,/admin/user_role_form/,3,175
+20211111,teacher1,Scroll_depth,vertical,/graphic_designing/,3,175
+20211112,abhinav1,Card Click,HTML syntax blog,/digital_marketing/,3,0
+20211112,abhinav1,Javascript_error,Uncaught ReferenceError: hello is not defined,http://127.0.0.1:5000/static/custom.js,3,105
+20211112,metric1,Scroll_depth,horizontal,/admin/,3,175
+20211112,metric1,Scroll_depth,horizontal,/admin/user_role_form/,3,175
+20211112,metric1,Scroll_depth,horizontal,/digital_marketing/,3,175
+20211112,metric1,Scroll_depth,vertical,/admin/,3,175
+20211112,metric1,Scroll_depth,vertical,/admin/user_role_form/,3,175
+20211112,metric1,Scroll_depth,vertical,/digital_marketing/,3,175
+20211115,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',3,3
+20211115,abhinav1,Nav-bar-click,student_list,/student/studentForm/,3,0
+20211115,abhinav1,Scroll_depth,horizontal,/admin/user_role_form/,3,175
+20211115,abhinav1,Scroll_depth,horizontal,/digital_marketing/,3,175
+20211115,abhinav1,Scroll_depth,horizontal,/graphic_designing/,3,175
+20211115,abhinav1,Scroll_depth,vertical,/admin/user_role_form/,3,175
+20211115,abhinav1,Scroll_depth,vertical,/digital_marketing/,3,175
+20211115,abhinav1,Scroll_depth,vertical,/graphic_designing/,3,175
+20211116,abhinav1,Nav-bar-click,graphic_design,/student/,3,0
+20211116,teacher1,Scroll_depth,horizontal,/admin/user_role_form/,3,175
+20211116,teacher1,Scroll_depth,horizontal,/digital_marketing/,3,175
+20211116,teacher1,Scroll_depth,vertical,/admin/user_role_form/,3,175
+20211117,abhinav1,Nav-bar-click,student_form,/student/,3,0
+20211117,abhinav1,Scroll_depth,horizontal,/graphic_designing/,3,175
+20211117,abhinav1,Scroll_depth,vertical,/graphic_designing/,3,175
+20211117,abhinav1432,Scroll_depth,horizontal,/student/,3,175
+20211117,abhinav1432,Scroll_depth,vertical,/student/,3,175
+20211117,admin125,Scroll_depth,horizontal,/student/,3,175
+20211117,admin125,Scroll_depth,vertical,/student/,3,175
+20211117,Aman123,Scroll_depth,horizontal,/student/,3,175
+20211117,Aman123,Scroll_depth,vertical,/student/,3,175
+20211117,metric14,Scroll_depth,horizontal,/digital_marketing/,3,175
+20211117,metric14,Scroll_depth,horizontal,/graphic_designing/,3,175
+20211117,metric14,Scroll_depth,vertical,/digital_marketing/,3,175
+20211117,metric14,Scroll_depth,vertical,/graphic_designing/,3,175
+20211101,abhinav1,StudentCreate,Click,/student/studentForm/,2,0
+20211101,abhinav1,UpdateRecord,Click,/student/studentForm/,2,0
+20211101,teacher1,StudentCreate,Click,/student/studentForm/,2,0
+20211108,abhinav1,Login Failed,Login Failed,/,2,0
+20211108,abhinav1,login-success,login,/student/,2,0
+20211108,abhinav1,StudentForm,Click,/student/,2,0
+20211109,abhinav1,Login Failed,Login Failed,/,2,0
+20211109,abhinav1,UpdateRecord,Click,/student/studentForm/,2,0
+20211110,teacher1,DeleteStudentRecord,click,/student/,2,0
+20211110,teacher1,Scroll,100 percent,/student/,2,0
+20211110,teacher1,Scroll,25 percent,/student/,2,0
+20211110,teacher1,Scroll,50 percent,/student/,2,0
+20211110,teacher1,video-50%,progress,Bohemian Rhapsody | Muppet Music Video | The Muppets,2,100
+20211111,teacher1,Card Click,HTML syntax blog,/digital_marketing/,2,0
+20211112,abhinav1,Javascript_error,Uncaught ReferenceError: logou is not defined,http://127.0.0.1:5000/student/,2,350
+20211112,metric1,Nav-bar-click,student_form,/student/,2,0
+20211115,abhinav1,Nav-bar-click,home,/student/studentForm/,2,0
+20211115,abhinav1,Nav-bar-click,student_form,/student/,2,0
+20211116,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/graphic_designing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',2,4
+20211116,abhinav1,Nav-bar-click,student_list,/student/,2,0
+20211116,abhinav1,video-50%,seek,Bohemian Rhapsody | Muppet Music Video | The Muppets,2,100
+20211116,teacher1,Nav-bar-click,graphic_design,/student/,2,0
+20211116,teacher1,Nav-bar-click,graphic_design,/student/studentForm/,2,0
+20211116,teacher1,Nav-bar-click,student_list,/student/,2,0
+20211116,teacher1,Scroll_depth,vertical,/digital_marketing/,2,75
+20211116,teacher1,video-50%,seek,Bohemian Rhapsody | Muppet Music Video | The Muppets,2,100
+20211117,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/admin/user_role_form/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',2,4
+20211117,abhinav1,Nav-bar-click,graphic_design,/student/,2,0
+20211117,abhinav1,Nav-bar-click,student_list,/admin/user_role_form/,2,0
+20211117,abhinav1,Nav-bar-click,student_list,/student/studentForm/,2,0
+20211101,abhinav1,StudentForm,Click,/,1,0
+20211101,teacher1,DeleteStudentRecord,click,/student/,1,0
+20211102,teacher1,StudentForm,Click,/student/,1,0
+20211102,teacher1,UpdateRecord,Click,/student/studentForm/,1,0
+20211108,abhinav1,StudentForm,Click,/admin/,1,0
+20211109,abhinav1,graphic-design-vid,seek,Bohemian Rhapsody | Muppet Music Video | The Muppets,1,0
+20211110,abhinav1,DeleteStudentRecord,click,/student/,1,0
+20211110,abhinav1,video-50%,seek,Bohemian Rhapsody | Muppet Music Video | The Muppets,1,50
+20211110,metric1,StudentCreate,Click,/student/studentForm/,1,0
+20211110,metric1,UpdateRecord,Click,/student/studentForm/,1,0
+20211110,teacher1,StudentForm,Click,/student/studentForm/,1,0
+20211110,teacher1,UpdateRecord,Click,/student/studentForm/,1,0
+20211111,abhinav1,Card Click,HTML image blog,/digital_marketing/,1,0
+20211111,abhinav1,Card Click,HTML syntax blog,/digital_marketing/,1,0
+20211111,abhinav1,Card Click,HTML tags Blog,/digital_marketing/,1,0
+20211111,abhinav1,Nav-bar-click,admin,/student/studentForm/,1,0
+20211111,abhinav1,Nav-bar-click,graphic_design,/admin/,1,0
+20211111,abhinav1,Nav-bar-click,graphic_design,/admin/user_role_form/,1,0
+20211111,abhinav1,Nav-bar-click,student_form1,/digital_marketing/,1,0
+20211111,abhinav1,Nav-bar-click,student_list,/student/studentForm/,1,0
+20211111,abhinav1,Nav-bar-click,track_event,/student/studentForm/,1,0
+20211111,abhinav1,Nav-bar-click,userrole-nav,/admin/,1,0
+20211111,abhinav1,Nav-bar-click,userrole-nav,/student/,1,0
+20211111,abhinav1,StudentForm,Click,(not set),1,0
+20211111,teacher1,Card Click,HTML tags Blog,/digital_marketing/,1,0
+20211111,teacher1,Nav-bar-click,admin,/student/,1,0
+20211111,teacher1,Nav-bar-click,digital_marketing,/admin/user_role_form/,1,0
+20211111,teacher1,Nav-bar-click,graphic_design,/admin/,1,0
+20211111,teacher1,Nav-bar-click,student_form,/student/,1,0
+20211111,teacher1,Nav-bar-click,student_list,/student/studentForm/,1,0
+20211111,teacher1,Nav-bar-click,userrole-nav,/graphic_designing/,1,0
+20211112,abhinav1,Nav-bar-click,digital_marketing,/student/,1,0
+20211112,abhinav1,Nav-bar-click,student_form,/student/,1,0
+20211112,metric1,Card Click,HTML image blog,/digital_marketing/,1,0
+20211112,metric1,Card Click,HTML syntax blog,/digital_marketing/,1,0
+20211112,metric1,Card Click,HTML tags Blog,/digital_marketing/,1,0
+20211112,metric1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/graphic_designing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,1
+20211112,metric1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,1
+20211112,metric1,Nav-bar-click,admin,/student/studentForm/,1,0
+20211112,metric1,Nav-bar-click,graphic_design,/admin/user_role_form/,1,0
+20211112,metric1,Nav-bar-click,student_list,/student/studentForm/,1,0
+20211112,metric1,Nav-bar-click,userrole-nav,/admin/,1,0
+20211112,metric1,video-50%,progress,Bohemian Rhapsody | Muppet Music Video | The Muppets,1,50
+20211115,abhinav1,Card Click,HTML image blog,/digital_marketing/,1,0
+20211115,abhinav1,Card Click,HTML syntax blog,/digital_marketing/,1,0
+20211115,abhinav1,Card Click,HTML tags Blog,/digital_marketing/,1,0
+20211115,abhinav1,Javascript_error,Uncaught ReferenceError: toastr is not defined,http://127.0.0.1:5000/student/,1,136
+20211115,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/graphic_designing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,1
+20211115,abhinav1,Nav-bar-click,admin,/student/,1,0
+20211115,abhinav1,Nav-bar-click,admin,/student/studentForm/,1,0
+20211115,abhinav1,Nav-bar-click,digital_marketing,/graphic_designing/,1,0
+20211115,abhinav1,Nav-bar-click,graphic_design,/admin/user_role_form/,1,0
+20211115,abhinav1,Nav-bar-click,home,/student/,1,0
+20211115,abhinav1,Nav-bar-click,student_form,/admin/,1,0
+20211115,abhinav1,Nav-bar-click,student_form,/student/studentForm/,1,0
+20211115,abhinav1,Nav-bar-click,userrole-nav,/admin/,1,0
+20211115,Admin12,Javascript_error,Uncaught ReferenceError: toastr is not defined,http://127.0.0.1:5000/static/custom.js,1,51
+20211115,Admin12,Nav-bar-click,admin,/student/,1,0
+20211115,Admin12,Nav-bar-click,admin,/student/studentForm/,1,0
+20211115,Admin12,Nav-bar-click,student_form,/student/,1,0
+20211115,Admin12,Nav-bar-click,student_form,/student/studentForm/,1,0
+20211115,Admin12,Nav-bar-click,student_list,/admin/,1,0
+20211116,abhinav1,Nav-bar-click,home,/student/,1,0
+20211116,abhinav1,Nav-bar-click,home,/student/studentForm/,1,0
+20211116,abhinav1,Nav-bar-click,student_list,/graphic_designing/,1,0
+20211116,abhinav1,video-50%,progress,Bohemian Rhapsody | Muppet Music Video | The Muppets,1,50
+20211116,abhinav1,video-50%,seek,Should You Learn Django or Flask in 2020-21?,1,50
+20211116,teacher1,Card Click,HTML syntax blog,/digital_marketing/,1,0
+20211116,teacher1,Card Click,HTML tags Blog,/digital_marketing/,1,0
+20211116,teacher1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/student/studentForm/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,2
+20211116,teacher1,Nav-bar-click,student_form,/graphic_designing/,1,0
+20211116,teacher1,Nav-bar-click,student_list,/admin/user_role_form/,1,0
+20211116,teacher1,Nav-bar-click,student_list,/student/studentForm/,1,0
+20211116,teacher1,Nav-bar-click,userrole-nav,/student/,1,0
+20211116,teacher1,video-50%,progress,Bohemian Rhapsody | Muppet Music Video | The Muppets,1,50
+20211117,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/admin/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,2
+20211117,abhinav1,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/graphic_designing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,2
+20211117,abhinav1,Nav-bar-click,admin,/student/studentForm/,1,0
+20211117,abhinav1,Nav-bar-click,home,/student/,1,0
+20211117,abhinav1,Nav-bar-click,student_form,/admin/user_role_form/,1,0
+20211117,abhinav1,Nav-bar-click,student_list,/admin/,1,0
+20211117,abhinav1,Nav-bar-click,student_list,/graphic_designing/,1,0
+20211117,abhinav1,Nav-bar-click,userrole-nav,/admin/,1,0
+20211117,abhinav1,Nav-bar-click,userrole-nav,/student/,1,0
+20211117,abhinav1,Nav-bar-click,userrole-nav,/student/studentForm/,1,0
+20211117,metric14,Javascript_error,Uncaught SyntaxError: Unexpected token '<',http://127.0.0.1:5000/digital_marketing/'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js',1,2
+20211117,metric14,Nav-bar-click,digital_marketing,/graphic_designing/,1,0
+20211117,metric14,Nav-bar-click,graphic_design,/student/,1,0
+20211117,metric14,Nav-bar-click,student_list,/digital_marketing/,1,0
+20211117,metric14,Nav-bar-click,track_event,/digital_marketing/,1,0

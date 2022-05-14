@@ -1,0 +1,7 @@
+col_drop=>datetime_friendly
+col_melt=>date,user_id,platform,content_name,page_name,market|include|metric_name|metric_value
+col_split_content_name=>content_name|Relaxing Rainfall (30 min),Tranquil Lake Sounds (30 min),Waterfall (30 min),California Surf (30 min),Waves (30 min)|Video,Audio|content_type
+col_filter_zero=>metric_value
+col_change_int=>metric_value
+col_set=>guid|
+col_reindex=>date|user_id|market|platform|page_name|content_type|content_name|metric_name|metric_value|guid
