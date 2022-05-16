@@ -1,0 +1,20 @@
+
+##post event list doesn't contain event_reference_number 
+
+date_time	visit_num	post_cust_hit_time_gmt	visit_start_time_gmt	post_visid_high	post_visid_low	post_prop1	post_prop28	post_prop31	username	post_prop33	post_prop34	post_prop45	post_prop44	post_prop15	post_prop16	post_evar9	post_event_list	duplicate_events	post_mobileaction
+2022-01-31 18:37:15	6	1643672235	1643672232	6860810878634478719	5210471993859921398	Security PIN	OIAM_801a7b74-350a-4091-a6e9-0f34a0c0e341	iOS	share3appprod	Enter Security PIN	none	(null)	(null)	(null)	(null)	(null)	503,510,509,511,100,101,102,104,122,124,132,133,141,150,157,162,179,180	(null)	(null)
+2022-01-31 18:37:20	6	1643672240	1643672232	6860810878634478719	5210471993859921398	Timeline	OIAM_801a7b74-350a-4091-a6e9-0f34a0c0e341	iOS	share3appprod	Timeline	Timeline	(null)	(null)	(null)	(null)	waimoku_falls	503,510,509,511,100,101,102,104,122,124,132,133,141,150,157,162,179,180	(null)	(null)
+
+
+
+
+=====================================================================================================================================================================
+
+user_id (post_prop28 ) null
+
+date_time	post_prop28	post_prop31	post_event_list	post_prop33	username
+2022-01-31 09:01:58	(null)	Android	503,510,509,511,101,102,104,122,141,150,157,162,179,180,290	(null)	share3appprod
+2022-01-31 04:00:29	(null)	Android	503,510,509,511,101,102,104,107,115,122,141,150,157,162,179,180,290	(null)	share3appprod
+2022-01-31 16:52:00	(null)	iOS	503,510,509,511,101,102,104,122,133,138,141,150,157,162,179,180	(null)	share3appprod
+2022-01-31 14:53:11	(null)	iOS	503,510,509,511,100,101,102,104,122,132,133,141,150,157,162,179,180	Confirm Your Country	share3appprod
+2022-01-31 14:53:11	(null)	iOS	503,510,509,511,101,102,104,122,133,141,150,157,162,179,180,240	(null)	share3appprod
