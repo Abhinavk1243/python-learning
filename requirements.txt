@@ -1,0 +1,70 @@
+pandas
+vertica_python
+requests
+boto3
+simple_salesforce
+awscli
+jira
+git+http://github.com/dancingcactus/python-omniture.git
+omniture
+sqlalchemy
+sqlalchemy-vertica[pyodbc,turbodbc,vertica-python]
+sqlalchemy-vertica-python
+PyJWT
+cryptography
+adobe-analytics-api-20
+curlify
+python-json-logger
+# pymysql
+shareplum==0.5.1
+# s3fs --upgrade
+scipy
+matplotlib
+pymongo
+azure-cosmos
+mysql-connector-python
+jinja2
+# pymsql
+s3fs
+python-gnupg
+paramiko
+jsonschema
+xlsxwriter
+Five9
+# sudo yum -y install gcc
+# sudo yum install postgresql postgresql-devel python-devel
+psycopg2-binary
+psycopg2
+
+adal
+Office365-REST-Python-Client
+requests-ntlm2
+
+google-cloud-storage
+pyarrow
+
+papermill
+wheel
+dask
+# "dask[dataframe]" --upgrade 
+
+python-pptx
+xlrd==1.2.0
+openpyxl
+
+sklearn
+statsmodels
+numpy
+tableone
+matplotlib
+imblearn
+scikit-learn
+
+psutil
+# -U kaleido
+more_itertools
+plotly
+hl7apy
+# sudo yum install unoconv
+verticapy
+five9

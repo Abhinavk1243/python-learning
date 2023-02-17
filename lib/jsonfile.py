@@ -1,7 +1,7 @@
 import json
 import pandas as pd 
 import xml.etree.ElementTree as ET
-import xmltodict
+# import xmltodict
 
 def read_json_file(file_name):
     """Method is used to read json data from .json file
@@ -65,24 +65,24 @@ def json_to_csv(dict_1,file_name_1):
 
 
 
-def createxml():
-    root=ET.Element("catalog")
+# def createxml():
+#     root=ET.Element("catalog")
     
-    m1=ET.Element("mobile")
-    root.append(m1)
-    b1=ET.SubElement(m1,"brand")
-    b1.text="redmi"
-    b2=ET.SubElement(m1,"price")
-    b2.text="18000"
+#     m1=ET.Element("mobile")
+#     root.append(m1)
+#     b1=ET.SubElement(m1,"brand")
+#     b1.text="redmi"
+#     b2=ET.SubElement(m1,"price")
+#     b2.text="18000"
 
-    m2=ET.Element("mobile")
-    root.append(m2)
-    c1=ET.SubElement(m2,"brand")
-    c1.text="samsung"
-    c2=ET.SubElement(m2,"price")
-    c2.text="28000"
-    tree=ET.ElementTree(root)
-    tree.write("scripts/dtoperation/xml_files/mobile_data.xml")
+#     m2=ET.Element("mobile")
+#     root.append(m2)
+#     c1=ET.SubElement(m2,"brand")
+#     c1.text="samsung"
+#     c2=ET.SubElement(m2,"price")
+#     c2.text="28000"
+#     tree=ET.ElementTree(root)
+#     tree.write("scripts/dtoperation/xml_files/mobile_data.xml")
 
      
 def xml_to_json():

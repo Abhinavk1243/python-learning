@@ -51,7 +51,7 @@ while continue_1=='y' or continue_1=='Y':
             print("file does not exist")
     elif choice==7:
         file=open(f"scripts/pandas_files/csvfiles/{file_name}","w")
-        ch=input("Enter the content want to wrie in a file")
+        ch=input("Enter the content want to wrtie in a file")
         file.write(ch)
         file.close()
         file=open(f"scripts/pandas_files/csvfiles/{file_name}","r")

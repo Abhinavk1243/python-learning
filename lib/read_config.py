@@ -30,7 +30,8 @@ def mysl_pool_connection(section):
               'host' : get_config(section,"host"),
               'user' : get_config(section,"user"),
               'database':get_config(section,"database"),
-              'password' :get_config(section,"password")
+              'password' :get_config(section,"password"),
+              'auth_plugin':'mysql_native_password'
             }
     
     cnxn = pooling.MySQLConnectionPool(pool_name = "Abhinav_mysl_pool",**dbconfig)
@@ -45,6 +46,10 @@ def logger():
     file_handler =lg.FileHandler("scripts\logs_files\logsfile.log")
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
+
+    consoleHandler = lg.StreamHandler()
+    consoleHandler.setFormatter(formatter)
+    logger.addHandler(consoleHandler)
     return logger
 
 def load_rules(filename):
@@ -79,4 +84,4 @@ def read_json_file(file_name):
     except Exception as error:
         print(f"error occurs :{error}")
     
-# data load
+

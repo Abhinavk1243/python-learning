@@ -1,232 +1,609 @@
-# from ast import Index
-# from unittest import result
-# import pandas as pd
-# from sqlalchemy import null
-# from lib import read_config
-
-# def remove_dup(test_list):
-#     res = []
-#     for i in test_list:
-#         if i not in res:
-#             res.append(i)
-#     return res
-# # pool_cnxn =  read_config.mysl_pool_connection("mysql_web_data")
-# # mycursor = pool_cnxn.cursor()
-
-# # df = pd.read_csv(f"melted.csv",sep="|")
-# # # print(df)
-# # df= df.drop("guid",axis=1)
-# # df1 = df.where(pd.notnull(df), None)
-# # val = list(df1.itertuples(index=False, name=None))
-
-# # sql=f"""INSERT INTO web_data.content_page (date,user_id,platform,market,content_type,content_id,content_name,metric_name,metric_value)
-# # VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-
-# # mycursor.executemany(sql,val)
-# # pool_cnxn.commit()
-
-# # list1  = ['6b3cc48a-d103-435e-9061-06f99c764b3a','26231018-dd06-4662-90b3-15cf7b61cafa','5f1bdad2-aecb-4214-bc80-9b5653cf7a2d	','23fffd26-bf45-40ef-bb2a-dc28ad1997a9','516730e3-323e-4e82-930e-d2dc6de46249','55000b2b-3f37-40e8-b731-b1caffbaf36f','992ebba3-4c7c-4443-a520-cc76af00080b','67c54434-96c9-4f24-8264-baa8571cfec1','44722d6a-8b01-4387-91e0-4e17d2c3b5f1','d49eafd1-c530-4fd1-bb97-a6e3aeebe543','OIAM_46cb2b91-4ff3-448c-986a-6062ec853217','872a80a4-5fdb-4202-9722-2046d11b6b0a','OIAM_bf8b026b-cea2-4584-9470-215bc1d3c899','c79f046d-6256-4d18-87cf-d86c42e0a6bf','4896112d-9500-4e66-82f2-e3871ea01f8a','3e58e07d-7c55-4d0f-8458-76da316ba2e2','1bdf3061-85a8-4cbe-bdda-973e92d13f7c','1f6d9b17-820f-4589-931a-3a5a29750949','2c059849-58eb-4fda-bda5-25ead2737f7d','b70b4b65-feb0-4947-9c6d-ba2c6e86f19b','34ff9f23-bbf6-4f9d-8c92-d8c5ebcddf83','d7f6e115-605b-4462-a952-9bb4dcd326f8','7bfae641-1f9c-43ca-a37a-f61edbcaeb57','2c5c3154-d20a-4f01-be3c-f6dd0a004bff','4b732e38-72a6-4736-9db8-652eb6b4c5f9','a569eb03-263c-4a7c-8d0a-6a631992313c','edb8e46f-34c3-4db7-aa56-e7d0f23c444c','09de4644-e9de-4d0b-abe8-36d8313b36e3','35f07eb7-15a0-48bc-a229-0c0311d10594','6e8ced15-134e-421e-a91b-2bb9ff7c6e75','9ba051a7-15b0-4ccb-8e8a-0f0b80ce2ea9','8de731dc-d93d-4815-8850-e60fb53236b0','a835ab02-fa09-46e2-802c-49043c732f98','c430a090-1b43-4851-9233-0ba3c0a195e1','9c09bc75-6a73-4586-b57e-530b2a086b21','2765a5b1-85e2-436f-b272-70268c688238','0dac226d-4ac5-419c-ba3a-585cc5ae685a','323b7bea-e9cb-41a7-824b-9d29d94100dc','2c95c2b2-46c8-44b7-874d-b910c46687a9','92ab44f6-2cd9-4e7e-99cd-a396df713f95','992774f4-4234-4814-926e-6f3260273e0b','5f815aa5-146c-4c6c-92f0-cb680d49dccf','5463d63c-6188-4036-9f95-b969b43c406c','51de17c2-d7b3-47fa-9b78-27360572f14d','2b314122-7546-46dd-a6c8-caf5f4f955c2','b994f91a-6338-4615-910a-e3aae10220aa','46a4b7b9-b992-44a9-b282-f17b5ec74080','215efac0-b586-4487-9f4a-4a249657462f','92dd3056-6aa4-4d27-ae11-85d5eb63d73f','OIAM_e558cc04-73b1-422d-b9b1-5d6811fa5093','8bbed3b2-f9d3-4c9e-8c21-fbde2cd3a373','6a059391-8ba7-4946-8e3c-47e6ae7e6dd9','55324c27-8693-4826-93c4-9b3e6bbd3fad','f8167d13-03e1-4d31-8eff-0e5ab786ecd0','71486313-7ab2-4a5c-bab3-a05814099a9c','bb285706-51ac-481a-9fac-232d73b91f8d','dc94b1d1-afde-4d20-ba0d-fefdbe2b8ab0','OIAM_223a0561-b2c5-4132-b090-720164f29b0b','c41aa8f8-1e19-443f-b30a-dba7b55bb07b','64055002-05a9-49a8-811f-26276fa8fe70','32fbcc64-d2da-4711-bced-38c3841c0318','11cfc64e-c7c1-4f76-8107-b9ab5c7195b8','bc0c6b7e-5483-4a63-b9ef-64c6ffb35eeb','24e99479-1bc0-4022-99b5-0bbf471c6aca']
-
-
-# # for index,i in enumerate(list1):
-# #     print(i)
-# #     sql = "select * from web_data.content_page where user_id = '{i}'"
-# #     mycursor.execute(sql)
-# #     try:
-# #         result1=mycursor.fetchall()
-# #     except:
-# #         print(i)
-# #     print(result1)
-    
-    
-# # # sql = "select * from web_data.content_page where user_id = '6b3cc48a-d103-435e-9061-06f99c764b3a'"
-# # # mycursor.execute(sql)
-# # # result1 = mycursor.fetchall()
-# # # print(result1)
-    
-    
-    
-# # feb_keep = ["date_time","accept_language","adclassificationcreative","adload","aemassetid","aemassetsource","aemclickedassetid",
-# #            "browser","browser_height","browser_width","c_color","campaign","carrier","channel","click_action","click_action_type",
-# #            "click_context","click_context_type","click_sourceid","click_tag","clickmaplink","clickmaplinkbyregion","clickmappage",
-# #            "clickmapregion","code_ver","color","connection_type","cookies","country","ct_connect_type","curr_factor","curr_rate",
-# #            "currency","cust_hit_time_gmt","daily_visitor","date_time.1","domain","duplicate_events","duplicate_purchase",
-# #            "duplicated_from","ef_id","evar1","evar2","evar3","evar4","evar5","evar6","evar7","evar8","evar9","evar10","evar11",
-# #            "evar12","evar13","evar14","evar15","evar16","evar17","evar18","evar19","evar20","evar21","evar22","evar23","evar24",
-# #            "evar25","evar26","evar27","evar28","evar29","evar30","evar31","evar32","evar33","evar34","evar35","evar36","evar37","evar38","evar39","evar40","evar41","evar42","evar43","evar44","evar45","evar46","evar47","evar48","evar49","evar50","evar51","evar52","evar53","evar54","evar55","evar56","evar57","evar58","evar59","evar60","evar61","evar62","evar63","evar64","evar65","evar66","evar67","evar68","evar69","evar70","evar71","evar72","evar73","evar74","evar75","evar76","evar77","evar78","evar79","evar80","evar81","evar82","evar83","evar84","evar85","evar86","evar87","evar88","evar89","evar90","evar91","evar92","evar93","evar94","evar95","evar96","evar97","evar98","evar99","evar100","evar101","evar102","evar103","evar104","evar105","evar106","evar107","evar108","evar109","evar110","evar111","evar112","evar113","evar114","evar115","evar116","evar117","evar118","evar119","evar120","evar121","evar122","evar123","evar124","evar125","evar126","evar127","evar128","evar129","evar130","evar131","evar132","evar133","evar134","evar135","evar136","evar137","evar138","evar139","evar140","evar141","evar142","evar143","evar144","evar145","evar146","evar147","evar148","evar149","evar150","evar151","evar152","evar153","evar154","evar155","evar156","evar157","evar158","evar159","evar160","evar161","evar162","evar163","evar164","evar165","evar166","evar167","evar168","evar169","evar170","evar171","evar172","evar173","evar174","evar175","evar176","evar177","evar178","evar179","evar180","evar181","evar182","evar183","evar184","evar185","evar186","evar187","evar188","evar189","evar190","evar191","evar192","evar193","evar194","evar195","evar196","evar197","evar198","evar199","evar200","evar201","evar202","evar203","evar204","evar205","evar206","evar207","evar208","evar209","evar210","evar211","evar212","evar213","evar214","evar215","evar216","evar217","evar218","evar219","evar220","evar221","evar222","evar223","evar224","evar225","evar226","evar227","evar228","evar229","evar230","evar231","evar232","evar233","evar234","evar235","evar236","evar237","evar238","evar239","evar240","evar241","evar242","evar243","evar244","evar245","evar246","evar247","evar248","evar249","evar250","event_list","exclude_hit","first_hit_page_url","first_hit_pagename","first_hit_ref_domain","first_hit_ref_type","first_hit_referrer","first_hit_time_gmt","geo_city","geo_country","geo_dma","geo_region","geo_zip","hier1","hier2","hier3","hier4","hier5","hit_source","hit_time_gmt","hitid_high","hitid_low","homepage","hourly_visitor","ip","j_jscript","java_enabled","javascript","language","last_hit_time_gmt","last_purchase_num","last_purchase_time_gmt","latlon1","latlon23","mcvisid","mobile_id","mobileacquisitionclicks","mobileappid","mobileappperformanceappid_app_perf_app_name","mobileappperformancecrashid","mobileappstoredownloads","mobileappstoreobjectid_application_name","mobileappstoreobjectid_application_version","mobileappstoreobjectid_category_name","mobileappstoreobjectid_device_manufacturer","mobileappstoreobjectid_in_app_name","mobileappstoreobjectid_platform_name_version","mobileappstoreobjectid_rank_category_type","mobileappstoreobjectid_region_name","mobileappstoreobjectid_review_title","mobileappstoreoneoffrevenue","mobileappstorepurchases","mobileappstorerankdivisor","mobileappstorerating","mobileappstoreratingdivisor","mobileavgprevsessionlength","mobilebeaconmajor","mobilebeaconminor","mobilebeaconproximity","mobilebeaconuuid","mobilecampaigncontent","mobilecampaignmedium","mobilecampaignname","mobilecampaignsource","mobilecrashes","mobilecrashrate","mobiledailyengagedusers","mobiledayofweek","mobiledayssincefirstuse","mobiledayssincelastupgrade","mobiledayssincelastuse","mobiledeeplinkid","mobiledeeplinkid_name","mobiledevice","mobilehourofday","mobileinstalls","mobilelaunches","mobilelaunchnumber","mobileltv","mobileltvtotal","mobilemessagebuttonname","mobilemessageid_dest","mobilemessageid_type","mobilemessageimpressions","mobilemessageonline","mobilemessagepushpayloadid_name","mobilemessageviews","mobilemonthlyengagedusers","mobileosenvironment","mobileplaceaccuracy","mobileplacecategory","mobileplacedwelltime","mobileplaceentry","mobileplaceexit","mobileplaceid","mobileprevsessionlength","mobilepushoptin","mobilepushpayloadid","mobilerelaunchcampaigncontent","mobilerelaunchcampaignsource","mobilerelaunchcampaignterm","mobileupgrades","monthly_visitor","mvvar1","mvvar2","mvvar3","namespace","new_visit","os","p_plugins","page_event","page_event_var1","page_event_var2","page_event_var3","page_url","pagename","paid_search","partner_plugins","persistent_cookie","post_adload","post_browser_height","post_browser_width","post_campaign","post_channel","post_clickmaplink","post_clickmaplinkbyregion","post_clickmappage","post_clickmapregion","post_cookies","post_currency","post_cust_hit_time_gmt","post_cust_visid","post_evar1","post_evar2","post_evar3","post_evar4","post_evar5","post_evar6","post_evar7","post_evar8","post_evar9","post_evar10","post_evar11","post_evar12","post_evar13","post_evar14","post_evar15","post_evar16","post_evar17","post_evar18","post_evar19","post_evar20","post_evar21","post_evar22","post_evar23","post_evar24","post_evar25","post_evar26","post_evar27","post_evar28","post_evar29","post_evar30","post_evar31","post_evar32","post_evar33","post_evar34","post_evar35","post_evar36","post_evar37","post_evar38","post_evar39","post_evar40","post_evar41","post_evar42","post_evar43","post_evar44","post_evar45","post_evar46","post_evar47","post_evar48","post_evar49","post_evar50","post_evar51","post_evar52","post_evar53","post_evar54","post_evar55","post_evar56","post_evar57","post_evar58","post_evar59","post_evar60","post_evar61","post_evar62","post_evar63","post_evar64","post_evar65","post_evar66","post_evar67","post_evar68","post_evar69","post_evar70","post_evar71","post_evar72","post_evar73","post_evar74","post_evar75","post_evar76","post_evar77","post_evar78","post_evar79","post_evar80","post_evar81","post_evar82","post_evar83","post_evar84","post_evar85","post_evar86","post_evar87","post_evar88","post_evar89","post_evar90","post_evar91","post_evar92","post_evar93","post_evar94","post_evar95","post_evar96","post_evar97","post_evar98","post_evar99","post_evar100","post_evar101","post_evar102","post_evar103","post_evar104","post_evar105","post_evar106","post_evar107","post_evar108","post_evar109","post_evar110","post_evar111","post_evar112","post_evar113","post_evar114","post_evar115","post_evar116","post_evar117","post_evar118","post_evar119","post_evar120","post_evar121","post_evar122","post_evar123","post_evar124","post_evar125","post_evar126","post_evar127","post_evar128","post_evar129","post_evar130","post_evar131","post_evar132","post_evar133","post_evar134","post_evar135","post_evar136","post_evar137","post_evar138","post_evar139","post_evar140","post_evar141","post_evar142","post_evar143","post_evar144","post_evar145","post_evar146","post_evar147","post_evar148","post_evar149","post_evar150","post_evar151","post_evar152","post_evar153","post_evar154","post_evar155","post_evar156","post_evar157","post_evar158","post_evar159","post_evar160","post_evar161","post_evar162","post_evar163","post_evar164","post_evar165","post_evar166","post_evar167","post_evar168","post_evar169","post_evar170","post_evar171","post_evar172","post_evar173","post_evar174","post_evar175","post_evar176","post_evar177","post_evar178","post_evar179","post_evar180","post_evar181","post_evar182","post_evar183","post_evar184","post_evar185","post_evar186","post_evar187","post_evar188","post_evar189","post_evar190","post_evar191","post_evar192","post_evar193","post_evar194","post_evar195","post_evar196","post_evar197","post_evar198","post_evar199","post_evar200","post_evar201","post_evar202","post_evar203","post_evar204","post_evar205","post_evar206","post_evar207","post_evar208","post_evar209","post_evar210","post_evar211","post_evar212","post_evar213","post_evar214","post_evar215","post_evar216","post_evar217","post_evar218","post_evar219","post_evar220","post_evar221","post_evar222","post_evar223","post_evar224","post_evar225","post_evar226","post_evar227","post_evar228","post_evar229","post_evar230","post_evar231","post_evar232","post_evar233","post_evar234","post_evar235","post_evar236","post_evar237","post_evar238","post_evar239","post_evar240","post_evar241","post_evar242","post_evar243","post_evar244","post_evar245","post_evar246","post_evar247","post_evar248","post_evar249","post_evar250","post_event_list","post_java_enabled","post_keywords","post_mobileaction","post_mobileappid","post_mobilecampaigncontent","post_mobilecampaignmedium","post_mobilecampaignname","post_mobilecampaignsource","post_mobilecampaignterm","post_mobiledayofweek","post_mobiledayssincefirstuse","post_mobiledayssincelastuse","post_mobiledevice","post_mobilehourofday","post_mobileinstalldate","post_mobilelaunchnumber","post_mobileosversion","post_mobileresolution","post_mvvar1","post_page_event","post_page_event_var1","post_page_event_var2","post_page_url","post_pagename","post_pagename_no_url","post_persistent_cookie","post_product_list","post_prop1","post_prop2","post_prop3","post_prop4","post_prop5","post_prop6","post_prop7","post_prop8","post_prop9","post_prop10","post_prop11","post_prop12","post_prop13","post_prop14","post_prop15","post_prop16","post_prop17","post_prop18","post_prop19","post_prop20","post_prop21","post_prop22","post_prop23","post_prop24","post_prop25","post_prop26","post_prop27","post_prop28","post_prop29","post_prop30","post_prop31","post_prop32","post_prop33","post_prop34","post_prop35","post_prop36","post_prop37","post_prop38","post_prop39","post_prop40","post_prop41","post_prop42","post_prop43","post_prop44","post_prop45","post_prop46","post_prop47","post_prop48","post_prop49","post_prop50","post_prop51","post_prop52","post_prop53","post_prop54","post_prop55","post_prop56","post_prop57",
-# #            "post_prop58","post_prop59","post_prop60","post_prop61","post_prop62","post_prop63","post_prop64","post_prop65","post_prop66","post_prop67","post_prop68","post_prop69","post_prop70","post_prop71","post_prop72","post_prop73","post_prop74","post_prop75","post_referrer","post_search_engine","post_t_time_info","post_visid_high","post_visid_low","post_visid_type","post_zip","prev_page","prop1","prop2","prop3","prop4","prop5","prop6","prop7","prop8","prop9","prop10","prop11","prop12","prop13","prop14","prop15","prop16","prop17","prop18","prop19","prop20","prop21","prop22","prop23","prop24","prop25","prop26","prop27","prop28","prop29","prop30","prop31","prop32","prop33","prop34","prop35","prop36","prop37","prop38","prop39","prop40","prop41","prop42","prop43","prop44","prop45","prop46","prop47","prop48","prop49","prop50","prop51","prop52","prop53","prop54","prop55","prop56","prop57","prop58","prop59","prop60","prop61","prop62","prop63","prop64","prop65","prop66","prop67","prop68","prop69","prop70","prop71","prop72","prop73","prop74","prop75","quarterly_visitor","ref_domain","ref_type","referrer","resolution","s_resolution","sampled_hit","search_engine","search_page_num","secondary_hit","service","sourceid","stats_server","t_time_info","tnt_action","truncated_hit","user_agent","user_hash","userid","username","va_closer_id","va_finder_id","va_instance_event","va_new_engagement","visid_high","visid_low","visid_new","visid_timestamp","visid_type","visit_keywords","visit_num","visit_page_num","visit_ref_domain","visit_ref_type","visit_referrer","visit_search_engine","visit_start_page_url","visit_start_pagename","visit_start_time_gmt","weekly_visitor","yearly_visitor"]
-
-# # jan_keep =["date_time","accept_language","adclassificationcreative","adload","aemassetid","aemassetsource","browser","browser_height",
-# #            "browser_width","c_color","campaign","carrier","channel","click_action","click_action_type","click_context","click_context_type",
-# #            "click_sourceid","click_tag","clickmaplink","code_ver","color","connection_type","cookies","country","ct_connect_type","curr_factor",
-# #            "curr_rate","currency","cust_hit_time_gmt","daily_visitor","date_time.1","domain","duplicate_events","duplicate_purchase",
-# #            "duplicated_from","ef_id","evar1","evar2","evar3","evar4","evar5","evar6","evar7","evar8","evar9","evar10","evar11","evar12","evar13",
-# #            "evar14","evar15","evar16","evar17","evar18","evar19","evar20","evar21","evar22","evar23","evar24","evar25","evar26","evar27","evar28",
-# #            "evar29","evar30","evar31","evar32","evar33","evar34","evar35","evar36","evar37","evar38","evar39","evar40","evar41","evar42","evar43","evar44","evar45","evar46","evar47","evar48","evar49","evar50","evar51","evar52","evar53","evar54","evar55","evar56","evar57","evar58","evar59","evar60","evar61","evar62","evar63","evar64","evar65","evar66","evar67","evar68","evar69","evar70","evar71","evar72","evar73","evar74","evar75","evar76","evar77","evar78","evar79","evar80","evar81","evar82","evar83","evar84","evar85","evar86","evar87","evar88","evar89","evar90","evar91","evar92","evar93","evar94","evar95","evar96","evar97","evar98","evar99","evar100","evar101","evar102","evar103","evar104","evar105","evar106","evar107","evar108","evar109","evar110","evar111","evar112","evar113","evar114","evar115","evar116","evar117","evar118","evar119","evar120","evar121","evar122","evar123","evar124","evar125","evar126","evar127","evar128","evar129","evar130","evar131","evar132","evar133","evar134","evar135","evar136","evar137","evar138","evar139","evar140","evar141","evar142","evar143","evar144","evar145","evar146","evar147","evar148","evar149","evar150","evar151","evar152","evar153","evar154","evar155","evar156","evar157","evar158","evar159","evar160","evar161","evar162","evar163","evar164","evar165","evar166","evar167","evar168","evar169","evar170","evar171","evar172","evar173","evar174","evar175","evar176","evar177","evar178","evar179","evar180","evar181","evar182","evar183","evar184","evar185","evar186","evar187","evar188","evar189","evar190","evar191","evar192","evar193","evar194","evar195","evar196","evar197","evar198","evar199","evar200","evar201","evar202","evar203","evar204","evar205","evar206","evar207","evar208","evar209","evar210","evar211","evar212","evar213","evar214","evar215","evar216","evar217","evar218","evar219","evar220","evar221","evar222","evar223","evar224","evar225","evar226","evar227","evar228","evar229","evar230","evar231","evar232","evar233","evar234","evar235","evar236","evar237","evar238","evar239","evar240","evar241","evar242","evar243","evar244","evar245","evar246","evar247","evar248","evar249","evar250","event_list","exclude_hit","first_hit_page_url","first_hit_pagename","first_hit_ref_domain","first_hit_ref_type","first_hit_referrer","first_hit_time_gmt","geo_city","geo_country","geo_dma","geo_region","geo_zip","hier1","hier2","hier3","hier4","hier5","hit_source","hit_time_gmt","hitid_high","hitid_low","homepage","hourly_visitor","ip","j_jscript","java_enabled","javascript","language","last_hit_time_gmt","last_purchase_num","last_purchase_time_gmt","latlon1","mcvisid","mobile_id","mobileacquisitionclicks","mobileappid","mobileappperformanceappid_app_perf_app_name","mobileappperformancecrashid","mobileappstoredownloads","mobileappstoreobjectid_application_name","mobileappstoreobjectid_application_version","mobileappstoreobjectid_category_name","mobileappstoreobjectid_device_manufacturer","mobileappstoreobjectid_in_app_name","mobileappstoreobjectid_platform_name_version","mobileappstoreobjectid_rank_category_type","mobileappstoreobjectid_region_name","mobileappstoreobjectid_review_title","mobileappstoreoneoffrevenue","mobileappstorepurchases","mobileappstorerating","mobileappstoreratingdivisor","mobileavgprevsessionlength","mobilebeaconmajor","mobilebeaconminor","mobilebeaconuuid","mobilecampaignmedium","mobilecampaignname","mobilecampaignsource","mobilecrashes","mobilecrashrate","mobiledailyengagedusers","mobiledayofweek","mobiledayssincefirstuse","mobiledayssincelastupgrade","mobiledayssincelastuse","mobiledeeplinkid","mobiledeeplinkid_name","mobiledevice","mobilehourofday","mobileinstalls","mobilelaunches","mobilelaunchnumber","mobileltv","mobileltvtotal","mobilemessageid_type","mobilemessageonline","mobilemessageviews","mobileplaceaccuracy","mobileplacecategory","mobileplacedwelltime","mobileplaceexit","mobileplaceid","mobileprevsessionlength","mobilepushoptin","mobilepushpayloadid","mobilerelaunchcampaigncontent","mobilerelaunchcampaignterm","mobileupgrades","monthly_visitor","mvvar1","mvvar2","mvvar3","namespace","new_visit","os","p_plugins","page_event","page_event_var1","page_event_var2","page_event_var3","page_url","pagename","paid_search","partner_plugins","persistent_cookie","post_adload","post_browser_height","post_browser_width","post_campaign","post_channel","post_clickmaplink","post_clickmaplinkbyregion","post_clickmappage","post_clickmapregion","post_cookies","post_currency","post_cust_hit_time_gmt","post_cust_visid","post_evar1","post_evar2","post_evar3","post_evar4","post_evar5","post_evar6","post_evar7","post_evar8","post_evar9","post_evar10","post_evar11","post_evar12","post_evar13","post_evar14","post_evar15","post_evar16","post_evar17","post_evar18","post_evar19","post_evar20","post_evar21","post_evar22","post_evar23","post_evar24","post_evar25","post_evar26","post_evar27","post_evar28","post_evar29","post_evar30","post_evar31","post_evar32","post_evar33","post_evar34","post_evar35","post_evar36","post_evar37","post_evar38","post_evar39","post_evar40","post_evar41","post_evar42","post_evar43","post_evar44","post_evar45","post_evar46","post_evar47","post_evar48","post_evar49","post_evar50","post_evar51","post_evar52","post_evar53","post_evar54","post_evar55","post_evar56","post_evar57","post_evar58","post_evar59","post_evar60","post_evar61","post_evar62","post_evar63","post_evar64","post_evar65","post_evar66","post_evar67","post_evar68","post_evar69","post_evar70","post_evar71","post_evar72","post_evar73","post_evar74","post_evar75","post_evar76","post_evar77","post_evar78","post_evar79","post_evar80","post_evar81","post_evar82","post_evar83","post_evar84","post_evar85","post_evar86","post_evar87","post_evar88","post_evar89","post_evar90","post_evar91","post_evar92","post_evar93","post_evar94","post_evar95","post_evar96","post_evar97","post_evar98","post_evar99","post_evar100","post_evar101","post_evar102","post_evar103","post_evar104","post_evar105","post_evar106","post_evar107","post_evar108","post_evar109","post_evar110","post_evar111","post_evar112","post_evar113","post_evar114","post_evar115","post_evar116","post_evar117","post_evar118","post_evar119","post_evar120","post_evar121","post_evar122","post_evar123","post_evar124","post_evar125","post_evar126","post_evar127","post_evar128","post_evar129","post_evar130","post_evar131","post_evar132","post_evar133","post_evar134","post_evar135","post_evar136","post_evar137","post_evar138","post_evar139","post_evar140","post_evar141","post_evar142","post_evar143","post_evar144","post_evar145","post_evar146","post_evar147","post_evar148","post_evar149","post_evar150","post_evar151","post_evar152","post_evar153","post_evar154","post_evar155","post_evar156","post_evar157","post_evar158","post_evar159","post_evar160","post_evar161","post_evar162","post_evar163","post_evar164","post_evar165","post_evar166","post_evar167","post_evar168","post_evar169","post_evar170","post_evar171","post_evar172","post_evar173","post_evar174","post_evar175","post_evar176","post_evar177","post_evar178","post_evar179","post_evar180","post_evar181","post_evar182","post_evar183","post_evar184","post_evar185","post_evar186","post_evar187","post_evar188","post_evar189","post_evar190","post_evar191","post_evar192","post_evar193","post_evar194","post_evar195","post_evar196","post_evar197","post_evar198","post_evar199","post_evar200","post_evar201","post_evar202","post_evar203","post_evar204","post_evar205","post_evar206","post_evar207","post_evar208","post_evar209","post_evar210","post_evar211","post_evar212","post_evar213","post_evar214","post_evar215","post_evar216","post_evar217","post_evar218","post_evar219","post_evar220","post_evar221","post_evar222","post_evar223","post_evar224","post_evar225","post_evar226","post_evar227","post_evar228","post_evar229","post_evar230","post_evar231","post_evar232","post_evar233","post_evar234","post_evar235","post_evar236","post_evar237","post_evar238","post_evar239","post_evar240","post_evar241","post_evar242","post_evar243","post_evar244","post_evar245","post_evar246","post_evar247","post_evar248","post_evar249","post_evar250","post_event_list","post_java_enabled","post_keywords","post_mobileaction","post_mobileappid","post_mobilecampaigncontent","post_mobilecampaignmedium","post_mobilecampaignname","post_mobilecampaignsource","post_mobilecampaignterm","post_mobiledayofweek","post_mobiledayssincefirstuse","post_mobiledayssincelastuse","post_mobiledevice","post_mobilehourofday","post_mobileinstalldate","post_mobilelaunchnumber","post_mobileosversion","post_mobileresolution","post_page_event","post_page_event_var1","post_page_event_var2","post_page_url","post_pagename","post_pagename_no_url","post_persistent_cookie","post_product_list","post_prop1","post_prop2","post_prop3","post_prop4","post_prop5","post_prop6","post_prop7","post_prop8","post_prop9","post_prop10","post_prop11","post_prop12","post_prop13","post_prop14","post_prop15","post_prop16","post_prop17","post_prop18","post_prop19","post_prop20","post_prop21","post_prop22","post_prop23","post_prop24","post_prop25","post_prop26","post_prop27","post_prop28","post_prop29","post_prop30","post_prop31","post_prop32","post_prop33","post_prop34","post_prop35","post_prop36","post_prop37","post_prop38","post_prop39","post_prop40","post_prop41","post_prop42","post_prop43","post_prop44","post_prop45","post_prop46","post_prop47","post_prop48","post_prop49","post_prop50","post_prop51","post_prop52","post_prop53","post_prop54","post_prop55","post_prop56","post_prop57","post_prop58","post_prop59","post_prop60","post_prop61","post_prop62","post_prop63","post_prop64","post_prop65","post_prop66","post_prop67","post_prop68","post_prop69","post_prop70","post_prop71","post_prop72","post_prop73","post_prop74","post_prop75","post_referrer","post_search_engine","post_t_time_info","post_visid_high","post_visid_low","post_visid_type","post_zip","prev_page","prop1","prop2","prop3","prop4","prop5","prop6","prop7","prop8","prop9","prop10","prop11","prop12","prop13","prop14","prop15","prop16","prop17","prop18","prop19","prop20","prop21","prop22","prop23","prop24","prop25","prop26","prop27","prop28","prop29","prop30","prop31","prop32","prop33","prop34","prop35","prop36","prop37","prop38","prop39","prop40","prop41","prop42","prop43","prop44","prop45","prop46","prop47","prop48","prop49","prop50","prop51","prop52","prop53","prop54","prop55","prop56","prop57","prop58","prop59","prop60","prop61","prop62","prop63","prop64","prop65","prop66","prop67","prop68","prop69","prop70","prop71","prop72","prop73","prop74","prop75","quarterly_visitor","ref_domain","ref_type","referrer","resolution","s_resolution","sampled_hit","search_engine","search_page_num","secondary_hit","service","sourceid","stats_server","t_time_info","tnt_action","truncated_hit","user_agent","user_hash","userid","username","va_closer_id","va_finder_id","va_instance_event","va_new_engagement","visid_high","visid_low","visid_new","visid_timestamp","visid_type","visit_keywords","visit_num","visit_page_num","visit_ref_domain","visit_ref_type","visit_referrer","visit_search_engine","visit_start_page_url","visit_start_pagename","visit_start_time_gmt","weekly_visitor","yearly_visitor"]
-
-# # dec_keep = ["date_time","accept_language","adclassificationcreative","adload","aemassetid","aemassetsource","browser","browser_height",
-# #             "browser_width","c_color","campaign","carrier","channel","click_action","click_action_type","click_context","click_context_type",
-# #             "click_sourceid","click_tag","clickmaplink","clickmaplinkbyregion","code_ver","color","connection_type","cookies","country","ct_connect_type","curr_factor","curr_rate","currency","cust_hit_time_gmt","daily_visitor","date_time.1","domain","duplicate_events","duplicate_purchase","duplicated_from","ef_id","evar1","evar2","evar3","evar4","evar5","evar6","evar7","evar8","evar9","evar10","evar11","evar12","evar13","evar14","evar15","evar16","evar17","evar18","evar19","evar20","evar21","evar22","evar23","evar24","evar25","evar26","evar27","evar28","evar29","evar30","evar31","evar32","evar33","evar34","evar35","evar36","evar37","evar38","evar39","evar40","evar41","evar42","evar43","evar44","evar45","evar46","evar47","evar48","evar49","evar50","evar51","evar52","evar53","evar54","evar55","evar56","evar57","evar58","evar59","evar60","evar61","evar62","evar63","evar64","evar65","evar66","evar67","evar68","evar69","evar70","evar71","evar72","evar73","evar74","evar75","evar76","evar77","evar78","evar79","evar80","evar81","evar82","evar83","evar84","evar85","evar86","evar87","evar88","evar89","evar90","evar91","evar92","evar93","evar94","evar95","evar96","evar97","evar98","evar99","evar100","evar101","evar102","evar103","evar104","evar105","evar106","evar107","evar108","evar109","evar110","evar111","evar112","evar113","evar114","evar115","evar116","evar117","evar118","evar119","evar120","evar121","evar122","evar123","evar124","evar125","evar126","evar127","evar128","evar129","evar130","evar131","evar132","evar133","evar134","evar135","evar136","evar137","evar138","evar139","evar140","evar141","evar142","evar143","evar144","evar145","evar146","evar147","evar148","evar149","evar150","evar151","evar152","evar153","evar154","evar155","evar156","evar157","evar158","evar159","evar160","evar161","evar162","evar163","evar164","evar165","evar166","evar167","evar168","evar169","evar170","evar171","evar172","evar173","evar174","evar175","evar176","evar177","evar178","evar179","evar180","evar181","evar182","evar183","evar184","evar185","evar186","evar187","evar188","evar189","evar190","evar191","evar192","evar193","evar194","evar195","evar196","evar197","evar198","evar199","evar200","evar201","evar202","evar203","evar204","evar205","evar206","evar207","evar208","evar209","evar210","evar211","evar212","evar213","evar214","evar215","evar216","evar217","evar218","evar219","evar220","evar221","evar222","evar223","evar224","evar225","evar226","evar227","evar228","evar229","evar230","evar231","evar232","evar233","evar234","evar235","evar236","evar237","evar238","evar239","evar240","evar241","evar242","evar243","evar244","evar245","evar246","evar247","evar248","evar249","evar250","event_list","exclude_hit","first_hit_page_url","first_hit_pagename","first_hit_ref_domain","first_hit_ref_type","first_hit_referrer","first_hit_time_gmt","geo_city","geo_country","geo_dma","geo_region","geo_zip","hier1","hier2","hier3","hier4","hier5","hit_source","hit_time_gmt","hitid_high","hitid_low","homepage","hourly_visitor","ip","j_jscript","java_enabled","javascript","language","last_hit_time_gmt","last_purchase_num","last_purchase_time_gmt","latlon1","latlon23","mcvisid","mobile_id","mobileacquisitionclicks","mobileappid","mobileappperformanceaffectedusers","mobileappperformanceappid_app_perf_app_name","mobileappperformancecrashid","mobileappstoredownloads","mobileappstoreobjectid_application_name","mobileappstoreobjectid_application_version","mobileappstoreobjectid_category_name","mobileappstoreobjectid_device_manufacturer","mobileappstoreobjectid_in_app_name","mobileappstoreobjectid_platform_name_version","mobileappstoreobjectid_rank_category_type","mobileappstoreobjectid_region_name","mobileappstoreobjectid_review_title","mobileappstoreoneoffrevenue","mobileappstorepurchases","mobileappstorerankdivisor","mobileappstorerating","mobileappstoreratingdivisor","mobileavgprevsessionlength","mobilebeaconmajor","mobilebeaconminor","mobilebeaconproximity","mobilebeaconuuid","mobilecampaigncontent","mobilecampaignmedium","mobilecampaignname","mobilecampaignsource","mobilecrashes","mobilecrashrate","mobiledailyengagedusers","mobiledayofweek","mobiledayssincefirstuse","mobiledayssincelastupgrade","mobiledayssincelastuse","mobiledeeplinkid","mobiledeeplinkid_name","mobiledevice","mobilehourofday","mobileinstalls","mobilelaunches","mobilelaunchnumber","mobileltv","mobileltvtotal","mobilemessagebuttonname","mobilemessageid_dest","mobilemessageid_type","mobilemessageonline","mobilemessageviews","mobileplaceaccuracy","mobileplacecategory","mobileplacedwelltime","mobileplaceexit","mobileplaceid","mobileprevsessionlength","mobilepushoptin","mobilepushpayloadid","mobilerelaunchcampaigncontent","mobilerelaunchcampaignterm","mobileupgrades","monthly_visitor","mvvar1","mvvar2","mvvar3","namespace","new_visit","os","p_plugins","page_event","page_event_var1","page_event_var2","page_event_var3","page_url","pagename","paid_search","partner_plugins","persistent_cookie","post_adload","post_browser_height","post_browser_width","post_campaign","post_channel","post_clickmaplink","post_clickmaplinkbyregion","post_clickmappage","post_clickmapregion","post_cookies","post_currency","post_cust_hit_time_gmt","post_cust_visid","post_evar1","post_evar2","post_evar3","post_evar4","post_evar5","post_evar6","post_evar7","post_evar8","post_evar9","post_evar10","post_evar11","post_evar12","post_evar13","post_evar14","post_evar15","post_evar16","post_evar17","post_evar18","post_evar19","post_evar20","post_evar21","post_evar22","post_evar23","post_evar24","post_evar25","post_evar26","post_evar27","post_evar28","post_evar29","post_evar30","post_evar31","post_evar32","post_evar33","post_evar34","post_evar35","post_evar36","post_evar37","post_evar38","post_evar39","post_evar40","post_evar41","post_evar42","post_evar43","post_evar44","post_evar45","post_evar46","post_evar47","post_evar48","post_evar49","post_evar50","post_evar51","post_evar52","post_evar53","post_evar54","post_evar55","post_evar56","post_evar57","post_evar58","post_evar59","post_evar60","post_evar61","post_evar62","post_evar63","post_evar64","post_evar65","post_evar66","post_evar67","post_evar68","post_evar69","post_evar70","post_evar71","post_evar72","post_evar73","post_evar74","post_evar75","post_evar76","post_evar77","post_evar78","post_evar79","post_evar80","post_evar81","post_evar82","post_evar83","post_evar84","post_evar85","post_evar86","post_evar87","post_evar88","post_evar89","post_evar90","post_evar91","post_evar92","post_evar93","post_evar94","post_evar95","post_evar96","post_evar97","post_evar98","post_evar99","post_evar100","post_evar101","post_evar102","post_evar103","post_evar104","post_evar105","post_evar106","post_evar107","post_evar108","post_evar109","post_evar110","post_evar111","post_evar112","post_evar113","post_evar114","post_evar115","post_evar116","post_evar117","post_evar118","post_evar119","post_evar120","post_evar121","post_evar122","post_evar123","post_evar124","post_evar125","post_evar126","post_evar127","post_evar128","post_evar129","post_evar130","post_evar131","post_evar132","post_evar133","post_evar134","post_evar135","post_evar136","post_evar137","post_evar138","post_evar139","post_evar140","post_evar141","post_evar142","post_evar143","post_evar144","post_evar145","post_evar146","post_evar147","post_evar148","post_evar149","post_evar150","post_evar151","post_evar152","post_evar153","post_evar154","post_evar155","post_evar156","post_evar157","post_evar158","post_evar159","post_evar160","post_evar161","post_evar162","post_evar163","post_evar164","post_evar165","post_evar166","post_evar167","post_evar168","post_evar169","post_evar170","post_evar171","post_evar172","post_evar173","post_evar174","post_evar175","post_evar176","post_evar177","post_evar178","post_evar179","post_evar180","post_evar181","post_evar182","post_evar183","post_evar184","post_evar185","post_evar186","post_evar187","post_evar188","post_evar189",
-# #             "post_evar190","post_evar191","post_evar192","post_evar193","post_evar194","post_evar195","post_evar196","post_evar197","post_evar198","post_evar199","post_evar200","post_evar201","post_evar202","post_evar203","post_evar204","post_evar205","post_evar206","post_evar207","post_evar208","post_evar209","post_evar210","post_evar211","post_evar212","post_evar213","post_evar214","post_evar215","post_evar216","post_evar217","post_evar218","post_evar219","post_evar220","post_evar221","post_evar222","post_evar223","post_evar224","post_evar225","post_evar226","post_evar227","post_evar228","post_evar229","post_evar230","post_evar231","post_evar232","post_evar233","post_evar234","post_evar235","post_evar236","post_evar237","post_evar238","post_evar239","post_evar240","post_evar241","post_evar242","post_evar243","post_evar244","post_evar245","post_evar246","post_evar247","post_evar248","post_evar249","post_evar250","post_event_list","post_java_enabled","post_keywords","post_mobileaction","post_mobileappid","post_mobilecampaignmedium","post_mobilecampaignname","post_mobilecampaignsource","post_mobiledayofweek","post_mobiledayssincefirstuse","post_mobiledayssincelastuse","post_mobiledevice","post_mobilehourofday","post_mobileinstalldate","post_mobilelaunchnumber","post_mobileosversion","post_mobileresolution","post_mvvar1","post_page_event","post_page_event_var1","post_page_event_var2","post_page_url","post_pagename","post_pagename_no_url","post_persistent_cookie","post_product_list","post_prop1","post_prop2","post_prop3","post_prop4","post_prop5","post_prop6","post_prop7","post_prop8","post_prop9","post_prop10","post_prop11","post_prop12","post_prop13","post_prop14","post_prop15","post_prop16","post_prop17","post_prop18","post_prop19","post_prop20","post_prop21","post_prop22","post_prop23","post_prop24","post_prop25","post_prop26","post_prop27","post_prop28","post_prop29","post_prop30","post_prop31","post_prop32","post_prop33","post_prop34","post_prop35","post_prop36","post_prop37","post_prop38","post_prop39","post_prop40","post_prop41","post_prop42","post_prop43","post_prop44","post_prop45","post_prop46","post_prop47","post_prop48","post_prop49","post_prop50","post_prop51","post_prop52","post_prop53","post_prop54","post_prop55","post_prop56","post_prop57","post_prop58","post_prop59","post_prop60","post_prop61","post_prop62","post_prop63","post_prop64","post_prop65","post_prop66","post_prop67","post_prop68","post_prop69","post_prop70","post_prop71","post_prop72","post_prop73","post_prop74","post_prop75","post_referrer","post_search_engine","post_t_time_info","post_visid_high","post_visid_low","post_visid_type","post_zip","prev_page","prop1","prop2","prop3","prop4","prop5","prop6","prop7","prop8","prop9","prop10","prop11","prop12","prop13","prop14","prop15","prop16","prop17","prop18","prop19","prop20","prop21","prop22","prop23","prop24","prop25","prop26","prop27","prop28","prop29","prop30","prop31","prop32","prop33","prop34","prop35","prop36","prop37","prop38","prop39","prop40","prop41","prop42","prop43","prop44","prop45","prop46","prop47","prop48","prop49","prop50","prop51","prop52","prop53","prop54","prop55","prop56","prop57","prop58","prop59","prop60","prop61","prop62","prop63","prop64","prop65","prop66","prop67","prop68","prop69","prop70","prop71","prop72","prop73","prop74","prop75","quarterly_visitor","ref_domain","ref_type","referrer","resolution","s_resolution","sampled_hit","search_engine","search_page_num","secondary_hit","service","sourceid","stats_server","t_time_info","tnt_action","truncated_hit","user_agent","user_hash","userid","username","va_closer_id","va_finder_id","va_instance_event","va_new_engagement","visid_high","visid_low","visid_new","visid_timestamp","visid_type","visit_keywords","visit_num","visit_page_num","visit_ref_domain","visit_ref_type","visit_referrer","visit_search_engine","visit_start_page_url","visit_start_pagename","visit_start_time_gmt","weekly_visitor","yearly_visitor"]
-
-# # adobe_null_column = ["mobileacquisitionclicks","mobileactioninapptime","mobileappperformanceaffectedusers","mobileappperformanceappid_app_perf_app_name","mobileappperformanceappid_app_perf_platform","mobileappperformancecrashid_app_perf_crash_name","mobileappperformanceloads","mobileappstoreavgrating","mobileappstoredownloads","mobileappstoreinapprevenue","mobileappstoreinapproyalties","mobileappstoreobjectid_app_store_user","mobileappstoreobjectid_application_name","mobileappstoreobjectid_application_version","mobileappstoreobjectid_appstore_name","mobileappstoreobjectid_category_name","mobileappstoreobjectid_country_name","mobileappstoreobjectid_device_manufacturer","mobileappstoreobjectid_device_name","mobileappstoreobjectid_in_app_name","mobileappstoreobjectid_platform_name_version","mobileappstoreobjectid_rank_category_type","mobileappstoreobjectid_region_name","mobileappstoreobjectid_review_comment","mobileappstoreobjectid_review_title","mobileappstoreoneoffrevenue","mobileappstoreoneoffroyalties","mobileappstorepurchases","mobileappstorerank","mobileappstorerankdivisor","mobileappstorerating","mobileappstoreratingdivisor","mobileavgprevsessionlength","mobilecrashes","mobilecrashrate","mobiledailyengagedusers","mobiledeeplinkid_name","mobileinstalls","mobilelaunches","mobileltvtotal","mobilemessageclicks","mobilemessageid_dest","mobilemessageid_name","mobilemessageid_type","mobilemessageimpressions","mobilemessagepushpayloadid_name","mobilemessageviews","mobilemonthlyengagedusers","mobileplacedwelltime","mobileplaceentry","mobileplaceexit","mobileprevsessionlength","mobilerelaunchcampaigntrackingcode_name","mobileupgrades","socialaveragesentiment","socialaveragesentiment (deprecated)","socialfbstories","socialfbstorytellers","socialinteractioncount","sociallikeadds","sociallink","sociallink (deprecated)","socialmentions","socialpageviews","socialpostviews","socialproperty","socialproperty (deprecated)","socialpubcomments","socialpubposts","socialpubrecommends","socialpubsubscribers","socialterm","socialtermslist","socialtermslist (deprecated)","socialtotalsentiment","sourceid","videoauthorized","videoaverageminuteaudience","videochaptercomplete","videochapterstart","videochaptertime","videopause","videopausecount","videopausetime","videoplay","videoprogress10","videoprogress25","videoprogress50","videoprogress75","videoprogress96","videoqoebitrateaverage","videoqoebitratechange","videoqoebuffer","videoqoedropbeforestart","videoqoedroppedframes","videoqoeerror","videoresume","videototaltime","videouniquetimeplayed"]
-
-# # # columns_in_jan_not_in_dec =[i for i in jan_keep if i not in dec_keep]
-# # # columns_in_dec_not_in_jan =[i for i in dec_keep if i not in jan_keep]
-
-# # # columns_in_jan_not_in_feb =[i for i in jan_keep if i not in feb_keep]
-# # # columns_in_feb_not_in_jan =[i for i in feb_keep if i not in jan_keep]
-
-# # # cols_feb_not_dec = [i for i in feb_keep if i not in dec_keep]
-# # # cols_dec_not_feb = [i for i in dec_keep if i not in feb_keep]
-
-# # # sum_keep_list =columns_in_jan_not_in_dec+columns_in_dec_not_in_jan +columns_in_jan_not_in_feb +cols_feb_not_dec +cols_dec_not_feb
-# # # sum_keep_list = remove_dup(sum_keep_list)
-# # # final_keep_list = [i for i in sum_keep_list if i not in adobe_null_column]
-# # # print(final_keep_list)
-# # dec_remove = ["aemclickedassetid","clickmappage","clickmapregion","cust_visid","ip2","latlon45","mc_audiences","mobileaction","mobileactioninapptime","mobileactiontotaltime","mobileappperformanceappid","mobileappperformanceappid_app_perf_platform","mobileappperformancecrashes","mobileappperformancecrashid_app_perf_crash_name","mobileappperformanceloads","mobileappstoreavgrating","mobileappstoreinapprevenue","mobileappstoreinapproyalties","mobileappstoreobjectid","mobileappstoreobjectid_app_store_user","mobileappstoreobjectid_appstore_name","mobileappstoreobjectid_country_name","mobileappstoreobjectid_device_name","mobileappstoreobjectid_review_comment","mobileappstoreoneoffroyalties","mobileappstorerank","mobilecampaignterm","mobileinstalldate","mobilelaunchessincelastupgrade","mobilemessageclicks","mobilemessageid","mobilemessageid_name","mobilemessageimpressions","mobilemessagepushoptin","mobilemessagepushpayloadid","mobilemessagepushpayloadid_name","mobilemonthlyengagedusers","mobileosenvironment","mobileosversion","mobileplaceentry","mobilerelaunchcampaignmedium","mobilerelaunchcampaignsource","mobilerelaunchcampaigntrackingcode","mobilerelaunchcampaigntrackingcode_name","mobileresolution","page_type","plugins","pointofinterest","pointofinterestdistance","post_adclassificationcreative","post_ef_id","post_hier1","post_hier2","post_hier3","post_hier4","post_hier5","post_mc_audiences","post_mobilecampaigncontent","post_mobilecampaignterm","post_mobileltv","post_mobilemessagebuttonname","post_mobilemessageclicks","post_mobilemessageid","post_mobilemessageid_dest","post_mobilemessageid_name","post_mobilemessageid_type","post_mobilemessageimpressions","post_mobilemessageonline","post_mobilemessagepushoptin","post_mobilemessagepushpayloadid","post_mobilemessagepushpayloadid_name","post_mobilemessageviews","post_mobilepushoptin","post_mobilepushpayloadid","post_mvvar2","post_mvvar3","post_page_event_var3","post_page_type","post_partner_plugins","post_pointofinterest","post_pointofinterestdistance","post_purchaseid","post_s_kwcid","post_socialaccountandappids","post_socialassettrackingcode","post_socialauthor","post_socialaveragesentiment","post_socialaveragesentiment_deprecated","post_socialcontentprovider","post_socialfbstories","post_socialfbstorytellers","post_socialinteractioncount","post_socialinteractiontype","post_sociallanguage","post_sociallatlong","post_sociallikeadds","post_sociallink","post_sociallink_deprecated","post_socialmentions","post_socialowneddefinitioninsighttype","post_socialowneddefinitioninsightvalue","post_socialowneddefinitionmetric","post_socialowneddefinitionpropertyvspost","post_socialownedpostids","post_socialownedpropertyid","post_socialownedpropertyname","post_socialownedpropertypropertyvsapp","post_socialpageviews","post_socialpostviews","post_socialproperty","post_socialproperty_deprecated","post_socialpubcomments","post_socialpubposts","post_socialpubrecommends","post_socialpubsubscribers","post_socialterm","post_socialtermslist","post_socialtermslist_deprecated","post_socialtotalsentiment","post_state","post_survey","post_tnt","post_tnt_action","post_transactionid","post_video","post_videoad","post_videoadinpod","post_videoadlength","post_videoadname","post_videoadplayername","post_videoadpod","post_videoadvertiser","post_videoauthorized","post_videocampaign","post_videochannel","post_videochapter","post_videocontenttype","post_videodaypart","post_videoepisode","post_videofeedtype","post_videogenre","post_videolength","post_videomvpd","post_videoname","post_videonetwork","post_videopath","post_videoplayername","post_videoqoebitrateaverageevar","post_videoqoebitratechangecountevar","post_videoqoebuffercountevar","post_videoqoebuffertimeevar","post_videoqoedroppedframecountevar","post_videoqoeerrorcountevar","post_videoqoetimetostartevar","post_videoseason","post_videosegment","post_videoshow","post_videoshowtype","product_list","product_merchandising","purchaseid","s_kwcid","socialaccountandappids","socialassettrackingcode","socialauthor","socialaveragesentiment","socialaveragesentiment_deprecated","socialcontentprovider","socialfbstories","socialfbstorytellers","socialinteractioncount","socialinteractiontype","sociallanguage","sociallatlong","sociallikeadds","sociallink","sociallink_deprecated","socialmentions","socialowneddefinitioninsighttype","socialowneddefinitioninsightvalue","socialowneddefinitionmetric","socialowneddefinitionpropertyvspost","socialownedpostids","socialownedpropertyid","socialownedpropertyname","socialownedpropertypropertyvsapp","socialpageviews","socialpostviews","socialproperty","socialproperty_deprecated","socialpubcomments","socialpubposts","socialpubrecommends","socialpubsubscribers","socialterm","socialtermslist","socialtermslist_deprecated","socialtotalsentiment","state","tnt","tnt_post_vista","transactionid","ua_color","ua_os","ua_pixels","user_server","va_closer_detail","va_finder_detail","video","videoad","videoadinpod","videoadlength","videoadname","videoadplayername","videoadpod","videoadvertiser","videoaudioalbum","videoaudioartist","videoaudioauthor","videoaudiolabel","videoaudiopublisher","videoaudiostation","videoauthorized","videoaverageminuteaudience","videocampaign","videochannel","videochapter","videochaptercomplete","videochapterstart","videochaptertime","videocontenttype","videodaypart","videoepisode","videofeedtype","videogenre","videolength","videomvpd","videoname","videonetwork","videopath","videopause","videopausecount","videopausetime","videoplay","videoplayername","videoprogress10","videoprogress25","videoprogress50","videoprogress75","videoprogress96","videoqoebitrateaverage","videoqoebitrateaverageevar","videoqoebitratechange","videoqoebitratechangecountevar","videoqoebuffer","videoqoebuffercountevar","videoqoebuffertimeevar","videoqoedropbeforestart","videoqoedroppedframecountevar","videoqoedroppedframes","videoqoeerror","videoqoeerrorcountevar","videoqoeextneralerrors","videoqoeplayersdkerrors","videoqoetimetostartevar","videoresume","videoseason","videosegment","videoshow","videoshowtype","videostreamtype","videototaltime","videouniquetimeplayed","zip"]
-
-# # jan_remove = ["aemclickedassetid","clickmaplinkbyregion","clickmappage","clickmapregion","cust_visid","ip2","latlon23","latlon45","mc_audiences","mobileaction","mobileactioninapptime","mobileactiontotaltime","mobileappperformanceaffectedusers","mobileappperformanceappid","mobileappperformanceappid_app_perf_platform","mobileappperformancecrashes","mobileappperformancecrashid_app_perf_crash_name","mobileappperformanceloads","mobileappstoreavgrating","mobileappstoreinapprevenue","mobileappstoreinapproyalties","mobileappstoreobjectid","mobileappstoreobjectid_app_store_user","mobileappstoreobjectid_appstore_name","mobileappstoreobjectid_country_name","mobileappstoreobjectid_device_name","mobileappstoreobjectid_review_comment","mobileappstoreoneoffroyalties","mobileappstorerank","mobileappstorerankdivisor","mobilebeaconproximity","mobilecampaigncontent","mobilecampaignterm","mobileinstalldate","mobilelaunchessincelastupgrade","mobilemessagebuttonname","mobilemessageclicks","mobilemessageid","mobilemessageid_dest","mobilemessageid_name","mobilemessageimpressions","mobilemessagepushoptin","mobilemessagepushpayloadid","mobilemessagepushpayloadid_name","mobilemonthlyengagedusers","mobileosenvironment","mobileosversion","mobileplaceentry","mobilerelaunchcampaignmedium","mobilerelaunchcampaignsource","mobilerelaunchcampaigntrackingcode","mobilerelaunchcampaigntrackingcode_name","mobileresolution","page_type","plugins","pointofinterest","pointofinterestdistance","post_adclassificationcreative","post_ef_id","post_hier1","post_hier2","post_hier3","post_hier4","post_hier5","post_mc_audiences","post_mobileltv","post_mobilemessagebuttonname","post_mobilemessageclicks","post_mobilemessageid","post_mobilemessageid_dest","post_mobilemessageid_name","post_mobilemessageid_type","post_mobilemessageimpressions","post_mobilemessageonline","post_mobilemessagepushoptin","post_mobilemessagepushpayloadid","post_mobilemessagepushpayloadid_name","post_mobilemessageviews","post_mobilepushoptin","post_mobilepushpayloadid","post_mvvar1","post_mvvar2","post_mvvar3","post_page_event_var3","post_page_type","post_partner_plugins","post_pointofinterest","post_pointofinterestdistance","post_purchaseid","post_s_kwcid","post_socialaccountandappids","post_socialassettrackingcode","post_socialauthor","post_socialaveragesentiment","post_socialaveragesentiment_deprecated","post_socialcontentprovider","post_socialfbstories","post_socialfbstorytellers","post_socialinteractioncount","post_socialinteractiontype","post_sociallanguage","post_sociallatlong","post_sociallikeadds","post_sociallink","post_sociallink_deprecated","post_socialmentions","post_socialowneddefinitioninsighttype","post_socialowneddefinitioninsightvalue","post_socialowneddefinitionmetric","post_socialowneddefinitionpropertyvspost","post_socialownedpostids","post_socialownedpropertyid","post_socialownedpropertyname","post_socialownedpropertypropertyvsapp","post_socialpageviews","post_socialpostviews","post_socialproperty","post_socialproperty_deprecated","post_socialpubcomments","post_socialpubposts","post_socialpubrecommends","post_socialpubsubscribers","post_socialterm","post_socialtermslist","post_socialtermslist_deprecated","post_socialtotalsentiment","post_state","post_survey","post_tnt","post_tnt_action","post_transactionid","post_video","post_videoad","post_videoadinpod","post_videoadlength","post_videoadname","post_videoadplayername","post_videoadpod","post_videoadvertiser","post_videoauthorized","post_videocampaign","post_videochannel","post_videochapter","post_videocontenttype","post_videodaypart","post_videoepisode","post_videofeedtype","post_videogenre","post_videolength","post_videomvpd","post_videoname","post_videonetwork","post_videopath","post_videoplayername","post_videoqoebitrateaverageevar","post_videoqoebitratechangecountevar","post_videoqoebuffercountevar","post_videoqoebuffertimeevar","post_videoqoedroppedframecountevar","post_videoqoeerrorcountevar","post_videoqoetimetostartevar","post_videoseason","post_videosegment","post_videoshow","post_videoshowtype","product_list","product_merchandising","purchaseid","s_kwcid","socialaccountandappids","socialassettrackingcode","socialauthor","socialaveragesentiment","socialaveragesentiment_deprecated","socialcontentprovider","socialfbstories","socialfbstorytellers","socialinteractioncount","socialinteractiontype","sociallanguage","sociallatlong","sociallikeadds","sociallink","sociallink_deprecated","socialmentions","socialowneddefinitioninsighttype","socialowneddefinitioninsightvalue","socialowneddefinitionmetric","socialowneddefinitionpropertyvspost","socialownedpostids","socialownedpropertyid","socialownedpropertyname","socialownedpropertypropertyvsapp","socialpageviews","socialpostviews","socialproperty","socialproperty_deprecated","socialpubcomments","socialpubposts","socialpubrecommends","socialpubsubscribers","socialterm","socialtermslist","socialtermslist_deprecated","socialtotalsentiment","state","tnt","tnt_post_vista","transactionid","ua_color","ua_os","ua_pixels","user_server","va_closer_detail","va_finder_detail","video","videoad","videoadinpod","videoadlength","videoadname","videoadplayername","videoadpod","videoadvertiser","videoaudioalbum","videoaudioartist","videoaudioauthor","videoaudiolabel","videoaudiopublisher","videoaudiostation","videoauthorized","videoaverageminuteaudience","videocampaign","videochannel","videochapter","videochaptercomplete","videochapterstart","videochaptertime","videocontenttype","videodaypart","videoepisode","videofeedtype","videogenre","videolength","videomvpd","videoname","videonetwork","videopath","videopause","videopausecount","videopausetime","videoplay","videoplayername","videoprogress10","videoprogress25","videoprogress50","videoprogress75","videoprogress96","videoqoebitrateaverage","videoqoebitrateaverageevar","videoqoebitratechange","videoqoebitratechangecountevar","videoqoebuffer","videoqoebuffercountevar","videoqoebuffertimeevar","videoqoedropbeforestart","videoqoedroppedframecountevar","videoqoedroppedframes","videoqoeerror","videoqoeerrorcountevar","videoqoeextneralerrors","videoqoeplayersdkerrors","videoqoetimetostartevar","videoresume","videoseason","videosegment","videoshow","videoshowtype","videostreamtype","videototaltime","videouniquetimeplayed","zip"]
-
-# # feb_remove = ["cust_visid","ip2","latlon45","mc_audiences","mobileaction","mobileactioninapptime","mobileactiontotaltime","mobileappperformanceaffectedusers","mobileappperformanceappid","mobileappperformanceappid_app_perf_platform","mobileappperformancecrashes","mobileappperformancecrashid_app_perf_crash_name","mobileappperformanceloads","mobileappstoreavgrating","mobileappstoreinapprevenue","mobileappstoreinapproyalties","mobileappstoreobjectid","mobileappstoreobjectid_app_store_user","mobileappstoreobjectid_appstore_name","mobileappstoreobjectid_country_name","mobileappstoreobjectid_device_name","mobileappstoreobjectid_review_comment","mobileappstoreoneoffroyalties","mobileappstorerank","mobilecampaignterm","mobileinstalldate","mobilelaunchessincelastupgrade","mobilemessageclicks","mobilemessageid","mobilemessageid_name","mobilemessagepushoptin","mobilemessagepushpayloadid","mobileosversion","mobilerelaunchcampaignmedium","mobilerelaunchcampaigntrackingcode","mobilerelaunchcampaigntrackingcode_name","mobileresolution","page_type","plugins","pointofinterest","pointofinterestdistance","post_adclassificationcreative","post_ef_id","post_hier1","post_hier2","post_hier3","post_hier4","post_hier5","post_mc_audiences","post_mobileltv","post_mobilemessagebuttonname","post_mobilemessageclicks","post_mobilemessageid","post_mobilemessageid_dest","post_mobilemessageid_name","post_mobilemessageid_type","post_mobilemessageimpressions","post_mobilemessageonline","post_mobilemessagepushoptin","post_mobilemessagepushpayloadid","post_mobilemessagepushpayloadid_name","post_mobilemessageviews","post_mobilepushoptin","post_mobilepushpayloadid","post_mvvar2","post_mvvar3","post_page_event_var3","post_page_type","post_partner_plugins","post_pointofinterest","post_pointofinterestdistance","post_purchaseid","post_s_kwcid","post_socialaccountandappids","post_socialassettrackingcode","post_socialauthor","post_socialaveragesentiment","post_socialaveragesentiment_deprecated","post_socialcontentprovider","post_socialfbstories","post_socialfbstorytellers","post_socialinteractioncount","post_socialinteractiontype","post_sociallanguage","post_sociallatlong","post_sociallikeadds","post_sociallink","post_sociallink_deprecated","post_socialmentions","post_socialowneddefinitioninsighttype","post_socialowneddefinitioninsightvalue","post_socialowneddefinitionmetric","post_socialowneddefinitionpropertyvspost","post_socialownedpostids","post_socialownedpropertyid","post_socialownedpropertyname","post_socialownedpropertypropertyvsapp","post_socialpageviews","post_socialpostviews","post_socialproperty","post_socialproperty_deprecated","post_socialpubcomments","post_socialpubposts","post_socialpubrecommends","post_socialpubsubscribers","post_socialterm","post_socialtermslist","post_socialtermslist_deprecated","post_socialtotalsentiment","post_state","post_survey","post_tnt","post_tnt_action","post_transactionid","post_video","post_videoad","post_videoadinpod","post_videoadlength","post_videoadname","post_videoadplayername","post_videoadpod","post_videoadvertiser","post_videoauthorized","post_videocampaign","post_videochannel","post_videochapter","post_videocontenttype","post_videodaypart","post_videoepisode","post_videofeedtype","post_videogenre","post_videolength","post_videomvpd","post_videoname","post_videonetwork","post_videopath","post_videoplayername","post_videoqoebitrateaverageevar","post_videoqoebitratechangecountevar","post_videoqoebuffercountevar","post_videoqoebuffertimeevar","post_videoqoedroppedframecountevar","post_videoqoeerrorcountevar","post_videoqoetimetostartevar","post_videoseason","post_videosegment","post_videoshow","post_videoshowtype","product_list","product_merchandising","purchaseid","s_kwcid","socialaccountandappids","socialassettrackingcode","socialauthor","socialaveragesentiment","socialaveragesentiment_deprecated","socialcontentprovider","socialfbstories","socialfbstorytellers","socialinteractioncount","socialinteractiontype","sociallanguage","sociallatlong","sociallikeadds","sociallink","sociallink_deprecated","socialmentions","socialowneddefinitioninsighttype","socialowneddefinitioninsightvalue","socialowneddefinitionmetric","socialowneddefinitionpropertyvspost","socialownedpostids","socialownedpropertyid","socialownedpropertyname","socialownedpropertypropertyvsapp","socialpageviews","socialpostviews","socialproperty","socialproperty_deprecated","socialpubcomments","socialpubposts","socialpubrecommends","socialpubsubscribers","socialterm","socialtermslist","socialtermslist_deprecated","socialtotalsentiment","state","tnt","tnt_post_vista","transactionid","ua_color","ua_os","ua_pixels","user_server","va_closer_detail","va_finder_detail","video","videoad","videoadinpod","videoadlength","videoadname","videoadplayername","videoadpod","videoadvertiser","videoaudioalbum","videoaudioartist","videoaudioauthor","videoaudiolabel","videoaudiopublisher","videoaudiostation","videoauthorized","videoaverageminuteaudience","videocampaign","videochannel","videochapter","videochaptercomplete","videochapterstart","videochaptertime","videocontenttype","videodaypart","videoepisode","videofeedtype","videogenre","videolength","videomvpd","videoname","videonetwork","videopath","videopause","videopausecount","videopausetime","videoplay","videoplayername","videoprogress10","videoprogress25","videoprogress50","videoprogress75","videoprogress96","videoqoebitrateaverage","videoqoebitrateaverageevar","videoqoebitratechange","videoqoebitratechangecountevar","videoqoebuffer","videoqoebuffercountevar","videoqoebuffertimeevar","videoqoedropbeforestart","videoqoedroppedframecountevar","videoqoedroppedframes","videoqoeerror","videoqoeerrorcountevar","videoqoeextneralerrors","videoqoeplayersdkerrors","videoqoetimetostartevar","videoresume","videoseason","videosegment","videoshow","videoshowtype","videostreamtype","videototaltime","videouniquetimeplayed","zip"]
-# # columns_in_jan_not_in_dec =[i for i in jan_remove if i not in dec_remove]
-# # columns_in_dec_not_in_jan =[i for i in dec_remove if i not in jan_remove]
-
-# # columns_in_jan_not_in_feb =[i for i in jan_remove if i not in feb_remove]
-# # columns_in_feb_not_in_jan =[i for i in feb_remove if i not in jan_remove]
-
-# # cols_feb_not_dec = [i for i in feb_remove if i not in dec_remove]
-# # cols_dec_not_feb = [i for i in dec_remove if i not in feb_remove]
-
-
-# # # print(cols_dec_not_feb)
-
-# # sum_keep_list =columns_in_jan_not_in_dec+columns_in_dec_not_in_jan +columns_in_jan_not_in_feb +cols_feb_not_dec +cols_dec_not_feb
-# # sum_keep_list = remove_dup(sum_keep_list)
-# # final_keep_list = [i for i in sum_keep_list if i not in adobe_null_column]
-# # # print(final_keep_list)
-
-
-
-# # final = ["accept_language","aemassetid","aemassetsource","aemclickedassetid","c_color","carrier","click_sourceid","code_ver","color","connection_type","country","ct_connect_type","curr_factor","curr_rate","daily_visitor","date_time","domain","duplicate_events","duplicate_purchase","duplicated_from","exclude_hit","first_hit_page_url","first_hit_pagename","first_hit_ref_domain","first_hit_ref_type","first_hit_referrer","first_hit_time_gmt","geo_city","geo_country","browser","geo_dma","geo_region","geo_zip","hit_source","hit_time_gmt","hitid_high","hitid_low","homepage","hourly_visitor","ip","ip2","j_jscript","javascript","language","last_hit_time_gmt","last_purchase_num","last_purchase_time_gmt","latlon1","latlon23","latlon45","mcvisid","mobile_id","mobileappperformanceappid","mobileappperformancecrashid","mobileappstoreobjectid","mobilebeaconmajor","mobilebeaconminor","mobilebeaconproximity","mobilebeaconuuid","mobiledayssincelastupgrade","mobiledeeplinkid","mobilelaunchessincelastupgrade","mobileosenvironment","mobileplaceaccuracy","mobileplacecategory","mobileplaceid","mobilerelaunchcampaigncontent","mobilerelaunchcampaignmedium","mobilerelaunchcampaignsource","mobilerelaunchcampaignterm","mobilerelaunchcampaigntrackingcode","monthly_visitor","namespace","new_visit","os","paid_search","post_adclassificationcreative","post_adload","post_browser_height","post_browser_width","post_campaign","post_channel","post_clickmaplink","post_clickmaplinkbyregion","post_clickmappage","post_clickmapregion","post_cookies","post_currency","post_cust_hit_time","post_cust_hit_time_gmt","post_cust_visid","post_ef_id","post_evar1","post_evar10","post_evar100","post_evar101","post_evar102","post_evar103","post_evar104","post_evar105","post_evar106","post_evar107","post_evar108","post_evar109","post_evar11","post_evar110","post_evar111","post_evar112","post_evar113","post_evar114","post_evar115","post_evar116","post_evar117","post_evar118","post_evar119","post_evar12","post_evar120","post_evar121","post_evar122","post_evar123","post_evar124","post_evar125","post_evar126","post_evar127","post_evar128","post_evar129","post_evar13","post_evar130","post_evar131","post_evar132","post_evar133","post_evar134","post_evar135","post_evar136","post_evar137","post_evar138","post_evar139","post_evar14","post_evar140","post_evar141","post_evar142","post_evar143","post_evar144","post_evar145","post_evar146","post_evar147","post_evar148","post_evar149","post_evar15","post_evar150","post_evar151","post_evar152","post_evar153","post_evar154","post_evar155","post_evar156","post_evar157","post_evar158","post_evar159","post_evar16","post_evar160","post_evar161","post_evar162","post_evar163","post_evar164","post_evar165","post_evar166","post_evar167","post_evar168","post_evar169","post_evar17","post_evar170","post_evar171","post_evar172","post_evar173","post_evar174","post_evar175","post_evar176","post_evar177","post_evar178","post_evar179","post_evar18","post_evar180","post_evar181","post_evar182","post_evar183","post_evar184","post_evar185","post_evar186","post_evar187","post_evar188","post_evar189","post_evar19","post_evar190","post_evar191","post_evar192","post_evar193","post_evar194","post_evar195","post_evar196","post_evar197","post_evar198","post_evar199","post_evar2","post_evar20","post_evar200","post_evar201","post_evar202","post_evar203","post_evar204","post_evar205","post_evar206","post_evar207","post_evar208","post_evar209","post_evar21","post_evar210","post_evar211","post_evar212","post_evar213","post_evar214","post_evar215","post_evar216","post_evar217","post_evar218","post_evar219","post_evar22","post_evar220","post_evar221","post_evar222","post_evar223","post_evar224","post_evar225","post_evar226","post_evar227","post_evar228","post_evar229","post_evar23","post_evar230","post_evar231","post_evar232","post_evar233","post_evar234","post_evar235","post_evar236","post_evar237","post_evar238","post_evar239","post_evar24","post_evar240","post_evar241","post_evar242","post_evar243","post_evar244","post_evar245","post_evar246","post_evar247","post_evar248","post_evar249","post_evar25","post_evar250","post_evar26","post_evar27","post_evar28","post_evar29","post_evar3","post_evar30","post_evar31","post_evar32","post_evar33","post_evar34","post_evar35","post_evar36","post_evar37","post_evar38","post_evar39","post_evar4","post_evar40","post_evar41","post_evar42","post_evar43","post_evar44","post_evar45","post_evar46","post_evar47","post_evar48","post_evar49","post_evar5","post_evar50","post_evar51","post_evar52","post_evar53","post_evar54","post_evar55","post_evar56","post_evar57","post_evar58","post_evar59","post_evar6","post_evar60","post_evar61","post_evar62","post_evar63","post_evar64","post_evar65","post_evar66","post_evar67","post_evar68","post_evar69","post_evar7","post_evar70","post_evar71","post_evar72","post_evar73","post_evar74","post_evar75","post_evar76","post_evar77","post_evar78","post_evar79","post_evar8","post_evar80","post_evar81","post_evar82","post_evar83","post_evar84","post_evar85","post_evar86","post_evar87","post_evar88","post_evar89","post_evar9","post_evar90","post_evar91","post_evar92","post_evar93","post_evar94","post_evar95","post_evar96","post_evar97","post_evar98","post_evar99","post_event_list","post_hier1","post_hier2","post_hier3","post_hier4","post_hier5","post_java_enabled","post_keywords","post_mc_audiences","post_mobileaction","post_mobileappid","post_mobilecampaigncontent","post_mobilecampaignmedium","post_mobilecampaignname","post_mobilecampaignsource","post_mobilecampaignterm","post_mobiledayofweek","post_mobiledayssincefirstuse","post_mobiledayssincelastuse","post_mobiledevice","post_mobilehourofday","post_mobileinstalldate","post_mobilelaunchnumber","post_mobilemessagebuttonname","post_mobilemessageid","post_mobilemessageonline","post_mobilemessagepushoptin","post_mobilemessagepushpayloadid","post_mobileosversion","post_mobilepushoptin","post_mobilepushpayloadid","post_mobileresolution","post_mvvar1","post_mvvar2","post_mvvar3","post_page_event","post_page_event_var1","post_page_event_var2","post_page_type","post_page_url","post_pagename","post_pagename_no_url","post_partner_plugins","post_persistent_cookie","post_pointofinterest","post_pointofinterestdistance","post_product_list","post_prop1","post_prop10","post_prop11","post_prop12","post_prop13","post_prop14","post_prop15","post_prop16","post_prop17","post_prop18","post_prop19","post_prop2","post_prop20","post_prop21","post_prop22","post_prop23","post_prop24","post_prop25","post_prop26","post_prop27","post_prop28","post_prop29","post_prop3","post_prop30","post_prop31","post_prop32","post_prop33","post_prop34","post_prop35","post_prop36","post_prop37","post_prop38","post_prop39","post_prop4","post_prop40","post_prop41","post_prop42","post_prop43","post_prop44","post_prop45","post_prop46","post_prop47","post_prop48","post_prop49","post_prop5","post_prop50","post_prop51","post_prop52","post_prop53","post_prop54","post_prop55","post_prop56","post_prop57","post_prop58","post_prop59","post_prop6","post_prop60","post_prop61","post_prop62","post_prop63","post_prop64","post_prop65","post_prop66","post_prop67","post_prop68","post_prop69","post_prop7","post_prop70","post_prop71","post_prop72","post_prop73","post_prop74","post_prop75","post_prop8","post_prop9","post_purchaseid","post_referrer","post_s_kwcid","post_search_engine","post_state","post_survey","post_t_time_info","post_tnt","post_tnt_action","post_transactionid","post_video","post_videoad","post_videoadinpod","post_videoadlength","post_videoadname","post_videoadplayername","post_videoadpod","post_videoadvertiser","post_videocampaign","post_videochannel","post_videochapter","post_videocontenttype","post_videodaypart","post_videoepisode","post_videofeedtype","post_videogenre","post_videolength","post_videomvpd","post_videoname","post_videonetwork","post_videopath","post_videoplayername","post_videoqoebitrateaverageevar","post_videoqoebitratechangecountevar","post_videoqoebuffercountevar","post_videoqoebuffertimeevar","post_videoqoedroppedframecountevar","post_videoqoeerrorcountevar","post_videoqoetimetostartevar","post_videoseason","post_videosegment","post_videoshow","post_videoshowtype","post_visid_high","post_visid_low","post_visid_type","post_zip","quarterly_visitor","ref_domain","ref_type","resolution","s_resolution","sampled_hit","search_page_num","secondary_hit","service","stats_server","truncated_hit","user_agent","user_hash","user_server","userid","username","va_closer_detail","va_closer_id","va_finder_detail","va_finder_id","va_instance_event","va_new_engagement","videoaudioalbum","videoaudioartist","videoaudioauthor","videoaudiolabel","videoaudiopublisher","videoaudiostation","videoqoeextneralerrors","videoqoeplayersdkerrors","videostreamtype","visid_new","visid_timestamp","visit_keywords","visit_num","visit_page_num","visit_ref_domain","visit_ref_type","visit_referrer","visit_search_engine","visit_start_page_url","visit_start_pagename","visit_start_time_gmt","weekly_visitor","yearly_visitor"]
-
-# # null_cols = ["accept_language","aemassetid","aemassetsource","aemclickedassetid","mobileappperformanceappid","mobileappperformancecrashid","mobileappstoreobjectid","mobilebeaconmajor","mobilebeaconminor","mobilebeaconproximity","mobilebeaconuuid","mobiledayssincelastupgrade","mobiledeeplinkid","mobilelaunchessincelastupgrade","mobileosenvironment","mobileplaceaccuracy","mobileplacecategory","mobileplaceid","mobilerelaunchcampaigncontent","mobilerelaunchcampaignmedium","mobilerelaunchcampaignsource","mobilerelaunchcampaignterm","mobilerelaunchcampaigntrackingcode","namespace","p_plugins","plugins","post_adclassificationcreative","post_adload","post_cust_visid","post_ef_id","post_hier1","post_hier2","post_hier3","post_hier4","post_hier5","post_keywords","post_mc_audiences","post_mobilecampaigncontent","post_mobilecampaignmedium","post_mobilecampaignname","post_mobilecampaignsource","post_mobilecampaignterm","post_mobileltv","post_mobilemessagebuttonname","post_mobilemessageid","post_mobilemessageonline","post_mobilemessagepushoptin","post_mobilemessagepushpayloadid","post_mobilepushoptin","post_mobilepushpayloadid","post_mvvar1","post_mvvar2","post_mvvar3","post_partner_plugins","post_pointofinterest","post_purchaseid","post_s_kwcid","post_socialaccountandappids","post_socialassettrackingcode","post_socialauthor","post_socialcontentprovider","post_socialinteractiontype","post_sociallanguage","post_sociallatlong","post_socialowneddefinitioninsighttype","post_socialowneddefinitioninsightvalue","post_socialowneddefinitionmetric","post_socialowneddefinitionpropertyvspost","post_socialownedpostids","post_socialownedpropertyid","post_socialownedpropertyname","post_socialownedpropertypropertyvsapp","post_survey","post_tnt","post_tnt_action","post_transactionid","post_video","post_videoad","post_videoadinpod","post_videoadlength","post_videoadname","post_videoadplayername","post_videoadpod","post_videoadvertiser","post_videocampaign","post_videochannel","post_videochapter","post_videocontenttype","post_videodaypart","post_videoepisode","post_videofeedtype","post_videogenre","post_videolength","post_videomvpd","post_videoname","post_videonetwork","post_videopath","post_videoplayername","post_videoqoebitrateaverageevar","post_videoqoebitratechangecountevar","post_videoqoebuffercountevar","post_videoqoebuffertimeevar","post_videoqoedroppedframecountevar","post_videoqoeerrorcountevar","post_videoqoetimetostartevar","post_videoseason","post_videosegment","post_videoshow","post_videoshowtype","product_merchandising","tnt_post_vista","ua_color","ua_os","ua_pixels","videoaudioalbum","videoaudioartist","videoaudioauthor","videoaudiolabel","videoaudiopublisher","videoaudiostation","videoqoeextneralerrors","videoqoeplayersdkerrors","videostreamtype"]
-
-
-# # null_final = [i for i in null_cols if i in final]
-
-# # for i in null_final:
-# #     print(i)
-# # def test(name):
-# #     if name >35:
-# #         return ["pass"]
-# #     else :
-# #         return ["fail"]
-# # data = {"name":["A","B","C","D","E"],"marks":[80,90,44,22,31]}
-# # df = pd.DataFrame(data)
-# # df_new = pd.DataFrame(df["marks"].apply(test).tolist(),columns=["content"])
-# # df= pd.concat([df, df_new],axis=1)
-
-
-# # print(df)
-
-# # def function(df,static_value_list,content_name_list):
-# #     static_value_list=static_value_list.split(",")
-# #     content_name_list=content_name_list.split(",")
-# #     # print(static_value_list)
-# #     df_new = pd.DataFrame(df["Content_Name"].apply(test,static_value_list=static_value_list,content_name_list=content_name_list).tolist(),columns=["Content_Type"])
-# #     df= pd.concat([df, df_new],axis=1)
-# #     return df
-	
-
-
-# # def test(value,static_value_list=[],content_name_list=[]):
-    
-# #     if value in content_name_list:
-# #         return [static_value_list[1]]
-# #     else:
-# #         return [static_value_list[0]]
-
-
-# # if __name__ == "__main__":
-# # #     df = pd.read_csv("miniproram_melted.csv",sep="|")
-# # #     static_value = "Video,Audio"
-# # #     content_name_list ="Relaxing Rainfall (30 min),Tranquil Lake Sounds (30 min),Waterfall (30 min),California Surf (30 min),Waves (30 min)"
-# # #     df = function(df,static_value,content_name_list)
-# # #     final_columns = ["date","user_id","market","platform","PageName","Content_Type","Content_Name","EventName","metric_value","guid"]
-# # #     df = df.reindex(columns = final_columns)
-# # #     df.to_csv("results/final_df.csv",sep="|",index=False,header=True)
-    
-    
-# # df = pd.read_csv("adobe_miniprogram.csv",sep="|")
-
-# # print(df.g)
-# import mysql.connector as msc 
-
-# from lib import read_config
-# conn = read_config.mysl_pool_connection("messaging")
-# mycursor=conn.cursor()
-# query = "Select * from messaging.custio_sc_api_campaigns"
-# mycursor.execute(query)
-# records = mycursor.fetchall()
-# print(records)
-from mysqlx import Result
+import os 
+from configparser import ConfigParser
+import vertica_python
 import pandas as pd
-from sqlalchemy import Column
+import argparse
+import numpy as np
+import sys
+import logging as lg
+from datetime import datetime,date,timedelta
+import smtplib
 
-# file_paths = ["/transformed/processed/shareshare3webprod/2022/02-shareshare3webprod_2022-04-11.parquet","transformed/processed/shareshare3webprod/2022/03-shareshare3webprod_2022-04-11.parquet","transformed/processed/share3appprod/2022/01-share3appprod_2022-04-11.parquet","transformed/processed/share3appprod/2022/02-share3appprod_2022-04-11.parquet","transformed/processed/shareshare3webprod/2022/01-shareshare3webprod_2022-04-11.parquet","transformed/processed/shareshare3webprod/2022/01-shareshare3webprod_2022-04-09.parquet","transformed/processed/share3appprod/2022/01-share3appprod_2022-04-09.parquet","transformed/processed/share3appprod/2022/02-share3appprod_2022-04-09.parquet","transformed/processed/shareshare3webprod/2022/03-shareshare3webprod_2022-04-08.parquet","transformed/processed/share3appprod/2022/01-share3appprod_2022-04-08.parquet","transformed/processed/share3appprod/2022/02-share3appprod_2022-04-08.parquet"]
-# last_mod_date= ["2022-04-12 04:01:16","2022-04-12 04:01:16","2022-04-11 04:01:16","2022-04-12 04:01:16","2022-04-12 04:01:16","2022-04-12 05:31:56","2022-04-12 05:31:56","2022-04-12 05:31:56","2022-04-12 05:06:27","2022-04-12 05:06:27","2022-04-12 05:06:27"] 
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email.mime.image import MIMEImage
+from email import encoders
 
-
-# file_dict = {
-#                 'file_path':file_paths,
-#                 'last_modified': last_mod_date,
-#             }
-
-
-# df_file_to_download = pd.DataFrame(file_dict)
-# print("=====================================================")
-# print("=====================================================")
-# print(df_file_to_download)
-# df_file_to_download = df_file_to_download.sort_values('last_modified',ascending=False)
-
-# print("=====================================================")
-# print("=====================================================")
-# df_file_to_download = df_file_to_download.reset_index()
-# df_file_to_download = df_file_to_download.drop(['index'],axis=1)
-# print(df_file_to_download)
-# print("=====================================================")
-# print("=====================================================")
+from jinja2 import Environment, FileSystemLoader
 
 
-import pandas as pd
+def logger():
+    logger = lg.getLogger(__name__)
+    logger.setLevel(lg.INFO)
+    formatter = lg.Formatter('%(asctime)s : %(name)s : %(filename)s : %(levelname)s : %(funcName)s :%(lineno)d : %(message)s ')
+    file_handler =lg.FileHandler("logs.log")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    consoleHandler = lg.StreamHandler()
+    consoleHandler.setFormatter(formatter)
+    logger.addHandler(consoleHandler)
+    return logger
+
+class Kpi_qbr_validation:
+    def __init__(self):
+        self.section = 'vertica_prod'
+        self.json_file = 'validation_query.json'
+        self.file_name=0
+        self.logger= logger()
+    
+    def getconfig(self,section,key):
+    
+        parser = ConfigParser()
+        parser.read(os.path.join(os.path.expanduser("~"),'.sharecare/credentials.cfg'))
+        return parser.get(section,key)  
+    
+    def send_mail(self,receivers_email,mail_content,subject=None,df_list=[],functional_area='Manual',files_name=[],html_template=None,description=''):
+        mail = smtplib.SMTP('smtp.gmail.com', 587)
+        mail.starttls()
+        message = MIMEMultipart('mixed')
+        message['From'] = self.getconfig("email","sender")
+        message['To'] = ",".join([str(i) for i in receivers_email])
+        message['Subject'] = subject
+        message.attach(MIMEText(description, 'plain'))
+
+        if html_template is not None:
+            enviornment_var = Environment(loader=FileSystemLoader('templates/'))
+            outliers={}
+            missing_month={}
+            # df=pd.DataFrame.from_dict(data)
+            outliers["data"]=df_list[0].to_dict("records")
+            outliers["columns"]=list(df_list[0].columns)
+
+            missing_month["data"]=df_list[1].to_dict("records")
+            missing_month["columns"]=list(df_list[1].columns)
+
+            mail_template = enviornment_var.get_template(f"{html_template}.html")
+            # var= {'content_data':content_data}
+            html = mail_template.render(outliers=outliers,missing_month=missing_month,functional_area=functional_area,description=description)
+            message.attach(MIMEText(html, 'html'))
+        
+        for files in files_name:
+            attach_file_name = f"{files}"
+            attach_file = open(attach_file_name, 'rb')
+            payload = MIMEBase('application', "octet-stream")
+            payload.set_payload((attach_file).read())
+            encoders.encode_base64(payload) 
+
+            payload.add_header(
+                "Content-Disposition",
+                f"attachment; filename= {files}",
+            )
+            message.attach(payload)
+
+        
+        
+        body = message.as_string()
+        h1='h12332'
+        mail.login(self.getconfig("email","sender"),self.getconfig("email","password"))
+        mail.sendmail(self.getconfig("email","sender"), receivers_email,body)
+        mail.quit()
+
+
+    def db_config(self,filename):
+        if sys.platform=='win32':
+            filename = os.getcwd()+''+'\\configs\\.sharecare\\credentials.cfg'  
+        else: 
+            filename = os.path.expanduser('~') + '' + '/.sharecare/credentials.cfg'
+                    
+        # create parser and read ini configuration file
+        parser = ConfigParser(interpolation=None)
+        parser.read(filename)
+        # get section
+        db = {}
+        if parser.has_section(self.section):
+            items = parser.items(self.section)
+            for item in items:
+                db[item[0]] = item[1]
+        else:
+            raise Exception(f'{self.section} not found in the {filename} file')
+        return db
+    
+    def execute_query(self,query_list,connection):
+        try:
+            cursor =connection.cursor()
+            for query in query_list:
+                cursor.execute(query)     
+        except Exception as error :
+           self.logger.error(f'Exception  arise as : {error}')
+    
+    def detect_outliers(self,row):
+        if (row['validation_value'] >= row['lower_range']) and (row['validation_value'] <= row['upper_range']) :
+            return 'PASS'
+        else:
+            return 'DANGER'
+
+    def get_metric_list(self,manual_run_specs):
+        str_metric_list ="("
+        for index,metric_id in enumerate(manual_run_specs["metric_id"]):
+            if index <len(manual_run_specs["metric_id"])-1:
+                str_metric_list = str_metric_list +f"{metric_id},"
+            else :
+                str_metric_list = str_metric_list +f"{metric_id})"
+        
+        return str_metric_list
+
+    def get_entity_query(self,manual_run_specs):
+        entity_query=""""""
+        for index,entity in enumerate(manual_run_specs["entity"]):
+            if index <len(manual_run_specs['entity'])-1:
+                entity_query=entity_query +f"select {entity} as reportgroupid union "
+            else:
+                entity_query=entity_query +f"select {entity} as reportgroupid"
+        return  entity_query
+
+    
+    def get_validation_range(self,tup,df):
+        df_new=df[['metric_id','entity','dims']].head(1)
+        
+        data =list(df['validation_value'])
+        Q2 = np.percentile(data, 50, interpolation = 'midpoint')
+
+
+        q3_list = [a for a in data if a>Q2]
+        q1_list = [a for a in data if a<Q2]
   
-# # Creating the DataFrame
-# df = pd.DataFrame({'Weight':[45, 88, 56, 15, 71],
-#                    'Name':['Sam', 'Andrea', 'Alex', 'Robin', 'Kia'],
-#                    'Age':[14, 25, 55, 8, 21]})
+        if len(q3_list)>0:
+            Q3 = np.percentile(q3_list, 50, interpolation = 'midpoint')
+        else :
+            Q3 = 0
   
-# Create the index
-# index_ = pd.date_range('2010-10-09 08:45', periods = 5, freq ='H')
+        if len(q1_list)>0:
+            Q1 = np.percentile(q1_list, 50, interpolation = 'midpoint')
+        else :
+            Q1=0
   
-# Set the index
-# df.index = index_
-# print(df.head(2))
-# Print the DataFrame
+        IQR = Q3 - Q1
+        upper = Q3 + 1.5*IQR
+        lower = Q1 - 1.5*IQR
+        df_new['upper_range'] = upper
+        df_new['lower_range'] = lower
 
-# print(df.loc[0,"Weight"])
-# data = [{"a":2,"b":3}]
-# df = pd.DataFrame.from_dict(data)
-# print(df)
+        return df_new
+        
+
+    def validate_missing_record(self,month_range,connection,functional_area,elig_entity):
+        df_missing_records =pd.DataFrame()
+        format='%Y-%m-%d'
+        end = datetime.strptime(reporting_end_period,format)
+        dates =self.get_date_list(end,15)
+
+        self.logger.info('Executing the queries to get the percentage difference change between 2 consecutive months for last months ')
+        for index,end_date in  enumerate(dates):
+            self.logger.info(f'Executing for reporting_end_period : {end_date} and merged into the dataframe')
+            query_list = []
+            query_list.append("DROP TABLE IF EXISTS   metrics_metadata;")
+            metrics_metadata = self.get_metrics_metadata(manual_run_specs,end_date,functional_area)
+            query_list.append(metrics_metadata)
+
+            self.execute_query(query_list,connection)
+
+            query_diff ='''select entity,a.metric_id,to_char(a.reporting_end_period,'yyyy-mm') month_ending
+            from sc_kpi.metrics_values a join metrics_metadata  m on a.metric_id =m.metric_id and 
+            a.entity =m.reportgroupid  and to_char(a.reporting_end_period,'yyyy-mm')  =to_char(m.reporting_end_period,'yyyy-mm') 
+            where a.entity::int in (select reportgroupid::int from elig) 
+            group by 1,2,3 having max(metric_value) is null  and min(metric_value)  is null  '''
+
+            query_diff ='''select a.functional_area,entity,a.metric_id,to_char(a.reporting_end_period,'yyyy-mm') month_ending
+            from sc_kpi.metrics_values a join metrics_metadata  m on a.metric_id =m.metric_id and 
+            a.entity =m.reportgroupid  and to_char(a.reporting_end_period,'yyyy-mm')  =to_char(m.reporting_end_period,'yyyy-mm') 
+           
+            group by 1,2,3,4 having max(metric_value) is null  and min(metric_value)  is null  '''
+
+            df_null_values=pd.read_sql(query_diff,connection)
+            df_missing_records=df_missing_records.append(df_null_values)
+        
+        # print(df_missing_records)
+        entity_df =pd.read_csv('elig_entity.csv',sep='|')
+        entity_df['entity']=  entity_df['entity'].astype(int)
+        df_missing_records['entity']=  df_missing_records['entity'].astype(int)
+        df_missing_records = pd.merge(entity_df,df_missing_records,how='inner',on =['entity'])
+
+        max_metric_value_query =f"""select entity ,metric_id ,max(metric_value) max_met,min(metric_value) as min_met from sc_kpi.metrics_values where functional_area in (select distinct functional_area from metrics_metadata) group by 1,2"""
+        df_max_metric = pd.read_sql(max_metric_value_query,connection)
+        
+
+        df_missing_month = df_missing_records.groupby(['entity','metric_id'])['month_ending'].apply(','.join).reset_index()
+        df_missing_month=df_missing_month.rename(columns={'month_ending':'Missing_month'})
+     
+        
+        if not(df_missing_month.empty):
+            df_mean =df_missing_records.groupby(['metric_id','entity'])
+            df_missing_records =pd.DataFrame()
+            for i in df_mean:
+                df_1 = i[1][['functional_area','entity','metric_id']].head(1)
+                df_1['count'] = len(i[1])
+                
+                df_missing_records =df_missing_records.append(df_1)
+            df_missing_records=df_missing_records[df_missing_records['count']!=month_range]
+            df_missing_records.reset_index(inplace=True,drop=True)
+            df_missing_records = pd.merge(df_missing_records,df_missing_month,how='left',on =['entity','metric_id'])
+            df_missing_records.sort_values(by=['count'])
+            df_max_metric['metric_id']=df_max_metric['metric_id'].astype(int)
+            df_max_metric['entity']=df_max_metric['entity'].astype(int)
+            df_missing_records = pd.merge(df_missing_records,df_max_metric,how='left',on =['entity','metric_id'])
+            df_missing_records = df_missing_records.dropna(subset=['max_met'])
+            
+
+      
+        if not(df_missing_records.empty):
+            df_missing_records = df_missing_records[df_missing_records['max_met']!=0]
+            
+            dates = list(map(lambda x:x[0:7],dates))
+            dates = ','.join(dates)
+            
+            df_missing_records['consectutive_month'] =df_missing_records.apply(self.detect_consecutive_months,dates=dates, axis=1)
+            # df_missing_records=df_missing_records.sort_values(by=['max_met'])
+            # df_missing_records = df_missing_records[(df_missing_records['min_met']>=20) & (df_missing_records['max_met']>=50)]
+            # df_exception = df_missing_records[(df_missing_records['max_met']<50)]
+            # df_2 = df_missing_records[~(df_missing_records['max_met']<50)]
+            # # df_2 = df_2[df_2['max_met']>20]
+            # df_missing_records =df_2.append(df_exception)
+            # print(len(df_missing_records))
+            # print(len(df_exception))
+            # print(len(df_2))
+            df_missing_records = df_missing_records[~(df_missing_records['consectutive_month'])]
+            elig_entity['entity'] = elig_entity['entity'].astype(int)
+            df_missing_records = pd.merge(df_missing_records,elig_entity,how='inner',on =['entity'])
+            df_missing_records =df_missing_records.drop(columns='consectutive_month')
+            
+            
+        return df_missing_records
+
+           
+    def detect_consecutive_months(self,row,dates=''):
+        
+        # print(dates[-1])
+        
+        if row['Missing_month'] in dates and row['count']<=8 and dates[-7:]  not in row['Missing_month']  :
+            return False
+        else:
+            return True
+
+    def get_date_list(self,end,month_range):
+        list_date=[end.strftime("%Y-%m-%d")]
+        first = end.replace(day=1)
+        for i in range(month_range-1):
+            last_month = first - timedelta(days=1)
+            list_date.append(last_month.strftime("%Y-%m-%d"))
+            first = last_month.replace(day=1)
+        return list_date
+
+    def elig_query(self,reporting_end_period):
+        
+        elig_1 = f"""CREATE LOCAL TEMP TABLE elig_1 ON COMMIT PRESERVE ROWS AS
+                SELECT DISTINCT em.reportgroupid,egr.reportgroupname, em.guid,sem.secure_id
+                FROM bi_reporting.eliggroupingmembers em
+                JOIN sharecare.sc_employer_membership sem ON em.guid::varchar(100) = sem.guid::varchar(100) 
+                join bi_reporting.eliggroupingrules egr on egr.reportgroupid = em.reportgroupid 
+                where em.bienddate>'{reporting_end_period}'::date AND sem.deleted_flg IS NULL   and egr.isactive=1     
+                ;"""
+        elig = """CREATE LOCAL TEMP TABLE elig ON COMMIT PRESERVE ROWS AS
+                select distinct el.reportgroupid,reportgroupname,count(distinct cc.secure_id) as tests
+                from elig_1 el
+                left join sharecare.sc_assessment_history_ratm cc
+                        on (el.secure_id=cc.secure_id                      
+                                and to_char(cc.creation_date,'yyyy-mm') >= to_char(add_months(sysdate,-18),'yyyy-mm')
+                                and to_char(cc.creation_date,'yyyy-mm') <= to_char(add_months(sysdate,-1),'yyyy-mm'))
+                group by 1,2;
+                """
+        
+        return ["drop table if exists elig_1","drop table if exists elig_1",elig_1 ,elig]
+
+    def validate_reportgroupid(self,reporting_end_period,connection):
+        query= f""" select b.* from (select distinct reportgroupid from elig where  (tests >=50 or reportgroupid =9500035)) a left join ( select entity,count(*) as met_cnt,case when  count(*) =5 then 'PASS' else 'DANGER' end validation_result from 
+           ( select entity,metric_id,metric_value from sc_kpi.metrics_values
+             where metric_id in (100001,100002,100003,100007,1000020) and to_char(reporting_end_period,'yyyy-mm')=to_char('{reporting_end_period}'::date,'yyyy-mm')
+             and entity::varchar(100) in (select distinct reportgroupid from elig where  (tests >=50 or reportgroupid =9500035))  and metric_value is not null) a
+                    group by 1) b on a.reportgroupid=b.entity"""
+        
+      
+        elig_member_query = self.elig_query(reporting_end_period)
+        self.logger.info('Get query for eligible reortgroups')
+        self.execute_query(elig_member_query ,connection)
+        entity_df=pd.read_sql(query,connection)
+        entity_df =entity_df[entity_df['entity']!=0]
 
 
-def titleToNumber(title):
-    result = 0
-    for i in range(len(title)):
-        result *= 26
-        result += ord(title[i]) - 64 
-    return result
+        null_metric_id_query =f"""select entity,metric_id from sc_kpi.metrics_values
+        where metric_id in (100001,100002,100003,100007,1000020) and to_char(reporting_end_period,'yyyy-mm')=to_char('{reporting_end_period}'::date,'yyyy-mm')
+             and entity::varchar(100) in (select distinct reportgroupid from elig where  (tests >=50 or reportgroupid =9500035))  and metric_value is  null"""
+        self.logger.info('execute the query to get the reportgroupid with key metric is null')
+        df_elig=pd.read_sql(null_metric_id_query,connection)
+            
+            
+        df_elig['metric_id'] = df_elig['metric_id'].astype(str)
+        df_elig = df_elig.groupby('entity')['metric_id'].apply(','.join).reset_index()
+        df = pd.merge(entity_df,df_elig,how='left',on =['entity'])
 
-string = "Az"
-string = string.upper()
-print(titleToNumber(string));
+        return df
+
+
+    def get_metrics_metadata(self,manual_run_specs,reporting_end_period,functional_area) :
+        if  manual_run_specs =={}:
+            if functional_area == None:
+                raise Exception('No functional area or metric_id is given')
+            metrics_metadata =f"""CREATE LOCAL TEMP TABLE metrics_metadata ON COMMIT PRESERVE ROWS  As 
+                select metric_id,reportgroupid,functional_area,'{reporting_end_period}'::date  as reporting_end_period,case when metric_id::int in (100001,100002,100003,1000049,10000101,100001803,100001804,100002033,100002038,100002069,100002073,100002100,100002114,100002115,100003003,100003006,100003044,100003045,100003062,100003063,100005006,100005007,100005017,100005018,100005021,100005022,100005037,100005040,100002024,100005153,100005063,100005028,100005065,100005044,1000017,100005086,100005023) then  'Monthly' else 'Lifetime' end metric_id_type  from sc_kpi.metrics_metadata a
+                cross join (select distinct reportgroupid from bi_reporting.eliggroupingrules) b
+                where functional_area = '{functional_area}';"""
+            
+        else :
+            if manual_run_specs["metric_id"] and manual_run_specs["entity"]:
+                str_metric_list =self.get_metric_list(manual_run_specs)
+                metric_id_query =f"""select metric_id,reportgroupid,functional_area,'{reporting_end_period}'::date  as reporting_end_period,case when metric_id::int in (100001,100002,100003,1000049,10000101,100001803,100001804,100002033,100002038,100002069,100002073,100002100,100002114,100002115,100003003,100003006,100003044,100003045,100003062,100003063,100005006,100005007,100005017,100005018,100005021,100005022,100005037,100005040,100002024,100005153,100005063,100005028,100005065,100005044,1000017,100005086,100005023) then  'Monthly' else 'Lifetime' end metric_id_type   from  
+                sc_kpi.metrics_metadata  """
+                
+                entity_query =self.get_entity_query(manual_run_specs)
+                metrics_metadata=f"""
+                CREATE LOCAL TEMP TABLE metrics_metadata ON COMMIT PRESERVE ROWS  As  {metric_id_query} a 
+                cross join ({entity_query}) b where metric_id in 
+                {str_metric_list}"""
+                
+            elif  manual_run_specs["metric_id"] != None  and manual_run_specs["entity"]==None:
+                str_metric_list =self.get_metric_list(manual_run_specs)
+                metric_id_query =f"""select  metric_id,reportgroupid,functional_area ,'{reporting_end_period}'::date
+                     as reporting_end_period,case when metric_id::int in (100001,100002,100003,1000049,10000101,100001803,100001804,100002033,100002038,100002069,100002073,100002100,100002114,100002115,100003003,100003006,100003044,100003045,100003062,100003063,100005006,100005007,100005017,100005018,100005021,100005022,100005037,100005040,100002024,100005153,100005063,100005028,100005065,100005044,1000017,100005086,100005023) then  'Monthly' else 'Lifetime' end metric_id_type   from  sc_kpi.metrics_metadata"""
+                metrics_metadata =f"""CREATE LOCAL TEMP TABLE metrics_metadata ON COMMIT PRESERVE ROWS  As 
+                    {metric_id_query}  a cross join (select distinct reportgroupid from bi_reporting.eliggroupingrules where isactive = 1 ) b
+                    where metric_id in  {str_metric_list}
+                    """
+            
+            elif manual_run_specs["metric_id"] == None  and manual_run_specs["entity"]!=None:
+                if functional_area == None:
+                    raise Exception('No functional area or metric_id is given')
+                entity_query =self.get_entity_query(manual_run_specs)
+                metrics_metadata =f""" CREATE LOCAL TEMP TABLE metrics_metadata ON COMMIT PRESERVE ROWS  As 
+                    select metric_id,reportgroupid,functional_area,'{reporting_end_period}'::date as reporting_end_period ,case when metric_id::int in (100001,100002,100003,1000049,10000101,100001803,100001804,100002033,100002038,100002069,100002073,100002100,100002114,100002115,100003003,100003006,100003044,100003045,100003062,100003063,100005006,100005007,100005017,100005018,100005021,100005022,100005037,100005040,100002024,100005153,100005063,100005028,100005065,100005044,1000017,100005086,100005023) then  'Monthly' else 'Lifetime' end metric_id_type  
+                    from  sc_kpi.metrics_metadata a cross join ({entity_query}) b
+                    where a.functional_area = '{functional_area}'"""
+        return metrics_metadata
+
+
+    def get_query(self):
+        query =["DROP TABLE IF EXISTS   kpi_validation  ;"]
+
+        
+        query_lifetime_metric ="""create local temp table kpi_validation  on commit preserve rows as
+            with run_params_cte as (select distinct reporting_end_period from  metrics_metadata)  
+            select  distinct
+                a.metric_id,
+                a.dims,
+                a.entity,
+                a.functional_area,
+                m.metric_id_type,
+                to_char(a.reporting_end_period,'yyyy-mm') month_ending,
+                a.metric_value,
+                a.metric_value-b.metric_value as validation_value
+                from  metrics_metadata  m
+                full outer join sc_kpi.metrics_values a  on a.metric_id=m.metric_id and a.functional_area=m.functional_area  and a.entity=m.reportgroupid
+                full outer join sc_kpi.metrics_values b  on a.entity=b.entity and a.metric_id=b.metric_id and nvl(a.dims,'aaa') = nvl(b.dims, 'aaa') and b.functional_area=m.functional_area
+                join run_params_cte as r on to_char(b.reporting_end_period,'yyyy-mm') = to_char(add_months(r.reporting_end_period,-1),'yyyy-mm')
+                and a.metric_value is not null and b.metric_value is not null
+                where  metric_id_type = 'Lifetime' and  to_char(a.reporting_end_period,'yyyy-mm') =to_char(r.reporting_end_period,'yyyy-mm')  and b.metric_value<>0
+                order by 1,2,4"""
+        
+        
+        query_monthly_metric  ="""insert into  kpi_validation 
+            with run_params_cte as (select distinct reporting_end_period from  metrics_metadata)  
+            select  distinct
+                a.metric_id,
+                a.dims,
+                a.entity,
+                a.functional_area,
+                m.metric_id_type,
+                to_char(a.reporting_end_period,'yyyy-mm') month_ending,
+                a.metric_value,
+                a.metric_value   validation_value     
+                from  metrics_metadata  m
+                join sc_kpi.metrics_values a  on a.metric_id=m.metric_id and a.functional_area=m.functional_area  and a.entity=m.reportgroupid and m.metric_id_type='Monthly'
+                join run_params_cte as r on  to_char(a.reporting_end_period,'yyyy-mm') =to_char(r.reporting_end_period,'yyyy-mm')  and a.metric_value<>0 and a.metric_value is not null
+                order by 1,2,4"""
+
+        query.append(query_lifetime_metric)
+        query.append(query_monthly_metric)
+        return query 
+
+    def css_to_rows(self,row,columns=''):
+        list_month=row[columns].split(',')
+        return list_month
+
+    def remove_validated_records(self,df_missing_records):
+        df_val= pd.read_csv('validated_result.csv',sep='|')
+        df_missing =df_missing_records.copy()
+        df_missing['month'] =df_missing.apply(self.css_to_rows,columns='Missing_month',axis=1)
+        df_missing =df_missing[['functional_area','entity','metric_id','month']]
+        df_missing=df_missing.explode(column='month')
+        df_pass= df_val[df_val['validated']=='PASSED']
+
+        df1=pd.merge(df_missing,df_pass, indicator=True, how='outer').query('_merge=="left_only"').drop('_merge', axis=1)
+        df_val = df_val.append(df1)
+        df_val= df_val[['functional_area','entity','metric_id','month','validated']]
+        df_val.to_csv('validated_result.csv',sep='|',index=False)
+        df1 = df1.groupby(['functional_area','entity','metric_id'])['month'].apply(','.join).reset_index()
+        
+        return df1
+    
+    def validate_records(self,dates,connection,functional_area,manual_run_specs):
+
+        final_merged =pd.DataFrame()
+
+        self.logger.info('Executing the queries to get the percentage difference change between 2 consecutive months for last months ')
+        for index,end_date in  enumerate(dates):
+            self.logger.info(f'Executing for reporting_end_period : {end_date} and merged into the dataframe')
+            query_list = []
+            query_list.append("DROP TABLE IF EXISTS   metrics_metadata;")
+            metrics_metadata = self.get_metrics_metadata(manual_run_specs,end_date,functional_area)
+            query_list.append(metrics_metadata)
+                
+            query = self.get_query()
+            query_list=query_list+query
+            self.execute_query(query_list,connection)
+
+            query_diff ='''select metric_id,dims,entity,functional_area,metric_id_type,month_ending,metric_value, validation_value from kpi_validation '''
+                
+            df=pd.read_sql(query_diff,connection)
+            final_merged=final_merged.append(df)
+
+            # print(final_merged)
+            #  To replace null in dims with
+
+        final_merged['dims'] = final_merged['dims'].fillna(value=np.nan)
+        final_merged['dims'] = final_merged['dims'].replace(np.nan, 'abc', regex=True)
+        final_merged['dims'] =final_merged['dims'].replace('','abc',)
+            
+        self.logger.info("calculating  upper_range and lower range for record group by metric_id,dims and entity")
+        groups_list =final_merged.groupby(['metric_id','dims','entity'])
+            
+            
+        df_validaion_range=pd.DataFrame()
+        for groups in groups_list:
+            group = groups[0]
+            df_group = groups[1]
+            if len(df_group)>=6:
+                df_group=df_group.sort_values(by=['validation_value'], ascending=True)
+                df_group_range= self.get_validation_range(group,df_group)
+            else:
+                continue
+            df_validaion_range=df_validaion_range.append(df_group_range)
+            
+
+        validation_result = pd.merge(final_merged, df_validaion_range , on=['metric_id', 'entity','dims'])
+            
+        validation_result['validation_result'] = validation_result.apply(self.detect_outliers, axis=1)
+        # print(validation_result)
+        return validation_result
+
+    def main(self,reporting_end_period,month_range,manual_run_specs,functional_area=None):
+        try: 
+            self.logger.info('Get vertica database credential')
+            db=self.db_config('credentials.cfg')
+            self.logger.info('Get vertica database connection')
+            connection = vertica_python.connect(**db)
+            
+            self.logger.info(f'Get the reporting end period for last {month_range} months ')
+            format='%Y-%m-%d'
+            end = datetime.strptime(reporting_end_period,format)
+            dates =self.get_date_list(end,month_range)
+            
+            # df_entity = self.validate_reportgroupid(reporting_end_period,connection)
+            # df_entity.to_csv('lvl1_val.csv',sep='|',index=False)
+
+            df_entity = pd.read_csv('lvl1_val.csv',sep='|')
+            df_lvl_1 =df_entity[df_entity['validation_result']=='DANGER']
+
+            elig_entity =df_entity[df_entity['validation_result']=='PASS']
+            elig_entity = elig_entity.dropna(subset=['entity'])
+            elig_entity =elig_entity['entity']
+            elig_entity= pd.DataFrame({'entity':elig_entity.values})
+
+            # df_missing_records = pd.read_csv('missing_records.csv',sep='|')
+            # validation_result = pd.read_csv('result.csv',sep='|')
+            # validation_result=validation_result[validation_result['validation_result']=='DANGER']
+           
+            df_missing_records = self.validate_missing_record(month_range,connection,functional_area,elig_entity)
+
+            df_missing_records.to_csv(f'missing_record.csv',sep='|',index=False)
+            # df_missing_records=pd.read_csv('missing_record.csv',sep='|')
+            df_missing_records=self.remove_validated_records(df_missing_records)
+            df_missing_records.to_csv(f'missing_record_2.csv',sep='|',index=False)
+            # print(df_missing_records)
+               
+            
+            # validation_result =self.validate_records(dates,connection,functional_area,manual_run_specs)
+            # validation_result.to_csv("result1.csv",sep="|" ,index =False)
+            # validation_result =validation_result[validation_result['validation_result']=='DANGER']
+            # validation_result =validation_result[['metric_id','dims','entity','functional_area','metric_id_type','month_ending','metric_value']]
+            
+
+            # # # validation_result = pd.read_csv("result.csv",sep="|" )
+            
+            # month_list =[reporting_end_period[0:7]]
+            # validation_result =validation_result[validation_result['month_ending'].isin(month_list)]
+            # # validation_result.to_csv(f"{functional_area}_outliers.csv",sep="|" ,index =False)
+            
+            
+            # df_lvl_1 =df_lvl_1[['entity','met_cnt','metric_id']]
+            # receivers_email=["abhinavkumar1243@gmail.com",'parvez.hussain@wittybrains.com']
+            # # files_name=[f"{functional_area}_outliers.csv",f'{functional_area}_missing_record.csv']
+            # writer = pd.ExcelWriter(f'{functional_area}_validation.xlsx', engine ='xlsxwriter')
+            # df_missing_records.to_excel(writer, sheet_name ='missing_records',index =False)
+            # validation_result.to_excel(writer, sheet_name ='outliers',index =False)
+            # writer.save()
+            # self.send_mail(receivers_email,f'{functional_area}_validation',subject=f'validation - {functional_area}',functional_area =functional_area,files_name=[f'{functional_area}_validation.xlsx'],html_template='mail',df_list=[validation_result,df_missing_records],description=f'Validation results for functional_area : {functional_area}')
+            connection.close()
+                        
+        except Exception as  exception:
+           self.logger.error(f'Exception  arise as : {exception}')
+           raise exception
+        
+if __name__ == '__main__':
+    import time 
+    starttime =time.time()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-func','--functional_area',help='Functional area to execute.',required=False)
+    parser.add_argument('-range','--months',help='number of months ',type =int,required=True)
+    parser.add_argument('-end','--reporting_end_period',help='End of reporting period for  run.',required=True)
+    parser.add_argument('-ent','--entity' ,type=int,nargs='+',help='Functional area to execute.',required=False)
+    parser.add_argument('-met','--metric_id',nargs='+',help='Functional area to execute.',required=False)
+   
+    args, unknown = parser.parse_known_args()
+    args = vars(args)
+
+    if args['functional_area']:
+        functional_area=args['functional_area']
+    else:
+        functional_area=None
+
+    reporting_end_period=args['reporting_end_period']
+    no_of_months=args['months']
+    manual_run_specs = {}
+    optional_args = ['entity','metric_id']
+
+    manual_options = 0
+    for optional in optional_args:
+        if args[optional]:
+            manual_options+=1
+
+    if manual_options > 0:
+        manual_run_specs = {'entity':None,'metric_id':None}
+        for optional in optional_args:
+            if optional == 'metrics':
+                if args[optional]:
+                    if type(args[optional]) == tuple:
+                        args[optional] = list(args[optional])
+                    elif type(args[optional]) != list:
+                        args[optional] = [args[optional]]
+            manual_run_specs[optional] = args[optional]
+
+        if manual_run_specs['metric_id'] is not None:
+            for i in range(0, len(manual_run_specs['metric_id'])):
+                manual_run_specs['metric_id'][i] = int(manual_run_specs['metric_id'][i])
+            
+        if manual_run_specs['entity'] is not None:
+            for i in range(0, len(manual_run_specs['entity'])):
+                manual_run_specs['entity'][i] = int(manual_run_specs['entity'][i])
+            
+    try:
+        validation=Kpi_qbr_validation()
+        validation.main(reporting_end_period,no_of_months,manual_run_specs,functional_area=functional_area)
+        execution_time =time.time()-starttime
+        validation.logger.info(f'successfully executed......in {execution_time} sec')
+    except Exception as exception:
+        validation.logger.error(f'Exception arise as {exception}')
+
+
+
+
+    

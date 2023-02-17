@@ -1,107 +1,113 @@
+from operator import index
 from urllib.parse import _NetlocResultMixinStr
 import pandas as pd 
 import numpy as np
-from py import test
-df = pd.read_excel('manual_cols.xlsx', sheet_name='Sheet2')
-all_column = list(df["All Columns"].apply(lambda x: x.strip()))
-all_post_dup_col = list((df['Columns whose "post_" suffix are available']).dropna().apply(lambda x: str(x).strip()))
-adobe_null =list((df['Not Needed Columns (Reported By Adobe)']).dropna().apply(lambda x: str(x).strip()))
-no_longer_use =list((df['No longer used (Adobe)']).dropna().apply(lambda x: str(x).strip()))
-post_not_needed = list((df['post_not_needed']).dropna().apply(lambda x: str(x).strip()))
-post_no_longer_use = list((df['post_no_longer_used']).dropna().apply(lambda x: str(x).strip()))
-# print(df)
-total_no_use = all_post_dup_col + adobe_null + no_longer_use  + post_not_needed + post_no_longer_use
-# post_not_needed = [f"post_{i}" for i in no_longer_use if i in all_post_dup_col]
+from sqlalchemy import create_engine, null
 
-final_col = [i for i in all_column if i not in total_no_use]
+# # validation_result = pd.read_excel('validation_met.xlsx', sheet_name='validation_result')
+# validation_result_monthly = pd.read_excel('qbr_incentives_validation.xlsx', sheet_name='outliers')
+# SQLALCHEMY_DATABASE_URI='mysql://root:abhinav12@127.0.0.1:3306/test_db?charset=utf8'
 
-for i in final_col:
-      print(i)
+# engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
+# # validation_result.to_sql('validation_result',engine, if_exists= 'replace',index=False)
+# validation_result_monthly.to_sql('outliers',engine, if_exists= 'replace',index=False)
+# import seaborn as sns
+list_1 =[1.0, 56.0, 150.0, 151.0, 159.0, 181.0, 196.0, 235.0, 264.0, 267.0, 295.0, 634.0, 718.0, 960.0, 980.0]
+# a=sns.boxplot(list_1)
+# fig = a.get_figure()
+# fig.savefig('svm_conf.png', dpi=400)
+# print(a)
 
-
-
-
-
-
-
+from scipy import stats
+import numpy as np
+ 
+z = np.abs(stats.zscore(list_1))
+print(np.where(z > 3))
 
 
 
 
 
-# final_cols = list(df["Final (removing post_ dups)  (Col C - Col D)"].apply(lambda x: str(x).strip()))
-# distinct = list(df["Cols_after_removing_distinct_cols_from_all_columns"].apply(lambda x: str(x).strip()))
-
-# list_1 = [i for i in final_cols if i not in distinct ]
-
-# for i in list_1:
-#       print(i)
-
-# def remove_dup(test_list):
-#       res = []
-#       for i in test_list:
-#             if i not in res:
-#                   res.append(i)
-      
-#       return res
-# # Columns whose "post_" suffix are available
-
-# all_column = list(df["All Columns"].apply(lambda x: x.strip()))
-# adobe_null_col = list((df["Not Needed Columns (Reported By Adobe)"]).dropna().apply(lambda x: str(x).strip()))
-# col_post =list((df['Columns whose "post_" suffix are available']).dropna().apply(lambda x: str(x).strip()))
-# no_longer_use =list((df['No longer used (Adobe)']).dropna().apply(lambda x: str(x).strip()))
-# col_after_remove_post = [i for i in all_column if i not in col_post]
-# post_not_needed = [f"post_{i}" for i in adobe_null_col]
-# col_after_not_needed_post = [i for i in col_after_remove_post if i not in post_not_needed]
-# # print(len(col_after_not_needed_post))
-# cols_after_remove_not_needed = [i for i in col_after_not_needed_post if i not in adobe_null_col]
-
-# col_value_null_as_feb = list((df['Column values as null (data_feed_external_feb)']).dropna().apply(lambda x: str(x).strip()))
-
-
-# total_cols = adobe_null_col + col_post + no_longer_use
-# total_cols = remove_dup(total_cols)
-
-# cols_removing_total = [i for i in all_column if i not in total_cols]
-# for i in cols_removing_total:
-#       print(i)
-# print(len(total_cols))
-# for i in total_cols:
-#       print(i)
-# for i in col_value_null_as_feb:
-#       print(i)
-# col_value_null_remove_no_longer_use = [i for i in col_value_null_as_feb if i not in no_longer_use]
-# for i in col_value_null_remove_no_longer_use:
-#       print(i)
-# final_cols = [i for i in cols_after_remove_not_needed if i not in no_longer_use]
-# for i in col_value_null_remove_no_longer_use:
-#       print(i)
-      
-# print(len(col_post))
-# adobe_null_col = adobe_null_col.where(pd.notnull(df), None)
-# print(df.columns)
-# post_suffix_available_cols=list(df["post_ suffix available cols"].apply(lambda x: str(x).strip()))
-# columns_after_removing_not_needed= list(df["Columns after Removing Not Needed"].apply(lambda x: str(x).strip()))
-# columns_after_removing_post_not_needed = list(df["Columns after removing post_ Not Needed"].apply(lambda x: str(x).strip()))
-
-# not_needed_post_cols = [f"post_{i}" for i in post_suffix_available_cols if i in adobe_null_col if i is not np.nan ]
-
-# columns_after_removing_not_needed_prog= [i for i in all_column if i not in adobe_null_col ]
-# columns_after_removing_post_not_needed_prog =[i for i in columns_after_removing_not_needed_prog if i not in not_needed_post_cols ]
-# final_column =  [i for i in columns_after_removing_post_not_needed if i not in post_suffix_available_cols ]
 
 
 
 
-# data={
-#       "columns_after_removing_post_not_needed_prog":columns_after_removing_post_not_needed_prog,
-#       }
 
-# df_1 = pd.DataFrame(data)
-# file_name = "adobe_data_feed.xlsx"
-# key = "programing_Columns"
-# df_1.to_excel(file_name, sheet_name=key,index=False)
-# print
-# df["All Columns"] ="pageview"
-# print(df)
+
+
+
+
+# 
+# # data =  {'Name':['Jai', 'Princi', 'Gaurav', 'Anuj'], 
+# #         'Age':[27, 24, 22, 32], 
+# #         'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj'], 
+# #         'Qualification':['Msc', 'MA', 'MCA', 'Phd'],
+# #         'Mobile No': [97, 91, 58, 76]} 
+
+# # df = pd.DataFrame(data)
+# # print(df)
+
+# table_old = 'enr_old'
+# table_new = 'enrolls_new'
+# df_old.to_sql('coaching',engine, if_exists= 'replace',index=False)
+# df_new.to_sql('coaching',engine, if_exists= 'replace',index=False)
+
+# # df = pd.read_sql_table('old_metadata',engine)
+# # print(df)
+
+
+# sql = '''select distinct * from (
+# SELECT case 
+#         when n.metric_id is null then o.metric_id
+#         when o.metric_id is null then n.metric_id
+#         else o.metric_id 
+#     end as metric_id,
+#     o.reportgroupname as old_reportgroupname,
+#         n.reportgroupname as new_reportgroupname,
+#         o.dims as old_dims,
+#         n.dims as new_dims,
+#         o.metric as old_cnt,
+#         n.metric as new_cnt FROM test_db.enrolls_old o 
+# LEFT JOIN test_db.enrolls_new  n ON (o.reportgroupname = n.reportgroupname and o.metric_id =n.metric_id and o.dims = n.dims)
+# UNION
+# SELECT case 
+#         when n.metric_id is null then o.metric_id
+#         when o.metric_id is null then n.metric_id
+#         else o.metric_id 
+#     end as metric_id,
+#     o.reportgroupname as old_reportgroupname,
+#         n.reportgroupname as new_reportgroupname,
+#         o.dims as old_dims,
+#         n.dims as new_dims,
+#         o.metric as old_cnt,
+#         n.metric as new_cnt FROM test_db.enrolls_old o
+# RIGHT JOIN test_db.enrolls_new  n ON (o.reportgroupname = n.reportgroupname and o.metric_id =n.metric_id and o.dims = n.dims)
+# ) as a
+# order by 1,2,3,4,5'''
+
+# writer = pd.ExcelWriter('enrolls.xlsx', engine ='xlsxwriter')
+# sql ='SELECT * FROM test_db.site_analytics_new where reportgroupid =53750005'
+# df = pd.read_sql(sql=sql ,con=engine)
+# df['new_cnt'] = df['new_cnt'].replace(to_replace='(null)',value='0')
+# df['old_cnt'] = df['old_cnt'].replace(to_replace='(null)',value='0')
+# df['old_cnt']= df['old_cnt'].fillna(0)
+# df['new_cnt']= df['new_cnt'].fillna(0)
+# df['new_cnt'] =df['new_cnt'].astype(float)
+# df['old_cnt'] =df['old_cnt'].astype(float)
+# df['count-difference(old-new)'] = df['old_cnt']-df['new_cnt']
+# df.to_excel(writer, sheet_name ='enrolls-allreportgroups',index =False)
+# # writer.save()
+
+# df['old_reportgroupname'] = df['old_reportgroupname'].fillna(value=np.nan)
+# df['new_reportgroupname'] = df['new_reportgroupname'].fillna(value=np.nan)
+# df['old_reportgroupname']= df['old_reportgroupname'].fillna(0)
+# df['new_reportgroupname']= df['new_reportgroupname'].fillna(0)
+# df = df[df['old_reportgroupname'] !=0 ]
+# df = df[df['new_reportgroupname'] !=0 ]
+# # print(df)
+# list1 = ['metric_id','old_reportgroupname','new_reportgroupname','old_dims','new_dims']
+# df = df.drop_duplicates(subset=list1,keep= 'last')
+# df.to_excel(writer, sheet_name ='enrolls-common-reportgroups',index =False)
+# writer.save()
+
